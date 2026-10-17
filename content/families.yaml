@@ -1,0 +1,9 @@
+# The six colour families (from Gloria Willcox's feeling wheel). Every feeling's mix is made of these.
+# angle: where the family sits on screen, in degrees (0 = right, 90 = down, -90 = up).
+# color: fallback only — the live colours come from the --fw-color-* design tokens (src/tokens.css).
+- { id: joyful,   name: Joyful,   color: "#FFD21F", angle: -90 }
+- { id: peaceful, name: Peaceful, color: "#19D3A5", angle: -30 }
+- { id: sad,      name: Sad,      color: "#2F6BFF", angle: 30 }
+- { id: scared,   name: Scared,   color: "#9C4DFF", angle: 90 }
+- { id: mad,      name: Mad,      color: "#FF2E4D", angle: 150 }
+- { id: powerful, name: Powerful, color: "#FF8A1F", angle: 210 }

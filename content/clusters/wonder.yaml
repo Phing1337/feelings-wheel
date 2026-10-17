@@ -1,0 +1,142 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Wonder cluster · format guide: content/README.md
+
+id: wonder
+name: Wonder
+family: joyful
+anchor: curious
+mix: joyful 60, powerful 25, peaceful 15
+blurb: Curiosity, awe and fascination — the mind and heart leaning in.
+near:
+  joy: [excited, playful]
+  hope: [hopeful]
+  love: [smitten]
+  desire: [attracted]
+  calm: [peaceful]
+  fear: [nervous excited]
+
+feelings:
+  - word: curious
+    mix: joyful 60, powerful 25, scared 15
+    level: 3
+    def: Wanting to know more — something caught your mind and won’t let go.
+    stronger: fascinated
+    see: intrigued
+    text: I’m so curious what you’ll think of this.
+    self: Follow the thread and see where it goes.
+
+  - word: intrigued
+    mix: joyful 50, powerful 30, scared 20
+    level: 3
+    def: Hooked by a puzzle — something doesn’t add up yet, and you want it to.
+    stronger: fascinated
+    text: Okay, now I’m intrigued. Tell me more.
+    self: Mystery is fun when you know you’re safe.
+
+  - word: fascinated
+    mix: joyful 60, powerful 25, peaceful 15
+    level: 4
+    def: Absorbed — fully gripped by how something works or who someone is.
+    softer: curious
+    stronger: captivated
+    text: I’m honestly fascinated by this.
+    self: Let yourself go deep on it.
+
+  - word: entranced
+    aliases: [spellbound, mesmerized]
+    also: love
+    mix: joyful 45, peaceful 40, scared 15
+    level: 4
+    def: Spellbound — so drawn in that the rest of the world goes quiet.
+    see: [captivated, enchanted]
+    body: still, wide-eyed, time slowing down
+    text: I was completely entranced by you tonight.
+    self: Stay in it a moment longer.
+
+  - word: captivated
+    also: desire
+    mix: joyful 55, powerful 25, peaceful 20
+    level: 4
+    def: Held by someone’s charm or a moment’s beauty — you can’t look away.
+    softer: fascinated
+    text: I was captivated the whole time.
+    self: Notice what pulls you in. It says something about you.
+
+  - word: enchanted
+    mix: joyful 60, peaceful 40
+    level: 4
+    def: Delighted as if by magic — the ordinary suddenly glows.
+    see: amazed
+    text: This place is enchanting. Wish you were here.
+    self: Hold on to the magic. It’s real.
+
+  - word: amazed
+    aliases: [astonished]
+    mix: joyful 60, powerful 20, scared 20
+    level: 4
+    def: Struck by something far beyond what you expected.
+    stronger: awed
+    see: surprised
+    say: That’s incredible. How did you do that?
+    text: I’m genuinely amazed by what you pulled off.
+
+  - word: awed
+    aliases: [in awe, awestruck]
+    mix: peaceful 40, joyful 35, scared 25
+    level: 5
+    def: Humbled by something vast — nature, art, love, the sheer scale of things.
+    softer: amazed
+    body: chills, goosebumps, a hush in your chest
+    text: I was in awe the whole time.
+    self: Small in a good way. Let it widen you.
+
+  - word: inspired
+    also: hope
+    mix: joyful 50, powerful 40, peaceful 10
+    level: 4
+    def: Lit up with ideas or courage — something showed you what’s possible.
+    see: [hopeful, determined]
+    text: Feeling so inspired after talking with you.
+    self: Write it down before it fades.
+
+  - word: amused
+    also: joy
+    mix: joyful 80, peaceful 20
+    level: 2
+    def: Tickled — something struck you as funny.
+    stronger: playful
+    text: Still laughing about earlier, honestly.
+    self: Let yourself laugh. It’s medicine.
+
+  - word: dazzled
+    mix: joyful 65, powerful 20, scared 15
+    level: 4
+    def: Bowled over by brilliance — beauty, talent or charm that’s almost too bright.
+    see: amazed
+    text: I’m still dazzled by your performance.
+    self: Admiration is a lovely way to feel.
+
+  - word: moved
+    mix: peaceful 40, sad 30, joyful 30
+    level: 4
+    def: Touched deep down — something reached the soft middle of you.
+    see: [tender, grateful]
+    body: tight throat, misty eyes
+    text: I was so moved by what you said.
+    self: Not all tears are sad. Some are full.
+
+  - word: surprised
+    mix: joyful 40, scared 40, powerful 20
+    level: 3
+    def: Caught off guard — something you didn’t see coming.
+    stronger: amazed
+    text: Wow, I did not see that coming!
+    self: Give yourself a second to catch up.
+
+  - word: eager
+    mix: joyful 65, powerful 35
+    level: 3
+    def: Leaning forward — keen to start, to see, to do.
+    see: excited
+    text: So eager to see you this weekend!
+    self: Enjoy the anticipation. It’s part of the fun.

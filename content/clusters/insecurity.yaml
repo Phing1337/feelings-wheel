@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Insecurity cluster · format guide: content/README.md
+
+id: insecurity
+name: Insecurity
+family: scared
+anchor: insecure
+blurb: Unsure you’re enough, or where you stand.
+near:
+  fear: [anxious]
+  loneliness: [left out]
+  hurt: [hurt]
+  strength: [confident]
+
+feelings:
+  - word: insecure
+    mix: scared 60, sad 40
+    level: 2
+    def: Unsure you are enough, or unsure where you stand.
+    opposite: confident
+    body: shrinking posture, replaying conversations
+    voice: [Am I enough?, They probably think I’m…]
+    text: I’m feeling a bit insecure today. Could use a little reassurance.
+    say: I’m in my head about where I stand with you.
+    self: A wobble isn’t the truth about you.
+
+  - word: jealous
+    mix: mad 45, scared 35, sad 20
+    level: 3
+    def: Afraid of losing something (or someone) to someone else, with a sting of anger.
+    under: [insecure]
+    opposite: content
+    body: a tight knot, comparing, a hot flicker
+    voice: [Why them and not me?, I want that too.]
+    text: This is a little embarrassing, but I felt jealous today and I want to be honest about it.
+    say: I’m happy for them and also a bit jealous. Both are true.
+    self: Jealousy shows you what you want. Take note.

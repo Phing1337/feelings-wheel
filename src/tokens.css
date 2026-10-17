@@ -1,0 +1,137 @@
+/* Design tokens — mirrored from the Paper style guide
+   (Scratchpad · "Atomic elements of feelings…", sections 01–06).
+   Paper is the source of truth: edit there, then ask Copilot to "sync tokens".
+   Motion + layout tokens are plain-language strings; src/tokens.js parses them. */
+:root {
+  /* 03 · Ink theme */
+  --fw-color-ink-bg: #0B0B12;
+  --fw-color-ink-fg: #F4F2FF;
+  --fw-color-ink-mute: rgb(244 242 255 / 56%);
+  --fw-color-ink-line: rgb(244 242 255 / 10%);
+  --fw-color-ink-card: rgb(22 21 34 / 90%);
+  /* 03 · Poster theme */
+  --fw-color-poster-bg: #F7F5F0;
+  --fw-color-poster-fg: #14131A;
+  --fw-color-poster-mute: rgb(20 19 26 / 56%);
+  --fw-color-poster-line: rgb(20 19 26 / 8%);
+  --fw-color-poster-card: rgb(255 255 255 / 92%);
+  /* 03 · Shared by both themes */
+  --fw-color-label-dark: #14131A;
+  --fw-color-label-light: #FFFFFF;
+  --fw-color-scrim: rgb(5 5 10 / 55%);
+  --fw-color-page: #05050A;
+
+  /* 01 · Feeling families */
+  --fw-color-joyful: #FFD21F;
+  --fw-color-peaceful: #19D3A5;
+  --fw-color-sad: #2F6BFF;
+  --fw-color-scared: #9C4DFF;
+  --fw-color-mad: #FF2E4D;
+  --fw-color-powerful: #FF8A1F;
+  --fw-color-accent: var(--fw-color-joyful);
+
+  /* 04 · Type — display face set to Merriweather in Paper (bubble words, prompt, titles) */
+  --fw-font-display: "Merriweather Variable", "Merriweather", Georgia, serif;
+  --fw-font-body: "Inter Variable", "Inter", system-ui, sans-serif;
+  --fw-text-micro: 9.5px;
+  --fw-text-caption: 10px;
+  --fw-text-label: 12px;
+  --fw-text-ui: 13px;
+  --fw-text-body: 14px;
+  --fw-text-lead: 16px;
+  --fw-text-heading: 19px;
+  --fw-text-title: 22px;
+  --fw-text-prompt: 26px;
+  --fw-text-display: 30px;
+  --fw-font-weight-medium: 500;
+  --fw-font-weight-semibold: 600;
+  --fw-font-weight-bold: 700;
+  --fw-font-weight-heavy: 800;
+  --fw-tracking-tight: -0.02em;
+  --fw-tracking-label: 0.02em;
+  --fw-tracking-caps: 0.14em;
+  --fw-leading-tight: 100%;
+  --fw-leading-body: 145%;
+
+  /* 05 · See-through (gloss is off: Paper bubbles are flat fills now) */
+  --fw-opacity-glow: 30%;
+  --fw-opacity-shade: 30%;
+  --fw-opacity-dim: 32%;
+  --fw-opacity-light: 38%;
+  --fw-opacity-hint: 55%;
+  --fw-opacity-gloss: 55%;
+
+  /* 05 · Shape & space */
+  --fw-breakpoint-phone: 500px;
+  --fw-container-dock: 76px;
+  --fw-container-bubble: 100px;
+  --fw-container-phone: 390px;
+  --fw-space-1: 4px;
+  --fw-space-2: 8px;
+  --fw-space-3: 12px;
+  --fw-space-edge: 14px;
+  --fw-space-4: 16px;
+  --fw-space-5: 24px;
+  --fw-radius-sm: 14px;
+  --fw-radius-card: 24px;
+  --fw-radius-sheet: 30px;
+  --fw-radius-device: 44px;
+  --fw-radius-pill: 999px;
+
+  /* 06 · Motion — "duration · ease · extras" */
+  --fw-motion-bloom-in: "0.8s · back.out(1.5) · stagger 35ms";
+  --fw-motion-move: "0.75s · power3.inOut";
+  --fw-motion-exit: "0.45s · power2.in · drift 90px";
+  --fw-motion-pulse: "0.8s · elastic.out(1, 0.4) · from 1.12";
+  --fw-motion-spring-back: "0.9s · elastic.out(1, 0.45)";
+  --fw-motion-press: "0.18s · power2.out · scale 0.92";
+  --fw-motion-release: "0.6s · elastic.out(1, 0.45)";
+  --fw-motion-hold: "0.48s";
+  --fw-motion-pin-flight: "0.75s · power2.in · lift 0.16s";
+  --fw-motion-bump: "1s · elastic.out(1, 0.35) · from 1.2";
+  --fw-motion-peek-in: "0.45s · power3.out · rise 24px";
+  --fw-motion-drawer-open: "0.6s · power3.out";
+  --fw-motion-drawer-close: "0.45s · power2.in";
+  --fw-motion-toast: "0.3s · power2.out · hold 1.6s";
+  --fw-motion-pivot-slide: "0.45s · power3.out";
+  --fw-motion-float: "2.2–3.8s · sine.inOut · drift 3–6px";
+  --fw-motion-blend-spin: "16–28s · none";
+  --fw-motion-dock-spin: "24s · none";
+  --fw-motion-tint: "0.9s · power2.out";
+  --fw-motion-wheel-seg: "0.7s · power3.out";
+
+  /* 06 · Layout — sizes are × the 100px bubble; radii in px at 390 wide */
+  --fw-layout-center-y: "42%";
+  --fw-layout-max-zoom: "1.15×";
+  --fw-layout-bloom-home: "radius 134 · 0.9×";
+  --fw-layout-bloom-focus: "1.2×";
+  --fw-layout-bloom-inner: "116 × 128 · 0.7× · 7";
+  --fw-layout-bloom-outer: "160 × 208 · 0.58× · 9";
+  --fw-layout-bloom-more: "55°";
+  --fw-layout-honeycomb-cell: "78";
+  --fw-layout-honeycomb-size: "0.66×";
+  --fw-layout-honeycomb-rings: "5";
+  --fw-layout-orbit-field: "150 × 250";
+  --fw-layout-orbit-focus: "1.1×";
+  --fw-layout-orbit-ring: "122 × 132 · 0.6×";
+  --fw-layout-orbit-rest: "fade 40% · push 1.15×";
+
+  /* 07 · Aura — the slow, dreamy glows behind the bubbles (Paper: "Phone · Ink").
+     The three corner glows take the family colours of your pinned feelings. The big centre haze
+     carries the mood: it rests on haze, lifts toward haze-happy as you get happier (and every glow
+     brightens), and sinks toward haze-sad as you get sadder. Nothing pinned = the Paper mix. */
+  --fw-color-aura-haze: #8C46CD;
+  --fw-color-aura-haze-happy: #B69CFF;
+  --fw-color-aura-haze-sad: #8F0100;
+  --fw-color-aura-joyful: #FFE600;
+  --fw-color-aura-peaceful: #69FFA2;
+  --fw-color-aura-sad: #8F0100;
+  --fw-color-aura-scared: #8C46CD;
+  --fw-color-aura-mad: #FF2E4D;
+  --fw-color-aura-powerful: #FF8A1F;
+  --fw-opacity-aura: 37%;
+  --fw-opacity-aura-mood: 35%;
+  --fw-opacity-aura-poster: 45%;
+  --fw-motion-aura-drift: "60–110s · sine.inOut · drift 18% · breathe 12% · shimmer 8°";
+  --fw-motion-aura-shift: "8s · sine.inOut · stagger 0.7s";
+}

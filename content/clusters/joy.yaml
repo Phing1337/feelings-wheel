@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Joy cluster · format guide: content/README.md
+
+id: joy
+name: Joy
+family: joyful
+anchor: joyful
+blurb: Lightness, delight and fun — good energy that wants to be shared.
+near:
+  love: [loved]
+  hope: [hopeful]
+  wonder: [curious, amused]
+  pride: [proud]
+  calm: [content]
+
+feelings:
+  - word: joyful
+    core: true
+    mix: joyful
+    level: 3
+    def: Lit up from the inside. Things feel good and you want to share it.
+    stronger: excited
+    softer: content
+    opposite: sad
+    body: lightness in the chest, a smile that keeps sneaking out
+    voice:
+      - Today is actually good.
+      - I want to tell someone about this.
+    text: Okay I’m in a really good mood and I wanted you to be part of it.
+    say: I feel genuinely happy right now — like, all the way.
+    self: Notice this. Let it count.
+
+  - word: excited
+    mix: joyful 75, powerful 25
+    level: 4
+    def: Buzzing about something that is happening now or almost here.
+    softer: joyful
+    under: [hopeful]
+    opposite: drained
+    body: buzzing hands, hard to sit still, talking fast
+    voice: [I can’t wait., Is it time yet?]
+    text: I’m SO excited about this weekend I can barely focus.
+    opener: Can I tell you something I’m really excited about?
+    say: I’m bouncing off the walls a little — in a good way.
+
+  - word: playful
+    mix: joyful 80, peaceful 20
+    level: 3
+    def: Light and silly — up for teasing, games, and laughing at nothing.
+    opposite: defensive
+    body: loose shoulders, grinning, mischief in your eyes
+    voice:
+      - Let’s not take this too seriously.
+      - What if we just…
+    text: I’m in a goofy mood. Entertain me or be entertained, your choice.
+    say: I feel silly and light today and I kind of love it.
+    opener: Want to do something fun and pointless with me?

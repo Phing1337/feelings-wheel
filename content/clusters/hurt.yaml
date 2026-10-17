@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Hurt cluster · format guide: content/README.md
+
+id: hurt
+name: Hurt
+family: mad
+anchor: hurt
+blurb: Pain from something someone did — and the armour that grows around it.
+near:
+  anger: [mad]
+  sadness: [heartbroken]
+  insecurity: [insecure]
+  loneliness: [left out]
+
+feelings:
+  - word: hurt
+    mix: sad 50, mad 50
+    level: 3
+    def: Stung by something someone said or did — it landed somewhere tender.
+    stronger: heartbroken
+    softer: disappointed
+    opposite: safe
+    body: a sting in the chest, eyes burning, wanting to pull away
+    voice:
+      - That really got to me.
+      - I didn’t expect that from them.
+    text: What happened earlier hurt more than I let on. Can we talk?
+    say: When that happened, I felt really hurt.
+    self: Hurt means it mattered. You’re allowed to say so.
+
+  - word: defensive
+    mix: mad 50, scared 50
+    level: 2
+    def: Guard up — ready to protect yourself before you know you need to.
+    under: [insecure, scared]
+    opposite: safe
+    body: crossed arms, quick comebacks, bracing for impact
+    voice: [That’s not fair., You don’t understand.]
+    text: I got defensive earlier and I’m sorry. I think I felt criticized.
+    say: I’m feeling defensive — give me a second so I can actually listen.
+    self: What are you protecting right now?

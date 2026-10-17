@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Sadness cluster · format guide: content/README.md
+
+id: sadness
+name: Sadness
+family: sad
+anchor: sad
+blurb: Heaviness that comes from something mattering.
+near:
+  loneliness: [lonely]
+  longing: [wistful]
+  hurt: [hurt]
+  fear: [overwhelmed]
+
+feelings:
+  - word: sad
+    core: true
+    mix: sad
+    level: 3
+    def: Heavy and low. Something matters, and it hurts that it is missing.
+    stronger: heartbroken
+    softer: disappointed
+    opposite: joyful
+    body: heavy limbs, tight throat, everything a bit slower
+    voice: [I just feel low., I miss how it was.]
+    text: I’m feeling kind of sad today. Not sure I need anything, just didn’t want to hide it.
+    say: I’m sad, and I don’t totally know why yet.
+    self: Sad is information, not a verdict. Be kind to yourself.
+
+  - word: disappointed
+    mix: sad 70, mad 30
+    level: 2
+    def: You hoped for something and it did not happen. The gap stings.
+    stronger: sad
+    opposite: hopeful
+    body: deflated, a slow sigh, shoulders dropping
+    voice:
+      - I really thought it would happen.
+      - Of course.
+    text: I’m pretty disappointed it fell through. I was really looking forward to it.
+    say: I’m not mad, I’m just disappointed — I had my hopes up.
+    self: It mattered. That’s why it stings.
+
+  - word: drained
+    mix: sad 80, peaceful 20
+    level: 2
+    def: Running on empty — nothing left to give right now.
+    opposite: excited
+    body: heavy eyelids, slow thoughts, nothing in the tank
+    voice:
+      - I have nothing left today.
+      - Please don’t ask me for one more thing.
+    text: I’m completely drained tonight. Can we keep it low-key?
+    say: I want to be there for this, I’m just running on empty.
+    self: Rest is not a reward. It’s a need.
+
+  - word: heartbroken
+    mix: sad
+    level: 5
+    def: A deep ache from losing something — or someone — that mattered a lot.
+    softer: sad
+    opposite: loved
+    body: an ache behind the ribs, waves of tears, numb in between
+    voice:
+      - I don’t know how to do this.
+      - It wasn’t supposed to end like this.
+    text: I’m really heartbroken right now. I don’t need advice, I just need someone.
+    say: This hurts more than I know how to say.
+    self: Grief is love with nowhere to go. Let it move.

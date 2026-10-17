@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Calm cluster · format guide: content/README.md
+
+id: calm
+name: Calm
+family: peaceful
+anchor: peaceful
+blurb: Settled, unhurried, and okay right now.
+near:
+  safety: [safe]
+  gratitude: [grateful]
+  love: [tender]
+  connection: [accepted]
+
+feelings:
+  - word: peaceful
+    core: true
+    mix: peaceful
+    level: 3
+    def: Settled and unhurried. Nothing needs fixing right now.
+    softer: calm
+    opposite: mad
+    body: slow breathing, soft jaw, nothing pulling at you
+    voice:
+      - Nothing needs fixing right now.
+      - This is nice.
+    text: Having a really peaceful evening. Hope yours is gentle too.
+    say: I feel settled. Like everything is okay for now.
+    self: Remember this quiet. You can come back to it.
+
+  - word: calm
+    mix: peaceful
+    level: 1
+    def: Steady breath, quiet mind. You are not racing anywhere.
+    stronger: peaceful
+    opposite: anxious
+    body: steady heartbeat, even breath, clear head
+    voice: [One thing at a time., I’m okay.]
+    text: I’m feeling pretty calm about it now, actually.
+    say: I’m in a calm place — we can talk about it whenever.
+    self: Slow is fine. You’re not behind.
+
+  - word: content
+    mix: peaceful 60, joyful 40
+    level: 2
+    def: Quietly satisfied. This is enough, and that feels good.
+    stronger: joyful
+    opposite: jealous
+    body: settled into your seat, no itch to change anything
+    voice:
+      - This is enough.
+      - I don’t need more right now.
+    text: Nothing big to report — just feeling content tonight.
+    say: Honestly? I’m just really content right now.
+    self: Enough is a real feeling. Enjoy it.
+
+  - word: relieved
+    mix: peaceful 70, joyful 30
+    level: 3
+    def: The weight just lifted. The thing you were bracing for is over — or never came.
+    opposite: on edge
+    body: a long exhale, loosened chest, almost laughing
+    voice: [Oh thank goodness., It’s over.]
+    text: It went fine!! I’m so relieved I could cry.
+    say: I didn’t realize how tense I was until it ended.
+    self: You carried that a long time. Put it down.

@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Hope cluster · format guide: content/README.md
+
+id: hope
+name: Hope
+family: joyful
+anchor: hopeful
+blurb: Leaning toward what could be.
+near:
+  joy: [excited]
+  strength: [determined]
+  wonder: [inspired, eager]
+  fear: [nervous-excited]
+  sadness: [disappointed]
+
+feelings:
+  - word: hopeful
+    mix: joyful 60, powerful 25, peaceful 15
+    level: 2
+    def: Leaning toward a good outcome. Not there yet, but you can see it from here.
+    stronger: excited
+    opposite: disappointed
+    body: leaning forward, lighter footsteps, a quiet spark
+    voice:
+      - This could actually work out.
+      - Maybe the next part is better.
+    text: I’m feeling hopeful about things for the first time in a while.
+    say: I don’t know how it ends yet, but I have a good feeling.
+    self: Hope is allowed even before the proof shows up.

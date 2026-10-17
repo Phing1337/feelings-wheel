@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Strength cluster · format guide: content/README.md
+
+id: strength
+name: Strength
+family: powerful
+anchor: powerful
+blurb: Capable, steady, ready to take it on.
+near:
+  pride: [proud]
+  hope: [hopeful]
+  joy: [excited]
+  safety: [safe]
+  anger: [mad]
+
+feelings:
+  - word: powerful
+    core: true
+    mix: powerful
+    level: 3
+    def: Strong and capable. You can take this on.
+    stronger: determined
+    softer: confident
+    opposite: scared
+    body: standing tall, solid feet, a steady voice
+    voice: [I can handle this., I know what I’m doing.]
+    text: Feeling really strong today — like I can take on anything.
+    say: I feel capable and clear right now.
+    self: Remember this feeling the next time you doubt yourself.
+
+  - word: confident
+    mix: powerful 80, peaceful 20
+    level: 2
+    def: You trust yourself here. Steady footing, clear head.
+    stronger: powerful
+    opposite: insecure
+    body: relaxed shoulders, steady eye contact, an easy pace
+    voice: [I’ve got this., I trust myself here.]
+    text: Feeling confident about tomorrow. I’m ready.
+    say: I feel good about this decision.
+    self: Confidence is earned. You earned it.
+
+  - word: determined
+    mix: powerful 85, mad 15
+    level: 4
+    def: Locked in. You have decided, and you are not letting go.
+    softer: powerful
+    opposite: overwhelmed
+    body: set jaw, focused eyes, leaning in
+    voice: [I’m not giving up., One way or another.]
+    text: It’s been tough, but I’m determined to see this through.
+    say: I’m committed. I’m going to make this work.
+    self: Keep going. Small steps still move you.
+
+  - word: fired up
+    mix: powerful 50, mad 30, joyful 20
+    level: 4
+    def: Charged and ready to go — a spark of fight and fun together.
+    opposite: drained
+    body: electric, restless legs, ready to go right now
+    voice: [Let’s go!, Nothing is stopping me.]
+    text: I’m SO fired up about this idea. Can I tell you about it?
+    say: I’ve got so much energy for this right now.
+    self: Point the fire at one thing.

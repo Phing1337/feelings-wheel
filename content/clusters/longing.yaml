@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Longing cluster · format guide: content/README.md
+
+id: longing
+name: Longing
+family: sad
+anchor: yearning
+blurb: Reaching for something — or someone — that isn’t here.
+near:
+  love: [loved]
+  sadness: [sad]
+  desire: [craving]
+  hope: [hopeful]
+  loneliness: [lonely]
+
+feelings:
+  - word: yearning
+    also: [desire, love]
+    mix: sad 50, joyful 35, powerful 15
+    level: 4
+    def: A deep, aching want for someone or something out of reach.
+    softer: wistful
+    see: [missing someone, lovesick]
+    body: a pull in the chest, reaching without moving
+    text: I’ve been yearning for you all week.
+    self: The ache points at what matters to you.
+
+  - word: missing someone
+    aliases: [missing you, miss you]
+    mix: sad 65, joyful 20, peaceful 15
+    level: 3
+    def: Feeling the space where someone usually is.
+    stronger: yearning
+    see: lonely
+    text: I miss you. That’s it, that’s the text.
+    self: Missing them means they matter.
+
+  - word: homesick
+    mix: sad 60, scared 20, peaceful 20
+    level: 3
+    def: Longing for home — the people, places and rhythms that feel like yours.
+    see: nostalgic
+    text: Feeling homesick today. Call me later?
+    self: Bring a little bit of home into today.
+
+  - word: pining
+    mix: sad 60, joyful 25, scared 15
+    level: 4
+    def: Wasting away a little with longing — stuck on someone who isn’t here.
+    see: lovesick
+    text: Okay, I’m officially pining. Come back soon.
+    self: Feel it, then feed yourself something good.
+
+  - word: bittersweet
+    mix: joyful 50, sad 50
+    level: 2
+    def: Happy and sad at once — something good that also carries a goodbye.
+    body: a smile and a lump in the throat at the same time
+    voice:
+      - I’m happy and I’m going to miss this.
+      - Both things are true.
+    text: Feeling so bittersweet today — happy for what’s next, sad to leave this behind.
+    say: It’s a good thing, and I’m still a little sad about it.
+    self: You can hold two feelings at once.
+
+  - word: nostalgic
+    mix: joyful 40, sad 35, peaceful 25
+    level: 2
+    def: Warmly missing a time, a place, or a person from before.
+    body: a warm pull backward, a song or smell bringing it all back
+    voice:
+      - Remember when…
+      - Things felt simpler then.
+    text: I just found an old photo of us and got so nostalgic.
+    opener: Do you remember that time we…?
+    self: Those moments still belong to you.
+
+  - word: wistful
+    mix: sad 60, peaceful 40
+    level: 1
+    def: A gentle longing for something just out of reach.
+    stronger: nostalgic
+    body: a soft sigh, gazing out windows
+    voice:
+      - If only.
+      - I wonder what it would’ve been like.
+    text: Feeling a little wistful tonight. Just one of those evenings.
+    say: I keep drifting back to what might have been.
+    self: Longing points at what you value.

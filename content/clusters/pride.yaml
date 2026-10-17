@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Pride cluster · format guide: content/README.md
+
+id: pride
+name: Pride
+family: powerful
+anchor: proud
+blurb: Feeling the worth of what you — or someone you love — did.
+near:
+  strength: [confident]
+  joy: [joyful]
+  gratitude: [grateful]
+  connection: [seen]
+
+feelings:
+  - word: proud
+    mix: powerful 60, joyful 40
+    level: 3
+    def: Glowing about something you — or someone you love — did.
+    opposite: insecure
+    body: chest open, chin up, a grin you can’t hide
+    voice: [I did that., All that work paid off.]
+    text: I did it!! I’m honestly so proud of myself.
+    say: I’m really proud of how I handled that.
+    self: Celebrate it. Don’t rush past it.
+
+  - word: appreciated
+    mix: joyful 50, powerful 30, peaceful 20
+    level: 2
+    def: Your effort was noticed, and it feels good to be valued.
+    opposite: unappreciated
+    body: warm cheeks, standing a little taller
+    voice:
+      - They noticed.
+      - That meant more than they know.
+    text: What you said today made me feel really appreciated. Thank you.
+    say: It means a lot that you noticed.
+    self: Let it land. You don’t have to wave it away.
+
+  - word: vindicated
+    mix: powerful 70, joyful 15, mad 15
+    level: 3
+    def: Proven right after being doubted — that quiet “I knew it.”
+    opposite: insecure
+    body: a satisfied exhale, a small knowing smile
+    voice:
+      - I knew it.
+      - I was right to trust myself.
+    text: Turns out I was right about that. Feeling pretty vindicated, not gonna lie.
+    say: It feels good to have my instincts confirmed.
+    self: Your gut was right. Remember that next time.

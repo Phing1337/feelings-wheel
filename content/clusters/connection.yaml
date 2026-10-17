@@ -1,0 +1,192 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Connection cluster · format guide: content/README.md
+
+id: connection
+name: Connection
+family: peaceful
+anchor: connected
+mix: peaceful 60, joyful 40
+blurb: The thread between you and other people — being seen, heard and part of something.
+near:
+  love: [loved, cherished]
+  safety: [held, safe]
+  loneliness: [lonely, left out]
+  gratitude: [grateful]
+  desire: [desired]
+  wonder: [curious]
+
+feelings:
+  - word: connected
+    mix: peaceful 55, joyful 45
+    level: 3
+    def: On the same wavelength as someone — part of something shared.
+    opposite: lonely
+    see: [close, belonging]
+    body: open chest, easy breath, leaning in
+    voice: We’re in this together.
+    text: I felt so connected to you today.
+    self: Notice who brings this out in you — and go back often.
+
+  - word: close
+    mix: peaceful 50, joyful 50
+    level: 3
+    def: Near in heart — hardly any distance between you and someone.
+    stronger: intimate
+    see: bonded
+    text: I’ve felt really close to you lately. I love that.
+    say: I love how close we’ve gotten.
+
+  - word: intimate
+    also: [love, desire]
+    mix: peaceful 45, joyful 35, scared 20
+    level: 4
+    def: Deeply close — letting someone see and know the real, unedited you.
+    softer: close
+    see: vulnerable
+    body: slow, warm, unguarded
+    text: Last night felt really intimate. I loved being that close to you.
+    self: Closeness takes courage. You showed up for it.
+
+  - word: seen
+    mix: peaceful 50, joyful 30, powerful 20
+    level: 3
+    def: Truly noticed — someone gets who you are, not just what you do.
+    opposite: unappreciated
+    see: understood
+    voice: They actually get me.
+    text: I felt really seen by you today. Thank you.
+    self: Remember this the next time you feel invisible.
+
+  - word: understood
+    mix: peaceful 65, joyful 35
+    level: 3
+    def: Someone grasps what you mean — and why it matters to you.
+    softer: heard
+    see: seen
+    voice: I don’t have to explain it twice.
+    say: Thank you for getting it. That means a lot.
+    self: Notice the relief of not having to translate yourself.
+
+  - word: heard
+    mix: peaceful 60, powerful 25, joyful 15
+    level: 2
+    def: Listened to — your words landed and were taken seriously.
+    stronger: understood
+    text: Thanks for really listening earlier. I felt heard.
+    opener: Can I talk for a minute? I don’t need fixing, just listening.
+
+  - word: belonging
+    mix: peaceful 50, joyful 40, powerful 10
+    level: 3
+    def: Part of the group — you fit, and your place is yours.
+    softer: included
+    opposite: left out
+    voice: These are my people.
+    text: I feel like I really belong here.
+    self: You don’t have to earn your seat at this table.
+
+  - word: included
+    mix: joyful 50, peaceful 50
+    level: 2
+    def: Invited in — someone made room for you.
+    stronger: belonging
+    opposite: left out
+    text: Thanks for including me. It meant more than you know.
+    self: Let it count. You were wanted there.
+
+  - word: accepted
+    also: love
+    mix: peaceful 60, joyful 40
+    level: 3
+    def: Welcomed as you are — no performance needed.
+    opposite: insecure
+    see: seen
+    voice: I don’t have to pretend here.
+    text: I felt so accepted by everyone tonight.
+    self: The people who accept you are telling you the truth about you.
+
+  - word: supported
+    also: safety
+    mix: peaceful 50, powerful 30, joyful 20
+    level: 3
+    def: Backed up — you’re not doing this alone.
+    opposite: overwhelmed
+    see: [held, cared for]
+    text: I feel so supported by you. Thank you for being in my corner.
+    say: Knowing you’ve got my back changes everything.
+
+  - word: trusting
+    mix: peaceful 70, joyful 30
+    level: 2
+    def: Able to rely on someone and let your guard down.
+    opposite: defensive
+    see: safe
+    say: I trust you with this.
+    self: Trust can grow slowly. That’s allowed.
+
+  - word: in sync
+    mix: joyful 55, peaceful 45
+    level: 3
+    def: Moving together — matching each other’s pace, finishing each other’s thoughts.
+    see: attuned
+    text: We were so in sync today. Loved it.
+    self: Moments like this are worth remembering.
+
+  - word: attuned
+    mix: peaceful 70, joyful 30
+    level: 2
+    def: Tuned in to what someone feels, often before they say it.
+    see: empathetic
+    say: I can tell something’s up. Want to talk about it?
+    self: Your sensitivity is a gift — pace how much you take on.
+
+  - word: open
+    mix: peaceful 60, joyful 25, scared 15
+    level: 2
+    def: Unguarded and receptive — willing to let things in.
+    stronger: vulnerable
+    opposite: defensive
+    opener: I’m feeling pretty open today — want to really talk?
+    self: Open doesn’t mean unprotected. You still get to choose.
+
+  - word: vulnerable
+    mix: scared 40, peaceful 35, sad 25
+    level: 4
+    def: Exposed on purpose — letting someone see the soft, uncertain parts.
+    softer: open
+    see: [tender, intimate]
+    body: shaky, warm face, heart loud
+    say: This is hard for me to say, but I want you to know.
+    self: Vulnerable is brave, even when it shakes.
+
+  - word: bonded
+    mix: joyful 45, peaceful 40, powerful 15
+    level: 4
+    def: Joined by something you went through together.
+    see: kindred
+    text: I feel so bonded with you after this week.
+    self: Shared hard things grow deep roots.
+
+  - word: kindred
+    mix: joyful 55, peaceful 45
+    level: 3
+    def: Recognizing a fellow spirit — someone made of the same stuff as you.
+    see: understood
+    text: You’re such a kindred spirit. Seriously.
+    self: Your people exist. Here’s one of them.
+
+  - word: welcomed
+    mix: joyful 55, peaceful 45
+    level: 2
+    def: Received warmly — someone was glad you came.
+    see: included
+    text: Thank you for making me feel so welcome.
+    self: Let the welcome all the way in.
+
+  - word: empathetic
+    mix: peaceful 50, sad 30, joyful 20
+    level: 3
+    def: Feeling what someone else feels, almost from the inside.
+    see: [compassionate, attuned]
+    say: I can feel how much this hurts. I’m here.
+    self: Their feelings aren’t yours to carry home.

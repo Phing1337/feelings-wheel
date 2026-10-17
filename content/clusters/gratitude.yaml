@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Gratitude cluster · format guide: content/README.md
+
+id: gratitude
+name: Gratitude
+family: joyful
+anchor: grateful
+blurb: Noticing the good you were given, and where it came from.
+near:
+  love: [loved]
+  joy: [joyful]
+  calm: [content]
+  pride: [appreciated]
+
+feelings:
+  - word: grateful
+    mix: joyful 55, peaceful 45
+    level: 2
+    def: Noticing something good you were given, and feeling warm toward where it came from.
+    opposite: resentful
+    body: warmth spreading out, a softer face, slower breath
+    voice:
+      - I didn’t have to be given this.
+      - I’m lucky.
+    text: Just thinking about how much you’ve helped me lately. Thank you, really.
+    say: I don’t say it enough — I’m grateful for you.
+    self: Three good things today. Write them down.

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Safety cluster · format guide: content/README.md
+
+id: safety
+name: Safety
+family: peaceful
+anchor: safe
+blurb: Protected enough to let your guard down.
+near:
+  calm: [calm]
+  connection: [supported, trusting]
+  love: [held]
+  fear: [scared]
+
+feelings:
+  - word: safe
+    mix: peaceful 75, powerful 25
+    level: 2
+    def: Protected and at ease — you can let your guard down here.
+    opposite: scared
+    body: shoulders dropping, guard down, easy breathing
+    voice:
+      - I can relax here.
+      - Nobody’s going to hurt me right now.
+    text: I always feel safe with you. I don’t think I’ve said that.
+    say: I feel safe enough to tell you something real.
+    self: You’re safe right now. Let your body believe it.

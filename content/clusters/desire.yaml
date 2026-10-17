@@ -1,0 +1,150 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Desire cluster · format guide: content/README.md
+
+id: desire
+name: Desire
+family: joyful
+anchor: attracted
+mix: joyful 55, powerful 45
+blurb: Wanting and being wanted — attraction, heat and the pull toward someone.
+near:
+  love: [loved, in love]
+  connection: [intimate]
+  wonder: [entranced]
+  longing: [yearning]
+  strength: [confident]
+  insecurity: [jealous]
+
+feelings:
+  - word: attracted
+    mix: joyful 55, powerful 30, scared 15
+    level: 3
+    def: Drawn toward someone — your attention keeps landing on them.
+    stronger: smitten
+    see: flirty
+    text: Not gonna lie, I’m pretty attracted to you.
+    self: Attraction is information, not an instruction.
+
+  - word: sexual
+    mix: joyful 50, powerful 50
+    level: 4
+    def: Aware of desire in your body — wanting physical closeness and pleasure.
+    see: [aroused, sensual]
+    body: warmth, heightened senses, a little restless
+    text: Feeling a little sexual tonight, just so you know.
+    self: Desire is a normal, healthy part of being you.
+
+  - word: aroused
+    aliases: [turned on, horny, in the mood]
+    mix: joyful 45, powerful 45, scared 10
+    level: 5
+    def: Desire switched on — your body is awake and wanting.
+    softer: sensual
+    see: sexual
+    body: flushed, heart quick, everything a bit more vivid
+    text: Just so you know, I’m very much in the mood.
+    self: Notice it without judging it.
+
+  - word: sensual
+    mix: joyful 50, peaceful 35, powerful 15
+    level: 3
+    def: Savoring touch, taste and texture — pleasure through the senses.
+    stronger: aroused
+    see: romantic
+    text: Feeling sensual — long bath and a slow evening?
+    self: Slow down and let your senses lead for a while.
+
+  - word: flirty
+    aliases: [flirtatious]
+    mix: joyful 70, powerful 30
+    level: 3
+    def: Playfully interested — wanting to tease, spark and be noticed.
+    see: playful
+    text: Feeling flirty today. Consider yourself warned.
+    self: Playfulness is a kind of courage.
+
+  - word: desired
+    mix: joyful 55, powerful 35, peaceful 10
+    level: 4
+    def: Wanted — someone is drawn to you, and you can feel it.
+    opposite: insecure
+    see: [sexy, adored]
+    voice: They want me — actually me.
+    text: You make me feel so wanted.
+    self: Let yourself feel wanted without explaining it away.
+
+  - word: magnetic
+    mix: powerful 55, joyful 45
+    level: 4
+    def: Feeling irresistible — an energy that pulls people toward you.
+    see: confident
+    text: Feeling kind of magnetic tonight.
+    self: Enjoy your own spark.
+
+  - word: passionate
+    mix: powerful 50, joyful 50
+    level: 5
+    def: Intensely, burningly invested — in a person, a cause or a moment.
+    softer: attracted
+    see: romantic
+    text: Still so passionate about you, you know.
+    self: Point that fire at things that love you back.
+
+  - word: lustful
+    mix: powerful 55, joyful 45
+    level: 5
+    def: Strong physical wanting — raw, hungry desire.
+    softer: aroused
+    see: craving
+    text: Feeling a little lustful. Just saying.
+    self: Wanting isn’t something to be ashamed of.
+
+  - word: craving
+    mix: joyful 40, powerful 35, sad 25
+    level: 4
+    def: Hungry for something you don’t have right now — closeness, touch, a taste of it.
+    see: yearning
+    text: Craving some time with just you.
+    self: What is the craving really asking for?
+
+  - word: tempted
+    mix: joyful 45, scared 30, powerful 25
+    level: 3
+    def: Pulled toward something you’re not sure you should do.
+    see: curious
+    opener: I’m tempted to say yes — can we think it through together?
+    self: Pause. Which choice will you be glad about tomorrow?
+
+  - word: sexy
+    mix: powerful 55, joyful 45
+    level: 4
+    def: Comfortable and confident in your own appeal.
+    see: [confident, desired]
+    text: Feeling really good in my skin today.
+    self: Own it. You look good to you.
+
+  - word: breathless
+    mix: joyful 50, scared 30, powerful 20
+    level: 4
+    def: Swept off your feet — heart racing, words briefly gone.
+    see: [smitten, entranced]
+    body: fast heartbeat, short breath, flushed
+    text: You leave me breathless, honestly.
+    self: Let the moment be as big as it is.
+
+  - word: flustered
+    mix: scared 50, joyful 50
+    level: 3
+    def: Thrown off balance in a good-awkward way — cheeks warm, words tangled.
+    see: nervous excited
+    body: warm cheeks, tangled words, a grin you can’t hide
+    text: You had me so flustered earlier.
+    self: Flustered just means it matters to you.
+
+  - word: satisfied
+    mix: peaceful 55, joyful 45
+    level: 2
+    def: Your want has been met — full, settled, enough.
+    see: content
+    text: Feeling really satisfied after tonight.
+    self: Let enough be enough.

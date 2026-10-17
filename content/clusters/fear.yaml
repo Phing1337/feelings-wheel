@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Fear cluster · format guide: content/README.md
+
+id: fear
+name: Fear
+family: scared
+anchor: scared
+blurb: Your body bracing to protect you.
+near:
+  insecurity: [insecure]
+  hurt: [defensive]
+  safety: [safe]
+  hope: [hopeful]
+
+feelings:
+  - word: scared
+    core: true
+    mix: scared
+    level: 3
+    def: Bracing for something bad. Your body is getting ready to protect you.
+    softer: on edge
+    opposite: safe
+    body: racing heart, cold hands, every sense on alert
+    voice: [What if it goes wrong?, I don’t feel safe.]
+    text: I’m honestly a bit scared about tomorrow. Can you check in on me?
+    say: I’m scared, and I could use some company.
+    self: Fear is trying to protect you. Thank it, then decide.
+
+  - word: anxious
+    mix: scared 85, sad 15
+    level: 3
+    def: Worried about what might happen, with your mind running ten steps ahead.
+    stronger: overwhelmed
+    softer: on edge
+    opposite: calm
+    body: tight chest, shallow breath, a mind running laps
+    voice:
+      - What if… what if… what if…
+      - I can’t stop thinking about it.
+    text: My anxiety is pretty loud today. Would you be up for a distraction?
+    say: I’m anxious about this and could use a reality check.
+    self: Feet on the floor. Name five things you can see.
+
+  - word: overwhelmed
+    mix: scared 60, sad 25, mad 15
+    level: 4
+    def: Too much at once — more than you can hold right now.
+    softer: anxious
+    opposite: peaceful
+    body: buzzing head, everything at once, hard to start anything
+    voice:
+      - It’s too much.
+      - I don’t even know where to begin.
+    text: I’m really overwhelmed right now. Could you help me pick one thing to start with?
+    say: I’m at capacity — I need to slow down before I can take anything else on.
+    self: Just the next small step. Not all of it.
+
+  - word: on edge
+    mix: scared 70, mad 30
+    level: 2
+    def: Wound tight and jumpy, waiting for the next thing to go wrong.
+    stronger: anxious
+    opposite: relieved
+    body: jumpy, jaw tight, startling at small sounds
+    voice:
+      - Something’s about to go wrong.
+      - Don’t push me right now.
+    text: I’m kind of on edge today, so if I’m short with you, it’s not you.
+    say: I’m wound tight right now — give me a minute.
+    self: Unclench your jaw. Drop your shoulders. Breathe out long.
+
+  - word: nervous-excited
+    mix: scared 50, joyful 50
+    level: 3
+    def: Jittery and thrilled at the same time — something big is about to happen.
+    aliases: [butterflies]
+    body: butterflies, shaky hands, can’t stop smiling
+    voice: [This is huge!, Okay okay okay.]
+    text: I have the BIGGEST butterflies about tomorrow. Nervous and excited all at once.
+    say: My stomach is doing flips, but in a good way.
+    self: Nervous and excited feel the same in the body. Choose excited.

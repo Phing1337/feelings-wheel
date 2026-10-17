@@ -1,0 +1,191 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Love cluster · format guide: content/README.md
+
+id: love
+name: Love
+family: joyful
+anchor: loved
+blurb: Warmth toward and from other people — being held, and holding.
+near:
+  connection: [connected]
+  desire: [attracted, sexual]
+  wonder: [entranced, curious]
+  gratitude: [grateful]
+  longing: [yearning]
+  safety: [safe]
+
+feelings:
+  - word: loved
+    mix: joyful 60, peaceful 40
+    level: 3
+    def: Held in someone’s care — seen, wanted, and enough as you are.
+    stronger: adored
+    softer: fond
+    see: [cherished, cared for]
+    opposite: lonely
+    body: melting, safe warmth, wanting to stay close
+    voice:
+      - They really see me.
+      - I don’t have to earn this.
+    text: I felt really loved by you today. Thank you for that.
+    say: When you did that, I felt so cared for.
+    self: Let it in. You don’t have to deflect it.
+
+  - word: tender
+    mix: peaceful 45, joyful 30, sad 25
+    level: 2
+    def: Soft and open-hearted — a little raw, in a good way.
+    opposite: defensive
+    body: soft, a little raw, eyes a bit wet
+    voice:
+      - Everything feels close to the surface.
+      - Be gentle with me today.
+    text: Feeling kind of tender today. Extra gentleness welcome.
+    opener: I’m a bit soft right now — can we go easy?
+    self: Tender isn’t weak. It’s open.
+
+  - word: adored
+    mix: joyful 70, peaceful 15, powerful 15
+    level: 4
+    def: Loved with delight — someone lights up when you walk in.
+    softer: loved
+    voice: They’re actually happy I’m here.
+    text: I felt so adored by you today. It meant more than you know.
+    self: Let yourself be delighted in.
+
+  - word: cherished
+    aliases: [treasured, precious]
+    mix: joyful 55, peaceful 45
+    level: 3
+    def: Held as precious — someone protects your place in their life.
+    see: devoted
+    text: You make me feel cherished. I don’t take that lightly.
+    self: You’re allowed to be someone’s treasure.
+
+  - word: cared for
+    mix: peaceful 55, joyful 45
+    level: 2
+    def: Looked after — someone noticed what you needed and showed up.
+    see: supported
+    text: Thank you for looking after me. I felt really cared for.
+    say: It helped so much that you checked on me.
+
+  - word: held
+    also: safety
+    mix: peaceful 70, joyful 30
+    level: 2
+    def: Contained and supported — you can stop carrying everything yourself.
+    see: [safe, supported]
+    body: shoulders drop, breath slows
+    text: I felt really held by you tonight.
+    self: You can set it down for a minute. You’re held.
+
+  - word: fond
+    mix: joyful 55, peaceful 45
+    level: 1
+    def: A soft, easy warmth toward someone or something.
+    stronger: loved
+    text: I’m really fond of you, you know that?
+    self: Notice the small warmth. It counts.
+
+  - word: affectionate
+    mix: joyful 65, peaceful 35
+    level: 3
+    def: Wanting to show warmth — a hug, a touch, a sweet word.
+    see: tender
+    text: Feeling extra affectionate today. Hugs incoming.
+    opener: I just want to be close to you for a bit.
+
+  - word: warmhearted
+    hy: warm-hearted
+    mix: joyful 50, peaceful 50
+    level: 2
+    def: Kind all the way through — easy to give, easy to forgive.
+    see: compassionate
+    text: Feeling really warmhearted toward everyone today.
+    self: This softness is a strength.
+
+  - word: devoted
+    mix: joyful 45, powerful 35, peaceful 20
+    level: 4
+    def: Committed with your whole heart — you’d keep showing up.
+    see: protective
+    say: I’m in this with you. All the way.
+    self: Devotion is a choice you keep making.
+
+  - word: smitten
+    also: desire
+    mix: joyful 70, scared 15, powerful 15
+    level: 4
+    def: Struck by someone — giddy, a little dazed, thinking about them a lot.
+    stronger: infatuated
+    text: Okay, I’m a little smitten. Don’t make it weird.
+    self: Enjoy the giddiness. It’s allowed.
+
+  - word: infatuated
+    also: desire
+    mix: joyful 55, scared 25, powerful 20
+    level: 5
+    def: Swept up — they fill your thoughts more than you can steer.
+    softer: smitten
+    voice: I can’t stop thinking about them.
+    opener: Honestly? I’m pretty swept up in them.
+    self: Enjoy the rush, and keep one foot on the ground.
+
+  - word: in love
+    mix: joyful 60, peaceful 20, scared 20
+    level: 5
+    def: All-in love — thrilling, tender and a little terrifying.
+    see: [devoted, adored]
+    say: I’m in love with you.
+    text: I keep realizing how in love with you I am.
+
+  - word: protective
+    mix: powerful 55, joyful 25, scared 20
+    level: 3
+    def: Wanting to shield someone you love from harm.
+    see: devoted
+    say: I just want to make sure you’re okay.
+    self: Protecting them doesn’t mean carrying all of it.
+
+  - word: compassionate
+    mix: peaceful 50, sad 25, joyful 25
+    level: 3
+    def: Feeling with someone’s pain and wanting to ease it.
+    see: empathetic
+    say: That sounds so hard. I’m here.
+    self: Turn some of that kindness inward too.
+
+  - word: nurturing
+    mix: peaceful 55, joyful 30, powerful 15
+    level: 2
+    def: Wanting to help something or someone grow.
+    see: protective
+    text: Feeling nurturing — can I cook for you this week?
+    self: Who’s nurturing you right now?
+
+  - word: romantic
+    also: desire
+    mix: joyful 60, peaceful 20, powerful 20
+    level: 3
+    def: Craving closeness with a little magic — candles-and-music energy.
+    see: passionate
+    text: Feeling romantic. Date night soon?
+    opener: Can we do something just for us this week?
+
+  - word: lovesick
+    also: longing
+    mix: sad 45, joyful 35, scared 20
+    level: 4
+    def: Aching with love — sweet and painful at once, usually with distance in it.
+    see: [yearning, pining]
+    text: Honestly a bit lovesick. Miss you so much.
+    self: The ache is love looking for somewhere to go.
+
+  - word: full-hearted
+    mix: joyful 65, peaceful 35
+    level: 4
+    def: So much love it spills over — nothing feels missing right now.
+    see: grateful
+    text: My heart is so full right now.
+    self: Pause and let this one sink in.

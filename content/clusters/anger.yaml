@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Anger cluster · format guide: content/README.md
+
+id: anger
+name: Anger
+family: mad
+anchor: mad
+blurb: Heat that says a line got crossed.
+near:
+  hurt: [hurt]
+  fear: [on edge]
+  strength: [fired up]
+  sadness: [disappointed]
+
+feelings:
+  - word: mad
+    core: true
+    mix: mad
+    level: 3
+    def: Heat rising. A line got crossed and you want it to stop.
+    stronger: furious
+    softer: frustrated
+    under: [hurt, scared]
+    opposite: peaceful
+    body: hot face, clenched fists, energy that wants out
+    voice:
+      - That’s not okay.
+      - I’m done being quiet about this.
+    text: I’m pretty mad right now and I want to talk about it once I’ve cooled down a bit.
+    say: I’m angry, and I want to say it calmly instead of letting it leak out.
+    self: Anger often guards a boundary. Which one?
+
+  - word: frustrated
+    mix: mad 80, sad 20
+    level: 2
+    def: Blocked. You keep trying, and it keeps not working.
+    stronger: mad
+    softer: irritated
+    under: [disappointed]
+    opposite: content
+    body: tight jaw, sharp exhales, wanting to throw something soft
+    voice: [Why is this so hard?, I’ve tried everything.]
+    text: Super frustrated today — nothing’s going the way I planned.
+    say: I’m frustrated because I keep hitting the same wall.
+    self: Step away for ten minutes. The wall will still be there, smaller.
+
+  - word: irritated
+    mix: mad 90, scared 10
+    level: 1
+    def: Small things scraping at you while your patience runs thin.
+    stronger: frustrated
+    opposite: calm
+    body: prickly skin, short answers, every sound a little too loud
+    voice:
+      - Can everyone just… not?
+      - Small things are getting to me.
+    text: Heads up, I’m a bit irritable today. It’s not about you.
+    say: I’m kind of prickly right now — I might need some space.
+    self: Hungry? Tired? Overstimulated? Check the basics.
+
+  - word: furious
+    mix: mad
+    level: 5
+    def: Full-body anger — it is hard to think about anything else.
+    softer: mad
+    under: [hurt]
+    opposite: peaceful
+    body: pounding heart, shaking, heat rushing up the neck
+    voice: [I can’t believe this., This crossed a line.]
+    text: I’m furious and I don’t trust myself to talk yet. Can we pick this up tomorrow?
+    say: I’m too angry to have this conversation well right now.
+    self: Move your body first. Decide after.
+
+  - word: resentful
+    mix: mad 70, sad 30
+    level: 3
+    def: Old hurt that hardened — still carrying something that was never made right.
+    under: [hurt, unappreciated]
+    opposite: grateful
+    body: a slow burn, keeping score, a heavy stomach
+    voice:
+      - I’m always the one who gives.
+      - They never even noticed.
+    text: I’ve been holding onto something and I don’t want it to keep building. Can we talk this week?
+    say: I’ve noticed some resentment building and I’d rather deal with it than let it grow.
+    self: Resentment is an unspoken request. What’s yours?

@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../schema/cluster.schema.json
+# Loneliness cluster · format guide: content/README.md
+
+id: loneliness
+name: Loneliness
+family: sad
+anchor: lonely
+blurb: Wanting connection and not finding it.
+near:
+  sadness: [sad]
+  longing: [missing someone]
+  connection: [connected]
+  insecurity: [insecure]
+  hurt: [hurt]
+
+feelings:
+  - word: lonely
+    mix: sad 75, scared 25
+    level: 3
+    def: Wanting connection and not finding it — sometimes even in a full room.
+    under: [insecure]
+    opposite: loved
+    body: hollow chest, checking your phone, the room feels big
+    voice:
+      - Does anyone actually get me?
+      - I wish someone would reach out first.
+    text: I’m feeling a little lonely tonight. Would you be up for a call?
+    opener: I’ve been feeling disconnected lately and I miss you.
+    self: Reach out to one person. Small counts.
+
+  - word: left out
+    mix: sad 60, mad 20, scared 20
+    level: 2
+    def: On the outside of something you wanted to be part of.
+    stronger: lonely
+    under: [insecure]
+    opposite: appreciated
+    body: a sinking drop, cheeks warm, pulling inward
+    voice:
+      - Why wasn’t I included?
+      - Maybe they didn’t want me there.
+    text: Honestly I felt a bit left out when I saw the plans. Can we talk about it?
+    say: I don’t want to make it a big deal, but I felt left out.
+    self: Feeling left out doesn’t mean you don’t belong.
+
+  - word: unappreciated
+    mix: sad 60, mad 40
+    level: 2
+    def: You have been giving, and it feels like nobody noticed.
+    stronger: resentful
+    under: [hurt]
+    opposite: appreciated
+    body: tired arms, jaw set, a quiet burn
+    voice:
+      - Does anyone notice what I do?
+      - I’m always the one who…
+    text: I’ve been feeling a little unappreciated lately and I didn’t want it to turn into resentment.
+    opener: Can I share something that’s been building up for me?
+    say: It would mean a lot to hear that what I do is noticed.
