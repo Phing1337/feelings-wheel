@@ -26,6 +26,64 @@ feelings:
     text: I’m feeling kind of sad today. Not sure I need anything, just didn’t want to hide it.
     say: I’m sad, and I don’t totally know why yet.
     self: Sad is information, not a verdict. Be kind to yourself.
+    synonyms:
+      - unhappy: the plain, everyday opposite of happy
+      - blue: quietly sad, like a song in a minor key
+      - down: low in spirits — the everyday shorthand
+      - low: mood and energy both sitting near the floor
+      - glum: quiet, droopy and hard to cheer up
+      - gloomy: everything looks gray from in here
+      - downcast: eyes down, and your spirits with them
+      - downhearted: your heart has sunk a notch or two
+      - dejected: knocked down and not quite ready to get up
+      - sorrowful: full of sorrow — an older, deeper kind of sad
+      - heavy-hearted: carrying sadness like a weight in your chest
+      - miserable: unhappy all the way through
+      - weepy: tears sitting close to the surface all day
+      - mopey: drifting around slow, sighing and sorry for yourself
+      - in a funk: stuck in a low, gray mood that won’t lift
+      - down in the dumps: low and gloomy, with no obvious way up
+    deep:
+      - melancholy: a lingering, thoughtful sadness, often with no clear cause
+        sounds: MEL-un-kol-ee
+        from: Greek melankholia, “black bile”
+      - doleful: sorrow you can see on the face and hear in the voice
+        sounds: DOHL-ful
+        from: old word dole, “grief,” from Latin dolere
+      - dolorous: achingly sorrowful, like the lament in an old ballad
+        sounds: DOH-luh-rus
+        from: Latin dolor, “pain” — as in the Via Dolorosa
+      - lugubrious: mournful in a heavy, almost theatrical way
+        sounds: loo-GOO-bree-us
+        from: Latin lugere, “to mourn”
+      - woebegone: sorrow written all over you
+        from: Middle English, “beset by woe”
+      - disconsolate: cheerless and low, out of reach of small comforts
+        from: Latin dis- + consolari, “to comfort”
+      - despondent: hope has quietly packed up and left
+        from: Latin despondere, “to give up, lose heart”
+      - morose: sullen and gloomy, closed in on yourself
+        sounds: muh-ROHS
+        from: Latin morosus, “hard to please”
+      - saturnine: gloomy and brooding, slow to smile
+        sounds: SAT-er-nyne
+        from: Saturn, the gloomy planet of old astrology
+      - Weltschmerz: a weary sadness at the state of the whole world
+        sounds: VELT-shmerts
+        lang: German
+        from: Welt, “world” + Schmerz, “pain”
+      - lachrymose: tearful, or very easily brought to tears
+        sounds: LAK-ruh-mohs
+        from: Latin lacrima, “tear”
+      - atrabilious: gloomy, and a bit sour with it
+        sounds: a-truh-BIL-yus
+        from: Latin atra bilis, “black bile” — melancholy’s Latin twin
+      - tristful: sad-faced and sorrowful — a word Shakespeare used
+        from: Latin tristis, “sad,” via French triste
+      - in the doldrums: becalmed and low, going nowhere for a while
+        from: 1800s slang for low spirits, later for windless seas
+      - hipped: an old word for low and mopey (nothing to do with cool)
+        from: 1700s slang “the hyp” (hypochondria), meaning gloom
 
   - word: disappointed
     mix: sad 70, mad 30
@@ -40,6 +98,25 @@ feelings:
     text: I’m pretty disappointed it fell through. I was really looking forward to it.
     say: I’m not mad, I’m just disappointed — I had my hopes up.
     self: It mattered. That’s why it stings.
+    synonyms:
+      - let down: someone or something didn’t come through
+      - deflated: all the air let out of your hopes
+      - disheartened: the heart’s gone out of it
+      - discouraged: less sure it’s worth trying again
+      - dismayed: a sinking jolt when things go the wrong way
+      - bummed: casually, mildly down about how it turned out
+      - disillusioned: the shine has worn off something you believed in
+      - underwhelmed: you expected more and got … that
+    deep:
+      - crestfallen: head hung low, the hope knocked right out of you
+      - chapfallen: jaw dropped and spirits drooping
+        sounds: CHAP-faw-lun
+        from: chap, “jaw” — in Hamlet, Yorick’s skull is “quite chap-fallen”
+      - gutted: so let down it feels like a punch in the gut
+        from: British slang — as if your insides were scooped out
+      - sick as a parrot: bitterly let down — the football opposite of over the moon
+        from: British football talk, origin unclear
+      - down in the mouth: visibly glum, corners of the mouth turned down
 
   - word: drained
     mix: sad 80, peaceful 20
@@ -53,6 +130,42 @@ feelings:
     text: I’m completely drained tonight. Can we keep it low-key?
     say: I want to be there for this, I’m just running on empty.
     self: Rest is not a reward. It’s a need.
+    synonyms:
+      - exhausted: completely used up, body and mind
+      - weary: tired deep down, in a long-haul way
+      - worn out: used and used until there’s nothing left
+      - spent: gave it everything — nothing left in reserve
+      - wiped out: flattened, done for the day
+      - wrung out: twisted dry, especially by big feelings
+      - depleted: reserves running low after a long stretch
+      - burnt out: run down from carrying too much for too long
+      - bone-tired: tired right down to your skeleton
+      - running on fumes: still going, but only just
+    deep:
+      - enervated: drained of all vigor, limp and sapped
+        sounds: EN-er-vay-tid
+        from: Latin enervare, “to cut out the sinews”
+      - listless: no spark, no wish to do anything at all
+        from: old word list, “desire” — so, literally “wishless”
+      - jaded: dulled and worn down, especially by too much of something
+        from: jade, an old word for a worn-out horse
+      - ennui: a weary, listless boredom with everything
+        sounds: on-WEE
+        lang: French
+        from: Old French enui, “annoyance” — kin to “annoy”
+      - knackered: completely, utterly exhausted — a British favorite
+        from: perhaps knacker, a buyer of worn-out horses
+      - cream-crackered: rhyming slang for knackered — properly done in
+      - wabbit: worn out and fit for nothing
+        sounds: WAB-it
+        from: Scots dialect, ultimate origin uncertain
+      - logy: heavy, sluggish and slow to get going
+        sounds: LOH-gee
+        from: perhaps Dutch log, “heavy, dull”
+      - tuckered out: plumb worn out after a long, full day
+        from: 1830s American, from tucker, “to tire”
+      - fordone: utterly worn out, done in by long labor
+        from: Puck’s ploughman, “all with weary task fordone”
 
   - word: heartbroken
     mix: sad
@@ -67,3 +180,20 @@ feelings:
     text: I’m really heartbroken right now. I don’t need advice, I just need someone.
     say: This hurts more than I know how to say.
     self: Grief is love with nowhere to go. Let it move.
+    synonyms:
+      - devastated: flattened by a loss, nothing left standing
+      - shattered: broken into too many pieces to pick up yet
+      - crushed: pressed flat by a blow you didn’t see coming
+      - grief-stricken: struck down by grief after a loss
+      - grieving: in the long, slow work of missing what’s gone
+      - inconsolable: past the point where comfort can help
+      - anguished: in raw, twisting pain of the heart
+      - torn up: wrecked inside and can’t hold it together
+    deep:
+      - bereft: emptied out by loss, as if something was stolen
+        from: Old English bereafian, “to rob” — kin to bereaved
+      - heartsore: sore all through the heart — an old, gentle word
+      - wretched: as miserable and low as it gets
+        from: Old English wrecca, “an exile, outcast”
+      - cut up: deeply upset by a loss, in understated British style
+      - prostrate with grief: flattened by sorrow, unable to rise

@@ -10,8 +10,12 @@ Chrome: ⋮ → Install app).
 
 ## How it works
 
-- Tap a bubble to bloom the feelings connected to it; hold to pin it to **My wheel**.
-- Open My wheel to learn more about each feeling and share how you're doing.
+- Tap a bubble to bloom the feelings connected to it; hold to pin it to **My wheel** (top left).
+- It's a thesaurus too: tap the feeling in the middle (or **≈ words**) and its synonyms revolve around
+  it — everyday words on the inner ring, rare and strange ones (sanguine, choleric, twitterpated…) on
+  the outer. Tap a word to swap it into the middle, drag to spin, tap outside to close.
+- The card at the bottom explains the feeling in focus, with your path back above it.
+- Open My wheel (tap or pull down) to learn more about each feeling and share how you're doing.
 - The background glows drift slowly and take on the colors and mood of what you've pinned.
 
 ## Develop
@@ -27,8 +31,10 @@ npm run icons        # regenerate favicon + PWA icons from public/icon.svg
 ## Content
 
 Every feeling lives in YAML under `content/clusters/` — one file per cluster (love, longing, wonder…),
-with definitions, examples, aliases and links to related feelings. A Vite plugin compiles them into the
-app; `npm run words:check` catches duplicates and broken links.
+with definitions, examples, aliases, links to related feelings, and a thesaurus of `synonyms` and rare
+`deep` words with glosses, pronunciations and origins. A Vite plugin compiles them into the app;
+`npm run words:check` catches duplicates and broken links. See [`content/README.md`](content/README.md)
+for the format.
 
 ## Design tokens
 

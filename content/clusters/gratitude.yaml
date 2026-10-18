@@ -25,3 +25,27 @@ feelings:
     text: Just thinking about how much you’ve helped me lately. Thank you, really.
     say: I don’t say it enough — I’m grateful for you.
     self: Three good things today. Write them down.
+    synonyms:
+      - thankful: warm toward whoever, or whatever, made this possible
+      - appreciative: really noticing the good, and the effort behind it
+      - blessed: given more than you asked for, and aware of it
+      - lucky: amazed at how things broke your way
+      - fortunate: aware how easily it could have gone otherwise
+      - privileged: grateful just to be part of it
+      - honored: quietly thrilled to be trusted, asked or chosen
+      - indebted: you owe someone, and you’re glad to
+      - much obliged: thanks in its old-fashioned Sunday best
+      - counting my blessings: taking stock of the good things, one by one
+    deep:
+      - beholden: bound to someone by a kindness they did you
+        sounds: bih-HOLE-dun
+        from: behold, which once meant “to hold, keep”
+      - bounden: duty-bound by a kindness — a solemn old word
+        sounds: BOWN-dun
+        from: the old past participle of bind
+      - thanking my lucky stars: amazed at your luck, and grateful for it
+        from: astrology — your stars were thought to steer your fortune
+      - thankful for small mercies: glad it wasn’t worse, and noticing the small good bits
+      - sensible of: keenly aware of a kindness — the formal old way to say thanks
+      - graced: touched by a goodness you did nothing to earn
+      - jammy: luckier than you’ve any right to be — British slang

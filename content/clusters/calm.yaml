@@ -27,6 +27,53 @@ feelings:
     text: Having a really peaceful evening. Hope yours is gentle too.
     say: I feel settled. Like everything is okay for now.
     self: Remember this quiet. You can come back to it.
+    synonyms:
+      - serene: deeply calm, like a lake with no wind on it
+      - tranquil: undisturbed, inside and out
+      - at peace: nothing left to fight, with the world or with yourself
+      - still: quiet all the way down
+      - at rest: body and mind finally off duty
+      - untroubled: no worries tugging at your sleeve
+      - settled: everything has landed where it belongs
+      - reconciled: you’ve made your peace with how things are
+      - zen: unbothered in a deep, mountaintop kind of way
+      - mellow: soft and slow, like late-afternoon light
+      - blissed out: so relaxed you’re practically melting
+      - unhurried: no rush, and time feels roomy
+      - present: right here, not off in yesterday or tomorrow
+      - meditative: quiet, inward and gently focused
+      - soothed: gently calmed, the rough edges smoothed away
+    deep:
+      - halcyon: calm and golden, like a windless day at sea
+        sounds: HAL-see-un
+        from: Greek alkyōn, a kingfisher said to calm the winter sea
+      - ataraxic: untroubled at the deepest level, beyond the reach of worry
+        sounds: at-uh-RAK-sik
+        from: Greek ataraxia, “freedom from disturbance”
+      - equanimous: evenly balanced, whatever the day throws at you
+        sounds: ih-KWAN-uh-mus
+        from: Latin aequus, “even,” + animus, “mind”
+      - irenic: in a peacemaking mood, with no appetite for a fight
+        sounds: eye-REN-ik
+        from: Greek eirēnē, “peace” — also the name of its goddess
+      - pacific: mild and calm, with no wish to stir anything up
+        sounds: puh-SIF-ik
+        from: Latin pax, “peace” — Magellan named the ocean for its calm
+      - quiescent: quietly at rest, nothing in you stirring
+        sounds: kwy-ESS-unt
+        from: Latin quiescere, “to rest”
+      - limpid: clear and untroubled all the way through, like still water
+        from: Latin limpidus, “clear”
+      - placid: calm on the surface and all the way down
+        from: Latin placidus, “gentle, calm”
+      - seraphic: blissfully serene, with an angel’s faraway smile
+        sounds: suh-RAF-ik
+        from: the seraphim, six-winged angels in the Book of Isaiah
+      - Arcadian: simple and untroubled, like a shepherd in an old painting
+        sounds: ar-KAY-dee-un
+        from: Arcadia, a Greek region poets turned into a shepherds’ paradise
+      - in repose: resting so fully that even your face goes soft
+      - lulled: rocked gently into calm, like a boat on soft waves
 
   - word: calm
     mix: peaceful
@@ -39,6 +86,36 @@ feelings:
     text: I’m feeling pretty calm about it now, actually.
     say: I’m in a calm place — we can talk about it whenever.
     self: Slow is fine. You’re not behind.
+    synonyms:
+      - relaxed: loose in the shoulders, nothing clenched
+      - at ease: comfortable, with nothing to brace for
+      - chill: low-key and easy, nothing getting under your skin
+      - laid-back: easygoing, happy to let things unfold
+      - unbothered: it’s not getting to you, and that’s fine
+      - unfazed: something happened, and you didn’t flinch
+      - unruffled: feathers smooth, even when things get choppy
+      - composed: collected and steady, in charge of yourself
+      - grounded: feet on the floor, steady in yourself
+      - cool as a cucumber: calm under pressure, not a bead of sweat
+    deep:
+      - imperturbable: impossible to rattle, however hard the day pushes
+        sounds: im-per-TER-buh-bul
+        from: Latin perturbare, “to throw into confusion”
+      - phlegmatic: slow to stir and steady as a stone
+        sounds: fleg-MAT-ik
+        from: phlegm, the cold, wet humor once blamed for a calm temper
+      - insouciant: breezily unconcerned, with a little shrug in it
+        sounds: in-SOO-see-unt
+        from: French, literally “not worrying”
+      - nonchalant: coolly casual, as if it’s no big deal (because it isn’t)
+        from: Old French chaloir, “to matter,” from Latin calere, “to be warm”
+      - stoic: steady through the hard stuff, without making a fuss
+        from: the Stoa, the painted porch in Athens where Zeno taught
+      - on an even keel: level and steady, not rocking either way
+        from: a ship sitting level in the water
+      - mollified: softened and settled again after being upset
+        sounds: MOL-uh-fyd
+        from: Latin mollis, “soft”
 
   - word: content
     mix: peaceful 60, joyful 40
@@ -53,6 +130,39 @@ feelings:
     text: Nothing big to report — just feeling content tonight.
     say: Honestly? I’m just really content right now.
     self: Enough is a real feeling. Enjoy it.
+    synonyms:
+      - fulfilled: full in the deep way, like your life fits you
+      - cozy: warm, tucked in and in no hurry to move
+      - comfy: socks-on-the-couch comfortable, in body and mood
+      - in a good place: steady and okay with where life is right now
+      - all good: no complaints, nothing to fix
+      - sitting pretty: comfortably placed, with life going your way
+      - whole: complete as you are, no missing pieces
+      - hunky-dory: fine and dandy, nothing to complain about
+    deep:
+      - hygge: candlelit, blanket-and-cocoa coziness with people you like
+        sounds: HOO-guh
+        lang: Danish
+      - gemütlich: warm, homey and at ease, like a long evening at the kitchen table
+        sounds: guh-MOOT-likh
+        lang: German
+      - happy as a clam: perfectly content in your own little world
+        from: short for “happy as a clam at high water,” safe from diggers
+      - in clover: living comfortably, with everything you need and then some
+        from: cattle turned out to graze in rich clover
+      - gruntled: perfectly pleased, with nothing to grumble about
+        from: a playful back-formation from “disgruntled”
+      - copacetic: completely fine, everything in order and running smoothly
+        sounds: koh-puh-SET-ik
+        from: early-1900s American slang, origin unknown
+      - cushty: nice and comfy, everything just right
+        sounds: KUSH-tee
+        from: Romani kushti, “good” — British slang
+      - irie: all good, easy and right with the world
+        sounds: EYE-ree
+        lang: Jamaican Patois
+      - sorted: all set and squared away, with everything you need
+        from: British slang
 
   - word: relieved
     mix: peaceful 70, joyful 30
@@ -64,3 +174,25 @@ feelings:
     text: It went fine!! I’m so relieved I could cry.
     say: I didn’t realize how tense I was until it ended.
     self: You carried that a long time. Put it down.
+    synonyms:
+      - unburdened: the heavy thing is finally off your shoulders
+      - off the hook: free of the thing you were dreading
+      - out of the woods: past the worst of it, at last
+      - in the clear: no longer in trouble or in danger
+      - lighter: like you’ve set down a bag you carried for miles
+      - reassured: told it’s okay, and finally believing it
+      - over the hump: the hardest part is behind you
+      - breathing easy: letting out the breath you’d been holding
+      - spared: the bad thing passed you by
+      - home free: past the hard part, nothing left to go wrong
+    deep:
+      - reprieved: granted a last-minute pardon from what you dreaded
+      - absolved: the guilt or blame finally lifted off you
+        from: Latin absolvere, “to set free”
+      - shriven: lightened after confessing, your slate wiped clean
+        sounds: SHRIV-un
+        from: Old English scrīfan, “hear confession” — hence Shrove Tuesday
+      - scot-free: let off completely, without paying a thing
+        from: scot, an old tax — go scot-free and you paid none
+      - home and hosed: safely over the line, the win in the bag
+        from: Australian and New Zealand horse-racing slang

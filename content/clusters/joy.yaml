@@ -29,6 +29,41 @@ feelings:
     text: Okay I’m in a really good mood and I wanted you to be part of it.
     say: I feel genuinely happy right now — like, all the way.
     self: Notice this. Let it count.
+    synonyms:
+      - happy: the everyday word for feeling good
+      - glad: a soft, quiet yes about how things are
+      - cheerful: bright, warm and easy to be around
+      - delighted: pleased all the way through
+      - elated: lifted up, almost floating
+      - overjoyed: more happiness than you can hold
+      - blissful: perfectly, peacefully happy
+      - ecstatic: joy turned all the way up
+      - upbeat: in good spirits, leaning toward the good
+      - sunny: warm and bright, hard to cloud over
+      - light-hearted: nothing heavy, everything easy
+      - over the moon: so happy it’s a little ridiculous
+    deep:
+      - blithe: cheerfully carefree, untouched by worry
+        sounds: BLYTHE
+        from: Old English blīþe, “kind, joyous”
+      - jocund: merry and good-humored
+        sounds: JOCK-und
+        from: Latin iucundus, “pleasant”
+      - exultant: leap-in-the-air happy, especially after a win
+        from: Latin exsultare, “to leap up”
+      - rapturous: carried away by joy
+        from: Latin raptus, “seized, carried off”
+      - beatific: blissfully serene, glowing like a saint in a painting
+        sounds: bee-uh-TIF-ik
+        from: Latin beatus, “blessed”
+      - gladsome: full of gladness — an old, sunny word
+      - transported: lifted right out of yourself by joy
+      - chuffed: really pleased, and a little proud of it
+        from: British slang, from dialect chuff, “puffed up”
+      - cock-a-hoop: crowing with delight
+        from: a 1600s English idiom, origin still argued over
+      - in seventh heaven: as happy as it gets
+        from: the highest of seven heavens in old cosmology
 
   - word: excited
     mix: joyful 75, powerful 25
@@ -42,6 +77,33 @@ feelings:
     text: I’m SO excited about this weekend I can barely focus.
     opener: Can I tell you something I’m really excited about?
     say: I’m bouncing off the walls a little — in a good way.
+    synonyms:
+      - thrilled: a jolt of pure delight
+      - pumped: charged up and ready to go
+      - stoked: hyped up, like a fire that’s just been fed
+      - psyched: geared up and counting down
+      - giddy: dizzy with good anticipation
+      - buzzing: humming with energy you can’t contain
+      - exhilarated: wide awake with a rush of thrill
+      - electric: every nerve lit up
+      - exuberant: overflowing with lively energy
+    deep:
+      - ebullient: bubbling over with enthusiasm
+        sounds: ih-BUL-yunt
+        from: Latin ebullire, “to boil over”
+      - effervescent: fizzing with bright, bubbly energy
+        from: Latin effervescere, “to boil up”
+      - agog: wide-eyed and eager to see what happens
+        sounds: uh-GOG
+        from: Old French en gogues, “in merriment”
+      - atingle: tingling all over with anticipation
+      - febrile: feverishly keyed up, can’t settle
+        sounds: FEB-ryle
+        from: Latin febris, “fever”
+      - rhapsodic: gushing with enthusiasm
+        from: Greek rhapsōidos, “song-stitcher”
+      - full of beans: bursting with lively energy
+        from: 1800s British — said of frisky, well-fed horses
 
   - word: playful
     mix: joyful 80, peaceful 20
@@ -55,3 +117,29 @@ feelings:
     text: I’m in a goofy mood. Entertain me or be entertained, your choice.
     say: I feel silly and light today and I kind of love it.
     opener: Want to do something fun and pointless with me?
+    synonyms:
+      - silly: happily ridiculous
+      - goofy: loose, clownish and unbothered
+      - cheeky: a little bold, teasing with a grin
+      - mischievous: up to harmless trouble
+      - giggly: laughter keeps bubbling up
+      - carefree: nothing weighing on you right now
+      - bubbly: sparkling, chatty and bright
+      - high-spirited: lively and up for anything
+    deep:
+      - puckish: playfully mischievous, like a sprite
+        from: Puck, the trickster fairy in A Midsummer Night’s Dream
+      - impish: a little devil, in the best way
+        from: imp, a small mischievous demon
+      - waggish: full of jokes and sly humor
+        from: wag, 1500s slang for a joker
+      - frolicsome: in the mood to romp
+        from: Dutch vrolijk, “merry”
+      - jocose: joking, teasing, fond of a bit
+        sounds: joh-KOHS
+        from: Latin iocus, “joke”
+      - mirthful: full of laughter and good cheer
+      - larky: up for a lark — spontaneous fun
+        from: British, 1800s
+      - coltish: frisky and gangly, like a young horse
+      - gamesome: game for anything — an old word

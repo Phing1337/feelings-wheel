@@ -27,6 +27,42 @@ feelings:
     text: Feeling really strong today — like I can take on anything.
     say: I feel capable and clear right now.
     self: Remember this feeling the next time you doubt yourself.
+    synonyms:
+      - strong: the plain word for it — able to carry what comes
+      - capable: you can actually do this, and you know it
+      - mighty: big, old-fashioned strength
+      - potent: strength that gets real results
+      - empowered: handed the power, or finally claiming it
+      - in control: hands on the wheel, steering where you want
+      - unstoppable: nothing’s getting in the way of this
+      - invincible: like nothing could beat you right now
+      - bulletproof: whatever they throw just bounces off
+      - formidable: a force others take seriously
+      - fierce: strong, intense and not backing down
+      - resilient: knocked down before, and back up again
+      - ten feet tall: standing taller than you actually are
+    deep:
+      - puissant: mighty, in a knights-and-castles way
+        sounds: PWISS-unt
+        from: Old French, from Latin posse, “to be able”
+      - indomitable: impossible to subdue or tame
+        sounds: in-DOM-ih-tuh-bul
+        from: Latin indomitus, “untamed”
+      - redoubtable: strong enough to make anyone think twice
+        sounds: rih-DOW-tuh-bul
+        from: French redouter, “to dread”
+      - doughty: brave, sturdy and hard to beat
+        sounds: DOW-tee
+        from: Old English dohtig, “strong, valiant”
+      - stalwart: strong, steady and dependable
+      - unbowed: knocked about, but head still held high
+      - unassailable: so solid no attack or argument can get a grip
+      - sovereign: answerable to no one but yourself
+      - ascendant: rising, with the momentum on your side
+        from: astrology — the sign rising in the east as you’re born
+      - omnipotent: all-powerful, at least for today
+      - masterful: fully in command, and good at it
+      - fighting fit: in top shape and ready for anything — British
 
   - word: confident
     mix: powerful 80, peaceful 20
@@ -39,6 +75,31 @@ feelings:
     text: Feeling confident about tomorrow. I’m ready.
     say: I feel good about this decision.
     self: Confidence is earned. You earned it.
+    synonyms:
+      - self-assured: quietly certain of yourself, no approval needed
+      - sure of myself: you know what you’re doing, and you know you know
+      - poised: balanced and ready, nothing wobbling
+      - assertive: saying what you want, clearly and kindly
+      - bold: willing to go first and take up space
+      - brave: maybe scared, but doing it anyway
+      - fearless: the fear has left the building
+      - gutsy: willing to take the risk and own it
+      - cocky: confident with a little strut — maybe too much
+      - in my element: right where you shine
+    deep:
+      - dauntless: nothing puts you off, not even the odds
+      - intrepid: fearless about the unknown — the explorer’s word
+        from: Latin in- “not” + trepidus, “alarmed”
+      - valiant: brave in a way that deserves a song
+        from: Latin valere, “to be strong”
+      - audacious: boldly daring, with a dash of nerve
+        from: Latin audax, “bold”
+      - mettlesome: full of spirit and pluck
+        from: mettle — once just another spelling of “metal”
+      - lionhearted: brave as a lion, heart first
+      - cocksure: completely sure — maybe a bit too sure
+      - bold as brass: cheekily, shamelessly confident
+      - self-possessed: calm and in full command of yourself
 
   - word: determined
     mix: powerful 85, mad 15
@@ -51,6 +112,33 @@ feelings:
     text: It’s been tough, but I’m determined to see this through.
     say: I’m committed. I’m going to make this work.
     self: Keep going. Small steps still move you.
+    synonyms:
+      - driven: something inside keeps pushing you forward
+      - dead set: decided, and that’s the end of it
+      - persistent: you keep showing up, again and again
+      - relentless: no letting up, no matter what
+      - single-minded: one goal, and everything else fades
+      - unwavering: no wobble, no second-guessing
+      - steely: cool, hard resolve
+      - gritty: tired and battered and still going
+      - on a mission: you know exactly what you’re here to do
+      - hell-bent: going for it, whatever it takes
+    deep:
+      - resolute: firmly decided — the matter is settled
+      - dogged: hanging on like a dog with a bone
+      - tenacious: you grip, and you don’t let go
+        from: Latin tenax, “holding fast”
+      - pertinacious: stubbornly, admirably unwilling to quit
+        sounds: pur-tih-NAY-shus
+        from: Latin pertinax, “holding on tight”
+      - indefatigable: tireless — you just keep going
+        sounds: in-dih-FAT-ih-guh-bul
+        from: Latin defatigare, “to tire out”
+      - adamant: immovable — no one’s talking you out of it
+        from: Greek adamas, “unconquerable” — the hardest stone
+      - sisu: grit that keeps going long after it makes sense
+        sounds: SEE-soo
+        lang: Finnish
 
   - word: fired up
     mix: powerful 50, mad 30, joyful 20
@@ -62,3 +150,24 @@ feelings:
     text: I’m SO fired up about this idea. Can I tell you about it?
     say: I’ve got so much energy for this right now.
     self: Point the fire at one thing.
+    synonyms:
+      - amped: turned all the way up and ready
+      - revved up: engine running hot, waiting for the green light
+      - energized: a fresh surge of get-up-and-go
+      - charged up: full of voltage and sparking to go
+      - hyped: buzzing, loud and ready for it
+      - geared up: kitted out and ready to roll
+      - feisty: small spark, big fight, lots of fun
+      - full of fight: ready to take on whatever’s coming
+      - ready to rumble: up for the fight, and kind of loving it
+    deep:
+      - galvanized: jolted into action
+        from: Luigi Galvani, who made frogs’ legs twitch with electricity
+      - afire: burning with energy and purpose
+      - zealous: all-in and burning for the cause
+        from: Greek zēlos, “zeal, ardor”
+      - geed up: spurred on and ready to charge — British
+        from: the call “gee up!”, which gets a horse moving
+      - roused: woken up and ready to act
+      - full of vim: bursting with vigor and get-up-and-go
+        from: 1840s American — perhaps Latin vim, “strength”

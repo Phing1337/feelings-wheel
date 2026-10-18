@@ -29,6 +29,45 @@ feelings:
     text: I’m pretty mad right now and I want to talk about it once I’ve cooled down a bit.
     say: I’m angry, and I want to say it calmly instead of letting it leak out.
     self: Anger often guards a boundary. Which one?
+    synonyms:
+      - angry: the plain, everyday word for it
+      - cross: a tidy, buttoned-up kind of angry
+      - pissed off: the blunt, everyday way to say it
+      - ticked off: annoyed enough that it shows
+      - steamed: hot and building pressure
+      - heated: temperature rising, words getting sharper
+      - riled up: stirred up and ready to say something
+      - provoked: poked and poked until you reacted
+      - indignant: angry at how unfair this is
+      - irate: loudly, visibly angry
+      - up in arms: protesting, and not quietly
+      - on the warpath: angry and heading straight for it
+      - bent out of shape: twisted up about it, maybe more than it deserves
+    deep:
+      - choleric: hot-tempered, with the heat rising fast
+        sounds: KOL-uh-rik
+        from: Greek kholē, “bile” — yellow bile was blamed for hot tempers
+      - splenetic: venting bad temper at anyone in range
+        sounds: spluh-NET-ik
+        from: the spleen, once thought to be the seat of bad temper
+      - irascible: quick to flare up, slow to cool down
+        sounds: ih-RASS-uh-bul
+        from: Latin irasci, “to grow angry”
+      - ireful: full of ire — an old, rolling word for anger
+      - exercised: all worked into a state about something — oddly formal
+      - in high dudgeon: indignant, offended, and making sure everyone knows
+        from: 1500s English — nobody knows where “dudgeon” came from
+      - het up: all heated and agitated, steam rising
+        from: English dialect het, “heated”
+      - shirty: snippy and cross, British-style
+        from: 1800s British — “getting your shirt out” meant losing it
+      - hacked off: thoroughly annoyed, in plain British
+      - pugnacious: spoiling for a fight
+        sounds: pug-NAY-shus
+        from: Latin pugnax, “combative” — from pugnus, “fist”
+      - peppery: hot-tempered, with a bit of bite
+      - mad as a wet hen: spluttering, feathers-everywhere mad — a Southern US classic
+      - cross as two sticks: properly grumpy — a crisp British idiom
 
   - word: frustrated
     mix: mad 80, sad 20
@@ -43,6 +82,29 @@ feelings:
     text: Super frustrated today — nothing’s going the way I planned.
     say: I’m frustrated because I keep hitting the same wall.
     self: Step away for ten minutes. The wall will still be there, smaller.
+    synonyms:
+      - exasperated: patience rubbed all the way through
+      - fed up: had more than enough of this, thanks
+      - thwarted: blocked right as you reached for it
+      - stuck: pushing hard and going nowhere
+      - aggravated: bothered, and it keeps getting worse
+      - stonewalled: up against someone who won’t budge or even answer
+      - spinning my wheels: lots of effort, zero traction
+      - at the end of my rope: patience and ideas, both run out
+      - at my wits’ end: tried everything you can think of, and then some
+      - tearing my hair out: so frustrated it’s almost funny
+    deep:
+      - stymied: blocked by something you can’t get around
+        sounds: STY-meed
+        from: golf — a stymie was a ball blocking your path to the hole
+      - snookered: boxed in, with no clean shot at what you want
+        from: snooker, when another ball blocks your shot
+      - hamstrung: hobbled — you can’t move the way you need to
+      - on tilt: so frustrated you start making bad calls
+        from: pinball — shake it too hard and it locks up with “TILT”
+      - chafing: rubbed raw by limits you can’t shake off
+      - cheesed off: thoroughly annoyed and done with it
+        from: British slang
 
   - word: irritated
     mix: mad 90, scared 10
@@ -57,6 +119,35 @@ feelings:
     text: Heads up, I’m a bit irritable today. It’s not about you.
     say: I’m kind of prickly right now — I might need some space.
     self: Hungry? Tired? Overstimulated? Check the basics.
+    synonyms:
+      - annoyed: the everyday itch of something not being okay
+      - bugged: something keeps buzzing at you
+      - irked: rubbed the wrong way, and it lingers
+      - peeved: quietly put out, a little sulky about it
+      - miffed: slightly offended, nose a bit out of joint
+      - grumpy: low and grumbly, and it’s leaking into everything
+      - cranky: tired, hungry or both — and short on patience
+      - testy: one more thing and you’ll snap
+      - in a mood: everything’s grating and you can’t say why
+      - on my last nerve: patience down to the final thread
+    deep:
+      - nettled: stung by something small, like brushing a nettle
+      - vexed: troubled and annoyed — a fine old-fashioned word
+        from: Latin vexare, “to shake, to harass”
+      - tetchy: short-fused and quick to take things the wrong way
+      - pettish: in a small, sulky snit
+      - dyspeptic: sour and grouchy — the opposite of eupeptic
+        sounds: dis-PEP-tik
+        from: Greek dyspeptos, “hard to digest”
+      - liverish: peevish and off, as if your liver were acting up
+      - ornery: grumpy, stubborn and spoiling to be difficult
+        sounds: OR-nuh-ree
+        from: American dialect, a twist on “ordinary”
+      - crabbit: bad-tempered and snappish
+        from: Scots
+      - mardy: sulky, moody and making sure you know it
+        from: Northern English dialect
+      - curmudgeonly: gruff, grudging and grumbling, like an old crank
 
   - word: furious
     mix: mad
@@ -70,6 +161,34 @@ feelings:
     text: I’m furious and I don’t trust myself to talk yet. Can we pick this up tomorrow?
     say: I’m too angry to have this conversation well right now.
     self: Move your body first. Decide after.
+    synonyms:
+      - livid: so angry your face changes color
+      - enraged: taken over completely by rage
+      - seething: boiling under the lid, barely holding it in
+      - fuming: smoke-coming-out-of-your-ears angry
+      - outraged: shocked into anger by how wrong this is
+      - seeing red: so angry it tints everything you look at
+      - beside myself: so angry you’ve stepped outside yourself
+      - hopping mad: too angry to stand still
+      - ballistic: launched — way past keeping it together
+      - fit to be tied: so angry someone ought to hold you back
+    deep:
+      - incensed: burning up, inflamed with anger
+        from: Latin incendere, “to set on fire”
+      - incandescent: white-hot with rage, practically glowing
+        from: Latin incandescere, “to begin to glow”
+      - apoplectic: so angry you might actually burst
+        sounds: ap-uh-PLEK-tik
+        from: apoplexy, an old word for a stroke
+      - wroth: angry in an old, thunderous, biblical way
+        sounds: ROTH
+        from: Old English wrāþ, “angry” — kin to wrath
+      - ropable: so furious you’d need roping in
+        from: Australian — once said of wild, unmanageable cattle
+      - furibund: raging, frothing, fully furious
+        sounds: FYOOR-ih-bund
+        from: Latin furibundus, “raging”
+      - in a towering rage: anger so tall it fills the room
 
   - word: resentful
     mix: mad 70, sad 30
@@ -84,3 +203,73 @@ feelings:
     text: I’ve been holding onto something and I don’t want it to keep building. Can we talk this week?
     say: I’ve noticed some resentment building and I’d rather deal with it than let it grow.
     self: Resentment is an unspoken request. What’s yours?
+    synonyms:
+      - bitter: hurt that’s gone hard and sharp-tasting
+      - sore: still tender and angry about it
+      - salty: a bit bitter about it, and it shows
+      - wronged: something unfair happened and was never made right
+      - put-upon: always the one carrying it, and tired of it
+      - begrudging: giving it, but not gladly
+      - disgruntled: grumbling and dissatisfied, quietly fed up
+      - embittered: made bitter, slowly, by what happened
+      - stewing: going over it and over it, getting hotter
+      - nursing a grudge: keeping an old hurt warm on purpose
+    deep:
+      - aggrieved: sure you were treated unfairly, and keeping track
+      - rancorous: bitterness that’s gone sour and settled in
+        sounds: RANK-er-us
+        from: Latin rancor, “rankness, a rancid smell”
+      - jaundiced: soured by experience, so everything looks a bit yellow
+        from: jaundice, once thought to tint the whole world yellow
+      - galled: rubbed raw by it, again and again
+        from: gall, an old word for a sore from chafing
+      - chippy: carrying a chip on your shoulder about being looked down on
+        from: British slang
+      - hard done by: treated unfairly and feeling it — British
+
+  - word: at odds
+    mix: mad 60, powerful 40
+    level: 2
+    def: Pulling against someone or something — even yourself. Your views, values or wants point opposite ways.
+    see: [defensive, frustrated]
+    opposite: in sync
+    body: crossed arms, a set jaw, a tug-of-war somewhere in your chest
+    voice:
+      - That’s not how I see it.
+      - We want different things here.
+    text: I think we’re a bit at odds on this one. Can we talk it through properly?
+    say: I feel at odds with you on this, and I’d rather understand it than win it.
+    opener: Can we talk about where we’re not lining up?
+    self: Disagreeing isn’t the same as disconnecting.
+    synonyms:
+      - in disagreement: you see it one way, they see it another
+      - opposed: standing firmly on the other side
+      - clashing: rubbing up against each other, sparks flying
+      - butting heads: pushing against each other, neither giving way
+      - on the outs: not on good terms right now
+      - out of step: marching to a different beat from everyone else
+      - contrary: inclined to push the other way, just because
+      - argumentative: ready to debate every little point
+      - conflicted: torn inside, two parts of you pulling apart
+    deep:
+      - antithetical: set squarely against — the direct opposite
+        sounds: an-tih-THET-ih-kul
+        from: Greek antithesis, “a setting against”
+      - adversarial: treating it as a contest, you against them
+        from: Latin adversarius, “opponent”
+      - contrarian: taking the other side, almost on principle
+      - discordant: out of harmony, like a wrong note held too long
+        from: Latin dis- “apart” + cor “heart”
+      - at loggerheads: locked in a stubborn standoff
+      - at cross purposes: working against each other without meaning to
+      - at daggers drawn: openly hostile — blades out, so to speak
+      - at variance: out of agreement, formally speaking
+      - contumacious: stubbornly refusing to give in or obey
+        sounds: kon-tyoo-MAY-shus
+        from: Latin contumax, “stubborn, defiant”
+      - oppugnant: set against it and ready to fight
+        sounds: uh-PUG-nunt
+        from: Latin oppugnare, “to fight against”
+      - cross-grained: contrary, like wood that won’t plane smooth
+      - bolshie: rebellious and refusing to go along — British
+        from: short for Bolshevik

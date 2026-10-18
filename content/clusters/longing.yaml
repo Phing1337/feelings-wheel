@@ -24,6 +24,30 @@ feelings:
     body: a pull in the chest, reaching without moving
     text: I’ve been yearning for you all week.
     self: The ache points at what matters to you.
+    synonyms:
+      - longing: wanting something with your whole heart, and waiting
+      - aching: wanting so much that it physically hurts
+      - hungering: hungry for it in the heart, not the stomach
+      - desperate for: wanting it so badly you can hardly stand it
+      - unfulfilled: something deep in you is still waiting to be met
+      - incomplete: like part of you is still somewhere else
+    deep:
+      - Sehnsucht: a deep, restless longing for something you can’t quite name
+        sounds: ZAYN-zookht
+        lang: German
+        from: sehnen, “to long” + Sucht, “sickness”
+      - toska: an ache of the soul — “a longing with nothing to long for”
+        sounds: tuh-SKAH
+        lang: Russian
+        from: Russian, glossed at length by Nabokov
+      - desiderium: an ardent longing for something you once had
+        sounds: des-ih-DEER-ee-um
+        lang: Latin
+        from: Latin desiderare, “to long for, to miss”
+      - wanderlust: an ache to roam toward somewhere far away
+        lang: German
+        from: wandern, “to roam” + Lust, “desire”
+      - crying for the moon: aching for something you can never have
 
   - word: missing someone
     aliases: [missing you, miss you]
@@ -34,6 +58,15 @@ feelings:
     see: lonely
     text: I miss you. That’s it, that’s the text.
     self: Missing them means they matter.
+    synonyms:
+      - counting the days: ticking off the time until you’re together again
+      - lost without you: a little off-balance with them gone
+      - wishing you were here: the postcard feeling, wherever you go
+    deep:
+      - saudade: a sweet, aching missing for someone or somewhere far away
+        sounds: sow-DAH-jee
+        lang: Portuguese
+        from: Latin solitas, “solitude,” via Old Portuguese soidade
 
   - word: homesick
     mix: sad 60, scared 20, peaceful 20
@@ -42,6 +75,28 @@ feelings:
     see: nostalgic
     text: Feeling homesick today. Call me later?
     self: Bring a little bit of home into today.
+    synonyms:
+      - far from home: miles from the people and places that feel like yours
+      - missing home: wanting your own bed, your own people, your own streets
+      - uprooted: pulled up out of the ground you grew in
+      - displaced: in the wrong place, and not yet at home anywhere
+      - exiled: cut off from home through no choice of your own
+    deep:
+      - hiraeth: a Welsh ache for a home you can’t return to, or that never was
+        sounds: HEER-eyeth
+        lang: Welsh
+      - Heimweh: a deep, almost bodily ache to be back home
+        sounds: HYME-vay
+        lang: German
+        from: Heim, “home” + Weh, “ache” — the model for “homesickness”
+      - mal du pays: a sickness for your own country and its ways
+        sounds: mal doo pay-EE
+        lang: French
+      - deracinated: uprooted from your culture, a stranger even back home
+        sounds: dee-RAS-ih-nay-tid
+        from: French déraciner, “to uproot” (racine, “root”)
+      - stranger in a strange land: far from home, and not at home anywhere
+        from: Moses in exile, Exodus 2:22
 
   - word: pining
     mix: sad 60, joyful 25, scared 15
@@ -50,6 +105,20 @@ feelings:
     see: lovesick
     text: Okay, I’m officially pining. Come back soon.
     self: Feel it, then feed yourself something good.
+    synonyms:
+      - mooning: drifting around, lost in thoughts of them
+      - hung up on: can’t stop thinking about them, however hard you try
+      - not over them: still carrying them, long after it ended
+      - waiting by the phone: hoping they’ll call, jumping at every buzz
+    deep:
+      - languishing: fading and drooping for want of someone
+        from: Latin languere, “to be faint, weak”
+      - carrying a torch: still in love with someone who has moved on
+        from: 1920s slang — hence the “torch song”
+      - eating your heart out: suffering in silence over someone
+        from: a grief image as old as Homer’s Iliad
+      - wearing the willow: mourning a love that’s lost, or was never returned
+        from: the willow, old emblem of lost love — see Othello
 
   - word: bittersweet
     mix: joyful 50, sad 50
@@ -62,6 +131,19 @@ feelings:
     text: Feeling so bittersweet today — happy for what’s next, sad to leave this behind.
     say: It’s a good thing, and I’m still a little sad about it.
     self: You can hold two feelings at once.
+    synonyms:
+      - smiling through tears: happy and teary in the same breath
+      - mixed feelings: glad and sad, tangled up together
+    deep:
+      - poignant: so tender it almost hurts
+        sounds: POIN-yunt
+        from: Latin pungere, “to prick” — kin to “pungent”
+      - mono no aware: a gentle sadness at how all beautiful things pass
+        sounds: MOH-noh noh ah-WAH-ray
+        lang: Japanese
+        from: Japanese, roughly “the pathos of things”
+      - sweet sorrow: the ache of a goodbye you’re glad you got to have
+        from: Juliet’s “parting is such sweet sorrow”
 
   - word: nostalgic
     mix: joyful 40, sad 35, peaceful 25
@@ -74,6 +156,19 @@ feelings:
     text: I just found an old photo of us and got so nostalgic.
     opener: Do you remember that time we…?
     self: Those moments still belong to you.
+    synonyms:
+      - sentimental: soft-hearted about the past and the people in it
+      - reminiscent: in a remembering mood, old stories rising up
+      - dewy-eyed: soft-focus and fond, maybe a little teary
+      - walking down memory lane: wandering back through the good old days
+    deep:
+      - natsukashii: a happy, fond pang when something from the past returns
+        sounds: nat-soo-KAH-shee
+        lang: Japanese
+      - maudlin: tearfully, soppily sentimental — often after a drink
+        from: Mary Magdalene, often painted weeping
+      - Proustian: swept back in time by a taste, a smell, a song
+        from: Proust’s madeleine, In Search of Lost Time
 
   - word: wistful
     mix: sad 60, peaceful 40
@@ -87,3 +182,16 @@ feelings:
     text: Feeling a little wistful tonight. Just one of those evenings.
     say: I keep drifting back to what might have been.
     self: Longing points at what you value.
+    synonyms:
+      - pensive: quietly lost in thought, with a touch of sadness
+      - reflective: turning things over gently, looking back
+      - lost in thought: miles away, somewhere in your own head
+      - regretful: wishing something had gone differently
+    deep:
+      - rueful: a little sorry, a little sad, a little wry about it
+        from: Old English hreow, “sorrow, regret”
+      - elegiac: gently mournful for what’s gone, like an old lament
+        sounds: el-uh-JY-uk
+        from: Greek elegos, a song of mourning
+      - in a brown study: lost in gloomy daydreams, miles away
+        from: 1500s — “brown” once meant gloomy

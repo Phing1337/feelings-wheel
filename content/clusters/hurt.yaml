@@ -27,6 +27,44 @@ feelings:
     text: What happened earlier hurt more than I let on. Can we talk?
     say: When that happened, I felt really hurt.
     self: Hurt means it mattered. You’re allowed to say so.
+    synonyms:
+      - wounded: hurt deep enough to leave a mark
+      - stung: a sharp, sudden hurt, usually from words
+      - bruised: aching for a while after the knock
+      - smarting: still stinging after the blow
+      - upset: thrown and hurting, not okay right now
+      - offended: hurt with a flash of indignation
+      - slighted: brushed aside as if you didn’t matter
+      - snubbed: coldly ignored by someone who saw you
+      - rejected: turned away when you reached out
+      - betrayed: let down hard by someone you trusted
+      - used: like you were only wanted for what you could give
+      - burned: you trusted, and got singed for it
+      - humiliated: made to feel small in front of others
+      - disrespected: treated as if you don’t count
+      - criticized: picked apart, and every word lands
+    deep:
+      - cut to the quick: wounded right where you’re softest
+        from: “the quick” was living flesh, like the skin under a nail
+      - affronted: insulted right to your face
+        from: Old French afronter, “to slap in the face”
+      - chagrined: stung and embarrassed when things go wrong
+        sounds: shuh-GRIND
+        from: French chagrin, “vexation, sorrow”
+      - piqued: pride pricked, and a little sulky about it
+        sounds: PEEKT
+        from: French piquer, “to prick”
+      - jilted: dropped by someone who held your heart
+      - spurned: turned away, as good as kicked aside
+        from: Old English spurnan, “to kick against”
+      - rebuffed: your kindness pushed back, bluntly
+        from: Italian ribuffo, “a reproof”
+      - lacerated: torn open by harsh words
+        from: Latin lacerare, “to tear”
+      - ill-used: treated badly by someone who should have known better
+      - licking my wounds: off somewhere quiet, recovering from the blow
+        from: what an injured animal does after a fight
+      - in a sulk: hurt and quietly refusing to be cheered up
 
   - word: defensive
     mix: mad 50, scared 50
@@ -39,3 +77,25 @@ feelings:
     text: I got defensive earlier and I’m sorry. I think I felt criticized.
     say: I’m feeling defensive — give me a second so I can actually listen.
     self: What are you protecting right now?
+    synonyms:
+      - guarded: walls up, letting very little in
+      - on guard: watching for the next attack
+      - attacked: like every word is aimed at you
+      - judged: like every move is being scored against you
+      - cornered: no way out, so you get ready to bite back
+      - prickly: spines out at the lightest touch
+      - touchy: easily set off, everything landing wrong
+      - bristling: hackles raised, ready to push back
+      - thin-skinned: every hint of criticism gets through
+      - brittle: hard on the outside, close to cracking
+    deep:
+      - on the back foot: pushed back and scrambling to recover
+        from: British, from sport — weight on your back foot, defending
+      - embattled: under fire and fighting back on every side
+      - bridling: chin up and drawing back, stung by a slight
+        from: like a horse tossing its head against the bridle
+      - umbrageous: quick to take offense, even at a shadow
+        sounds: um-BRAY-jus
+        from: Latin umbra, “shade” — the root of taking umbrage
+      - circling the wagons: closing ranks, braced against attack from outside
+        from: American — wagon trains drew into a ring to defend camp

@@ -7,7 +7,8 @@ import YAML from 'yaml';
 
 export const TAGS = ['text', 'say', 'opener', 'self'];
 export const LINKS = ['stronger', 'softer', 'opposite', 'under', 'see'];
-const FEELING_KEYS = new Set(['word', 'id', 'core', 'mix', 'level', 'def', 'aliases', 'hy', 'also', 'body', 'voice', 'note', ...LINKS, ...TAGS]);
+const FEELING_KEYS = new Set(['word', 'id', 'core', 'mix', 'level', 'def', 'aliases', 'hy', 'also', 'body', 'voice', 'note', 'synonyms', 'deep', ...LINKS, ...TAGS]);
+const SYN_KEYS = new Set(['word', 'means', 'sounds', 'from', 'lang']);
 const CLUSTER_KEYS = new Set(['id', 'name', 'family', 'anchor', 'mix', 'level', 'blurb', 'near', 'feelings', 'note']);
 const FAMILY_KEYS = new Set(['id', 'name', 'color', 'angle']);
 
@@ -55,6 +56,24 @@ export function parseMix(v, fams, bad) {
   return tot ? Object.fromEntries(Object.entries(out).sort((a, b) => b[1] - a[1]).map(([k, w]) => [k, +(w / tot).toFixed(3)])) : null;
 }
 
+/* thesaurus words: "glad", or "sanguine: cheerfully hopeful…" with optional sounds / from / lang lines */
+function parseSyn(v, bad) {
+  if (typeof v === 'string' || typeof v === 'number') return text(v) ? { word: text(v) } : null;
+  if (!v || typeof v !== 'object' || Array.isArray(v)) { bad('write each one as a word, or "word: what it means"'); return null; }
+  const keys = Object.keys(v), extra = keys.filter(k => !SYN_KEYS.has(k));
+  let word = text(v.word), means = text(v.means);
+  if (!word) {
+    if (extra.length !== 1) { bad(`can't tell which key is the word in { ${keys.join(', ')} }`); return null; }
+    const val = v[extra[0]];
+    if (val && typeof val === 'object') { bad(`"${extra[0]}" — put its meaning on the same line, and sounds/from/lang level with the word`); return null; }
+    word = text(extra[0]); means = means || text(val);
+  } else if (extra.length) bad(`unknown field "${extra[0]}" on "${word}"`);
+  const s = { word };
+  if (means) s.means = means;
+  ['sounds', 'from', 'lang'].forEach(k => { if (text(v[k])) s[k] = text(v[k]); });
+  return s;
+}
+
 export function compileFeelings(dir) {
   const errors = [], warnings = [], files = [];
   const fail = (where, msg) => errors.push({ where, msg });
@@ -80,7 +99,7 @@ export function compileFeelings(dir) {
   const cdir = path.join(dir, 'clusters');
   const cfiles = fs.existsSync(cdir) ? fs.readdirSync(cdir).filter(f => /\.ya?ml$/i.test(f)).sort() : [];
   if (!cfiles.length) fail(relOf(cdir), 'no cluster files found');
-  const clusters = [], feelings = [], content = {}, where = {}, raw = [];
+  const clusters = [], feelings = [], content = {}, where = {}, raw = [], rawSyn = [];
 
   for (const name of cfiles) {
     const file = path.join(cdir, name), rel = relOf(file);
@@ -119,6 +138,22 @@ export function compileFeelings(dir) {
       feelings.push(f);
       raw.push({ f, e, fw });
 
+      const syn = [];
+      [['synonyms', false], ['deep', true]].forEach(([key, deep]) => {
+        if (e[key] == null) return;
+        (Array.isArray(e[key]) ? e[key] : [e[key]]).forEach(v => {
+          const s = parseSyn(v, m => warn(fw, `${key} on "${e.word}": ${m}`));
+          if (!s) return;
+          if (deep) {
+            s.deep = true;
+            if (!s.means) warn(fw, `deep word "${s.word}" on "${e.word}" needs a short meaning — "${s.word}: what it means"`);
+          }
+          if ((s.means || '').length > 110) warn(fw, `meaning of "${s.word}" is long — aim for one short line`);
+          syn.push(s);
+        });
+      });
+      if (syn.length) rawSyn.push({ f, syn, fw });
+
       const c = {}, ex = [];
       if (e.body) c.body = text(e.body);
       const voice = list(e.voice); if (voice.length) c.voice = voice;
@@ -139,6 +174,26 @@ export function compileFeelings(dir) {
   const resolve = (w, fw, why) => { const s = slug(w); if (ids.has(s)) return s; if (alias[s]) return alias[s]; warn(fw, `${why} "${w}" isn't a feeling yet`); return null; };
   const cids = new Set(clusters.map(c => c.id));
   const byCluster = Object.fromEntries(clusters.map(c => [c.id, c]));
+  const byId = Object.fromEntries(feelings.map(f => [f.id, f]));
+
+  /* ---- thesaurus: each synonym lives under exactly one feeling, so a word always lands in one place ---- */
+  const synOwner = {};
+  let nSyn = 0, nDeep = 0;
+  for (const { f, syn, fw } of rawSyn) {
+    const out = [];
+    for (const s of syn) {
+      const id = slug(s.word), on = `synonym "${s.word}" on "${f.word}"`;
+      if (!id) { warn(fw, `${on} has no letters`); continue; }
+      if (id === f.id) { warn(fw, `${on} is the word itself`); continue; }
+      if (ids.has(id)) { warn(fw, `${on} is already its own feeling — link it with see: instead`); continue; }
+      if (alias[id] && alias[id] !== f.id) { warn(fw, `${on} is already an alias of "${byId[alias[id]].word}"`); continue; }
+      if (synOwner[id]) { warn(fw, synOwner[id] === f ? `${on} is listed twice` : `${on} is already a synonym of "${synOwner[id].word}" — keep it where it fits best`); continue; }
+      synOwner[id] = f;
+      out.push({ id, ...s });
+      if (s.deep) nDeep++; else nSyn++;
+    }
+    if (out.length) f.syn = out;
+  }
 
   for (const { f, e, fw } of raw) {
     const links = {};
@@ -183,6 +238,8 @@ export function compileFeelings(dir) {
 
   if (errors.length) throw new FeelingsError(errors);
   const examples = Object.values(content).reduce((n, c) => n + (c.examples || []).length, 0);
-  const stats = { families: families.length, clusters: clusters.length, feelings: feelings.length, words: feelings.length + Object.keys(alias).length, examples };
+  const aliasOnly = Object.keys(alias).filter(a => !synOwner[a]).length;
+  const stats = { families: families.length, clusters: clusters.length, feelings: feelings.length, synonyms: nSyn, deep: nDeep,
+    words: feelings.length + aliasOnly + nSyn + nDeep, examples };
   return { data: { families, clusters, feelings }, content, warnings, stats, files };
 }

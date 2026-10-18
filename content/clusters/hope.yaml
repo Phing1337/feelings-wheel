@@ -27,3 +27,34 @@ feelings:
     text: I’m feeling hopeful about things for the first time in a while.
     say: I don’t know how it ends yet, but I have a good feeling.
     self: Hope is allowed even before the proof shows up.
+    synonyms:
+      - optimistic: expecting things to turn out well
+      - encouraged: given a little more heart
+      - heartened: lifted by a sign things might be okay
+      - positive: leaning toward yes
+      - buoyant: hard to sink — you keep bobbing back up
+      - uplifted: raised up in spirit
+      - expectant: waiting for something good to arrive
+      - wishful: wanting it to be true, maybe a bit too much
+      - cautiously optimistic: hopeful, but holding it loosely
+    deep:
+      - sanguine: cheerfully confident, even when things look grim
+        sounds: SANG-gwin
+        from: Latin sanguis, “blood” — once thought to make you cheerful
+      - roseate: rosy — maybe a little too rosy
+        sounds: ROH-zee-it
+        from: Latin roseus, “rose-colored”
+      - bullish: confident things are headed up
+        from: market bulls, who toss prices upward with their horns
+      - eupeptic: cheerful and optimistic — literally, good at digesting
+        sounds: yoo-PEP-tik
+        from: Greek eupeptos, “easy to digest”
+      - Panglossian: hopeful to the point of absurdity
+        sounds: pan-GLOSS-ee-un
+        from: Dr. Pangloss in Voltaire’s Candide, 1759
+      - Pollyannaish: determined to find the bright side
+        from: Pollyanna, the relentlessly glad heroine of a 1913 novel
+      - Micawberish: sure that something will turn up
+        sounds: mih-KAW-ber-ish
+        from: Mr. Micawber in Dickens’s David Copperfield
+      - in good heart: keeping your spirits and your hope up

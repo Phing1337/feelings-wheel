@@ -26,6 +26,40 @@ feelings:
     voice: We’re in this together.
     text: I felt so connected to you today.
     self: Notice who brings this out in you — and go back often.
+    synonyms:
+      - vibing: getting along easily, sharing the same energy
+      - linked: joined to someone by a thread you can feel
+      - united: joined together and standing on the same side
+      - in solidarity: standing together and sharing the weight
+      - in touch: in contact and keeping up with each other’s lives
+      - in harmony: fitting together without friction, like voices in a chord
+      - at one with the world: part of everything, not apart from it
+      - part of something bigger: one thread in a much larger weave
+      - sociable: in the mood for people, glad of the company
+      - plugged in: hooked into the people and the life around you
+    deep:
+      - en rapport: in close, easy understanding with someone
+        sounds: ahn ra-POR
+        lang: French
+      - simpatico: getting along naturally, with a warm, easy fit
+        sounds: sim-PAH-tih-koh
+        lang: Italian
+      - in communion: sharing something deep and quiet, beyond words
+        from: Latin communio, “sharing, fellowship”
+      - of one heart: wanting the same things, feeling the same way
+        from: Acts 4:32, “of one heart and of one soul”
+      - in concord: in deep agreement, hearts pulling the same way
+        from: Latin concors, from con-, “together,” + cor, “heart”
+      - convivial: festive and warm, at home around a full table
+        from: Latin convivium, a feast — literally “living together”
+      - gregarious: flocking toward people, happiest in a crowd
+        from: Latin grex, “flock”
+      - oceanic: a boundless sense of being one with everything
+        from: Romain Rolland’s “oceanic feeling,” described to Freud
+      - conspiratorial: sharing a private wink, in on something together
+        from: Latin conspirare, “to breathe together”
+      - in fellowship: sharing life and purpose with others, side by side
+        from: Old Norse félagi, a partner who lays down money
 
   - word: close
     mix: peaceful 50, joyful 50
@@ -35,6 +69,21 @@ feelings:
     see: bonded
     text: I’ve felt really close to you lately. I love that.
     say: I love how close we’ve gotten.
+    synonyms:
+      - tight: good friends who just get each other, no explaining needed
+      - chummy: friendly and familiar, easy in each other’s company
+      - inseparable: always together, hard to picture one without the other
+      - joined at the hip: so close you’re practically one unit
+      - like family: close enough that “friend” feels too small a word
+      - near: no distance between your hearts, however far apart you are
+    deep:
+      - thick as thieves: so close you share secrets and inside jokes
+      - companionable: easy together, comfortable even in silence
+        from: Latin com-, “with,” + panis, “bread” — a bread-sharer
+      - matey: pally and familiar, like old mates at the pub
+        from: British — mate comes from Middle Low German for “messmate”
+      - palsy-walsy: playfully, almost comically chummy
+        from: pal, from Romani for “brother”
 
   - word: intimate
     also: [love, desire]
@@ -46,6 +95,16 @@ feelings:
     body: slow, warm, unguarded
     text: Last night felt really intimate. I loved being that close to you.
     self: Closeness takes courage. You showed up for it.
+    synonyms:
+      - known: someone has the real map of you, and stays
+      - let in: past the walls, welcomed into the inner rooms
+      - unmasked: no performance left between you
+      - wrapped up in each other: so absorbed in each other the world fades out
+    deep:
+      - entwined: wound around each other, heart and life
+      - tête-à-tête: head to head, just the two of you, the world shut out
+        sounds: tet-uh-TET
+        lang: French
 
   - word: seen
     mix: peaceful 50, joyful 30, powerful 20
@@ -56,6 +115,10 @@ feelings:
     voice: They actually get me.
     text: I felt really seen by you today. Thank you.
     self: Remember this the next time you feel invisible.
+    synonyms:
+      - witnessed: someone saw what you went through, and it counted
+      - visible: out of the background and into someone’s full view
+      - remembered: someone kept you in mind, down to the little things
 
   - word: understood
     mix: peaceful 65, joyful 35
@@ -66,6 +129,14 @@ feelings:
     voice: I don’t have to explain it twice.
     say: Thank you for getting it. That means a lot.
     self: Notice the relief of not having to translate yourself.
+    synonyms:
+      - on the same wavelength: they get what you mean before you finish
+      - speaking the same language: no translating needed between you
+    deep:
+      - grokked: understood so completely it’s like they’re inside your head
+        from: Robert Heinlein’s Stranger in a Strange Land (1961)
+      - fathomed: understood to the very bottom, depths and all
+        from: Old English fæthm, the span of two outstretched arms
 
   - word: heard
     mix: peaceful 60, powerful 25, joyful 15
@@ -74,6 +145,12 @@ feelings:
     stronger: understood
     text: Thanks for really listening earlier. I felt heard.
     opener: Can I talk for a minute? I don’t need fixing, just listening.
+    synonyms:
+      - listened to: someone gave you their full attention
+      - taken seriously: your words were given real weight
+      - believed: your account was trusted, not second-guessed
+    deep:
+      - heeded: not just listened to, but acted on
 
   - word: belonging
     mix: peaceful 50, joyful 40, powerful 10
@@ -84,6 +161,14 @@ feelings:
     voice: These are my people.
     text: I feel like I really belong here.
     self: You don’t have to earn your seat at this table.
+    synonyms:
+      - at home: where you are feels like where you’re meant to be
+      - rooted: planted deep among your people and your place
+      - one of the gang: counted in without a second thought
+      - fitting in: slotting right into place, no squeezing required
+    deep:
+      - in the fold: gathered back in among your own
+        from: fold, an old word for a sheep pen
 
   - word: included
     mix: joyful 50, peaceful 50
@@ -93,6 +178,13 @@ feelings:
     opposite: left out
     text: Thanks for including me. It meant more than you know.
     self: Let it count. You were wanted there.
+    synonyms:
+      - invited: someone wanted you there and said so
+      - in the loop: kept in the know, not left guessing
+      - in the mix: right there in the middle of things
+      - in on it: part of the plan, the joke or the secret
+    deep:
+      - in the swim: carried along in the current of everyone’s plans
 
   - word: accepted
     also: love
@@ -104,6 +196,15 @@ feelings:
     voice: I don’t have to pretend here.
     text: I felt so accepted by everyone tonight.
     self: The people who accept you are telling you the truth about you.
+    synonyms:
+      - unjudged: no verdict hanging over you, just taken as you are
+      - forgiven: the mistake is let go, and you’re still wanted
+      - liked: enjoyed for exactly who you are, no reason needed
+      - approved of: given the nod, no proving yourself
+    deep:
+      - persona grata: welcome and in good standing — the opposite of persona non grata
+        from: diplomatic Latin for an “acceptable person”
+        lang: Latin
 
   - word: supported
     also: safety
@@ -114,6 +215,17 @@ feelings:
     see: [held, cared for]
     text: I feel so supported by you. Thank you for being in my corner.
     say: Knowing you’ve got my back changes everything.
+    synonyms:
+      - backed: you’ve got someone standing right behind you
+      - championed: someone’s fighting your corner, out loud
+      - bolstered: propped up and made sturdier
+      - cheered on: there’s a voice on the sidelines shouting your name
+      - not alone: someone’s in this with you
+      - rallied around: people closed ranks around you when it counted
+    deep:
+      - buttressed: braced from the outside, like a cathedral wall
+        from: Old French bouter, “to push”
+      - upborne: lifted and held aloft, as if on many hands
 
   - word: trusting
     mix: peaceful 70, joyful 30
@@ -123,6 +235,11 @@ feelings:
     see: safe
     say: I trust you with this.
     self: Trust can grow slowly. That’s allowed.
+    synonyms:
+      - confiding: ready to share what you usually keep close
+      - counting on you: sure they’ll come through when it matters
+      - taking you at your word: believing what they say, no proof needed
+      - leaning on you: letting someone take some of your weight
 
   - word: in sync
     mix: joyful 55, peaceful 45
@@ -131,6 +248,16 @@ feelings:
     see: attuned
     text: We were so in sync today. Loved it.
     self: Moments like this are worth remembering.
+    synonyms:
+      - on the same page: wanting the same thing, no confusion between you
+      - in step: moving at the same pace, side by side
+      - in tune: perfectly matched, like two notes that ring true together
+      - of one mind: thinking the same thing at the same moment
+      - clicking: everything between you just works
+      - gelling: coming together smoothly, as a pair or a team
+    deep:
+      - singing from the same hymn sheet: in full agreement, all saying the same thing
+        from: British idiom, from a church congregation singing as one
 
   - word: attuned
     mix: peaceful 70, joyful 30
@@ -139,6 +266,16 @@ feelings:
     see: empathetic
     say: I can tell something’s up. Want to talk about it?
     self: Your sensitivity is a gift — pace how much you take on.
+    synonyms:
+      - tuned in: picking up on what someone’s feeling
+      - intuitive: sensing things before anyone says them out loud
+      - perceptive: catching the small shifts other people miss
+      - reading the room: sensing the mood and moving with it
+    deep:
+      - percipient: quick to sense what’s unspoken, sharp-eyed and gentle
+        sounds: per-SIP-ee-unt
+        from: Latin percipere, “to perceive”
+      - alive to: keenly aware of what someone else is feeling
 
   - word: open
     mix: peaceful 60, joyful 25, scared 15
@@ -148,6 +285,15 @@ feelings:
     opposite: defensive
     opener: I’m feeling pretty open today — want to really talk?
     self: Open doesn’t mean unprotected. You still get to choose.
+    synonyms:
+      - receptive: ready to take in whatever comes
+      - unguarded: walls down, nothing held in reserve
+      - disarmed: someone’s warmth made your defenses drop
+      - candid: honest and straightforward, nothing tucked away
+      - forthcoming: offering things up freely, not holding back
+    deep:
+      - expansive: in a warm, talkative mood, ready to share and spill
+      - unbuttoned: loosened up, your buttoned-up self set aside
 
   - word: vulnerable
     mix: scared 40, peaceful 35, sad 25
@@ -158,6 +304,16 @@ feelings:
     body: shaky, warm face, heart loud
     say: This is hard for me to say, but I want you to know.
     self: Vulnerable is brave, even when it shakes.
+    synonyms:
+      - exposed: out in the open, without your usual cover
+      - raw: tender to the touch, nothing between you and the feeling
+      - laid bare: stripped of pretense, the truth showing
+      - fragile: easily shaken right now — handle with care
+      - out on a limb: you’ve put yourself out there with no safety net
+      - heart on my sleeve: showing your feelings for anyone to see
+      - defenseless: no armor left, and you know it
+    deep:
+      - unbosomed: you’ve poured out your secret heart, and feel lighter for it
 
   - word: bonded
     mix: joyful 45, peaceful 40, powerful 15
@@ -166,6 +322,16 @@ feelings:
     see: kindred
     text: I feel so bonded with you after this week.
     self: Shared hard things grow deep roots.
+    synonyms:
+      - tight-knit: closely joined, like a well-made sweater
+      - shoulder to shoulder: side by side, facing the hard stuff as one
+      - in the same boat: going through the same thing, together
+      - solid: steady and sure of each other, whatever comes
+    deep:
+      - comradely: warm and loyal, like people who’ve weathered a storm together
+        from: Spanish camarada, “roommate,” from cámara, “room”
+      - knit together: joined heart to heart by what you’ve shared
+        from: 1 Samuel 18, where Jonathan’s soul was “knit” with David’s
 
   - word: kindred
     mix: joyful 55, peaceful 45
@@ -174,6 +340,15 @@ feelings:
     see: understood
     text: You’re such a kindred spirit. Seriously.
     self: Your people exist. Here’s one of them.
+    synonyms:
+      - like-minded: thinking the same way about the things that matter
+      - akin: related in spirit, if not by blood
+      - cut from the same cloth: alike right down to the threads
+      - birds of a feather: so alike you were bound to flock together
+      - in good company: among people who share your quirks and loves
+    deep:
+      - congenial: pleasantly alike in spirit and taste
+        from: Latin com-, “together,” + genius, “spirit”
 
   - word: welcomed
     mix: joyful 55, peaceful 45
@@ -182,6 +357,9 @@ feelings:
     see: included
     text: Thank you for making me feel so welcome.
     self: Let the welcome all the way in.
+    synonyms:
+      - among friends: surrounded by people glad to have you
+      - warmly received: greeted like someone they’d been hoping to see
 
   - word: empathetic
     mix: peaceful 50, sad 30, joyful 20
@@ -190,3 +368,11 @@ feelings:
     see: [compassionate, attuned]
     say: I can feel how much this hurts. I’m here.
     self: Their feelings aren’t yours to carry home.
+    synonyms:
+      - in their shoes: seeing it from right where they stand
+      - feeling for them: your heart going out to someone
+    deep:
+      - commiserating: sharing in someone’s misery so it isn’t theirs alone
+        from: Latin com-, “with,” + miserari, “to pity”
+      - vicarious: feeling it secondhand, as if it were happening to you
+        from: Latin vicarius, “substitute” — the same root as vicar

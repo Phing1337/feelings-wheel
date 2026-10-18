@@ -25,6 +25,10 @@ const FALLBACK = {
   'motion-dock-spin': '24s · none',
   'motion-tint': '0.9s · power2.out',
   'motion-wheel-seg': '0.7s · power3.out',
+  'motion-synonyms-open': '0.9s · back.out(1.3) · stagger 28ms · swirl 35°',
+  'motion-synonyms-swap': '0.75s · power3.inOut',
+  'motion-synonyms-close': '0.45s · power2.in · stagger 12ms',
+  'motion-synonyms-revolve': '90–140s · none',
   'motion-aura-drift': '60–110s · sine.inOut · drift 18% · breathe 12% · shimmer 8°',
   'motion-aura-shift': '8s · sine.inOut · stagger 0.7s',
   'layout-center-y': '42%',
@@ -40,7 +44,10 @@ const FALLBACK = {
   'layout-orbit-field': '150 × 250',
   'layout-orbit-focus': '1.1×',
   'layout-orbit-ring': '122 × 132 · 0.6×',
-  'layout-orbit-rest': 'fade 40% · push 1.15×'
+  'layout-orbit-rest': 'fade 40% · push 1.15×',
+  'layout-synonyms-center': '1×',
+  'layout-synonyms-inner': '90 × 92 · 0.6× · squeeze 12%',
+  'layout-synonyms-outer': '160 × 160 · 0.56× · squeeze 22%'
 };
 
 const cache = new Map();

@@ -31,15 +31,21 @@ function head_html() {
   return `<div class="handle"></div><div class="dtitle">How I'm feeling</div><div class="dsum">${FW.summary(agg)}</div>` +
     `<div class="dbar">${agg.map(p => `<span style="width:${(p.w * 100).toFixed(1)}%;background:${p.color}"></span>`).join('')}</div>`;
 }
+/* a word from the thesaurus borrows its feeling's body sense and voice, and says which feeling it
+   belongs to; every card ends with all the words for its feeling, tappable */
 function card_html(p) {
-  const f = FW.byId[p.id], c = FW.content(p.id), esc = FW.esc;
+  const f = FW.byId[p.id], h = f.head ? FW.byId[f.head] : null, c = FW.content(h ? h.id : p.id), esc = FW.esc;
+  const ws = [...(h ? [h] : []), ...FW.words(p.id)];
   return `<div class="card${openIds.has(p.id) ? ' open' : ''}" data-id="${p.id}"><div class="ch"><span class="dot" style="background:${FW.fillCSS(f)}"></span>` +
     `<div class="cw">${esc(f.word)}<div class="mix">${FW.mixChips(f)}</div></div>` +
     `<div class="amt" title="How much">${[1, 2, 3].map(n => `<b data-n="${n}" class="${n <= p.amt ? 'on' : ''}"></b>`).join('')}</div></div>` +
     `<div class="cbody">${f.def ? `<div class="cdef">${esc(f.def)}</div>` : ''}` +
+    (h ? `<div class="csyn">\u2248 a word for <b>${esc(h.word)}</b>${f.sounds ? ` · <i>${esc(f.sounds)}</i>` : ''}${f.from ? ` · from ${esc(f.from)}` : ''}</div>` : '') +
     (c.body ? `<div class="csense">In your body: ${esc(c.body)}</div>` : '') +
     (c.voice || []).map(v => `<div class="voice" style="--c:${f.avg}">\u201c${esc(v)}\u201d</div>`).join('') +
-    (c.examples || []).map((e, i) => `<div class="ex" data-ex="${i}"><em>${esc(TAG[e.tag] || e.tag)} · tap to copy</em>${esc(e.s)}</div>`).join('') +
+    (h ? [] : c.examples || []).map((e, i) => `<div class="ex" data-ex="${i}"><em>${esc(TAG[e.tag] || e.tag)} · tap to copy</em>${esc(e.s)}</div>`).join('') +
+    (ws.length ? `<div class="thes"><em>\u2248 Words for ${esc((h || f).word)}</em><div class="tw">` +
+      ws.map(w => `<button class="tchip${w === h ? ' head' : ''}${w.deep ? ' deep' : ''}${w.id === p.id ? ' cur' : ''}" data-word="${w.id}">${esc(w.word)}</button>`).join('') + '</div></div>' : '') +
     `<div class="crow"><button class="btn sm" data-act="explore">Explore</button><button class="btn sm" data-act="share">Share</button><button class="btn sm" data-act="unpin">Unpin</button></div></div></div>`;
 }
 function render(fresh) {
@@ -65,14 +71,14 @@ function expand(card) {
       const st = new SplitText(def, { type: 'words' });
       gsap.from(st.words, { opacity: 0, y: 10, duration: 0.45, stagger: 0.025, ease: 'power3.out', onComplete: () => st.revert() });
     }
-    gsap.from(card.querySelectorAll('.csense,.voice,.ex,.crow'), { opacity: 0, y: 10, duration: FW.dur(0.4), stagger: 0.05, delay: 0.15, ease: 'power2.out' });
+    gsap.from(card.querySelectorAll('.csyn,.csense,.voice,.ex,.thes,.crow'), { opacity: 0, y: 10, duration: FW.dur(0.4), stagger: 0.05, delay: 0.15, ease: 'power2.out' });
   } else openIds.delete(id);
 }
 
 function journal() {
   const d = new Date(), pins = FW.pinnedSorted();
   const lines = [`## How I'm feeling — ${d.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}`, '', FW.summary(), ''];
-  pins.forEach(p => { const f = FW.byId[p.id]; lines.push(`- ${'●'.repeat(p.amt)}${'○'.repeat(3 - p.amt)} **${f.word}** — ${f.def}`); });
+  pins.forEach(p => { const f = FW.byId[p.id], h = f.head && FW.byId[f.head]; lines.push(`- ${'●'.repeat(p.amt)}${'○'.repeat(3 - p.amt)} **${f.word}**${h ? ` (\u2248 ${h.word})` : ''} — ${f.def}`); });
   lines.push('', 'Mix: ' + FW.aggregate().map(p => `${FW.fam[p.fam].name} ${Math.round(p.w * 100)}%`).join(' · '));
   return lines.join('\n');
 }
@@ -84,6 +90,8 @@ function onBody(e) {
   if (b && card) { FW.setAmt(card.dataset.id, +b.dataset.n); return; }
   const ex = t.closest('.ex');
   if (ex && card) { const c = FW.content(card.dataset.id); FW.copy(c.examples[+ex.dataset.ex].s); gsap.fromTo(ex, { scale: 0.97 }, { scale: 1, duration: 0.5, ease: 'elastic.out(1,.5)' }); return; }
+  const tw = t.closest('.tchip');
+  if (tw) { FW.closeDrawer(); setTimeout(() => FW.emit('explore', tw.dataset.word), 250); return; }
   if (act) {
     const a = act.dataset.act, id = card && card.dataset.id;
     if (a === 'write') { FW._builderOpen = !FW._builderOpen; const bl = body.querySelector('#builder'); bl.classList.toggle('open', FW._builderOpen); if (FW._builderOpen) gsap.from(bl, { opacity: 0, y: -8, duration: FW.dur(0.35) }); }
@@ -96,8 +104,8 @@ function onBody(e) {
     }
     if (a === 'explore' && id) { FW.closeDrawer(); setTimeout(() => FW.emit('explore', id), 250); }
     if (a === 'share' && id) {
-      const f = FW.byId[id], ex = (FW.content(id).examples || []).find(x => x.tag === 'text');
-      FW.share(ex ? ex.s : `Feeling ${f.word} right now. ${f.def}`, 'How I\u2019m feeling');
+      const f = FW.byId[id], ex = !f.head && (FW.content(id).examples || []).find(x => x.tag === 'text');
+      FW.share(ex ? ex.s : `Feeling ${f.word} right now${f.head ? ' \u2014 ' : '. '}${f.def}`, 'How I\u2019m feeling');
     }
     if (a === 'unpin' && id) { openIds.delete(id); FW.unpin(id); }
     return;

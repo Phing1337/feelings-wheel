@@ -87,12 +87,18 @@ function flight(id, srcEl, done) {
   landing.delete(id); const t = targets()[id]; landing.add(id);
   const mid = t ? t.mid : -Math.PI / 2, sc = wr.width / 100;
   const wx = wr.left - fr.left + (C + RM * Math.cos(mid)) * sc, wy = wr.top - fr.top + (C + RM * Math.sin(mid)) * sc;
+  /* bow the arc sideways off the straight line (upward when it can), kept inside the frame */
+  const dx = wx - sx, dy = wy - sy, L = Math.hypot(dx, dy) || 1, bow = Math.min(120, L * 0.3);
+  let nx = -dy / L, ny = dx / L;
+  if (ny > 0 || (ny === 0 && nx < 0)) { nx = -nx; ny = -ny; }
+  const kx = Math.max(24, Math.min(fr.width - 24, (sx + wx) / 2 + nx * bow));
+  const ky = Math.max(24 + (FW.safe ? FW.safe.top : 0), Math.min(fr.height - 24, (sy + wy) / 2 + ny * bow));
   const clone = FW.bubble(f, { size: 100, static: true });
   FW.els.fly.appendChild(clone);
   gsap.set(clone, { x: sx, y: sy, scale: size / 100 });
   gsap.timeline({ onComplete: () => { clone.remove(); done && done(); } })
     .to(clone, { scale: size / 100 * 1.15, duration: FW.dur(0.16), ease: 'power2.out' })
-    .to(clone, { motionPath: { path: [{ x: sx, y: sy }, { x: (sx + wx) / 2 + (wx < sx ? -50 : 50), y: Math.min(sy, wy) - 90 }, { x: wx, y: wy }], curviness: 1.4 },
+    .to(clone, { motionPath: { path: [{ x: sx, y: sy }, { x: kx, y: ky }, { x: wx, y: wy }], curviness: 1.4 },
       scale: 0.12, duration: FW.dur(0.75), ease: 'power2.in' });
 }
 
@@ -103,11 +109,12 @@ FW.initDock = () => {
   segs.clear();
   if (!FW.reduce) gsap.to(coreFill, { rotation: 360, duration: 24, ease: 'none', repeat: -1 });
   syncWheel();
+  /* the wheel sits top left: tap it, or pull it down, to open the drawer */
   let y0 = null;
   FW.els.dock.addEventListener('pointerdown', e => { y0 = e.clientY; });
   FW.els.dock.addEventListener('pointerup', e => {
     if (y0 === null) return;
-    const dy = y0 - e.clientY; y0 = null;
+    const dy = e.clientY - y0; y0 = null;
     if (dy > 24 || Math.abs(dy) < 8) FW.openDrawer ? FW.openDrawer() : FW.toast('Drawer arrives next');
   });
 };

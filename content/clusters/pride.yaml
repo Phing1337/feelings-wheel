@@ -23,6 +23,46 @@ feelings:
     text: I did it!! I’m honestly so proud of myself.
     say: I’m really proud of how I handled that.
     self: Celebrate it. Don’t rush past it.
+    synonyms:
+      - accomplished: like you’ve really done something
+      - victorious: you won, and it shows
+      - successful: it worked, and you’re the one who made it work
+      - beaming: smiling so wide it spills over
+      - pleased with myself: quietly delighted with what you pulled off
+      - patting myself on the back: giving yourself the credit you’ve earned
+      - walking tall: shoulders back, chin up, taking up space
+      - head held high: nothing to hide and plenty to show
+      - riding high: on a winning streak and loving it
+      - in my glory: at your very best, and soaking it up
+      - puffed up: chest out, swelling a little with your own success
+      - strutting: showing off a bit, and enjoying every step
+      - preening: smoothing your feathers and admiring the effect
+    deep:
+      - kvelling: bursting with pride over someone you love
+        sounds: KVEL-ing
+        lang: Yiddish
+        from: Yiddish kveln, from Middle High German quellen, “to well up”
+      - shepping naches: soaking up joy from what your loved ones achieve
+        sounds: SHEP-ing NAKH-es
+        lang: Yiddish
+        from: Yiddish nakhes, from Hebrew nachat, “contentment”
+      - triumphant: celebrating a hard-won victory, banners flying
+        from: Latin triumphus, a Roman general’s victory parade
+      - pleased as punch: thoroughly, gleefully pleased with yourself
+        from: Mr. Punch, the gleeful puppet of Punch and Judy
+      - fit to burst: so proud you might pop
+      - glorying: reveling proudly in what you’ve done
+      - laureled: crowned with honors, like a victor of old
+        from: the laurel wreaths worn by Greek and Roman victors
+      - vainglorious: proud to the point of bragging
+        sounds: vayn-GLOR-ee-us
+        from: Latin vana gloria, “empty glory”
+      - hubristic: proud enough to tempt fate
+        sounds: hyoo-BRIS-tik
+        from: Greek hubris, “insolence” — pride that offends the gods
+      - orgulous: proud, in a grand old word from the age of knights
+        sounds: OR-gyuh-lus
+        from: Old French orgueil, “pride”
 
   - word: appreciated
     mix: joyful 50, powerful 30, peaceful 20
@@ -36,6 +76,22 @@ feelings:
     text: What you said today made me feel really appreciated. Thank you.
     say: It means a lot that you noticed.
     self: Let it land. You don’t have to wave it away.
+    synonyms:
+      - valued: what you bring is counted, and counted on
+      - recognized: your part didn’t go unseen
+      - acknowledged: someone named what you did, out loud
+      - noticed: someone clocked the little things you do
+      - credited: your name is on it, as it should be
+      - respected: taken seriously, your work given its due
+      - admired: looked up to for something you did
+      - flattered: pleased, and a bit pink, that they think so well of you
+      - affirmed: told plainly that you’re doing well
+    deep:
+      - esteemed: held in warm, steady regard
+        from: Latin aestimare, “to value”
+      - well thought of: quietly respected by the people who count
+      - in someone’s good books: in favor with someone, and enjoying it
+      - lionized: treated like a celebrity, praise all round
 
   - word: vindicated
     mix: powerful 70, joyful 15, mad 15
@@ -49,3 +105,19 @@ feelings:
     text: Turns out I was right about that. Feeling pretty vindicated, not gonna lie.
     say: It feels good to have my instincts confirmed.
     self: Your gut was right. Remember that next time.
+    synonyms:
+      - proven right: the facts finally came down on your side
+      - validated: your hunch or worry confirmed as fair
+      - justified: you had good reason all along
+      - in the right: on the side of the facts, and you know it
+      - cleared: no longer under suspicion or blame
+      - smug: quietly, privately pleased you were right
+      - crowing: a little loud about having been right
+    deep:
+      - exonerated: cleared of blame, the weight lifted
+        sounds: ig-ZON-uh-ray-tid
+        from: Latin exonerare, “to unburden”
+      - exculpated: formally freed from blame
+        from: Latin ex-, “out of” + culpa, “blame”
+      - borne out: shown right by how things turned out
+      - having the last laugh: doubted all along, and right in the end

@@ -24,6 +24,38 @@ feelings:
     see: intrigued
     text: I’m so curious what you’ll think of this.
     self: Follow the thread and see where it goes.
+    synonyms:
+      - inquisitive: always asking one more question
+      - interested: leaning in because you want to know more
+      - wondering: turning a question over and over in your mind
+      - inquiring: a mind out looking for answers
+      - full of questions: every answer just opens another door
+      - nosy: very curious about other people’s business
+      - snoopy: tempted to peek where you maybe shouldn’t
+      - dying to know: so curious that not knowing almost hurts
+      - all ears: listening hard, ready for every detail
+      - adventurous: up for the new, the strange and the untried
+    deep:
+      - zetetic: always seeking, always asking — curiosity as a way of life
+        sounds: zuh-TET-ik
+        from: Greek zētein, “to seek”
+      - curiouser and curiouser: more curious the deeper you go
+        from: Lewis Carroll’s Alice’s Adventures in Wonderland, 1865
+      - Socratic: in a questioning mood, gently poking at what everyone assumes
+        from: Socrates, who taught by asking question after question
+      - omnivorous: hungry to know about absolutely everything
+        sounds: om-NIV-er-us
+        from: Latin omnivorus, “all-devouring”
+      - venturesome: ready to wander off the map just to see what’s there
+      - burning with curiosity: curiosity hot enough to keep you up at night
+      - nebby: nosy, Pittsburgh style
+        from: Scots neb, “nose,” carried over by Scots-Irish settlers
+      - stickybeaking: having a nosy look around, Australian style
+        from: Australian slang stickybeak, “a busybody”
+      - earwigging: ears pricked, quietly listening in on someone else’s talk
+        from: British slang
+      - rubbernecking: craning your neck to see what’s going on
+        from: 1890s American slang
 
   - word: intrigued
     mix: joyful 50, powerful 30, scared 20
@@ -32,6 +64,16 @@ feelings:
     stronger: fascinated
     text: Okay, now I’m intrigued. Tell me more.
     self: Mystery is fun when you know you’re safe.
+    synonyms:
+      - drawn in: pulled toward something you can’t quite figure out
+      - puzzled: stuck on something that doesn’t add up — yet
+      - mystified: baffled in a way that makes you lean closer
+      - in suspense: kept guessing about what happens next
+      - on the edge of my seat: gripped, waiting for the next twist
+    deep:
+      - quizzical: one eyebrow up — puzzled, and a little amused
+        sounds: KWIZ-ih-kul
+      - on the scent: following a clue and closing in
 
   - word: fascinated
     mix: joyful 60, powerful 25, peaceful 15
@@ -41,6 +83,22 @@ feelings:
     stronger: captivated
     text: I’m honestly fascinated by this.
     self: Let yourself go deep on it.
+    synonyms:
+      - absorbed: so taken up by it you forget everything else
+      - gripped: held tight — you can’t put it down
+      - immersed: in all the way, over your head in it
+      - into it: really, properly interested
+      - invested: you care how it turns out now
+      - obsessed: can’t stop thinking or talking about it
+      - geeking out: gleefully nerdy about something you love
+    deep:
+      - engrossed: attention swallowed up, every last bit of it
+        from: Old French en gros, “wholesale” — attention bought up whole
+      - enwrapped: wrapped up in something, mind and all
+      - down a rabbit hole: following one fascinating thread after another
+        from: Alice’s tumble into Wonderland
+      - mad keen: wildly, gloriously into something
+        from: British slang
 
   - word: entranced
     aliases: [spellbound, mesmerized]
@@ -52,6 +110,24 @@ feelings:
     body: still, wide-eyed, time slowing down
     text: I was completely entranced by you tonight.
     self: Stay in it a moment longer.
+    synonyms:
+      - hypnotized: held so still you forget to blink
+      - lost to the world: the world could end and you wouldn’t notice
+      - lost in the moment: fully here, and nowhere else
+      - swept away: carried off by music, beauty or feeling
+      - rooted to the spot: so held by it you couldn’t move if you tried
+      - in a trance: so absorbed you go still, half here and half elsewhere
+    deep:
+      - transfixed: pinned in place by what you’re seeing
+        from: Latin transfigere, “to pierce through”
+      - in a reverie: drifting in a waking dream
+        sounds: REV-uh-ree
+        from: Old French resverie, “raving” — it softened into daydreaming
+      - away with the fairies: dreamily elsewhere, off in a world of your own
+        from: British slang
+      - agaze: gazing and gazing, unable to look away
+        sounds: uh-GAYZ
+        from: a- + gaze, like aglow and agape
 
   - word: captivated
     also: desire
@@ -61,6 +137,19 @@ feelings:
     softer: fascinated
     text: I was captivated the whole time.
     self: Notice what pulls you in. It says something about you.
+    synonyms:
+      - riveted: eyes fixed, attention locked in place
+      - all eyes: watching every move, missing nothing
+      - glued to it: can’t tear yourself away
+      - won over: charmed past all your doubts
+    deep:
+      - rapt: held so completely you forget yourself
+        from: Latin raptus, “carried off” — the root of rapture
+      - enthralled: held captive by delight
+        from: Old Norse þræll, “slave” — to be held in thrall
+      - beguiled: pleasantly taken in, maybe a little cleverly
+        from: be- + guile, “trickery”
+      - becharmed: held softly in place, as if by a gentle spell
 
   - word: enchanted
     mix: joyful 60, peaceful 40
@@ -69,6 +158,17 @@ feelings:
     see: amazed
     text: This place is enchanting. Wish you were here.
     self: Hold on to the magic. It’s real.
+    synonyms:
+      - charmed: smiling at something sweet and lovely
+      - under a spell: held by a magic you don’t want broken
+      - bewitched: caught up in something so lovely it feels like sorcery
+      - wide-eyed: seeing everything fresh, the way a child does
+    deep:
+      - enraptured: carried off on a wave of delight
+      - ensorcelled: under a sorcerer’s spell — the most magical word for it
+        sounds: en-SOR-suld
+        from: Old French ensorceler, “to bewitch”
+      - aglow: softly shining, lit from within
 
   - word: amazed
     aliases: [astonished]
@@ -79,6 +179,32 @@ feelings:
     see: surprised
     say: That’s incredible. How did you do that?
     text: I’m genuinely amazed by what you pulled off.
+    synonyms:
+      - stunned: stopped in your tracks
+      - astounded: amazement turned all the way up
+      - blown away: knocked back by how good it is
+      - floored: so surprised you could sit right down
+      - mind-blown: your whole picture of things just changed
+      - dumbstruck: so amazed the words won’t come
+      - open-mouthed: jaw literally dropped
+      - staggered: reeling, as if the floor just tilted under you
+    deep:
+      - flabbergasted: astonished to the point of sputtering
+        from: 1772 slang, first spotted in a list of trendy new words
+      - gobsmacked: so shocked your hand flies to your mouth
+        from: British slang, from gob, “mouth”
+      - thunderstruck: amazed as if hit by a bolt from the blue
+      - dumbfounded: struck speechless and confused at once
+        from: dumb + confound
+      - stupefied: hit so hard by it your thinking stalls
+        from: Latin stupefacere, “to stun”
+      - agape: mouth wide open in wonder
+        sounds: uh-GAYP
+        from: a- + gape — not the Greek agapē, “love”
+      - goggle-eyed: eyes wide and staring, out on stalks
+      - struck all of a heap: astonished all at once, as if you’d crumpled
+        from: old British slang
+      - mazed: dazed and bewildered — the old word hiding inside amazed
 
   - word: awed
     aliases: [in awe, awestruck]
@@ -89,6 +215,20 @@ feelings:
     body: chills, goosebumps, a hush in your chest
     text: I was in awe the whole time.
     self: Small in a good way. Let it widen you.
+    synonyms:
+      - humbled: made small in the best way
+      - speechless: no words are big enough for it
+      - dwarfed: made tiny by something vast
+      - lost in wonder: swallowed up by the size and beauty of it
+      - marveling: lingering in amazement, taking it all in
+      - hushed: gone quiet inside before something far bigger than you
+    deep:
+      - reverent: hushed and respectful before something greater
+        from: Latin revereri, “to stand in awe of”
+      - wonderstruck: struck clean through with wonder
+      - overawed: so in awe it’s almost daunting
+      - wonder-wounded: struck so deep by wonder it almost aches
+        from: Shakespeare’s Hamlet — “like wonder-wounded hearers”
 
   - word: inspired
     also: hope
@@ -98,6 +238,22 @@ feelings:
     see: [hopeful, determined]
     text: Feeling so inspired after talking with you.
     self: Write it down before it fades.
+    synonyms:
+      - lit up: an idea switched something on in you
+      - full of ideas: more possibilities than you can write down
+      - creative: in the mood to make something
+      - motivated: suddenly wanting to get going on it
+      - emboldened: given the nerve to try
+      - enlivened: livelier, brighter, more yourself
+      - awakened: something in you just woke up
+    deep:
+      - Promethean: daringly creative, like you’ve stolen fire
+        sounds: proh-MEE-thee-un
+        from: Prometheus, who stole fire from the gods for humankind
+      - quickened: newly alive inside, like the first flutter of something growing
+        from: Old English cwic, “alive” — as in “the quick and the dead”
+      - enkindled: set alight, with ideas catching like kindling
+      - inspirited: new spirit breathed into you, heart and courage both
 
   - word: amused
     also: joy
@@ -107,6 +263,26 @@ feelings:
     stronger: playful
     text: Still laughing about earlier, honestly.
     self: Let yourself laugh. It’s medicine.
+    synonyms:
+      - tickled: something got you right in the funny bone
+      - entertained: enjoying the show, whatever it is
+      - chuckling: a quiet laugh, mostly to yourself
+      - cracking up: the laughter’s escaping now
+      - in stitches: laughing so hard it hurts
+    deep:
+      - wry: amused in a dry, sideways way
+      - bemused: half puzzled, half tickled
+      - diverted: pleasantly entertained — an elegant old word
+        from: Latin divertere, “to turn aside”
+      - chortling: gleeful, snorting little laughs
+        from: coined by Lewis Carroll in 1871 — chuckle + snort
+      - corpsing: breaking into giggles when you really, really shouldn’t
+        from: British theater slang for breaking up on stage
+      - rolling in the aisles: helpless with laughter, like a whole crowd
+      - schadenfreude: a guilty little glee at someone else’s mishap
+        sounds: SHAH-den-froy-duh
+        from: German Schaden, “harm” + Freude, “joy”
+        lang: German
 
   - word: dazzled
     mix: joyful 65, powerful 20, scared 15
@@ -115,6 +291,18 @@ feelings:
     see: amazed
     text: I’m still dazzled by your performance.
     self: Admiration is a lovely way to feel.
+    synonyms:
+      - bowled over: toppled like a skittle by sheer brilliance
+      - starstruck: giddy in the presence of someone you admire
+      - impressed: struck by real skill, talent or quality
+      - wowed: freshly, brightly impressed
+      - dazed: a little dizzy from all that brilliance
+    deep:
+      - bedazzled: dazzled so thoroughly you’re seeing sparkles
+      - beglamoured: under glamour’s spell, everything shimmering a little
+        sounds: bih-GLAM-erd
+        from: glamour first meant a magic spell — Scots, from grammar
+      - saucer-eyed: eyes gone round as saucers at something brilliant
 
   - word: moved
     mix: peaceful 40, sad 30, joyful 30
@@ -124,6 +312,22 @@ feelings:
     body: tight throat, misty eyes
     text: I was so moved by what you said.
     self: Not all tears are sad. Some are full.
+    synonyms:
+      - touched: something reached you and stayed
+      - stirred: shaken awake inside, in a good way
+      - choked up: a lump in your throat you can’t talk past
+      - misty-eyed: tears close, but kind ones
+      - welling up: the tears are rising
+      - emotional: feeling it all a bit more than usual
+      - overcome: too much feeling to hold back
+      - softened: something gentle slipped past your guard
+    deep:
+      - verklempt: too full of feeling to talk — just give me a minute
+        sounds: fer-KLEMPT
+        lang: Yiddish
+      - undone: so moved you come gently apart
+      - brimming: full to the edge, tears just about to spill
+      - heart-struck: struck right to the heart by something tender or true
 
   - word: surprised
     mix: joyful 40, scared 40, powerful 20
@@ -132,6 +336,24 @@ feelings:
     stronger: amazed
     text: Wow, I did not see that coming!
     self: Give yourself a second to catch up.
+    synonyms:
+      - startled: a quick jump — your body reacted before you did
+      - taken aback: stopped short by something unexpected
+      - caught off guard: it came at you from nowhere
+      - shocked: surprise with a sharp edge of alarm
+      - blindsided: hit by something you never saw coming
+      - thrown for a loop: spun around, still finding your bearings
+    deep:
+      - knocked for six: utterly thrown, usually by big news
+        from: cricket, where a six sails clean over the boundary
+      - wrong-footed: caught leaning the wrong way by a sudden turn
+      - caught on the hop: caught unprepared, with one foot still in the air
+        from: British informal
+      - nonplussed: so thrown you don’t know what to say or do
+        sounds: non-PLUST
+        from: Latin non plus, “no more” — nothing more to be said
+      - poleaxed: knocked flat by surprise, as if felled with an axe
+        from: British slang — a poleaxe was a medieval battle-axe
 
   - word: eager
     mix: joyful 65, powerful 35
@@ -140,3 +362,20 @@ feelings:
     see: excited
     text: So eager to see you this weekend!
     self: Enjoy the anticipation. It’s part of the fun.
+    synonyms:
+      - keen: sharply interested and wanting in
+      - enthusiastic: wholeheartedly into the idea
+      - raring to go: ready, set, just waiting for “go”
+      - champing at the bit: restless to start, like a horse chewing its bit
+      - game: willing to give anything a try
+      - up for it: in, ready, just say the word
+      - itching: so ready to start you can hardly sit still
+      - gung-ho: charging in at full tilt, maybe a touch too fast
+    deep:
+      - keen as mustard: sharp, bright and eager, with real bite to it
+        from: British idiom
+      - bright-eyed and bushy-tailed: alert, lively and ready for anything
+      - atiptoe: up on your toes with eager expectation
+        sounds: uh-TIP-toe
+      - fain: gladly willing — an old word, as in “I would fain go”
+      - straining at the leash: eager to go, held back for now

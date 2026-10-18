@@ -1,6 +1,6 @@
 /* Feelings wheel — app styles. Colours, fonts, radii and sizes point at design tokens (src/tokens.css). */
-:root{--bg:var(--fw-color-ink-bg);--fg:var(--fw-color-ink-fg);--mute:var(--fw-color-ink-mute);--line:var(--fw-color-ink-line);--card:var(--fw-color-ink-card);--glow:rgba(0,0,0,0);--sat:env(safe-area-inset-top,0px);--sab:env(safe-area-inset-bottom,0px)}
-.frame[data-theme=poster]{--bg:var(--fw-color-poster-bg);--fg:var(--fw-color-poster-fg);--mute:var(--fw-color-poster-mute);--line:var(--fw-color-poster-line);--card:var(--fw-color-poster-card)}
+:root{--bg:var(--fw-color-ink-bg);--fg:var(--fw-color-ink-fg);--mute:var(--fw-color-ink-mute);--line:var(--fw-color-ink-line);--card:var(--fw-color-ink-card);--glow:rgba(0,0,0,0);--shim:rgba(244,242,255,.7);--sat:env(safe-area-inset-top,0px);--sab:env(safe-area-inset-bottom,0px)}
+.frame[data-theme=poster]{--bg:var(--fw-color-poster-bg);--fg:var(--fw-color-poster-fg);--mute:var(--fw-color-poster-mute);--line:var(--fw-color-poster-line);--card:var(--fw-color-poster-card);--shim:rgba(20,19,26,.5)}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;height:100%;background:var(--fw-color-page);font-family:var(--fw-font-body);overscroll-behavior:none}
 body{display:grid;place-items:center;overflow:hidden}
@@ -10,11 +10,17 @@ button{font:inherit;color:inherit;touch-action:manipulation}
 @media (max-width:500px){.frame{width:100vw;height:100vh;height:100dvh;border-radius:0;box-shadow:none}}
 .aura{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(70% 45% at 50% 42%,var(--glow),transparent 72%)}
-.stage{position:absolute;inset:0}
+.stage{position:absolute;inset:0;touch-action:none}
 
-/* top bar + trail */
-.topbar{position:absolute;left:0;right:0;top:var(--sat);padding:16px 16px 0;display:flex;align-items:center;gap:8px;z-index:6}
-.trail{flex:1;min-width:0;display:flex;align-items:center;gap:4px;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+/* top bar: my wheel (top left) + theme */
+.topbar{position:absolute;left:0;right:0;top:var(--sat);padding:12px 16px 0 var(--fw-space-edge);display:flex;align-items:center;justify-content:space-between;gap:8px;z-index:8;pointer-events:none}
+.topbar>*{pointer-events:auto}
+/* bottom stack: the breadcrumb trail sits just above the peek card */
+.hud{position:absolute;left:var(--fw-space-edge);right:var(--fw-space-edge);bottom:calc(14px + var(--sab));z-index:7;display:flex;flex-direction:column;gap:8px;pointer-events:none}
+.hud>*{pointer-events:auto}
+.trail{display:flex;align-items:center;gap:4px;overflow-x:auto;scrollbar-width:none}
+.trail:empty{display:none}
+.trail.over{-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%);mask-image:linear-gradient(90deg,transparent,#000 14%)}
 .trail::-webkit-scrollbar{display:none}
 .chip{flex:none;border:0;background:var(--line);color:var(--fg);font:600 12px/1 var(--fw-font-body);padding:8px 11px;border-radius:99px;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
 .chip i{width:9px;height:9px;border-radius:50%;display:inline-block}
@@ -32,14 +38,23 @@ button{font:inherit;color:inherit;touch-action:manipulation}
 .blend .fill{inset:-30%}
 .label{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--ink);font-family:var(--fw-font-display);font-weight:var(--fw-font-weight-heavy);letter-spacing:var(--fw-tracking-label);line-height:1.1;pointer-events:none}
 .label.lite{text-shadow:0 1px 10px rgba(0,0,0,.35)}
-.cap{position:absolute;left:-60%;right:-60%;top:100%;text-align:center;font:700 10px/1 var(--fw-font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);white-space:nowrap;pointer-events:none}
+.cap{position:absolute;left:-60%;right:-60%;top:100%;text-align:center;font:700 10px/1 var(--fw-font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);white-space:nowrap;pointer-events:none;transition:opacity .3s}
 .node.is-focus .bubble{box-shadow:0 0 0 3px rgba(255,255,255,.16),0 22px 44px -14px rgba(0,0,0,.8)}
 .node.is-pinned .bubble::after{content:'';position:absolute;right:15%;top:15%;width:13%;height:13%;border-radius:50%;background:#fff;box-shadow:0 0 0 3px rgba(0,0,0,.18)}
 /* "+N more" bubble that pages through a long list of relatives */
 .node.more .bubble{background:var(--card);box-shadow:inset 0 0 0 2px var(--line),0 14px 26px -14px rgba(0,0,0,.6)}
 .node.more .label{color:var(--fg);font:800 30px/1 var(--fw-font-body);letter-spacing:-.02em}
-/* peek card */
-.peek{position:absolute;left:var(--fw-space-edge);right:var(--fw-space-edge);bottom:calc(110px + var(--sab));z-index:7;padding:14px 14px 14px 16px;border-radius:var(--fw-radius-card);background:var(--card);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 18px 40px -18px rgba(0,0,0,.6),inset 0 0 0 1px var(--line);visibility:hidden;opacity:0}
+.node.off{pointer-events:none}
+/* thesaurus: a dashed halo turns round a feeling that has words; while its words orbit, the feeling
+   wears a ring when it's out on a ring, and rare words carry a slow shimmer */
+.halo{position:absolute;inset:-12%;border-radius:50%;border:1.5px dashed var(--fg);opacity:0;transition:opacity .4s;pointer-events:none}
+.node.has-syn.is-focus .halo{opacity:.28;animation:fw-spin 40s linear infinite}
+.stage.orbiting .halo,.stage.orbiting .cap{opacity:0}
+.node.is-head .bubble{box-shadow:0 0 0 3px color-mix(in srgb,var(--fg) 60%,transparent),0 16px 30px -12px rgba(0,0,0,.7)}
+.node.deep .float::before{content:'';position:absolute;inset:-8%;border-radius:50%;pointer-events:none;background:conic-gradient(transparent 0 12%,var(--shim) 25%,transparent 38% 62%,var(--shim) 75%,transparent 88%);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 2.5px),#000 calc(100% - 2px));mask:radial-gradient(farthest-side,transparent calc(100% - 2.5px),#000 calc(100% - 2px));animation:fw-spin 12s linear infinite}
+@keyframes fw-spin{to{transform:rotate(1turn)}}
+/* peek card (bottom of the page, inside .hud) */
+.peek{position:relative;display:none;padding:14px 14px 14px 16px;border-radius:var(--fw-radius-card);background:var(--card);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 18px 40px -18px rgba(0,0,0,.6),inset 0 0 0 1px var(--line);visibility:hidden;opacity:0}
 .ph{display:flex;align-items:center;gap:12px}
 .pw{flex:1;min-width:0}
 .peek .dot{width:36px;height:36px;border-radius:50%;flex:none}
@@ -48,21 +63,28 @@ button{font:inherit;color:inherit;touch-action:manipulation}
 .mix{display:flex;gap:4px;flex-wrap:wrap;margin-top:6px}
 .mixchip{font:700 9.5px/1 var(--fw-font-body);letter-spacing:.06em;text-transform:uppercase;padding:4px 7px;border-radius:99px}
 .peek .def{font:500 13.5px/1.42 var(--fw-font-body);opacity:.86;margin-top:10px}
+.peek .say{margin-left:8px;font:italic 500 13px/1 var(--fw-font-body);letter-spacing:0;color:var(--mute)}
+.peek .from{margin-top:6px;font:500 12px/1.4 var(--fw-font-body);color:var(--mute)}
+.peek .from b{margin-right:4px;font:700 9.5px/1 var(--fw-font-body);letter-spacing:.14em;text-transform:uppercase}
+.prow{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.pchip{border:0;border-radius:99px;padding:7px 11px;background:var(--line);color:var(--fg);font:700 12px/1 var(--fw-font-body);cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.pchip i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.pchip.on{background:var(--fg);color:var(--bg)}
 .pinbtn{flex:none;border:0;border-radius:99px;padding:10px 14px;font:800 13px/1 var(--fw-font-body);cursor:pointer;background:var(--fg);color:var(--bg)}
 .pinbtn.on{background:var(--line);color:var(--fg)}
 
-/* dock wheel */
-.dock{position:absolute;left:0;right:0;bottom:calc(14px + var(--sab));margin:auto;width:max-content;z-index:8;display:flex;flex-direction:column;align-items:center;gap:5px;cursor:pointer;touch-action:none}
-.wheel{position:relative;width:var(--fw-container-dock);height:var(--fw-container-dock)}
+/* my wheel: top left — tap or pull down to open the drawer */
+.dock{display:flex;align-items:center;gap:9px;cursor:pointer;touch-action:none}
+.wheel{position:relative;flex:none;width:var(--fw-container-dock);height:var(--fw-container-dock)}
 .wheel svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
 .wheel .track{fill:none;stroke:var(--line);stroke-width:15}
-.wheel-core{position:absolute;inset:17px;border-radius:50%;overflow:hidden;background:var(--line)}
+.wheel-core{position:absolute;inset:22%;border-radius:50%;overflow:hidden;background:var(--line)}
 .wheel-core .fill{inset:-30%}
 .badge{position:absolute;right:-6px;top:-4px;min-width:20px;height:20px;padding:0 6px;border-radius:99px;background:var(--fg);color:var(--bg);font:800 11px/20px var(--fw-font-body);text-align:center}
 .dock-label{font:700 9.5px/1 var(--fw-font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
 .fly{position:absolute;inset:0;pointer-events:none;z-index:20}
 .fly .node{cursor:default}
-.toast{position:absolute;left:0;right:0;top:calc(62px + var(--sat));margin:auto;width:max-content;max-width:86%;padding:10px 16px;border-radius:99px;background:var(--fg);color:var(--bg);font:700 13px/1.2 var(--fw-font-body);z-index:30;opacity:0;pointer-events:none}
+.toast{position:absolute;left:0;right:0;top:calc(84px + var(--sat));margin:auto;width:max-content;max-width:86%;padding:10px 16px;border-radius:99px;background:var(--fg);color:var(--bg);font:700 13px/1.2 var(--fw-font-body);z-index:30;opacity:0;pointer-events:none}
 /* drawer */
 .scrim{position:absolute;inset:0;background:var(--fw-color-scrim);opacity:0;visibility:hidden;z-index:9}
 .drawer{position:absolute;left:0;right:0;bottom:0;height:92%;z-index:10;background:var(--bg);border-radius:var(--fw-radius-sheet) var(--fw-radius-sheet) 0 0;box-shadow:0 -24px 60px -20px rgba(0,0,0,.75),inset 0 1px 0 var(--line);display:flex;flex-direction:column;visibility:hidden}
@@ -94,6 +116,15 @@ button{font:inherit;color:inherit;touch-action:manipulation}
 .ex{margin-top:8px;padding:10px 12px;border-radius:14px;background:var(--bg);font:500 14px/1.45 var(--fw-font-body);cursor:pointer}
 .ex em{display:block;font:700 9.5px/1 var(--fw-font-body);letter-spacing:.14em;text-transform:uppercase;font-style:normal;color:var(--mute);margin-bottom:6px}
 .crow{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+/* thesaurus row on a card: every word for the feeling, the rare ones in italics */
+.csyn{margin-top:6px;font:500 13px/1.5 var(--fw-font-body);color:var(--mute)}
+.thes{margin-top:12px}
+.thes em{display:block;margin-bottom:8px;font:700 9.5px/1 var(--fw-font-body);letter-spacing:.14em;text-transform:uppercase;font-style:normal;color:var(--mute)}
+.tw{display:flex;flex-wrap:wrap;gap:6px}
+.tchip{border:0;border-radius:99px;padding:7px 11px;background:var(--bg);color:var(--fg);font:600 13px/1 var(--fw-font-body);cursor:pointer}
+.tchip.deep{font-style:italic}
+.tchip.head{font-weight:800}
+.tchip.cur{box-shadow:inset 0 0 0 1.5px var(--fg)}
 .empty{padding:36px 12px;text-align:center;color:var(--mute);font:500 14px/1.55 var(--fw-font-body)}
 .builder{border-radius:22px;background:var(--line);padding:14px;margin-bottom:14px;display:none}
 .builder.open{display:block}

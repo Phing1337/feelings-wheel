@@ -23,6 +23,46 @@ feelings:
     text: I’m feeling a bit insecure today. Could use a little reassurance.
     say: I’m in my head about where I stand with you.
     self: A wobble isn’t the truth about you.
+    synonyms:
+      - self-conscious: aware of every eye on you, and every flaw
+      - unsure of myself: second-guessing every move you make
+      - inadequate: like you don’t quite measure up
+      - not good enough: the old voice saying you fall short
+      - small: shrunk down and easy to overlook
+      - inferior: ranked below everyone else in the room
+      - unworthy: like you haven’t earned your place
+      - like a fraud: sure you’ll be found out any minute
+      - out of my depth: everyone else seems to know what they’re doing
+      - intimidated: shrinking next to someone who seems bigger
+      - shy: holding back, hoping not to be noticed
+      - timid: hesitant to speak up or take up space
+      - awkward: clumsy and stiff in your own skin
+      - embarrassed: cheeks hot, wishing you could rewind the moment
+      - ashamed: wanting to hide, sure something’s wrong with you
+      - in my head: overthinking every word you said
+    deep:
+      - diffident: shy and doubting your own worth
+        sounds: DIF-ih-dunt
+        from: Latin diffidere, “to mistrust” — here, yourself
+      - gauche: socially clumsy, all elbows
+        sounds: GOHSH
+        lang: French
+        from: literally “left” — while adroit comes from “to the right”
+      - abashed: suddenly unsure of yourself, cheeks burning
+        from: Old French esbaer, “to gape with astonishment”
+      - shamefaced: sheepish and ashamed, eyes on the floor
+        from: Old English sceamfæst, “shame-fast” — the face crept in later
+      - mortified: so embarrassed you want to vanish
+        from: Latin mortificare, “to put to death”
+      - found wanting: weighed, measured and judged not enough
+        from: the writing on Belshazzar’s wall, in the Book of Daniel
+      - unequal to the task: sure the job is bigger than you are
+      - on shaky ground: unsure the floor will hold you
+      - wobbly: steady a minute ago, now not so sure
+        from: British — “having a wobble” is a sudden loss of nerve
+      - unmoored: cut loose, nothing holding you in place
+      - like an ugly duckling: the odd one out, not yet knowing you’re a swan
+        from: Hans Christian Andersen’s 1843 fairy tale
 
   - word: jealous
     mix: mad 45, scared 35, sad 20
@@ -35,3 +75,22 @@ feelings:
     text: This is a little embarrassing, but I felt jealous today and I want to be honest about it.
     say: I’m happy for them and also a bit jealous. Both are true.
     self: Jealousy shows you what you want. Take note.
+    synonyms:
+      - envious: wanting what someone else has
+      - green with envy: so envious it practically shows
+      - possessive: holding tight, afraid to share what’s yours
+      - territorial: guarding your patch from newcomers
+      - suspicious: reading too much into every glance and text
+      - competitive: measuring yourself against them at every turn
+      - replaced: like someone new has taken your spot
+      - second best: like someone else always comes first
+      - clingy: wanting to keep them close and always in sight
+    deep:
+      - green-eyed: envy coloring everything you see
+        from: Iago’s “green-eyed monster” in Othello
+      - covetous: eyeing something that isn’t yours and wanting it badly
+        from: the tenth commandment — “Thou shalt not covet”
+      - emulous: envious in a way that makes you want to match them
+        from: Latin aemulus, “rivaling”
+      - proprietorial: possessive, as if you held the deed to them
+      - eaten up with envy: so envious it’s consuming you from inside

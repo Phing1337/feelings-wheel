@@ -1,12 +1,15 @@
-/* Bloom — tap a feeling and its relatives bloom around it. Sizes, radii and timing come from
-   the --fw-layout-bloom-* and --fw-motion-* tokens. */
+/* Bloom — tap a feeling and its relatives bloom around it. Tap the feeling in the middle again and
+   its words orbit it (see orbit.js). Sizes, radii and timing come from the --fw-layout-bloom-* and
+   --fw-motion-* tokens. */
+import { createOrbit } from './orbit.js';
+
 const FW = window.FW;
 
 export function createBloom(stage) {
   const T = FW.tok, B = 100, MORE = '__more';
   const live = new Map();
   let focus = null, trail = [], page = 0;
-  let W, H, k, cx, cy, top, bottom;
+  let W, H, k, cx, cy, hy, top, bottom;
 
   const prompt = document.createElement('div');
   prompt.className = 'prompt';
@@ -16,16 +19,23 @@ export function createBloom(stage) {
   function measure() {
     W = FW.W; H = FW.H;
     k = Math.min(W / 390, H / 844, T.layout('max-zoom')[0] ?? 1.15);
-    top = 62 + FW.safe.top; bottom = 244 + FW.safe.bottom;
+    top = FW.room().top; bottom = 24 + FW.safe.bottom;
     cx = W / 2;
     cy = FW.safe.top + (H - FW.safe.top - FW.safe.bottom) * (T.layout('center-y')[0] ?? 42) / 100;
-    prompt.style.top = (cy - 27) + 'px';
+    /* home has nothing at the bottom, so its ring sits in the middle of the open space (a touch high) */
+    hy = (top + H - bottom) / 2 - H * 0.03;
+    prompt.style.top = (hy - 27) + 'px';
   }
   measure();
 
+  /* when the words fold away, the feeling's relatives bloom back around it */
+  const orbit = createOrbit(stage, {
+    onClose(id, fast) { if (!fast && focus === id) render(focusLayout(id), { x: cx, y: cy }); }
+  });
+
   const homeLayout = () => {
     const [rad = 134, sc = 0.9] = T.layout('bloom-home');
-    return FW.fams.map(F => ({ id: FW.core[F.id].id, x: cx + Math.cos(F.rad) * rad * k, y: cy + Math.sin(F.rad) * rad * k, sc: sc * k, cap: '', role: 'home' }));
+    return FW.fams.map(F => ({ id: FW.core[F.id].id, x: cx + Math.cos(F.rad) * rad * k, y: hy + Math.sin(F.rad) * rad * k, sc: sc * k, cap: '', role: 'home' }));
   };
 
   /* place items on an ellipse, rotated so each sits as close as possible to its colour direction.
@@ -74,10 +84,10 @@ export function createBloom(stage) {
     return nodes;
   }
 
-  /* keep bubbles (and their captions) clear of the peek card, whose height depends on the definition */
+  /* keep bubbles (and their captions) clear of the trail + peek card at the bottom, whose height
+     depends on the definition */
   function band() {
-    const p = FW.els.peek;
-    bottom = focus && p.offsetHeight ? Math.max(H - p.offsetTop + 16, 150 + FW.safe.bottom) : 244 + FW.safe.bottom;
+    bottom = H - FW.room().bottom + 6;
   }
 
   /* relatives come best-first; when there are more than fit, the last outer slot becomes "+N more" */
@@ -97,7 +107,8 @@ export function createBloom(stage) {
       outer.push({ id: MORE, more: true, fixed: moreAt * Math.PI / 180, label: left > 0 ? '+' + left : '↺', cap: left > 0 ? 'more' : 'start over' });
     }
     band();
-    return relax([{ id, x: cx, y: cy, sc: fs * k, cap: '', role: 'focus' },
+    const n = FW.words(id).length;
+    return relax([{ id, x: cx, y: cy, sc: fs * k, cap: n ? `\u2248 ${n} words` : '', role: 'focus' },
       ...ring(items.slice(0, inN), irx * k, iry * k, f, 'inner', isc * k),
       ...ring(outer, orx * k, ory * k, f, 'outer', osc * k)]);
   }
@@ -120,17 +131,27 @@ export function createBloom(stage) {
     return el;
   }
 
-  const handlers = id => ({
-    onTap: () => focus === id ? pulse(id) : go(id),
-    onLong: () => FW.pin(id, live.get(id)),
-    onDrag: (dx, dy) => { if (focus === id) gsap.set(live.get(id).querySelector('.grip'), { x: dx * 0.6, y: dy * 0.6 }); },
-    onRelease: (dx, dy, vx, vy) => {
-      const el = live.get(id); if (!el) return;
-      if (focus === id && ((vy > 0.6 && dy > 30) || dy > 140)) FW.pin(id, el);
-      const m = T.motion('spring-back');
-      gsap.to(el.querySelector('.grip'), { x: 0, y: 0, duration: FW.dur(m.dur), ease: m.ease });
-    }
-  });
+  /* while the orbit has borrowed a bubble, its gestures belong to the orbit */
+  const handlers = id => {
+    const o = () => orbit.owns(id) ? orbit.hand(id) : null;
+    return {
+      onDown: e => { const h = o(); h && h.onDown(e); },
+      onEnd: e => { const h = o(); h && h.onEnd(e); },
+      onTap: e => { const h = o(); if (h) return h.onTap(e); focus === id ? openWords(id) : go(id); },
+      onLong: () => { const h = o(); if (h) return h.onLong(); FW.pin(id, live.get(id)); },
+      onDrag: (dx, dy, e) => {
+        const h = o(); if (h) return h.onDrag(dx, dy, e);
+        if (focus === id) gsap.set(live.get(id).querySelector('.grip'), { x: dx * 0.6, y: dy * 0.6 });
+      },
+      onRelease: (dx, dy, vx, vy, e) => {
+        const h = o(); if (h) return h.onRelease(dx, dy, vx, vy, e);
+        const el = live.get(id); if (!el) return;
+        if (focus === id && ((vy > 0.6 && dy > 30) || dy > 140)) FW.pin(id, el);
+        const m = T.motion('spring-back');
+        gsap.to(el.querySelector('.grip'), { x: 0, y: 0, duration: FW.dur(m.dur), ease: m.ease });
+      }
+    };
+  };
 
   function pulse(id) {
     const g = live.get(id).querySelector('.grip'), m = T.motion('pulse');
@@ -138,16 +159,39 @@ export function createBloom(stage) {
     FW.peek(id);
   }
 
-  function render(nodes, origin) {
-    const keep = new Set(nodes.map(n => n.id));
-    const ex = T.motion('exit'), bi = T.motion('bloom-in'), mv = T.motion('move');
+  /* tapping the feeling in the middle sends its relatives away and lets its words orbit it */
+  const openWords = id => FW.words(id).length ? words(id) : pulse(id);
+
+  /* go to a feeling's words (optionally straight to one word): the feeling takes the middle,
+     everything else drifts off, and the orbit borrows its bubble */
+  function words(head, at) {
+    if (orbit.isOpen() && orbit.head() === head) return at ? orbit.center(at) : orbit.close();
+    orbit.close(true);
+    if (head !== focus) {
+      page = 0; focus = head;
+      const t = trail.indexOf(head); trail = t >= 0 ? trail.slice(0, t + 1) : [...trail, head];
+      gsap.to(prompt, { autoAlpha: 0, scale: 0.9, duration: FW.dur(0.3) });
+      drawTrail();
+    }
+    if (live.get(head)) exitExcept(new Set([head]));
+    else render([{ id: head, x: cx, y: cy, sc: (T.layout('bloom-focus')[0] ?? 1.2) * k, cap: '', role: 'focus' }], { x: cx, y: cy });
+    orbit.open(head, live.get(head), at);
+  }
+
+  function exitExcept(keep) {
+    const ex = T.motion('exit');
     live.forEach((el, id) => {
       if (keep.has(id)) return;
       live.delete(id);
-      el.style.pointerEvents = 'none';
+      el.classList.add('off');
       const x = gsap.getProperty(el, 'x'), y = gsap.getProperty(el, 'y'), a = Math.atan2(y - cy, x - cx), d = ex.drift ?? 90;
       gsap.to(el, { x: x + Math.cos(a) * d, y: y + Math.sin(a) * d, scale: 0, opacity: 0, duration: FW.dur(ex.dur), ease: ex.ease, overwrite: true, onComplete: () => FW.dispose(el) });
     });
+  }
+
+  function render(nodes, origin) {
+    const bi = T.motion('bloom-in'), mv = T.motion('move');
+    exitExcept(new Set(nodes.map(n => n.id)));
     let i = 0;
     nodes.forEach(n => {
       let el = live.get(n.id);
@@ -171,6 +215,9 @@ export function createBloom(stage) {
   }
 
   function go(id, fromTrail) {
+    const w = id && FW.byId[id];
+    if (w && w.head) return words(w.head, id);
+    orbit.close(true);
     const src = id && live.get(id);
     const origin = src ? { x: gsap.getProperty(src, 'x'), y: gsap.getProperty(src, 'y') } : { x: cx, y: cy };
     if ((id || null) !== focus) page = 0;
@@ -178,21 +225,23 @@ export function createBloom(stage) {
     if (!id) {
       trail = [];
       FW.peek(null); FW.tint(null);
-      band();
+      drawTrail(); band();
       render(homeLayout(), origin);
       gsap.to(prompt, { autoAlpha: 1, scale: 1, duration: FW.dur(0.5), delay: FW.dur(0.25) });
     } else {
       if (!fromTrail) { const t = trail.indexOf(id); trail = t >= 0 ? trail.slice(0, t + 1) : [...trail, id]; }
       gsap.to(prompt, { autoAlpha: 0, scale: 0.9, duration: FW.dur(0.3) });
       FW.peek(id); FW.tint(FW.byId[id].avg);
+      drawTrail();
       render(focusLayout(id), origin);
     }
-    drawTrail();
   }
 
+  /* breadcrumbs above the peek card: "◎ all › joyful › ecstatic". Hidden at home. */
   function drawTrail() {
     const t = FW.els.trail;
     t.innerHTML = '';
+    if (!trail.length) { t.classList.remove('over'); return; }
     const home = document.createElement('button');
     home.className = 'chip'; home.textContent = '◎ all'; home.onclick = () => go(null);
     t.appendChild(home);
@@ -204,14 +253,23 @@ export function createBloom(stage) {
       t.appendChild(b);
     });
     t.scrollLeft = t.scrollWidth;
+    t.classList.toggle('over', t.scrollWidth > t.clientWidth + 1);
     if (trail.length) gsap.from(t.lastElementChild, { opacity: 0, x: -8, duration: FW.dur(0.35) });
   }
 
+  /* the peek card's "≈ N words" chip opens and closes the orbit; "↩ feeling" brings the feeling back */
+  FW.on('peek', ({ act, id }) => {
+    const f = FW.byId[id]; if (!f) return;
+    if (act === 'words') return orbit.isOpen() ? orbit.close() : words(id);
+    if (act === 'head' && f.head) orbit.isOpen() && orbit.head() === f.head ? orbit.center(f.head) : go(f.head);
+  });
+
   return {
     go,
-    relayout() { measure(); go(focus, true); },
-    syncPins() { live.forEach((el, id) => el.classList.toggle('is-pinned', FW.isPinned(id))); },
+    relayout() { measure(); if (orbit.isOpen()) orbit.relayout(); else go(focus, true); },
+    syncPins() { live.forEach((el, id) => el.classList.toggle('is-pinned', FW.isPinned(id))); orbit.syncPins(); },
     focus: () => focus,
-    live: () => [...live.keys()]
+    live: () => [...live.keys()],
+    orbit
   };
 }

@@ -63,7 +63,7 @@
 
   /* 05 · Shape & space */
   --fw-breakpoint-phone: 500px;
-  --fw-container-dock: 76px;
+  --fw-container-dock: 56px;
   --fw-container-bubble: 100px;
   --fw-container-phone: 390px;
   --fw-space-1: 4px;
@@ -99,6 +99,12 @@
   --fw-motion-dock-spin: "24s · none";
   --fw-motion-tint: "0.9s · power2.out";
   --fw-motion-wheel-seg: "0.7s · power3.out";
+  /* the words orbit: rings unfurl, a tapped word swaps into the middle, words fold away,
+     and each ring turns once every 90s (everyday words) / 140s (rare words) */
+  --fw-motion-synonyms-open: "0.9s · back.out(1.3) · stagger 28ms · swirl 35°";
+  --fw-motion-synonyms-swap: "0.75s · power3.inOut";
+  --fw-motion-synonyms-close: "0.45s · power2.in · stagger 12ms";
+  --fw-motion-synonyms-revolve: "90–140s · none";
 
   /* 06 · Layout — sizes are × the 100px bubble; radii in px at 390 wide */
   --fw-layout-center-y: "42%";
@@ -115,6 +121,11 @@
   --fw-layout-orbit-focus: "1.1×";
   --fw-layout-orbit-ring: "122 × 132 · 0.6×";
   --fw-layout-orbit-rest: "fade 40% · push 1.15×";
+  /* the words orbit — the word in the middle, then each ring: rx × ry · word size · how much
+     words shrink toward the sides. Everything scales down together to fit above the peek card */
+  --fw-layout-synonyms-center: "1×";
+  --fw-layout-synonyms-inner: "90 × 92 · 0.6× · squeeze 12%";
+  --fw-layout-synonyms-outer: "160 × 160 · 0.56× · squeeze 22%";
 
   /* 07 · Aura — the slow, dreamy glows behind the bubbles (Paper: "Phone · Ink").
      The three corner glows take the family colours of your pinned feelings. The big centre haze

@@ -27,6 +27,38 @@ feelings:
     text: I’m feeling a little lonely tonight. Would you be up for a call?
     opener: I’ve been feeling disconnected lately and I miss you.
     self: Reach out to one person. Small counts.
+    synonyms:
+      - alone: on your own — sometimes fine, sometimes not
+      - lonesome: lonely, with a long, quiet echo to it
+      - isolated: cut off, by walls or miles or circumstance
+      - disconnected: the lines to other people have gone quiet
+      - alone in a crowd: surrounded by people and still unreached
+      - friendless: no one to call your own right now
+      - abandoned: left behind by someone who should have stayed
+      - neglected: nobody checking in, nobody tending to you
+      - unloved: aching for a love that doesn’t seem to come
+      - alienated: a stranger among your own people
+      - adrift: floating loose, with nothing to hold on to
+      - invisible: as if nobody can see you at all
+      - empty: a hollow space where company should be
+      - unwanted: as if nobody wants you around
+    deep:
+      - forlorn: pitifully alone and a little lost
+        from: Old English forloren, “lost, abandoned”
+      - lorn: forlorn’s one-syllable cousin — Dickens’s “lone lorn creetur”
+        from: Old English loren, “lost”
+      - desolate: utterly alone, with everything stripped bare
+        from: Latin desolare, “to leave alone” — from solus, “alone”
+      - forsaken: given up on, with a biblical weight to it
+      - marooned: stranded alone, like a sailor left on an island
+      - unfriended: friendless — Shakespeare’s word, long before Facebook
+      - on your tod: all on your own, nobody else around
+        from: rhyming slang — Tod Sloan, a US jockey, rhymes with “own”
+      - estranged: grown apart from people who used to be yours
+        from: Latin extraneus, “foreign” — kin to “stranger”
+      - Billy no-mates: the one with no friends — British, said with a wry grin
+      - high and dry: stranded, with everyone else gone
+        from: 1790s, of a ship stranded out of the water
 
   - word: left out
     mix: sad 60, mad 20, scared 20
@@ -42,6 +74,23 @@ feelings:
     text: Honestly I felt a bit left out when I saw the plans. Can we talk about it?
     say: I don’t want to make it a big deal, but I felt left out.
     self: Feeling left out doesn’t mean you don’t belong.
+    synonyms:
+      - excluded: kept out, on purpose or by accident
+      - uninvited: the plans happened without you
+      - out in the cold: everyone’s inside but you
+      - odd one out: the only one who doesn’t fit the set
+      - third wheel: tagging along where you’re not quite needed
+      - on the outside looking in: watching through the glass, wishing you were in
+    deep:
+      - ostracized: shut out by the group, on purpose
+        from: Greek ostrakon, a pottery shard used to vote exiles out
+      - sent to Coventry: frozen out, with everyone pointedly not speaking to you
+        from: a disputed tale of royalist prisoners kept in Coventry
+      - like a spare part: standing around, not needed, wondering why you came
+      - persona non grata: officially unwelcome
+        sounds: per-SOH-nuh non GRAH-tuh
+        lang: Latin
+        from: diplomats’ Latin for an envoy no longer welcome
 
   - word: unappreciated
     mix: sad 60, mad 40
@@ -57,3 +106,15 @@ feelings:
     text: I’ve been feeling a little unappreciated lately and I didn’t want it to turn into resentment.
     opener: Can I share something that’s been building up for me?
     say: It would mean a lot to hear that what I do is noticed.
+    synonyms:
+      - undervalued: worth more than you’re being given credit for
+      - taken for granted: always there, so never noticed
+      - overlooked: right there, and somehow missed
+      - passed over: skipped when it was your turn
+      - unthanked: you did the thing, and nobody said thanks
+      - unacknowledged: the effort happened, but nobody named it
+    deep:
+      - unsung: doing the quiet work nobody sings about
+      - unregarded: unnoticed and set aside, left in the corner
+        from: As You Like It — “unregarded age in corners thrown”
+      - Cinderella: doing all the work while everyone else goes to the ball

@@ -24,6 +24,29 @@ feelings:
     see: flirty
     text: Not gonna lie, I’m pretty attracted to you.
     self: Attraction is information, not an instruction.
+    synonyms:
+      - drawn to: pulled their way before you’ve even decided
+      - into someone: casually, unmistakably interested
+      - taken with: quietly won over, and paying attention
+      - crushing: a fizzy, can’t-stop-thinking-about-them kind of like
+      - catching feelings: starting to like them more than you meant to
+      - warming to: liking them a little more every time you meet
+      - gravitating: your path keeps bending toward theirs
+      - admiring: enjoying the view, maybe from a respectful distance
+      - hooked: one conversation in, and you’re reeled
+      - a sucker for: helpless against a certain smile, voice or type
+    deep:
+      - sweet on: old-fashioned and a bit bashful — you like them
+      - keen on: the British way of saying you fancy them
+        from: Old English cēne, “bold, brave”
+      - partial to: rather liking them, in an understated sort of way
+      - soft on: quietly, a little helplessly fond of them
+      - eyeing someone up: giving someone a long, appreciative look — British
+      - making sheep’s eyes: dated for gazing at someone with shy, moony longing
+      - like a moth to a flame: drawn in, even knowing you might get singed
+      - allured: drawn in by a charm you can’t quite name
+        from: lure, once a falconer’s bait of feathers
+      - magnetized: pulled toward them like iron filings to a magnet
 
   - word: sexual
     mix: joyful 50, powerful 50
@@ -33,6 +56,18 @@ feelings:
     body: warmth, heightened senses, a little restless
     text: Feeling a little sexual tonight, just so you know.
     self: Desire is a normal, healthy part of being you.
+    synonyms:
+      - frisky: playful, with a little heat in it
+      - naughty: feeling a bit wicked, in the most fun way
+      - spicy: in a bold, turn-up-the-heat sort of mood
+    deep:
+      - amorous: in the mood for love — the physical kind
+        from: Latin amor, “love”
+      - carnal: desire rooted in the flesh, body first
+        from: Latin caro, carnis, “flesh”
+      - amative: naturally inclined to desire — a rare, old-fashioned word
+        sounds: AM-uh-tiv
+        from: Latin amare, “to love”
 
   - word: aroused
     aliases: [turned on, horny, in the mood]
@@ -44,6 +79,16 @@ feelings:
     body: flushed, heart quick, everything a bit more vivid
     text: Just so you know, I’m very much in the mood.
     self: Notice it without judging it.
+    synonyms:
+      - hot and bothered: flushed, distracted and very much wanting
+      - worked up: all stirred up, and nowhere near calming down
+      - steamy: hot, heavy and fogging up the windows
+      - hot to trot: eager, ready and very much up for it
+      - tingly: every nerve awake and listening
+    deep:
+      - randy: cheerful British slang for wanting it, plainly
+      - titillated: teased awake and wanting more
+        from: Latin titillare, “to tickle”
 
   - word: sensual
     mix: joyful 50, peaceful 35, powerful 15
@@ -53,6 +98,27 @@ feelings:
     see: romantic
     text: Feeling sensual — long bath and a slow evening?
     self: Slow down and let your senses lead for a while.
+    synonyms:
+      - savoring: making every touch and taste last
+      - indulgent: saying yes to pleasure, on purpose
+      - luxuriating: sinking happily into something lovely
+      - tactile: wanting to touch everything — skin, silk, warm water
+      - decadent: rich, lavish and a little too much, gladly
+      - hedonistic: chasing pleasure for its own sake
+    deep:
+      - languorous: dreamily, deliciously slow
+        sounds: LANG-gur-us
+        from: Latin languor, “faintness, weariness”
+      - languid: loose-limbed and in no hurry at all
+      - voluptuous: given over to the pleasures of the senses
+        from: Latin voluptas, “pleasure”
+      - sybaritic: devoted to luxury and soft pleasures
+        sounds: sib-uh-RIT-ik
+        from: Sybaris, a Greek city in Italy famed for its luxury
+      - epicurean: relishing refined pleasures, especially of the table
+        sounds: ep-ih-kyoo-REE-un
+        from: Epicurus, who held pleasure to be life’s highest good
+      - sensuous: delighting in the senses — sensual’s gentler cousin
 
   - word: flirty
     aliases: [flirtatious]
@@ -62,6 +128,26 @@ feelings:
     see: playful
     text: Feeling flirty today. Consider yourself warned.
     self: Playfulness is a kind of courage.
+    synonyms:
+      - teasing: poking and provoking, all in fun
+      - coy: playing shy to draw them closer
+      - saucy: cheeky, with a wink of something more
+      - sweet-talking: laying the charm on thick
+      - making eyes at someone: flirting with a look held a beat too long
+      - playing hard to get: holding back a little so they’ll chase
+    deep:
+      - coquettish: flirting with a flutter of lashes and a sly smile
+        sounds: koh-KET-ish
+        from: French coquet, “little rooster” — a strutting flirt
+      - kittenish: playful and a little coy, all bat and pounce
+      - arch: knowingly playful, with a sly half-smile
+        from: arch-, “chief,” via phrases like “arch-rogue”
+      - come-hither: all invitation, no words needed
+        from: hither, the old word for “here”
+      - giving the glad eye: dated British for a frank, flirty look across the room
+      - dallying: flirting lightly, with no plans to get serious
+      - chatting someone up: talking to someone you fancy, with intent — British
+      - on the pull: out to catch someone’s eye — British slang
 
   - word: desired
     mix: joyful 55, powerful 35, peaceful 10
@@ -72,6 +158,19 @@ feelings:
     voice: They want me — actually me.
     text: You make me feel so wanted.
     self: Let yourself feel wanted without explaining it away.
+    synonyms:
+      - wanted: plainly, warmly wanted by someone
+      - desirable: worth wanting — and right now, you believe it
+      - sought after: someone is actively hoping for you
+      - in demand: everyone seems to want a piece of you
+      - wooed: being won over, gesture by gesture
+      - pursued: someone’s making the effort, and you’re enjoying it
+      - lusted after: wanted with real, unmistakable heat
+    deep:
+      - fancied: wanted, British-style — someone fancies you
+        from: fancy began as a shortening of fantasy
+      - coveted: wanted fiercely, the way people want rare things
+      - sighed over: someone’s quietly longing for you from afar
 
   - word: magnetic
     mix: powerful 55, joyful 45
@@ -80,6 +179,28 @@ feelings:
     see: confident
     text: Feeling kind of magnetic tonight.
     self: Enjoy your own spark.
+    synonyms:
+      - irresistible: hard to say no to, and you know it
+      - charismatic: a presence people want to follow
+      - charming: easy to like, and laying it on
+      - radiant: glowing so brightly people lean in
+      - larger than life: a big presence nobody can ignore
+    deep:
+      - Circean: alluring in a dangerous, delicious way
+        sounds: sur-SEE-un
+        from: Circe, the enchantress of Homer’s Odyssey
+      - Byronic: brooding, romantic and a little dangerous to know
+        sounds: by-RON-ik
+        from: Lord Byron — “mad, bad, and dangerous to know”
+      - debonair: suave, stylish and breezily charming
+        sounds: deb-uh-NAIR
+        from: Old French de bon aire, “of good breeding”
+      - raffish: a bit disreputable, and all the more appealing for it
+      - winsome: sweetly, disarmingly appealing
+        from: Old English wynsum, from wynn, “joy”
+      - suave: smooth, polished and effortlessly easy
+        sounds: SWAHV
+        from: Latin suavis, “sweet, pleasant”
 
   - word: passionate
     mix: powerful 50, joyful 50
@@ -89,6 +210,24 @@ feelings:
     see: romantic
     text: Still so passionate about you, you know.
     self: Point that fire at things that love you back.
+    synonyms:
+      - fiery: hot-hearted, all spark and flame
+      - intense: feeling everything at full volume
+      - burning: wanting so much it almost hurts
+      - all in: holding absolutely nothing back
+      - consumed: so caught up there’s room for nothing else
+      - smoldering: a slow burn under a calm surface
+      - hot-blooded: quick to heat, in love and in temper
+      - white-hot: passion at its very highest heat
+    deep:
+      - ardent: burning with eager, glowing feeling
+        from: Latin ardere, “to burn”
+      - fervent: earnest and intense, heart fully engaged
+        from: Latin fervere, “to boil”
+      - fervid: hot, almost feverish intensity
+        from: Latin fervidus, “glowing, hot”
+      - impassioned: filled with passion and pouring it out
+      - aflame: on fire with feeling
 
   - word: lustful
     mix: powerful 55, joyful 45
@@ -98,6 +237,24 @@ feelings:
     see: craving
     text: Feeling a little lustful. Just saying.
     self: Wanting isn’t something to be ashamed of.
+    synonyms:
+      - hot for: wanting someone, plainly and physically
+      - lusty: hearty, full-blooded wanting
+      - ravenous: hungry enough to devour
+      - insatiable: no amount feels like enough
+      - primal: desire from the oldest part of you
+      - thirsty: openly, unapologetically wanting
+      - on the prowl: out looking, and not shy about it
+    deep:
+      - libidinous: driven by a strong sexual appetite
+        sounds: lih-BID-in-us
+        from: Latin libido, “desire, longing”
+      - concupiscent: full of earthy, bodily longing
+        sounds: kon-KYOO-pih-sunt
+        from: Latin concupiscere, “to long for eagerly”
+      - Dionysian: given over to appetite, instinct and wild abandon
+        sounds: dy-uh-NISH-un
+        from: Dionysus, Greek god of wine and ecstasy
 
   - word: craving
     mix: joyful 40, powerful 35, sad 25
@@ -106,6 +263,22 @@ feelings:
     see: yearning
     text: Craving some time with just you.
     self: What is the craving really asking for?
+    synonyms:
+      - hungry: wanting it enough to feel it in your body
+      - hankering: an itch that keeps coming back
+      - jonesing: craving hard — slang with a restless edge
+      - dying for: wanting it so much it’s almost comic
+      - itching for: restless to have it, right now
+      - starved for: running on empty, and it shows
+    deep:
+      - athirst: thirsting for it — an old, poetic word
+      - esurient: hungry, a little greedy for more
+        sounds: ih-SOOR-ee-unt
+        from: Latin esurire, “to be hungry”
+      - desirous: wanting, in a formal, old-fashioned way
+      - avid: eager and greedy for it
+        from: Latin avidus, “greedy, eager”
+      - sharp-set: very hungry and eager — an old word
 
   - word: tempted
     mix: joyful 45, scared 30, powerful 25
@@ -114,6 +287,21 @@ feelings:
     see: curious
     opener: I’m tempted to say yes — can we think it through together?
     self: Pause. Which choice will you be glad about tomorrow?
+    synonyms:
+      - enticed: drawn by a promise
+      - lured: following the bait, eyes open
+      - seduced: half won over, and enjoying it
+      - torn: half yes, half better not
+      - wavering: about to give in
+      - teetering: one nudge from yes
+    deep:
+      - tantalized: teased by something just out of reach
+        from: Tantalus, doomed to reach for fruit forever
+      - akratic: knowing better, and wanting it anyway
+        sounds: uh-KRAT-ik
+        from: Greek akrasia, “lack of self-command”
+      - hearing the siren song: a lovely call, luring you toward the rocks
+        from: the Sirens, whose singing lured sailors to shipwreck
 
   - word: sexy
     mix: powerful 55, joyful 45
@@ -122,6 +310,31 @@ feelings:
     see: [confident, desired]
     text: Feeling really good in my skin today.
     self: Own it. You look good to you.
+    synonyms:
+      - hot: plainly, confidently good-looking
+      - attractive: easy on the eye, and feeling it
+      - gorgeous: knockout good, and you know it
+      - alluring: drawing eyes without even trying
+      - seductive: inviting, with a hint of danger
+      - sultry: slow, smoky heat
+      - foxy: sexy with a playful, retro wink
+      - feeling myself: loving how you look and feel today
+    deep:
+      - zaftig: curvy, lush and gorgeous with it
+        sounds: ZAHF-tig
+        lang: Yiddish
+        from: Yiddish zaftik, “juicy”
+      - callipygian: blessed with a shapely behind
+        sounds: kal-ih-PIJ-ee-un
+        from: Greek kallipygos, “beautiful-buttocked”
+      - Junoesque: statuesque and stunning, built like a goddess
+        sounds: joo-noh-ESK
+        from: Juno, queen of the Roman gods
+      - comely: pleasing to look at — a lovely old word
+      - pulchritudinous: beautiful, in a word that sounds anything but
+        sounds: pul-krih-TOOD-in-us
+        from: Latin pulcher, “beautiful”
+      - va-va-voom: retro slang for bombshell-level sexy
 
   - word: breathless
     mix: joyful 50, scared 30, powerful 20
@@ -131,6 +344,11 @@ feelings:
     body: fast heartbeat, short breath, flushed
     text: You leave me breathless, honestly.
     self: Let the moment be as big as it is.
+    synonyms:
+      - swooning: going faint at the thought of them
+      - weak in the knees: so struck you could buckle
+    deep:
+      - aquiver: trembling all over with it
 
   - word: flustered
     mix: scared 50, joyful 50
@@ -140,6 +358,16 @@ feelings:
     body: warm cheeks, tangled words, a grin you can’t hide
     text: You had me so flustered earlier.
     self: Flustered just means it matters to you.
+    synonyms:
+      - blushing: cheeks going pink and staying there
+      - flushed: warm in the face and a bit undone
+      - tongue-tied: words knot up right when you need them
+      - hot under the collar: flushed, fidgety and caught off guard
+      - in a tizzy: worked into a fluttery, can’t-think-straight state
+    deep:
+      - all of a dither: in a happy, flapping muddle, as the British say
+      - discomfited: thrown off balance, and a bit pink about it
+        sounds: dis-KUM-fit-id
 
   - word: satisfied
     mix: peaceful 55, joyful 45
@@ -148,3 +376,20 @@ feelings:
     see: content
     text: Feeling really satisfied after tonight.
     self: Let enough be enough.
+    synonyms:
+      - pleased: quietly happy with how it went
+      - gratified: your hopes met, and then some
+      - rewarded: the wanting paid off
+      - quenched: the thirst is finally gone
+      - in the afterglow: still humming with warmth after the fact
+    deep:
+      - sated: had your fill, wholly and happily
+      - slaked: thirst eased, hunger stilled
+        from: Old English slacian, “to slacken”
+      - replete: filled to the brim, nothing missing
+        sounds: rih-PLEET
+        from: Latin repletus, “filled up”
+      - postprandial: pleasantly full and slow after a good meal
+        sounds: post-PRAN-dee-ul
+        from: Latin prandium, “lunch”
+      - like the cat that got the cream: smug, purring and very pleased with yourself

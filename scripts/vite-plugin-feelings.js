@@ -12,7 +12,7 @@ export default function feelingsData(opts = {}) {
     if (result) return result;
     result = compileFeelings(dir);
     const s = result.stats;
-    logger?.info(`  feelings: ${s.feelings} feelings · ${s.words} words · ${s.examples} examples · ${s.clusters} clusters` +
+    logger?.info(`  feelings: ${s.feelings} feelings · ${s.synonyms + s.deep} synonyms · ${s.words} words · ${s.examples} examples · ${s.clusters} clusters` +
       (result.warnings.length ? ` · ${result.warnings.length} warnings (npm run words:check)` : ''), { timestamp: true });
     return result;
   };

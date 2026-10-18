@@ -30,6 +30,25 @@ feelings:
     text: I felt really loved by you today. Thank you for that.
     say: When you did that, I felt so cared for.
     self: Let it in. You don’t have to deflect it.
+    synonyms:
+      - chosen: picked on purpose, and picked again
+      - special: like you matter to someone in a way no one else does
+      - lovable: sure you’re worth loving, just as you are
+      - enough: nothing to prove, nothing to earn
+      - lucky in love: someone good loves you right back
+      - warm and fuzzy: all warm inside from a little kindness
+      - glowing: lit up by someone’s love, and it shows
+      - melting: going soft and warm all over
+      - thought of: remembered, even when you weren’t around
+      - missed: someone felt the gap while you were gone
+    deep:
+      - beloved: dearly, deeply loved — the word of vows and old letters
+      - cosseted: wrapped in pampering, protective care
+        from: cosset, an old word for a hand-reared pet lamb
+      - made much of: treated with warm, fond attention — a bit old-fashioned
+      - embosomed: taken close to someone’s heart — old and literary
+      - lovesome: lovely, and easy to love — an old, soft word
+        from: Old English lufsum, “lovable, pleasant”
 
   - word: tender
     mix: peaceful 45, joyful 30, sad 25
@@ -43,6 +62,16 @@ feelings:
     text: Feeling kind of tender today. Extra gentleness welcome.
     opener: I’m a bit soft right now — can we go easy?
     self: Tender isn’t weak. It’s open.
+    synonyms:
+      - soft: gentle and unguarded, easy to reach
+      - gentle: careful and mild, with the world and with yourself
+      - delicate: handle with care today
+      - sensitive: everything lands a little harder than usual
+      - teary: tears close by, and not necessarily sad ones
+      - gooey: gone all soft in the middle
+      - in my feels: soft and sentimental about everything — slang
+    deep:
+      - soppy: soft and sentimental, and not a bit embarrassed — British
 
   - word: adored
     mix: joyful 70, peaceful 15, powerful 15
@@ -52,6 +81,20 @@ feelings:
     voice: They’re actually happy I’m here.
     text: I felt so adored by you today. It meant more than you know.
     self: Let yourself be delighted in.
+    synonyms:
+      - doted on: fussed over with obvious delight
+      - worshipped: looked at like you hung the moon
+      - celebrated: made a happy fuss of, just for being you
+      - basking: soaking up someone’s delight like sunshine
+      - showered with love: love arriving from every direction
+      - the light of their life: the one who makes their whole world brighter
+    deep:
+      - fêted: celebrated like the guest of honor
+        sounds: FAY-tid
+        from: French fête, “party, feast”
+      - adulated: admired so lavishly it’s nearly flattery
+        sounds: AJ-uh-lay-tid
+        from: Latin adulari, “to flatter”
 
   - word: cherished
     aliases: [treasured, precious]
@@ -61,6 +104,13 @@ feelings:
     see: devoted
     text: You make me feel cherished. I don’t take that lightly.
     self: You’re allowed to be someone’s treasure.
+    synonyms:
+      - dear: precious to someone, close to their heart
+      - prized: valued above most things
+      - irreplaceable: no one else could fill your place
+    deep:
+      - the apple of their eye: guarded like the most precious thing they have
+        from: Old English — the “apple” meant the pupil of the eye
 
   - word: cared for
     mix: peaceful 55, joyful 45
@@ -69,6 +119,18 @@ feelings:
     see: supported
     text: Thank you for looking after me. I felt really cared for.
     say: It helped so much that you checked on me.
+    synonyms:
+      - looked after: someone’s keeping an eye on what you need
+      - fussed over: someone’s making a lovely fuss of you
+      - pampered: treated to soft, spoiling care
+      - spoiled: treated like you deserve the good stuff
+      - in good hands: someone capable has got you
+      - mothered: looked after the way a good mom would
+    deep:
+      - mollycoddled: fussed over like a precious child, and secretly loving it
+      - succored: helped and comforted through something hard
+        sounds: SUCK-erd
+        from: Latin succurrere, “to run to help”
 
   - word: held
     also: safety
@@ -79,6 +141,16 @@ feelings:
     body: shoulders drop, breath slows
     text: I felt really held by you tonight.
     self: You can set it down for a minute. You’re held.
+    synonyms:
+      - embraced: wrapped up in someone’s arms, or their acceptance
+      - cradled: carried gently, worries and all
+      - carried: someone else took the weight for a while
+      - comforted: soothed, eased, a little less alone in it
+      - enfolded: folded into someone’s arms and care
+    deep:
+      - cwtched: hugged in close and safe — a Welsh cuddle
+        sounds: KUTCHT (u as in put)
+        lang: Welsh
 
   - word: fond
     mix: joyful 55, peaceful 45
@@ -87,6 +159,11 @@ feelings:
     stronger: loved
     text: I’m really fond of you, you know that?
     self: Notice the small warmth. It counts.
+    synonyms:
+      - attached: you’ve grown used to them, and you’d miss them
+      - kindly: quietly good-natured toward someone
+      - warm: a quiet glow whenever they come to mind
+      - well-disposed: leaning toward liking them, ready to think the best
 
   - word: affectionate
     mix: joyful 65, peaceful 35
@@ -95,6 +172,19 @@ feelings:
     see: tender
     text: Feeling extra affectionate today. Hugs incoming.
     opener: I just want to be close to you for a bit.
+    synonyms:
+      - loving: full of warmth, and showing it
+      - cuddly: in the mood to snuggle up
+      - huggy: arms out, hugs for everyone
+      - lovey-dovey: all sweet talk and cuddles, maybe a bit much for onlookers
+      - doting: lavishing love and attention, a touch over the top
+      - mushy: soft and sentimental, and not even sorry
+      - demonstrative: open with your love, not shy about showing it
+    deep:
+      - spoony: sweetly, sappily silly over someone — 1800s slang
+      - gigil: the urge to squeeze something unbearably cute
+        sounds: gih-GIL
+        lang: Tagalog
 
   - word: warmhearted
     hy: warm-hearted
@@ -104,6 +194,25 @@ feelings:
     see: compassionate
     text: Feeling really warmhearted toward everyone today.
     self: This softness is a strength.
+    synonyms:
+      - kindhearted: gentle and good all the way down
+      - big-hearted: generous with your love, time and patience
+      - generous: quick to give, slow to keep score
+      - giving: always finding something to offer
+      - charitable: inclined to think the best of everyone
+      - forgiving: quick to let things go
+      - genial: warm, friendly and easy to be around
+    deep:
+      - magnanimous: big enough to be generous, even when wronged
+        sounds: mag-NAN-ih-mus
+        from: Latin magnus + animus, “great soul”
+      - benevolent: in a mood to wish everyone well, and mean it
+        sounds: buh-NEV-uh-lunt
+        from: Latin bene volens, “wishing well”
+      - altruistic: wanting good for others, no reward needed
+        from: French altruisme, coined by Auguste Comte
+      - philanthropic: in a give-it-all-away kind of mood
+        from: Greek philanthrōpia, “love of humankind”
 
   - word: devoted
     mix: joyful 45, powerful 35, peaceful 20
@@ -112,6 +221,22 @@ feelings:
     see: protective
     say: I’m in this with you. All the way.
     self: Devotion is a choice you keep making.
+    synonyms:
+      - committed: in it for the long haul
+      - loyal: you’d stand by them, no matter what
+      - faithful: steady in your love through thick and thin
+      - wholehearted: giving it everything, nothing held back
+      - ride or die: loyal to the end, no questions asked
+      - true-blue: loyal right to the core
+    deep:
+      - steadfast: fixed and unwavering, like a star you steer by
+        from: Old English stedefæst, “standing firm in place”
+      - leal: loyal and true — an old Scots word
+        sounds: LEEL
+        from: Anglo-French leal, the same root as loyal
+      - uxorious: doting on your wife, maybe a touch too much
+        sounds: uk-SOR-ee-us
+        from: Latin uxor, “wife”
 
   - word: smitten
     also: desire
@@ -121,6 +246,19 @@ feelings:
     stronger: infatuated
     text: Okay, I’m a little smitten. Don’t make it weird.
     self: Enjoy the giddiness. It’s allowed.
+    synonyms:
+      - lovestruck: hit hard, and a little dazed, by love
+      - wild about: can’t stop grinning when they come up
+      - weak at the knees: so taken with them your legs forget their job
+      - falling for someone: tipping, happily and helplessly, toward them
+      - drunk on love: giddy and a little unsteady with it all
+    deep:
+      - twitterpated: fluttery, giddy and spring-struck by love
+        from: Disney’s Bambi (1942), where Friend Owl warns of it
+      - struck on: knocked sideways by someone — old-fashioned slang
+      - dotty about: daft about someone, in the sweetest way — British
+      - gaga: so giddy over someone you’ve gone a bit silly
+        from: French gaga, “doddering” — love makes fools of us all
 
   - word: infatuated
     also: desire
@@ -131,6 +269,17 @@ feelings:
     voice: I can’t stop thinking about them.
     opener: Honestly? I’m pretty swept up in them.
     self: Enjoy the rush, and keep one foot on the ground.
+    synonyms:
+      - crazy about: wild about them, and not a bit sorry
+      - swept off my feet: carried off by someone, fast
+      - carried away: your feelings running well ahead of you
+    deep:
+      - besotted: so smitten you’re a little foolish with it
+        sounds: bih-SOT-id
+        from: sot, an old word for a fool
+      - gone on: far gone over someone — old slang
+      - limerent: helplessly, achingly infatuated, hoping it’s mutual
+        from: coined by psychologist Dorothy Tennov in the 1970s
 
   - word: in love
     mix: joyful 60, peaceful 20, scared 20
@@ -139,6 +288,18 @@ feelings:
     see: [devoted, adored]
     say: I’m in love with you.
     text: I keep realizing how in love with you I am.
+    synonyms:
+      - head over heels: tumbling, upside down, all the way in
+      - falling hard: tumbling in fast, no brakes
+      - in deep: too far in to turn back, and glad of it
+      - intoxicated: heady and dizzy with love
+    deep:
+      - enamored: utterly taken with someone, heart first
+        from: Old French enamourer, from amour, “love”
+      - imparadised: in paradise, in someone’s arms
+        sounds: im-PAIR-uh-dyst
+        from: im- + paradise — Milton’s lovers lie “imparadised”
+      - head over ears: in so deep the love is up over your head
 
   - word: protective
     mix: powerful 55, joyful 25, scared 20
@@ -147,6 +308,22 @@ feelings:
     see: devoted
     say: I just want to make sure you’re okay.
     self: Protecting them doesn’t mean carrying all of it.
+    synonyms:
+      - watchful: keeping an eye out for anything that could hurt them
+      - mama bear: claws out for the people you love
+      - mother hen: fussing and clucking over everyone’s safety
+      - overprotective: protective, turned up a notch too far
+      - watching their back: ready to step in if anyone comes for them
+    deep:
+      - Argus-eyed: watching over them with eyes everywhere
+        sounds: AR-gus-eyed
+        from: Argus, the hundred-eyed watchman of Greek myth
+      - tutelary: guardian-like, keeping watch over someone
+        sounds: TOO-tuh-lair-ee
+        from: Latin tutela, “protection, guardianship”
+      - solicitous: hovering with concern, checking they’re okay
+        sounds: suh-LISS-ih-tus
+        from: Latin sollicitus, “anxious, troubled”
 
   - word: compassionate
     mix: peaceful 50, sad 25, joyful 25
@@ -155,6 +332,15 @@ feelings:
     see: empathetic
     say: That sounds so hard. I’m here.
     self: Turn some of that kindness inward too.
+    synonyms:
+      - sympathetic: sorry for their pain, and on their side
+      - softhearted: easily moved by someone else’s hurt
+      - tenderhearted: quick to feel for anyone who’s struggling
+      - merciful: inclined to ease suffering, not add to it
+      - kind: wanting good for someone, and acting on it
+    deep:
+      - ruthful: full of pity — the lost opposite of ruthless
+        from: ruth, an old word for pity and sorrow
 
   - word: nurturing
     mix: peaceful 55, joyful 30, powerful 15
@@ -163,6 +349,19 @@ feelings:
     see: protective
     text: Feeling nurturing — can I cook for you this week?
     self: Who’s nurturing you right now?
+    synonyms:
+      - caring: wanting to look after someone, and doing it
+      - motherly: warm and steady, like a good mom
+      - fatherly: steady and guiding, like a good dad
+      - parental: in full looking-after-someone mode
+    deep:
+      - avuncular: kindly and encouraging, like a favorite uncle
+        sounds: uh-VUNG-kyuh-ler
+        from: Latin avunculus, “mother’s brother”
+      - clucky: broody and maternal around babies — Australian slang
+      - philoprogenitive: devoted to your children, or to having lots of them
+        sounds: fil-oh-proh-JEN-ih-tiv
+        from: philo-, “loving,” + progenitive, “producing offspring”
 
   - word: romantic
     also: desire
@@ -172,6 +371,17 @@ feelings:
     see: passionate
     text: Feeling romantic. Date night soon?
     opener: Can we do something just for us this week?
+    synonyms:
+      - starry-eyed: dreamy and a little dazzled by love
+      - dreamy: drifting in soft focus, love-song mode
+      - sappy: sweet and sentimental, unapologetically
+      - smoochy: in a kissing kind of mood
+    deep:
+      - moonstruck: dazed and dreamy with romance
+        from: once meant moon-maddened — the moon got the blame
+      - billing and cooing: murmuring sweet nothings like two doves
+        from: courting doves, which touch bills and coo
+      - hearts and flowers: full Valentine’s mode, all sweetness
 
   - word: lovesick
     also: longing
@@ -181,6 +391,15 @@ feelings:
     see: [yearning, pining]
     text: Honestly a bit lovesick. Miss you so much.
     self: The ache is love looking for somewhere to go.
+    synonyms:
+      - heartsick: aching with love that can’t land yet
+      - hung up on someone: can’t stop thinking about them, can’t put it down
+    deep:
+      - lovelorn: pining for a love that’s gone, or never came
+        from: love + lorn, “lost, forsaken”
+      - crossed in love: thwarted in love — a Jane Austen–era phrase
+      - sick with love: so in love it aches like a fever
+        from: the Song of Songs, where a lover begs to be comforted with apples
 
   - word: full-hearted
     mix: joyful 65, peaceful 35
@@ -189,3 +408,9 @@ feelings:
     see: grateful
     text: My heart is so full right now.
     self: Pause and let this one sink in.
+    synonyms:
+      - overflowing: so much love it spills out of you
+      - complete: nothing missing, nothing more to wish for
+    deep:
+      - abrim: full to the brim, and then some
+        sounds: uh-BRIM

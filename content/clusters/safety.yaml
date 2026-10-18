@@ -25,3 +25,39 @@ feelings:
     text: I always feel safe with you. I don’t think I’ve said that.
     say: I feel safe enough to tell you something real.
     self: You’re safe right now. Let your body believe it.
+    synonyms:
+      - secure: steady, and sure nothing’s about to give way
+      - protected: someone or something stands between you and harm
+      - defended: someone stood up for you, and you felt it
+      - sheltered: out of the wind and weather, in every sense
+      - shielded: kept back from the blows, the noise, the worst of it
+      - out of harm’s way: nothing can reach you here
+      - snug: tucked in warm and tight, nothing getting in
+      - cocooned: wrapped up soft and close, the world muffled
+      - watched over: someone’s keeping an eye out, so you don’t have to
+      - on solid ground: firm footing, nothing shifting underneath
+      - unafraid: fear has nothing to hold on to right now
+      - tucked in: settled for the night, covers up to your chin
+      - nestled: settled into a safe little hollow
+      - cushioned: softened against whatever bumps come along
+    deep:
+      - ensconced: settled in somewhere safe and snug, and not budging
+        sounds: en-SKONST
+        from: sconce, an old word for a small fort
+      - snug as a bug in a rug: as warm and secure as it gets
+        from: 1700s — Ben Franklin used it in a pet squirrel’s epitaph
+      - safe as houses: as secure as can be — British
+      - wrapped in cotton wool: protected from every bump, maybe a bit too much — British
+      - on terra firma: back on firm ground, and so glad of it
+        from: Latin, “firm land”
+      - under someone’s wing: sheltered by someone who looks out for you
+      - under someone’s aegis: shielded by someone strong enough to keep harm away
+        sounds: EE-jis
+        from: the aegis, the storied shield of Zeus and Athena
+      - inviolate: untouched, beyond the reach of harm
+        sounds: in-VY-uh-lit
+        from: Latin inviolatus, “unhurt”
+      - swaddled: wrapped up tight and safe, like a newborn
+      - embowered: tucked away in a leafy, sheltering nook
+        sounds: em-BOW-erd
+        from: em- + bower, a leafy shelter

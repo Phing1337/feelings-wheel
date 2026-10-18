@@ -25,6 +25,48 @@ feelings:
     text: I’m honestly a bit scared about tomorrow. Can you check in on me?
     say: I’m scared, and I could use some company.
     self: Fear is trying to protect you. Thank it, then decide.
+    synonyms:
+      - afraid: the plain, honest word for fear
+      - frightened: fear that just arrived and has your full attention
+      - fearful: fear that lingers, watching for what comes next
+      - terrified: fear at full volume — every part of you says run
+      - petrified: so scared you turn to stone
+      - spooked: unsettled by something you can’t quite name
+      - freaked out: scared and scrambling, your calm gone
+      - alarmed: suddenly sure that something is wrong
+      - shaken: still trembling after the scare has passed
+      - panicky: fear outrunning thought, breath coming fast
+      - horrified: struck cold by something awful
+      - unnerved: your nerve slipped out from under you
+      - creeped out: skin crawling, sure something isn’t right
+      - threatened: sensing danger aimed right at you
+      - unsafe: nowhere feels solid enough to rest
+      - trapped: no way out that you can see
+    deep:
+      - aghast: struck with horror, mouth hanging open
+        sounds: uh-GAST
+        from: Middle English agasten, “to terrify” — kin to ghost
+      - afeard: afraid, in old and country English
+        sounds: uh-FEERD
+        from: Caliban in The Tempest — “Be not afeard”
+      - sore afraid: afraid right down to your bones
+        from: the shepherds in the King James Bible’s Luke 2
+      - frit: scared, in plain old Midlands English
+        from: dialect past tense of fright — as bite gives bit
+      - in a blue funk: in a shivering, all-out panic
+        from: funk was likely 1740s Oxford slang for “cowering fear”
+      - timorous: timid and trembling, like a mouse in the open
+        sounds: TIM-er-us
+        from: Latin timor, “fear” — Burns’s “tim’rous beastie”
+      - trepid: fearful and hesitant — intrepid’s forgotten opposite
+        sounds: TREP-id
+        from: Latin trepidus, “agitated, alarmed”
+      - atremble: trembling from head to toe
+      - quailing: losing your nerve and shrinking back
+      - cowed: frightened into going quiet and small
+      - quaking in my boots: shaking with fear — often said with a wink
+      - like a rabbit in the headlights: frozen, unable to think or move
+        from: British — in America it’s a deer in the headlights
 
   - word: anxious
     mix: scared 85, sad 15
@@ -40,6 +82,37 @@ feelings:
     text: My anxiety is pretty loud today. Would you be up for a distraction?
     say: I’m anxious about this and could use a reality check.
     self: Feet on the floor. Name five things you can see.
+    synonyms:
+      - worried: thoughts circling something that might go wrong
+      - nervous: an uneasy stomach about what’s ahead
+      - uneasy: a quiet sense that something is off
+      - apprehensive: bracing for something you can’t see yet
+      - troubled: something heavy keeps tugging at your mind
+      - unsettled: can’t land, can’t rest, can’t quite say why
+      - worried sick: so worried your body starts to feel it
+      - on pins and needles: waiting to find out, unable to relax
+      - a bundle of nerves: every nerve jangling at once
+      - in a cold sweat: dread so strong your skin breaks out in it
+    deep:
+      - angst: a deep, shapeless dread about life itself
+        lang: German
+      - Torschlusspanik: panic that time’s running out on life’s big chances
+        sounds: TOR-shloos-pah-neek
+        lang: German
+        from: literally “gate-shut panic”
+      - on tenterhooks: stretched tight with suspense, waiting to hear
+        from: hooks that held wet cloth taut on a drying frame
+      - hag-ridden: tormented by worries, as if a witch rode you all night
+        from: the old belief that hags rode sleepers, bringing nightmares
+      - unquiet: restless inside, no peace in your mind
+      - fretful: worrying in circles, unable to let it go
+        from: Old English fretan, “to devour” — worry that gnaws
+      - in a stew: simmering in worry and can’t cool down
+      - distrait: too worried to pay attention to anything else
+        sounds: dih-STRAY
+        lang: French
+      - having kittens: in a frantic flap of worry
+        from: British slang, usually said half in jest
 
   - word: overwhelmed
     mix: scared 60, sad 25, mad 15
@@ -54,6 +127,37 @@ feelings:
     text: I’m really overwhelmed right now. Could you help me pick one thing to start with?
     say: I’m at capacity — I need to slow down before I can take anything else on.
     self: Just the next small step. Not all of it.
+    synonyms:
+      - swamped: water coming in faster than you can bail
+      - snowed under: buried by more than you can dig through
+      - frazzled: worn ragged, every edge fraying
+      - stressed out: pressure on every side, nowhere to set it down
+      - in over my head: deeper in than you know how to handle
+      - drowning: going under, gasping for air
+      - frantic: scrambling, no time to stop and think
+      - overloaded: carrying more than you were built to hold
+      - stretched thin: pulled in too many directions at once
+      - a nervous wreck: nerves so shot you can barely function
+    deep:
+      - discombobulated: scattered and thrown, pieces everywhere
+        sounds: dis-kum-BOB-yoo-lay-tid
+        from: 1830s American slang, a joke mock-Latin word
+      - at sixes and sevens: everything in disarray, you included
+        from: likely an old dicing phrase — Chaucer used it
+      - overwrought: worked up past what your nerves can bear
+        from: wrought, the old past tense of work — so, overworked
+      - beleaguered: under siege from every side
+        sounds: bih-LEE-gurd
+        from: Dutch belegeren, “to besiege”
+      - harried: chased by demands, no chance to catch your breath
+        from: Old English hergian, “to raid and lay waste”
+      - in a flat spin: whirling in a dizzy panic
+        from: British, from aviation — a plane spinning down almost level
+      - unstrung: nerves come apart like loosened strings
+      - distraught: so upset and agitated you can’t think straight
+        from: Latin distractus, “pulled apart”
+      - on the ropes: barely on your feet, close to going down
+        from: boxing — a fighter pinned against the ring’s ropes
 
   - word: on edge
     mix: scared 70, mad 30
@@ -68,6 +172,34 @@ feelings:
     text: I’m kind of on edge today, so if I’m short with you, it’s not you.
     say: I’m wound tight right now — give me a minute.
     self: Unclench your jaw. Drop your shoulders. Breathe out long.
+    synonyms:
+      - edgy: tense, with a sharp edge to everything
+      - jumpy: one sudden noise and you’re out of your skin
+      - twitchy: muscles ready to fire at nothing
+      - tense: braced, every muscle holding on
+      - jittery: shaky with nervous energy that won’t settle
+      - wired: switched on and buzzing, can’t power down
+      - rattled: knocked off balance and still jangling
+      - uptight: clenched, controlled and tightly wound
+      - antsy: fidgety, itching for something to happen
+      - skittish: easily spooked, ready to bolt
+    deep:
+      - highly strung: nerves tuned tight, like strings about to snap
+        from: British — Americans say “high-strung”
+      - nervy: tense, jumpy and short-fused
+        from: British sense — in America, nervy means bold
+      - on the qui vive: on high alert, watching for trouble
+        sounds: kee-VEEV
+        lang: French
+        from: a French sentry’s challenge, “(long) live who?”
+      - on shpilkes: too antsy to sit, as if perched on pins
+        sounds: SHPILL-kuss
+        lang: Yiddish
+        from: Yiddish shpilkes, “pins”
+      - like a cat on hot bricks: too restless to keep still for a second
+        from: British — Americans put the cat on a hot tin roof
+      - restive: restless and balky, straining at the reins
+        from: Old French restif — it once meant stubbornly still
 
   - word: nervous-excited
     mix: scared 50, joyful 50
@@ -79,3 +211,12 @@ feelings:
     text: I have the BIGGEST butterflies about tomorrow. Nervous and excited all at once.
     say: My stomach is doing flips, but in a good way.
     self: Nervous and excited feel the same in the body. Choose excited.
+    synonyms:
+      - keyed up: wound tight with the thrill of what’s coming
+      - all aflutter: wings in your stomach, a smile on your face
+      - all atwitter: chirpy, fluttery and unable to settle
+    deep:
+      - kilig: the giddy rush when romance comes your way
+        lang: Tagalog
+      - tremulous: quivering with hope and nerves at once
+        from: Latin tremulus, from tremere, “to tremble”
