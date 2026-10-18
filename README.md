@@ -1,7 +1,7 @@
 # Feelings Wheel
 
-A bold, bubbly feelings wheel for finding the words for how you feel — then sharing them.
-Phone-first and installable as an offline PWA.
+A bold, bubbly feelings wheel for finding the words for how you feel — and for how you see the people
+you care about — then sharing them. Phone-first and installable as an offline PWA.
 
 **Live:** https://phing1337.github.io/feelings-wheel/
 
@@ -18,12 +18,24 @@ Chrome: ⋮ → Install app).
 - Open My wheel (tap or pull down) to learn more about each feeling and share how you're doing.
 - The background glows drift slowly and take on the colors and mood of what you've pinned.
 
+### I feel · I see you
+
+The switch at the bottom of the home screen flips between two wheels:
+
+- **I feel** — how you're feeling.
+- **I see you** — how you see someone: looks, heart, spirit, humor, mind and character. Bright words
+  (beautiful, witty, kind) sit beside double-edged ones (stubborn, intense) and their shadow sides
+  (vain, flaky), which show up deeper in colour with a gentle way to bring them up.
+
+Each wheel keeps its own pins. In **their wheel**, type the person's name when you share — it stays on
+your phone — and **Tell them** drafts a warm, playful or honest message from what you've pinned.
+
 ## Develop
 
 ```sh
 npm install
 npm run dev          # http://127.0.0.1:5175
-npm run words:check  # validate the feelings content
+npm run words:check  # validate every deck (`-- people` checks just one)
 npm run build        # production build in dist/
 npm run icons        # regenerate favicon + PWA icons from public/icon.svg
 ```
@@ -32,9 +44,9 @@ npm run icons        # regenerate favicon + PWA icons from public/icon.svg
 
 Every feeling lives in YAML under `content/clusters/` — one file per cluster (love, longing, wonder…),
 with definitions, examples, aliases, links to related feelings, and a thesaurus of `synonyms` and rare
-`deep` words with glosses, pronunciations and origins. A Vite plugin compiles them into the app;
-`npm run words:check` catches duplicates and broken links. See [`content/README.md`](content/README.md)
-for the format.
+`deep` words with glosses, pronunciations and origins. The **I see you** words live the same way under
+`content/people/`. A Vite plugin compiles both decks into the app; `npm run words:check` catches
+duplicates and broken links. See [`content/README.md`](content/README.md) for the format.
 
 ## Design tokens
 

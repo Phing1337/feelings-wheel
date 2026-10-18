@@ -5,6 +5,7 @@ import './styles.css';
 import './gsap.js';
 import './tokens.js';
 import './data/index.js';
+import './engine/decks.js';
 import './engine/core.js';
 import './engine/dock.js';
 import './engine/drawer.js';
@@ -26,6 +27,7 @@ async function boot() {
   FW.mount({ variant: 'bloom' });
   const view = createBloom(FW.els.stage);
   FW.on('explore', id => view.go(id));
+  FW.on('mode', id => view.deck(id));
   FW.on('pins', () => view.syncPins());
   let rt = 0;
   addEventListener('resize', () => {

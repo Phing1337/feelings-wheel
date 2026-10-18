@@ -1,0 +1,23 @@
+# The people deck — words for how you see someone: what you adore, admire, and (honestly) what drives you up the wall.
+# Same format as the feelings (content/README.md → "The people deck"), plus what's described here.
+id: people
+name: People
+noun: descriptor
+
+# Example lines a word can carry → the label shown on its card. Write them to the person ("you"),
+# or about them to someone else ("they"). Never use a real name — the app adds one when you share.
+tags:
+  say: Say it          # out loud, to them
+  text: Text it        # written to them
+  about: About them    # telling someone else, "they"
+  gentle: Gently       # for shadow and edge words: a kind way to bring it up
+
+# Extra fields on each word: text (one line) or list.
+fields:
+  notice: text         # finishes "You see it in…" — the moment you notice it
+
+links: [stronger, softer, opposite, see, shadow]   # shadow: what this virtue looks like overdone
+
+# light: a compliment · edge: depends how it's meant · shadow: a criticism.
+# Clusters can set side for all their words; the first one is the default.
+sides: [light, edge, shadow]

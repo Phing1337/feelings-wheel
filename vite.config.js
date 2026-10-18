@@ -8,7 +8,7 @@ export default defineConfig({
   server: { host: '127.0.0.1', port: 5175, strictPort: true },
   preview: { host: '127.0.0.1', port: 4175, strictPort: true },
   plugins: [
-    feelingsData({ dir: 'content' }),
+    feelingsData(),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg', 'favicon.ico', 'apple-touch-icon-180x180.png'],

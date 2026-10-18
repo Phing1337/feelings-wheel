@@ -1,7 +1,6 @@
 /* Feelings wheel — core engine (window.FW). Motion + colours come from the design tokens (FW.tok). */
 (function () {
 const FW = window.FW = window.FW || {};
-const D = window.FEELINGS_DATA;
 const T = FW.tok;
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 FW.reduce = reduce;
@@ -27,17 +26,44 @@ const toHex = c => {
 };
 FW.color.toHex = toHex;
 
-/* ---------- data prep ---------- */
-FW.fams = D.families;
-FW.fam = {};
-D.families.forEach(F => { F.rad = F.angle * Math.PI / 180; F.ink = inkFor(F.color); FW.fam[F.id] = F; });
-FW.list = D.feelings;
-FW.byId = {};
-FW.core = {};
-FW.prep = f => {
+/* OKLab / OKLCH, so colour shifts glide through clean hues (the aura, the side shades) */
+const lin = c => (c /= 255) <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+const enc = c => Math.round(255 * Math.max(0, Math.min(1, c <= 0.0031308 ? 12.92 * c : 1.055 * c ** (1 / 2.4) - 0.055)));
+FW.color.toLch = hex => {
+  const [r, g, b] = hex2rgb(hex).map(lin);
+  const l = Math.cbrt(0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b);
+  const m = Math.cbrt(0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b);
+  const s = Math.cbrt(0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b);
+  const A = 1.9779984951 * l - 2.4285922050 * m + 0.4505937099 * s;
+  const B = 0.0259040371 * l + 0.7827717662 * m - 0.8086757660 * s;
+  return { L: 0.2104542553 * l + 0.7936177850 * m - 0.0040720468 * s, C: Math.hypot(A, B), h: (Math.atan2(B, A) * 180 / Math.PI + 360) % 360 };
+};
+FW.color.lchRgb = (L, C, h) => {
+  const A = C * Math.cos(h * Math.PI / 180), B = C * Math.sin(h * Math.PI / 180);
+  const l = (L + 0.3963377774 * A + 0.2158037573 * B) ** 3;
+  const m = (L - 0.1055613458 * A - 0.0638541728 * B) ** 3;
+  const s = (L - 0.0894841775 * A - 1.2914855480 * B) ** 3;
+  return [enc(4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s),
+    enc(-1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s),
+    enc(-0.0041960863 * l - 0.7034186147 * m + 1.7076147010 * s)];
+};
+/* double-edged and shadow-side words (people deck) wear their family's colour, deepened:
+   --fw-shade-edge / --fw-shade-shadow = "lightness · chroma · hue turn" */
+const SHADE = { edge: [86, 100, 0], shadow: [64, 95, -12] };
+FW.sideColor = (hex, side) => {
+  const s = SHADE[side]; if (!s) return hex;
+  const c = FW.color.toLch(hex);
+  return rgb2hex(FW.color.lchRgb(c.L * s[0] / 100, c.C * s[1] / 100, c.h + s[2]));
+};
+
+/* ---------- decks ----------
+   Each deck (feelings in content/, people in content/people/) has its own families, words, clusters
+   and content. build() preps one and FW.useDeck() swaps it in, so the rest of the engine just reads
+   FW.fams, FW.byId, FW.core… for whichever deck is showing. */
+const prep = (f, fam) => {
   const tot = Object.values(f.mix).reduce((a, b) => a + b, 0) || 1;
-  const t = f.tone || 0, shade = c => t ? mixHex(c, t > 0 ? '#FFFFFF' : '#000000', Math.abs(t)) : c;
-  f.parts = Object.entries(f.mix).map(([fam, w]) => ({ fam, w: w / tot, color: shade(FW.fam[fam].color) })).sort((a, b) => b.w - a.w);
+  const t = f.tone || 0, shade = c => FW.sideColor(t ? mixHex(c, t > 0 ? '#FFFFFF' : '#000000', Math.abs(t)) : c, f.side);
+  f.parts = Object.entries(f.mix).map(([k, w]) => ({ fam: k, w: w / tot, color: shade(fam[k].color) })).sort((a, b) => b.w - a.w);
   f.mix = Object.fromEntries(f.parts.map(p => [p.fam, p.w]));
   f.dom = f.parts[0].fam;
   f.blend = f.parts.length > 1;
@@ -46,34 +72,80 @@ FW.prep = f => {
   f.lite = lum(f.avg) <= 0.36;
   return f;
 };
-D.feelings.forEach(f => { FW.prep(f); FW.byId[f.id] = f; if (f.core) FW.core[f.dom] = f; });
-
-/* thesaurus: each synonym is a light word that borrows its head feeling's colours, nudged a touch
-   lighter or darker (`tone`, stable per word) so a ring of synonyms never reads as one flat colour */
+FW.prep = f => prep(f, FW.fam);
 const hash = s => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
-FW.syns = [];
-D.feelings.forEach(f => (f.syn || []).forEach(s => {
-  if (FW.byId[s.id]) return;
-  const w = { ...s, head: f.id, mix: { ...f.mix }, level: f.level, cluster: f.cluster, also: f.also, def: s.means || f.def, tone: ((hash(s.id) % 1000) / 1000 - 0.5) * 0.3 };
-  FW.byId[w.id] = FW.prep(w); FW.syns.push(w);
-}));
-/* the head feeling's words (everyday first, then the deep cuts), for a feeling or any of its synonyms */
+const decks = {};
+let cur = null, stamp = 1;
+function build(id) {
+  const src = window.FW_DECKS[id], D = src.data;
+  const S = { id, meta: { ...(D.deck || {}), id }, content: src.content || {}, fams: D.families, fam: {}, list: D.feelings, byId: {}, core: {},
+    syns: [], clusters: D.clusters || [], back: {}, stamp: 0 };
+  S.fams.forEach(F => { F.base = F.base || F.color; F.rad = F.angle * Math.PI / 180; F.ink = inkFor(F.color); S.fam[F.id] = F; });
+  S.list.forEach(f => { prep(f, S.fam); S.byId[f.id] = f; if (f.core) S.core[f.dom] = f; });
+  /* thesaurus: each synonym is a light word that borrows its head word's colours (and side), nudged a
+     touch lighter or darker (`tone`, stable per word) so a ring of synonyms never reads as one flat colour */
+  S.list.forEach(f => (f.syn || []).forEach(s => {
+    if (S.byId[s.id]) return;
+    const w = { ...s, head: f.id, mix: { ...f.mix }, level: f.level, cluster: f.cluster, also: f.also, side: f.side, def: s.means || f.def,
+      tone: ((hash(s.id) % 1000) / 1000 - 0.5) * 0.3 };
+    S.byId[w.id] = prep(w, S.fam); S.syns.push(w);
+  }));
+  /* each word lives in one cluster (love, desire, wonder…) and may join others via `also`; clusters
+     list their neighbours (`near`) and the doorway words that lead into them (`via`) */
+  S.cluster = Object.fromEntries(S.clusters.map(c => [c.id, c]));
+  S.list.forEach(g => Object.entries(g.links || {}).forEach(([k, ts]) => ts.forEach(t => { const b = S.back[t] = S.back[t] || {}; (b[k] = b[k] || []).push(g.id); })));
+  return S;
+}
+/* family colours come from the tokens: --fw-color-<deck>-<family>, then --fw-color-<family> */
+function paint(S) {
+  S.fams.forEach(F => { F.color = toHex(T.css(`--fw-color-${S.id}-${F.id}`)) || toHex(T.css('--fw-color-' + F.id)) || F.base; F.ink = inkFor(F.color); });
+  S.list.forEach(f => prep(f, S.fam));
+  S.syns.forEach(f => prep(f, S.fam));
+  S.stamp = stamp;
+}
+FW.getDeck = id => {
+  const S = decks[id] = decks[id] || build(id);
+  if (S.stamp !== stamp) paint(S);
+  return S;
+};
+FW.deckColors = id => FW.getDeck(id).fams.map(F => F.color);
+FW.useDeck = id => {
+  if (!(window.FW_DECKS || {})[id]) id = 'feelings';
+  const S = cur = FW.getDeck(id);
+  Object.assign(FW, { fams: S.fams, fam: S.fam, list: S.list, byId: S.byId, core: S.core, syns: S.syns, clusters: S.clusters, cluster: S.cluster });
+  FW.deck = S.meta;
+  FW.UI = FW.UIS[id] || FW.UIS.feelings;
+  try { localStorage.setItem('fw.deck', id); } catch (e) {}
+  return S;
+};
+FW.setDeck = id => {
+  if (!(window.FW_DECKS || {})[id] || (cur && cur.id === id)) return false;
+  FW.useDeck(id);
+  FW.emit('deck', id);
+  return true;
+};
+
+/* the head word's words (everyday first, then the deep cuts), for a word or any of its synonyms */
 FW.words = id => {
   const f = FW.byId[id], h = f && (f.head ? FW.byId[f.head] : f);
   return h ? (h.syn || []).map(s => FW.byId[s.id]).filter(w => w && w.head === h.id) : [];
 };
-FW.content = id => (window.FEELINGS_CONTENT || {})[id] || {};
+FW.content = id => (cur && cur.content[id]) || {};
 
-/* family colours, label inks and the label face come from src/tokens.css */
+let saved = null;
+try { saved = localStorage.getItem('fw.deck'); } catch (e) {}
+FW.useDeck(saved || 'feelings');
+
+/* family colours, side shades, label inks and the label face come from src/tokens.css */
 const label = { family: 'Georgia, serif', weight: 800, track: 0.02 };
 FW.applyTokens = () => {
   T.refresh();
   const css = n => T.css(n);
   FW.ink.dark = toHex(css('--fw-color-label-dark')) || FW.ink.dark;
   FW.ink.light = toHex(css('--fw-color-label-light')) || FW.ink.light;
-  D.families.forEach(F => { F.color = toHex(css('--fw-color-' + F.id)) || F.color; F.ink = inkFor(F.color); });
-  FW.list.forEach(FW.prep);
-  FW.syns.forEach(FW.prep);
+  ['edge', 'shadow'].forEach(k => { const v = (T.raw('shade-' + k).match(/-?\d*\.?\d+/g) || []).map(Number); if (v.length === 3) SHADE[k] = v; });
+  stamp++;
+  paint(cur);
   label.family = css('--fw-font-display') || label.family;
   label.weight = parseFloat(css('--fw-font-weight-heavy')) || label.weight;
   const tr = css('--fw-tracking-label');
@@ -94,22 +166,16 @@ FW.sim = (a, b) => {
   return d / (Math.sqrt(na * nb) || 1) - 0.04 * Math.abs((a.level || 3) - (b.level || 3));
 };
 
-/* ---------- clusters + links ----------
-   Each feeling lives in one cluster (love, desire, wonder…) and may join others via `also`.
-   Clusters list their neighbours (`near`) and the doorway words that lead into them (`via`). */
-FW.clusters = D.clusters || [];
-FW.cluster = Object.fromEntries(FW.clusters.map(c => [c.id, c]));
-const back = {};
-D.feelings.forEach(g => Object.entries(g.links || {}).forEach(([k, ts]) => ts.forEach(t => { const b = back[t] = back[t] || {}; (b[k] = b[k] || []).push(g.id); })));
-
-/* every related feeling, best first, each with a short caption explaining the connection.
+/* ---------- related words ----------
+   every related word, best first, each with a short caption explaining the connection.
    Order matters: the first 7 fill the inner ring (closest kin), the next 8 the outer ring (doorways
    into neighbouring clusters), and the rest are paged in with the "+ more" bubble. */
+const SIDE_RANK = { light: 0, edge: 1, shadow: 2 };
 FW.related = id => {
   const f = FW.byId[id]; if (!f) return [];
   const out = [], seen = new Set([id]);
   const add = (gid, cap = '') => { if (!gid || seen.has(gid) || !FW.byId[gid]) return; seen.add(gid); out.push({ id: gid, cap }); };
-  const L = f.links || {}, Bk = back[id] || {};
+  const L = f.links || {}, Bk = cur.back[id] || {};
   const bySim = ids => [...new Set(ids)].map(g => FW.byId[g]).filter(Boolean).sort((a, b) => FW.sim(f, b) - FW.sim(f, a)).map(g => g.id);
   const cname = cid => (FW.cluster[cid] ? FW.cluster[cid].name.toLowerCase() : '');
   const homes = [f.cluster, ...(f.also || [])].map(c => FW.cluster[c]).filter(Boolean);
@@ -117,14 +183,16 @@ FW.related = id => {
   [...(L.stronger || []), ...(Bk.softer || [])].forEach(g => add(g, 'stronger'));
   [...(L.softer || []), ...(Bk.stronger || [])].forEach(g => add(g, 'softer'));
   (L.under || []).forEach(g => add(g, 'underneath'));
+  (Bk.shadow || []).forEach(g => add(g, 'bright side'));
   [...(L.see || []), ...(Bk.see || [])].forEach(g => add(g));
 
   if (f.core) {
-    /* a family hub: open the doors to every cluster in this family, then the blends that lean on it */
-    const own = FW.clusters.filter(c => c.family === f.dom && c.anchor !== id);
+    /* a family hub: open the doors to every cluster in this family (bright ones first), then the blends that lean on it */
+    const own = FW.clusters.filter(c => c.family === f.dom && c.anchor !== id).sort((a, b) => (SIDE_RANK[a.side] || 0) - (SIDE_RANK[b.side] || 0));
     own.forEach(c => add(c.anchor, cname(c.id)));
     FW.clusters.filter(c => c.family !== f.dom && (FW.byId[c.anchor]?.mix[f.dom] || 0) >= 0.3).forEach(c => add(c.anchor, 'mix'));
     (L.opposite || []).forEach(g => add(g, 'opposite'));
+    (L.shadow || []).forEach(g => add(g, 'shadow side'));
     bySim(homes.flatMap(c => c.members)).forEach(g => add(g));
     bySim(FW.list.filter(g => g.dom === f.dom && !g.core).map(g => g.id)).forEach(g => add(g));
     FW.list.filter(g => g.dom !== f.dom && !g.core && (g.mix[f.dom] || 0) >= 0.3)
@@ -136,6 +204,7 @@ FW.related = id => {
   kin.forEach(g => { if (out.length < 7) add(g); });
   homes.forEach(c => (c.near || []).forEach(n => n.via.forEach(g => add(g, cname(n.id)))));
   [...(L.opposite || []), ...(Bk.opposite || [])].forEach(g => add(g, 'opposite'));
+  (L.shadow || []).forEach(g => add(g, 'shadow side'));
   kin.forEach(g => add(g));
   (Bk.under || []).forEach(g => add(g, 'on the surface'));
   f.parts.filter(p => p.w >= 0.25).forEach(p => add(FW.core[p.fam] && FW.core[p.fam].id, 'family'));
@@ -211,7 +280,7 @@ FW.fitLabel = (word, s, f) => {
 FW.bubble = (f, o = {}) => {
   const s = o.size || 100;
   const el = document.createElement('div');
-  el.className = 'node' + (f.blend ? ' blend' : '') + (f.syn && f.syn.length ? ' has-syn' : '') + (f.head ? ' syn' : '') + (f.deep ? ' deep' : '');
+  el.className = 'node' + (f.blend ? ' blend' : '') + (f.syn && f.syn.length ? ' has-syn' : '') + (f.head ? ' syn' : '') + (f.deep ? ' deep' : '') + (f.side ? ' side-' + f.side : '');
   el.dataset.id = f.id;
   el.style.setProperty('--s', s + 'px');
   el.style.setProperty('--ink', f.ink);
@@ -295,7 +364,11 @@ FW.share = async (text, title) => {
   if (navigator.share) { try { await navigator.share({ text, title }); return; } catch (e) { if (e.name === 'AbortError') return; } }
   FW.copy(text, 'Copied — paste it anywhere');
 };
-FW.mixChips = f => f.parts.map(p => `<span class="mixchip" style="background:${FW.fam[p.fam].color};color:${FW.fam[p.fam].ink}">${FW.fam[p.fam].name}</span>`).join('');
+/* family chips; a double-edged or shadow-side word wears its family's deepened colour and says which side it's on */
+FW.mixChips = f => f.parts.map(p => {
+  const F = FW.fam[p.fam], c = FW.sideColor(F.color, f.side);
+  return `<span class="mixchip" style="background:${c};color:${inkFor(c)}">${F.name}</span>`;
+}).join('') + (f.side && FW.UI.sides[f.side] ? `<span class="mixchip sidechip">${FW.UI.sides[f.side]}</span>` : '');
 
 /* fallbacks until dock.js loads */
 FW.isPinned = FW.isPinned || (() => false);
@@ -308,13 +381,14 @@ FW.mount = (o = {}) => {
   frame.dataset.variant = o.variant || '';
   frame.dataset.theme = localStorage.getItem('fw.theme') || 'ink';
   frame.innerHTML = `<canvas class="aura" id="aura" aria-hidden="true"></canvas><div class="glow" id="glow"></div><div class="stage" id="stage"></div>
-<div class="topbar" id="topbar"><div class="dock" id="dock" role="button" aria-label="My wheel"><div class="wheel" id="wheel"><svg viewBox="0 0 100 100"><defs></defs><circle class="track" cx="50" cy="50" r="38.5"></circle><g class="segs"></g></svg><div class="wheel-core"><div class="fill"></div></div><div class="badge" id="badge">0</div></div><div class="dock-label">my wheel</div></div><button class="iconbtn" id="themeBtn" title="Theme">◐</button></div>
-<div class="hud" id="hud"><div class="trail" id="trail"></div><div class="peek" id="peek"></div></div>
+<div class="topbar" id="topbar"><div class="dock" id="dock" role="button" aria-label="${esc(FW.UI.dock())}"><div class="wheel" id="wheel"><svg viewBox="0 0 100 100"><defs></defs><circle class="track" cx="50" cy="50" r="38.5"></circle><g class="segs"></g></svg><div class="wheel-core"><div class="fill"></div></div><div class="badge" id="badge">0</div></div><div class="dock-label" id="dockLabel">${esc(FW.UI.dock())}</div></div><button class="iconbtn" id="themeBtn" title="Theme">◐</button></div>
+<div class="hud" id="hud"><div class="trail" id="trail"></div><div class="peek" id="peek"></div><div class="modes" id="modes" role="tablist" aria-label="Mode"></div></div>
 <div class="fly" id="fly"></div><div class="scrim" id="scrim"></div><div class="drawer" id="drawer"></div><div class="toast" id="toast"></div>
 <div class="probe" id="satProbe"></div><div class="probe" id="sabProbe"></div>`;
   const $ = id => frame.querySelector('#' + id);
   FW.els = { frame, aura: $('aura'), glow: $('glow'), stage: $('stage'), topbar: $('topbar'), hud: $('hud'), trail: $('trail'), peek: $('peek'),
-    dock: $('dock'), wheel: $('wheel'), fly: $('fly'), scrim: $('scrim'), drawer: $('drawer'), toast: $('toast'), badge: $('badge') };
+    dock: $('dock'), wheel: $('wheel'), fly: $('fly'), scrim: $('scrim'), drawer: $('drawer'), toast: $('toast'), badge: $('badge'),
+    modes: $('modes'), dockLabel: $('dockLabel') };
   FW.measure = () => {
     FW.W = frame.clientWidth; FW.H = frame.clientHeight;
     FW.safe = { top: $('satProbe').offsetHeight, bottom: $('sabProbe').offsetHeight };
@@ -333,6 +407,7 @@ FW.mount = (o = {}) => {
   FW.initDock && FW.initDock();
   FW.initDrawer && FW.initDrawer();
   FW.initAura && FW.initAura();
+  FW.initModes && FW.initModes();
   return FW.els;
 };
 

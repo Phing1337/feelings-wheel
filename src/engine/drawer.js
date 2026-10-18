@@ -1,15 +1,12 @@
-/* Feelings wheel — Gen 1 drawer: "How I'm feeling", pinned cards, journal copy */
+/* Feelings wheel — drawer: "How I'm feeling" / "How I see them", pinned cards, journal copy.
+   The words around the cards (title, summary, fields, sharing) come from the deck's FW.UI (decks.js). */
 (function () {
 const FW = window.FW;
-const TAG = { text: 'Text', say: 'Say it', opener: 'Opener', self: 'To myself' };
+const tag = t => (FW.deck.tags || {})[t] || t;
 const openIds = new Set();
 let dr, scrim, head, body, Hd = 0, isOpen = false;
 
-const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
-FW.summary = (agg = FW.aggregate()) => {
-  const bits = agg.filter(p => p.w >= 0.08).map(p => (p.w >= 0.45 ? 'mostly ' : p.w >= 0.2 ? 'some ' : 'a little ') + FW.fam[p.fam].name.toLowerCase());
-  return bits.length ? cap(bits.join(' · ')) : 'Nothing pinned yet';
-};
+FW.summary = (agg = FW.aggregate()) => FW.UI.summary(agg);
 FW.pinnedSorted = () => [...FW.pins].sort((a, b) => b.amt - a.amt || a.t - b.t);
 
 const scrimSync = y => gsap.set(scrim, { opacity: Math.max(0, 1 - y / (Hd + 24)) });
@@ -28,11 +25,15 @@ FW.closeDrawer = () => {
 
 function head_html() {
   const agg = FW.aggregate();
-  return `<div class="handle"></div><div class="dtitle">How I'm feeling</div><div class="dsum">${FW.summary(agg)}</div>` +
+  return `<div class="handle"></div><div class="dtitle">${FW.esc(FW.UI.title())}</div><div class="dsum">${FW.esc(FW.summary(agg))}</div>` +
     `<div class="dbar">${agg.map(p => `<span style="width:${(p.w * 100).toFixed(1)}%;background:${p.color}"></span>`).join('')}</div>`;
 }
-/* a word from the thesaurus borrows its feeling's body sense and voice, and says which feeling it
-   belongs to; every card ends with all the words for its feeling, tappable */
+/* the deck's extra fields: a feeling's body sense + voice, what you notice in a person */
+const fields_html = (f, c) => FW.UI.fields.map(d => [].concat(c[d.key] || []).map(v => d.quote
+  ? `<div class="voice" style="--c:${f.avg}">\u201c${FW.esc(v)}\u201d</div>`
+  : `<div class="csense">${FW.esc((d.lead || '') + v + (d.dot && !/[.!?\u2026]$/.test(v) ? '.' : ''))}</div>`).join('')).join('');
+/* a word from the thesaurus borrows its head word's fields, and says which word it belongs to;
+   every card ends with all the words for its head word, tappable */
 function card_html(p) {
   const f = FW.byId[p.id], h = f.head ? FW.byId[f.head] : null, c = FW.content(h ? h.id : p.id), esc = FW.esc;
   const ws = [...(h ? [h] : []), ...FW.words(p.id)];
@@ -41,9 +42,8 @@ function card_html(p) {
     `<div class="amt" title="How much">${[1, 2, 3].map(n => `<b data-n="${n}" class="${n <= p.amt ? 'on' : ''}"></b>`).join('')}</div></div>` +
     `<div class="cbody">${f.def ? `<div class="cdef">${esc(f.def)}</div>` : ''}` +
     (h ? `<div class="csyn">\u2248 a word for <b>${esc(h.word)}</b>${f.sounds ? ` · <i>${esc(f.sounds)}</i>` : ''}${f.from ? ` · from ${esc(f.from)}` : ''}</div>` : '') +
-    (c.body ? `<div class="csense">In your body: ${esc(c.body)}</div>` : '') +
-    (c.voice || []).map(v => `<div class="voice" style="--c:${f.avg}">\u201c${esc(v)}\u201d</div>`).join('') +
-    (h ? [] : c.examples || []).map((e, i) => `<div class="ex" data-ex="${i}"><em>${esc(TAG[e.tag] || e.tag)} · tap to copy</em>${esc(e.s)}</div>`).join('') +
+    fields_html(f, c) +
+    (h ? [] : c.examples || []).map((e, i) => `<div class="ex" data-ex="${i}"><em>${esc(tag(e.tag))} · tap to copy</em>${esc(e.s)}</div>`).join('') +
     (ws.length ? `<div class="thes"><em>\u2248 Words for ${esc((h || f).word)}</em><div class="tw">` +
       ws.map(w => `<button class="tchip${w === h ? ' head' : ''}${w.deep ? ' deep' : ''}${w.id === p.id ? ' cur' : ''}" data-word="${w.id}">${esc(w.word)}</button>`).join('') + '</div></div>' : '') +
     `<div class="crow"><button class="btn sm" data-act="explore">Explore</button><button class="btn sm" data-act="share">Share</button><button class="btn sm" data-act="unpin">Unpin</button></div></div></div>`;
@@ -53,10 +53,10 @@ function render(fresh) {
   head.innerHTML = head_html();
   const pins = FW.pinnedSorted();
   const scroll = body.scrollTop;
-  body.innerHTML = `<div class="dactions"><button class="btn primary" data-act="write">✎ Write a text</button>` +
+  body.innerHTML = `<div class="dactions"><button class="btn primary" data-act="write">${FW.esc(FW.UI.write)}</button>` +
     `<button class="btn" data-act="journal">Copy for journal</button><button class="btn" data-act="clear">Clear</button></div>` +
     `<div class="builder${FW._builderOpen ? ' open' : ''}" id="builder"></div>` +
-    (pins.length ? pins.map(card_html).join('') : `<div class="empty">Nothing pinned yet.<br>Hold a bubble — or flick it down — to pin how you feel.</div>`);
+    (pins.length ? pins.map(card_html).join('') : `<div class="empty">${FW.UI.empty}</div>`);
   FW.renderBuilder && FW.renderBuilder(body.querySelector('#builder'));
   if (fresh) gsap.from(body.querySelectorAll('.card'), { y: 18, opacity: 0, duration: FW.dur(0.45), stagger: 0.05, ease: 'power3.out', delay: 0.12 });
   else body.scrollTop = scroll;
@@ -77,7 +77,7 @@ function expand(card) {
 
 function journal() {
   const d = new Date(), pins = FW.pinnedSorted();
-  const lines = [`## How I'm feeling — ${d.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}`, '', FW.summary(), ''];
+  const lines = [`## ${FW.UI.title()} — ${d.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}`, '', FW.summary(), ''];
   pins.forEach(p => { const f = FW.byId[p.id], h = f.head && FW.byId[f.head]; lines.push(`- ${'●'.repeat(p.amt)}${'○'.repeat(3 - p.amt)} **${f.word}**${h ? ` (\u2248 ${h.word})` : ''} — ${f.def}`); });
   lines.push('', 'Mix: ' + FW.aggregate().map(p => FW.fam[p.fam].name).join(' · '));
   return lines.join('\n');
@@ -103,10 +103,7 @@ function onBody(e) {
       clearArmed = setTimeout(() => { clearArmed = null; act.classList.remove('armed'); act.textContent = 'Clear'; }, 2500);
     }
     if (a === 'explore' && id) { FW.closeDrawer(); setTimeout(() => FW.emit('explore', id), 250); }
-    if (a === 'share' && id) {
-      const f = FW.byId[id], ex = !f.head && (FW.content(id).examples || []).find(x => x.tag === 'text');
-      FW.share(ex ? ex.s : `Feeling ${f.word} right now${f.head ? ' \u2014 ' : '. '}${f.def}`, 'How I\u2019m feeling');
-    }
+    if (a === 'share' && id) FW.share(FW.UI.share(FW.byId[id]), FW.UI.shareTitle());
     if (a === 'unpin' && id) { openIds.delete(id); FW.unpin(id); }
     return;
   }
@@ -128,54 +125,31 @@ FW.initDrawer = () => {
     onRelease() { (this.y > Hd * 0.28 || vy > 0.5) ? FW.closeDrawer() : FW.openDrawer(); } });
 };
 FW.on('pins', () => isOpen && render(false));
+FW.on('deck', () => { openIds.clear(); FW._builderOpen = false; });
+/* typing their name in the builder retitles the drawer — only the head, so the input keeps focus */
+FW.on('person', () => { if (isOpen) head.innerHTML = head_html(); });
 })();
 
-/* ---------- "Write a text" builder ---------- */
+/* ---------- "Write a text" / "Tell them" builder: controls + drafts come from FW.UI.builder ---------- */
 (function () {
 const FW = window.FW;
-const st = { tone: 'honest', len: 'quick', because: '', help: '' };
-const join = a => a.length <= 1 ? (a[0] || '') : a.slice(0, -1).join(', ') + ' and ' + a[a.length - 1];
-const clean = s => s.trim().replace(/^because\s+/i, '').replace(/[.!\s]+$/, '');
-
-function drafts() {
-  const pins = FW.pinnedSorted();
-  if (!pins.length) return [];
-  const words = pins.map(p => FW.byId[p.id].word), top = words.slice(0, 2);
-  const why = clean(st.because), help = clean(st.help);
-  const helpLine = help ? ` What would help: ${help}.` : '';
-  const fuller = st.len === 'fuller';
-  const rest = words.slice(2, 5);
-  const mix = fuller && rest.length ? ` There\u2019s a bit of ${join(rest)} in there too.` : '';
-  const T = {
-    light: [`Hey — small heads up, I'm feeling a bit ${join(top)} today${why ? ` (${why})` : ''}.${mix}${helpLine}${fuller ? ' No need to fix anything, just wanted you to know.' : ''}`,
-      `Quick check-in from me: ${join(top)}${why ? `, mostly because ${why}` : ''}.${helpLine}`],
-    honest: [`I want to be honest with you — I'm feeling ${join(top)}${why ? ` because ${why}` : ''}.${mix}${helpLine}${fuller ? ' I\u2019d rather say it than sit on it.' : ''}`,
-      `Being real: today I'm ${join(top)}.${why ? ` It's about ${why}.` : ''}${helpLine}`],
-    tender: [`Can I share something? I'm feeling pretty ${join(top)} right now${why ? ` — ${why}` : ''}.${mix}${helpLine}${fuller ? ' Thank you for being someone I can tell.' : ''}`,
-      `I'm a little ${join(top)} tonight${why ? `, because ${why}` : ''}. Just wanted to let you in on it.${helpLine}`]
-  };
-  const out = [...T[st.tone]];
-  const ex = (FW.content(pins[0].id).examples || []).find(e => e.tag === 'text');
-  if (ex) out.push(ex.s);
-  return out;
-}
 
 FW.renderBuilder = el => {
   if (!el) return;
-  const seg = (key, opts) => `<div class="seg" data-key="${key}">${opts.map(([v, l]) => `<button data-v="${v}" class="${st[key] === v ? 'on' : ''}">${l}</button>`).join('')}</div>`;
-  el.innerHTML = seg('tone', [['light', 'Light'], ['honest', 'Honest'], ['tender', 'Tender']]) + seg('len', [['quick', 'Quick'], ['fuller', 'Fuller']]) +
-    `<input id="bWhy" placeholder="because… (optional)"><input id="bHelp" placeholder="what would help… (optional)"><div id="bOut"></div>`;
-  const why = el.querySelector('#bWhy'), help = el.querySelector('#bHelp'), out = el.querySelector('#bOut');
-  why.value = st.because; help.value = st.help;
+  const B = FW.UI.builder, st = B.st, esc = FW.esc;
+  el.innerHTML = B.controls.map(([type, key, x, attrs = '']) => type === 'seg'
+    ? `<div class="seg" data-key="${key}">${x.map(([v, l]) => `<button data-v="${v}" class="${st[key] === v ? 'on' : ''}">${esc(l)}</button>`).join('')}</div>`
+    : `<input data-key="${key}" placeholder="${esc(x)}" autocomplete="off" ${attrs}>`).join('') + '<div class="bout"></div>';
+  const out = el.querySelector('.bout');
   const paint = animate => {
     out.innerHTML = '';
-    const list = drafts();
-    if (!list.length) { out.innerHTML = '<div class="empty" style="padding:14px">Pin a feeling or two first.</div>'; return; }
+    const list = B.drafts(st);
+    if (!list.length) { out.innerHTML = `<div class="empty" style="padding:14px">${esc(B.empty)}</div>`; return; }
     list.forEach(text => {
       const d = document.createElement('div'); d.className = 'draft';
       const p = document.createElement('div'); p.textContent = text; d.appendChild(p);
       const row = document.createElement('div'); row.className = 'crow';
-      [['Copy', () => FW.copy(text)], ['Share', () => FW.share(text, 'How I\u2019m feeling')]].forEach(([l, fn]) => {
+      [['Copy', () => FW.copy(text)], ['Share', () => FW.share(text, FW.UI.shareTitle())]].forEach(([l, fn]) => {
         const b = document.createElement('button'); b.className = 'btn sm'; b.textContent = l; b.onclick = fn; row.appendChild(b);
       });
       d.appendChild(row); out.appendChild(d);
@@ -188,8 +162,10 @@ FW.renderBuilder = el => {
     s.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
     paint(true);
   }));
-  why.addEventListener('input', () => { st.because = why.value; paint(false); });
-  help.addEventListener('input', () => { st.help = help.value; paint(false); });
+  el.querySelectorAll('input[data-key]').forEach(i => {
+    i.value = st[i.dataset.key] || '';
+    i.addEventListener('input', () => { st[i.dataset.key] = i.value; paint(false); });
+  });
   paint(false);
 };
 })();

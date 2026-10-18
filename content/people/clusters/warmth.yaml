@@ -1,0 +1,154 @@
+# Warmth cluster · people deck · format guide: content/README.md
+
+id: warmth
+name: Warmth
+family: heart
+anchor: warm
+blurb: The glow you feel just standing next to them.
+near:
+  kindness: [caring]
+  sunshine: [sunny]
+  steadfast: [protective]
+  clingy: [clingy]
+
+words:
+  - word: warm
+    mix: heart 80, spirit 20
+    level: 3
+    def: Easy to be near — they make people feel welcome before anyone’s said much.
+    notice: how strangers end up telling them their whole life story
+    opposite: cold
+    see: sunny
+    say: You make everyone feel like they belong. It’s like walking into a warm kitchen.
+    text:
+      - Talking to you tonight felt like coming in from the cold. You have such a warm way about you.
+      - I always leave your place feeling ten degrees warmer. Thanks for having me.
+    about: They’re so warm — five minutes in, you feel like you’ve known them for years.
+    synonyms:
+      - warmhearted: kind and loving, with a glow you can feel
+      - friendly: open and kind, and glad to see you
+      - welcoming: makes you feel wanted the moment you arrive
+      - approachable: easy to walk up to, no nerves required
+      - cordial: warm and sincere in a polite, unfussy way
+      - hospitable: loves having people over and making them comfortable
+      - cozy: comforting to be around, like a blanket and a cup of tea
+      - a hug in human form: makes you feel held without even touching you
+    deep:
+      - gemütlich: cozy and good-natured, easy company
+        sounds: guh-MOOT-likh
+        lang: German
+      - hyggelig: cozy and pleasant — the person version of candlelight
+        sounds: HOO-guh-lee
+        lang: Danish
+      - xenial: hospitable, especially to strangers — newcomers feel at home
+        sounds: ZEE-nee-ul
+        from: Greek xenia, “hospitality” — a sacred duty in ancient Greece
+
+  - word: affectionate
+    mix: heart 78, looks 22
+    level: 3
+    def: Shows love out loud — hugs, hand squeezes, sweet words, a head on your shoulder.
+    notice: the hand that finds yours under the table
+    shadow: clingy
+    say:
+      - You hug everyone hello like you mean it. I love that about you.
+      - I love how affectionate you are. You never leave me guessing.
+    text:
+      - I love how openly affectionate you are with your people. It’s rarer than you’d think.
+      - Still thinking about how you squeezed my hand before I left. Small thing, huge deal.
+    about: They’re really affectionate — always an arm around someone, always a hug hello.
+    synonyms:
+      - cuddly: always up for a cuddle, and great at it
+      - huggy: greets everyone with a hug, no exceptions
+      - snuggly: happiest curled up close to someone
+      - touchy-feely: openly physical and emotional, without a second thought
+      - tactile: shows warmth through touch — a hand on your arm, your back
+      - demonstrative: shows love openly, not just in private
+      - lovey-dovey: openly, happily soppy with the people they love
+    deep:
+      - spoony: soppy and sweet on someone — old-fashioned slang
+        from: spoon, old slang for a sentimental fool
+      - verschmust: always in the mood for a cuddle
+        sounds: fair-SHMOOST
+        lang: German
+        from: schmusen, “to cuddle”
+
+  - word: loving
+    mix: heart 90, character 10
+    level: 4
+    def: Full of love and generous with it — the people in their life never wonder where they stand.
+    notice: the way they look at their people when they think no one’s watching
+    shadow: possessive
+    say:
+      - You love your people so well. It was one of the first things I noticed about you.
+      - Being loved by you is the easiest thing in the world.
+    text:
+      - Thinking about how loving you are with the people in your life. It says so much about you.
+      - I don’t say it enough, but I feel so loved by you. Thank you for that.
+    about: They’re so loving — they show it in a hundred small ways you only notice later.
+    synonyms:
+      - adoring: looks at their people like they hung the moon
+      - devoted: loves steadily and completely, for the long haul
+      - doting: fusses over the people they love, delightedly
+      - fond: full of soft, easy affection for their people
+      - tender: soft, careful and full of love
+      - a lover, not a fighter: would rather make peace than make a point
+    deep:
+      - kindly affectioned: warmly, lovingly disposed toward others
+        from: the old Bible line “be kindly affectioned one to another”
+      - amorevole: loving and affectionate — also a music marking
+        sounds: ah-moh-REH-voh-leh
+        lang: Italian
+
+  - word: nurturing
+    mix: heart 75, character 25
+    level: 3
+    def: Helps people grow — they feed you, encourage you and quietly root for who you’re becoming.
+    notice: the soup that appears when you’re sick, and the pep talk after
+    shadow: controlling
+    say:
+      - You have this way of helping people grow. Everyone around you seems to bloom a little.
+      - You’ve helped me grow in ways I’m only starting to notice. Thank you.
+    text:
+      - You take such good care of people. Everyone left tonight fed, happy and a little braver.
+      - Thank you for feeding me, and for believing in me before I did.
+    about: They’re so nurturing — every plant, pet and friend in their life is thriving.
+    synonyms:
+      - motherly: caring and protective, the way a good mother is
+      - fatherly: steady, warm and protective, like a good dad
+      - parental: looks after people like they’re family
+      - fostering: helps people and ideas grow
+      - the mom friend: the friend with snacks, a spare charger and good advice
+      - takes people under their wing: looks after you while you find your feet
+    deep:
+      - avuncular: kind and encouraging toward younger people, like an uncle
+        sounds: uh-VUNG-kyuh-ler
+        from: Latin avunculus, “mother’s brother”
+      - materteral: fond and indulgent, the way an aunt can be
+        sounds: muh-TUR-tuh-rul
+        from: Latin matertera, “mother’s sister”
+      - cosseting: lavishing someone with protective, pampering care
+        from: cosset, a lamb raised by hand
+
+  - word: big-hearted
+    mix: heart 72, spirit 28
+    level: 4
+    def: Generous with love and goodwill — there’s space in their heart for everyone.
+    notice: how they always make room for one more at the table
+    opposite: petty
+    say: You have the biggest heart of anyone I know. Don’t let anyone make it smaller.
+    text: Just heard what you did. How does your heart even fit in your chest?
+    about: They’re big-hearted in the best way — quick to forgive, slow to judge, always giving.
+    synonyms:
+      - large-hearted: generous and sympathetic on a grand scale
+      - openhearted: gives love freely and holds nothing back
+      - all heart: kind and generous through and through
+      - generous-spirited: thinks the best of people and gives freely
+      - a soft touch: can’t say no to anyone who needs a hand
+      - a heart as big as all outdoors: kind and generous beyond measure
+    deep:
+      - magnanimous: generous in spirit, above pettiness and grudges
+        sounds: mag-NAN-ih-mus
+        from: Latin magnus animus, “great soul”
+      - greathearted: noble, generous and brave of heart
+        from: Middle English gret-herted

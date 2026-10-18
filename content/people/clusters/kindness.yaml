@@ -1,0 +1,195 @@
+# Kindness cluster · people deck · format guide: content/README.md
+
+id: kindness
+name: Kindness
+family: heart
+anchor: kind
+blurb: Good to people — especially when no one's watching.
+near:
+  warmth: [warm]
+  empathy: [thoughtful]
+  steadfast: [supportive]
+  sunshine: [good-natured]
+
+words:
+  - word: kind
+    core: true
+    mix: heart
+    level: 3
+    def: Good to people all the way through — gentle with the world and everyone in it.
+    notice: how they treat people who can’t do a thing for them
+    stronger: compassionate
+    softer: sweet
+    opposite: cold
+    see: [thoughtful, big-hearted]
+    say:
+      - You’re one of the kindest people I know, and you never make a show of it.
+      - I saw what you did for that stranger today. You didn’t even think twice.
+    text:
+      - You were so kind to me today and I don’t think you even noticed. I did.
+      - Reminder that you’re one of the kindest people I’ve ever met. That’s all, carry on.
+    about: They’re so kind — not polite-kind, properly kind, to waiters and strangers and everyone.
+    synonyms:
+      - kindhearted: kind by nature, not just on good days
+      - good-hearted: means well, and it shows in what they do
+      - kindly: kind in a gentle, unhurried, old-fashioned way
+      - nice: pleasant and good to people — the everyday word for it
+      - neighborly: helpful and friendly to whoever happens to be nearby
+      - a heart of gold: kind and generous right to the core
+      - a good egg: a thoroughly decent sort — a bit old-school
+      - an angel: so kind it seems almost too good to be true
+      - a good Samaritan: stops to help a stranger, no questions asked
+    deep:
+      - benevolent: well-meaning and kindly, wishing everyone well
+        sounds: buh-NEV-uh-lunt
+        from: Latin bene volens, “wishing well”
+      - beneficent: actively doing good, not just wishing it
+        sounds: buh-NEF-ih-sunt
+        from: Latin beneficus, “doing good”
+      - benignant: kindly and gracious, especially toward those with less
+        sounds: bih-NIG-nunt
+        from: benign, on the model of malignant
+      - buena gente: good people — a warm, plain way to call someone kind
+        sounds: BWEH-nah HEN-teh
+        lang: Spanish
+
+  - word: caring
+    mix: heart 80, character 20
+    level: 3
+    def: Genuinely invested in how you’re doing — and quick to show up when things go wrong.
+    notice: the “did you get home okay?” text, every single time
+    see: nurturing
+    say:
+      - You always check on everyone. I hope someone checks on you, too.
+      - The way you look after people is one of my favorite things about you.
+    text:
+      - Thanks for checking in. Small thing, but it made my whole day.
+      - You remembered my appointment and texted to ask how it went. Who does that? You do.
+    about: They’re so caring — first to notice when someone’s struggling, first to show up.
+    synonyms:
+      - concerned: genuinely worried for you, in the best way
+      - attentive: notices what you need, and shows up with it
+      - invested: truly cares how things turn out for you
+      - caretaking: the one who looks after everyone, often unasked
+      - hands-on: doesn’t just ask how you are — rolls up their sleeves
+      - the first to check in: notices when you’ve gone quiet
+    deep:
+      - ministering: tending to people’s needs, quietly and devotedly
+        from: Latin minister, “servant”
+      - fürsorglich: caring and protective, always looking after someone
+        sounds: FYOOR-zork-likh
+        lang: German
+        from: Fürsorge, “care, looking after”
+
+  - word: gentle
+    mix: heart 85, looks 15
+    level: 2
+    def: Soft and careful with people — no sharp edges, no rushing, never a raised voice.
+    notice: the way they handle anything fragile, from a teacup to your feelings
+    see: patient
+    say: You’re so gentle with people. I don’t think you know how rare that is.
+    text:
+      - You’re the gentlest person I’ve met in a long time, and I mean that as the highest compliment.
+      - Thank you for being so gentle with me today. It was exactly what I needed.
+    about: They’re gentle in a way that makes everyone lower their voice a little.
+    synonyms:
+      - soft-spoken: quiet-voiced, and never one to raise it
+      - mild-mannered: calm and easy in how they treat people
+      - softhearted: easily moved, and quick to go easy on you
+      - mild: calm and even, with no harshness in them
+      - a gentle giant: big and strong, and soft as anything
+      - a teddy bear: tougher-looking than they are — all soft inside
+      - wouldn’t hurt a fly: couldn’t be cruel if they tried
+    deep:
+      - yasashii: gentle and kind at once — one word for both
+        sounds: yah-SAH-shee
+        lang: Japanese
+      - mansuete: mild and gentle — an old word, almost lost
+        sounds: MAN-sweet
+        from: Latin mansuetus, “tamed, used to the hand”
+      - douce: sweet, quiet and mild-mannered — a soft old Scots word
+        sounds: dooss
+        lang: Scots
+        from: Old French douce, “sweet”
+
+  - word: generous
+    mix: heart 70, character 30
+    level: 3
+    def: Quick to give — their time, their help, the credit — and slow to keep score.
+    notice: how the last slice always ends up on someone else’s plate
+    opposite: selfish
+    see: big-hearted
+    say: You’re so generous with your time. I hope you know people notice.
+    text: Thank you for today. You make giving look so easy, and I know it isn’t.
+    about: They’re generous with everything — money, time, compliments, the good seat.
+    synonyms:
+      - giving: always offering something — time, help, a spare umbrella
+      - openhanded: gives freely, without a second thought
+      - unselfish: puts other people’s needs on a level with their own
+      - selfless: thinks of others first, often forgetting themselves
+      - altruistic: helps because it’s right, not for what it gets them
+      - charitable: generous to people in need, with money or time
+      - would give you the shirt off their back: generous to a fault
+    deep:
+      - munificent: lavishly, splendidly generous
+        sounds: myoo-NIF-ih-sunt
+        from: Latin munificus, “gift-making”
+      - bounteous: giving freely and abundantly
+        sounds: BOWN-tee-us
+        from: Old French bonté, “goodness”
+      - eleemosynary: charitable — given to helping those in need
+        sounds: el-uh-MOS-uh-ner-ee
+        from: Greek eleēmosynē, “pity, alms”
+
+  - word: compassionate
+    mix: heart 70, mind 30
+    level: 4
+    def: Moved by other people’s pain — and moved to do something about it.
+    notice: how they stop for the person everyone else walks past
+    opposite: callous
+    say: You have so much compassion for people, even the ones who don’t make it easy.
+    text:
+      - You stopped for that person today when everyone else walked past. I haven’t stopped thinking about it.
+      - Thank you for how you handled all this. I felt less alone the second you replied.
+    about: They’re so compassionate — the friend you call when something terrible happens, because they’ll come.
+    synonyms:
+      - sympathetic: feels for people, and lets them know it
+      - tenderhearted: easily moved by anyone who’s hurting
+      - merciful: quick to forgive and slow to punish
+      - humane: treats every person and creature with dignity
+      - feels for everyone: can’t watch someone struggle and not care
+    deep:
+      - ruthful: full of pity and mercy — the lost opposite of ruthless
+        from: ruth, an old word for pity
+      - clement: merciful and mild, slow to judge
+        sounds: KLEM-unt
+        from: Latin clemens, “mild, merciful”
+
+  - word: sweet
+    mix: heart 70, looks 15, humor 15
+    level: 2
+    def: Soft-hearted and easy to love — they make ordinary moments a little gentler.
+    notice: the little note they slipped in your bag for later
+    see: [cute, lovely]
+    say:
+      - You’re honestly the sweetest person I know, and it never once feels like an act.
+      - That was the sweetest thing anyone’s done for me in ages.
+    text:
+      - Okay, that was so sweet of you. I’m smiling at my phone like an idiot.
+      - Found your note. You’re ridiculously sweet and I’m keeping it forever.
+    about: They’re genuinely sweet — not sugary, just good to people in a way that rubs off on you.
+    synonyms:
+      - a sweetheart: kind and lovable — you can’t help adoring them
+      - dear: sweet and much-loved, in a cozy, old-fashioned way
+      - a lamb: sweet and mild — as in “you’re a lamb” for a small favor
+      - a cinnamon roll: too good, too pure for this world — internet slang
+      - wholesome: good and sweet through and through, nothing cynical
+      - sweet-natured: sweet by temperament, not just in the moment
+      - a love: a sweetie — as in the British “be a love”
+    deep:
+      - dolce: sweet and soft — the Italian word, and a music marking
+        sounds: DOHL-chay
+        lang: Italian
+      - lieb: sweet and dear — how Germans say “you’re so sweet”
+        sounds: leep
+        lang: German

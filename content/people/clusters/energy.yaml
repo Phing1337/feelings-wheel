@@ -1,0 +1,193 @@
+# Energy cluster · people deck · format guide: content/README.md
+
+id: energy
+name: Energy
+family: spirit
+anchor: vibrant
+blurb: Bright, alive, and impossible to ignore.
+near:
+  adventure: [spontaneous]
+  play: [playful]
+  sunshine: [cheerful]
+  charisma: [passionate]
+  beauty: [radiant]
+
+words:
+  - word: vibrant
+    core: true
+    mix: spirit
+    level: 3
+    def: Bursting with life — bright, warm, and so alive it's catching.
+    notice: how a room seems to get its color back when they walk in
+    softer: lively
+    see: [radiant, sunny]
+    shadow: exhausting
+    say:
+      - You make everything feel more alive. I don’t know how you do it.
+      - There’s so much life in you. It’s honestly contagious.
+    text:
+      - You make ordinary days feel like they’re in color. Thought you should know.
+      - Still buzzing from tonight. How are you this alive all the time?
+    about: They’re so vibrant — you walk away from every hangout feeling more awake.
+    synonyms:
+      - full of life: always moving, laughing, wanting more from the day
+      - alive: awake to everything, all the way through
+      - colorful: bright and full of personality, never once beige
+      - vivid: so present they seem drawn in brighter ink
+      - spirited: lively, eager and full of get-up-and-go
+      - sparky: quick, lively and full of spark — British
+    deep:
+      - vivacious: lively, animated and a joy to be around
+        sounds: vih-VAY-shus
+        from: Latin vivax, “lively, full of life”
+      - zestful: full of zest — a bright, tangy relish for life
+        from: French zeste, the citrus peel that gives a dish its kick
+      - irrepressible: too full of life to keep down for long
+      - full of joie de vivre: brimming with the sheer joy of being alive
+        sounds: zhwah duh VEE-vruh
+        lang: French
+
+  - word: lively
+    mix: spirit 80, humor 20
+    level: 2
+    def: Full of energy and easy chatter — things move a little faster and brighter around them.
+    notice: the way the whole table gets louder and happier when they sit down
+    say: I love how animated you get — your hands do half the talking.
+    text: You made that dinner. Honestly, it would’ve been so quiet without you.
+    about: They’re so lively — there’s never a lull when they’re around.
+    synonyms:
+      - animated: expressive and full of movement, hands and all
+      - outgoing: quick to chat, quick to join in
+      - a live wire: crackling with energy, never quite still
+      - full of go: always ready for the next thing — British
+      - zippy: quick, bright and full of zip
+      - bright-eyed and bushy-tailed: alert, eager and ready to go
+    deep:
+      - sprightly: light on their feet and full of spirit
+        sounds: SPRITE-lee
+        from: spright, an old spelling of sprite, “spirit”
+      - peart: lively and in good spirits — an old country word
+        sounds: PEERT
+
+  - word: bubbly
+    mix: spirit 65, humor 35
+    level: 3
+    def: Fizzing with good cheer — chatty, giggly, and lit up by the smallest good thing.
+    notice: the little squeal when good news lands, even if it isn’t theirs
+    see: cheerful
+    shadow: dramatic
+    say: I love how excited you get about tiny things. It’s the best.
+    text:
+      - Your texts are basically confetti. Instant mood boost, every time.
+      - Your voice note made my whole morning. How are you this bubbly before nine?
+    about: They’re so bubbly — five minutes with them and you’re giggling too.
+    synonyms:
+      - fizzy: sparkling with happy energy
+      - perky: chipper, upbeat and full of pep
+      - bouncy: full of springy, happy energy
+      - giggly: quick to laugh, and quick to set you off too
+      - sparkly: bright and twinkly, inside and out
+      - chatty: happily talkative, friends with everyone in line
+      - bubbling over: so happy it spills out of them
+    deep:
+      - effervescent: fizzing with lively, sparkling good cheer
+        sounds: ef-er-VESS-unt
+        from: Latin effervescere, “to boil up”
+      - ebullient: overflowing with cheerful, bubbling energy
+        sounds: ih-BUL-yent
+        from: Latin ebullire, “to bubble out”
+
+  - word: energetic
+    mix: spirit 85, character 15
+    level: 3
+    def: Seemingly bottomless energy — up early, out the door, and still going strong at midnight.
+    notice: how they’re three errands in before you’ve had coffee
+    shadow: chaotic
+    say: Where do you get all this energy? Seriously, can I borrow some?
+    text:
+      - You’ve packed more into one day than I manage in a week. Teach me your ways.
+      - You did a workout, two errands and brunch before I woke up. I’m in awe.
+    about: They’re so energetic — I get tired just watching them, in the best way.
+    synonyms:
+      - full of beans: bouncing with energy from the moment they wake
+      - peppy: bright, quick and full of pep
+      - high-energy: running at a higher voltage than the rest of us
+      - on the go: always moving, always somewhere to be
+      - tireless: never seems to run out of steam
+      - dynamic: full of energy and always making things happen
+      - a dynamo: a human power station, humming all day long
+    deep:
+      - kinetic: always in motion — energy you can actually see
+        from: Greek kinein, “to move”
+      - full of vim: brimming with zip and vigor — old American slang
+        from: perhaps Latin vim, “strength”
+      - full of brio: bursting with spirited, sparkling vigor
+        sounds: BREE-oh
+        from: Italian brio, “liveliness”
+
+  - word: enthusiastic
+    mix: spirit 75, heart 25
+    level: 3
+    def: All in, right away — they get genuinely excited about things, and it makes you excited too.
+    notice: the way they say “yes!” before you’ve even finished the plan
+    say: I love how excited you get. You make everything feel like it matters.
+    text:
+      - Every conversation with you feels like a pep talk. I always come away fired up.
+      - You were more excited about my news than I was. Nobody hypes me up like you.
+    about: They’re so enthusiastic — mention a half-baked idea and they’re already planning the party.
+    synonyms:
+      - keen: eager, interested and ready to start
+      - eager: ready, willing and leaning forward
+      - exuberant: overflowing with energy, excitement and joy
+      - raring to go: itching to get started
+      - fired up: excited, motivated and ready to run with it
+      - gung-ho: eager to charge in, sometimes before the plan is ready
+      - effusive: generous with excited praise and thanks
+    deep:
+      - avid: hungry for more of whatever they love
+        from: Latin avidus, “eager, greedy”
+      - zealous: devoted to what they love with fiery, untiring energy
+        sounds: ZEL-us
+        from: Greek zēlos, “zeal, ardor”
+      - alacritous: cheerfully quick to say yes and get going
+        sounds: uh-LAK-rih-tus
+        from: Latin alacer, “brisk, eager”
+      - rhapsodic: rapturous, gushing with delight about what they love
+        from: Greek rhapsōidia, the reciting of epic poems
+      - keen as mustard: wildly eager — a cheerful old British phrase
+
+  - word: fun
+    mix: spirit 60, humor 40
+    level: 2
+    def: Good company in the truest sense — any plan is better with them, and so is no plan at all.
+    notice: how a quick drink with them somehow becomes a 2 a.m. story
+    see: [playful, funny]
+    say:
+      - I always have the best time with you. Like, every single time.
+      - You could make a delayed flight fun. Actually, you have.
+    text:
+      - You’re genuinely the most fun person I know. Just saying.
+      - Today was so much fun. Same time next week? And the week after?
+    about: They’re so much fun — honestly, I’d sit in traffic with them and call it a great day.
+    synonyms:
+      - the life of the party: the one who gets everybody going
+      - a blast: a guaranteed good time, every time
+      - a laugh: great to be around, always up for a joke — British
+      - good company: easy, lively and great to spend hours with
+      - sociable: happiest out and about with people
+      - a social butterfly: flits happily from one conversation to the next
+      - a party animal: never the first to leave, always the last
+    deep:
+      - convivial: makes every gathering warmer, merrier and longer
+        sounds: kun-VIV-ee-ul
+        from: Latin convivium, “a feast”
+      - gregarious: loves a crowd, and the crowd loves them back
+        sounds: grih-GAIR-ee-us
+        from: Latin grex, “flock”
+      - great craic: brilliant fun to be around
+        sounds: KRACK
+        lang: Irish
+      - a bon vivant: someone who savors good food, good wine and good company
+        sounds: bon vee-VAHN
+        lang: French
+      - rollicking: boisterous, carefree and full of fun

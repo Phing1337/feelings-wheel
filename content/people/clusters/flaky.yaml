@@ -1,0 +1,116 @@
+# Flaky cluster · people deck · format guide: content/README.md
+
+id: flaky
+name: Flaky
+family: character
+side: shadow
+anchor: flaky
+blurb: Hard to pin down — and hard to count on.
+near:
+  steadfast: [reliable]
+  adventure: [free-spirited]
+  too-much: [flighty]
+  integrity: [honest]
+
+words:
+  - word: flaky
+    mix: character 58, spirit 42
+    level: 3
+    def: Big on plans, short on follow-through — you’re never quite sure they’ll actually show.
+    notice: the “so sorry, something came up!!” text, an hour before
+    about: They’re lovely, but flaky — I’ve learned to have a backup plan whenever we make one.
+    gentle: I love spending time with you, which is why it stings when plans fall through. Can we only make the ones you’re sure about?
+    synonyms:
+      - unreliable: you can’t quite count on them
+      - undependable: there some of the time, gone the rest
+      - inconsistent: great one week, missing the next
+      - fair-weather: around for the fun, gone when it gets hard
+      - all talk: big promises, not much follow-through
+      - a flake: cancels, forgets, or just doesn’t show
+    deep:
+      - feckless: well-meaning, maybe, but hopeless at following through
+        sounds: FECK-lis
+        from: Scots feck, “effect, worth”
+      - inconstant: changeable, never quite the same twice
+        sounds: in-KON-stunt
+
+  - word: two-faced
+    mix: character 66, heart 20, mind 14
+    level: 4
+    def: Sweet to your face and different behind your back — so you’re never sure which version you’re getting.
+    notice: how warm they are to someone they were complaining about an hour ago
+    opposite: genuine
+    about: They’re a bit two-faced — lovely to your face, and you never quite know what they say once you leave.
+    gentle: I care about you, so I’d rather say this straight — I heard what you said when I wasn’t there, and it hurt. Can we talk?
+    synonyms:
+      - fake: puts on a face that isn’t really theirs
+      - insincere: says things they don’t really mean
+      - deceitful: willing to mislead you to get what they want
+      - backstabbing: friendly to your face, then turns on you
+      - double-dealing: plays both sides against each other
+      - shady: up to something, and hard to trust
+    deep:
+      - duplicitous: deliberately deceptive, saying one thing and doing another
+        sounds: doo-PLISS-ih-tus
+        from: Latin duplex, “twofold”
+      - Janus-faced: shows two different faces to two different people
+        sounds: JAY-nus-faced
+        from: Janus, the two-faced Roman god of doorways
+      - dissembling: hides what they really think behind a pleasant mask
+        sounds: dih-SEM-bling
+
+  - word: lazy
+    mix: character 76, spirit 24
+    level: 2
+    def: Would rather not, if they can help it — happy to let the dishes, the plans and the effort wait.
+    notice: the dishes that have been “soaking” since Tuesday
+    opposite: ambitious
+    about: They’re a bit lazy — sweet as anything, but if it involves effort, it can probably wait.
+    gentle: I love how relaxed you are — honestly, I could learn from it. But I’m stretched thin. Could you take a bit more on?
+    synonyms:
+      - idle: happiest doing nothing at all
+      - unmotivated: hard to get going, whatever the task
+      - slack: lets slide the things that really shouldn’t slide
+      - workshy: allergic to anything that looks like hard work
+      - bone idle: lazy right down to the bone
+      - a slacker: does the bare minimum, if that
+      - a couch potato: happiest horizontal, remote in hand
+    deep:
+      - indolent: comfortably, contentedly inactive
+        sounds: IN-duh-lunt
+        from: Latin indolentia, “freedom from pain”
+      - slothful: lazy in a slow, deeply unhurried way
+        sounds: SLAWTH-ful
+        from: Middle English slouthe, “slowness”
+      - lackadaisical: lazily unbothered, without much get-up-and-go
+        sounds: lak-uh-DAY-zih-kul
+        from: lackaday, an old sigh of weary regret
+      - fainéant: an idle do-nothing, elegantly so
+        sounds: fay-nay-AHN
+        lang: French
+        from: French fait-néant, “does nothing”
+
+  - word: wishy-washy
+    mix: character 62, mind 38
+    level: 2
+    def: Can’t quite land on a decision or an opinion — everything stays a soft, noncommittal maybe.
+    notice: the “I don’t mind, what do you want?” — every single time
+    about: They’re a bit wishy-washy — sweet, but getting a straight answer out of them is a whole project.
+    gentle: I love how easygoing you are. Sometimes, though, I really want to know what you think — even if it’s not what I think.
+    synonyms:
+      - indecisive: finds it hard to make up their mind
+      - noncommittal: won’t quite commit to a yes or a no
+      - half-hearted: only ever about half in
+      - vague: a little fuzzy on what they actually want
+      - flip-flopping: changes their mind back and forth
+      - on the fence: can’t quite pick a side
+    deep:
+      - vacillating: wavering back and forth, never quite settling
+        sounds: VASS-ih-lay-ting
+        from: Latin vacillare, “to sway, waver”
+      - shilly-shallying: dithering endlessly instead of deciding
+        from: “shill I, shall I?” — a playful doubling of “shall I?”
+      - mealy-mouthed: too cautious to say what they really mean
+      - milquetoast: timid and meek, scared to take a stand
+        sounds: MILK-tohst
+        from: a timid 1920s comic-strip character

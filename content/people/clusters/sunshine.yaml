@@ -1,0 +1,158 @@
+# Sunshine cluster · people deck · format guide: content/README.md
+
+id: sunshine
+name: Sunshine
+family: humor
+anchor: cheerful
+blurb: Easy to be around — the mood lifts when they arrive.
+near:
+  play: [playful]
+  warmth: [warm]
+  energy: [bubbly]
+  kindness: [sweet]
+
+words:
+  - word: cheerful
+    mix: humor 60, spirit 25, heart 15
+    level: 3
+    def: Reliably bright — they bring good humor to ordinary mornings, and it rubs off on you.
+    notice: the “good morning!” that sounds like they actually mean it
+    see: bubbly
+    say:
+      - Your good mood is contagious. I came in grumpy and look at me now.
+      - You’re honestly the best part of my mornings. How are you this cheerful before coffee?
+    text:
+      - Rough day, and then your message popped up. Instantly better — how do you do that?
+      - Your good-morning texts genuinely fix my whole day. Just so you know.
+    about: They’re so cheerful — not fake-happy, just genuinely glad to see you, every single time.
+    synonyms:
+      - cheery: bright and pleasant from morning to night
+      - chipper: perky and in fine spirits, even early
+      - chirpy: bright and chatty, like a bird at dawn
+      - merry: full of good cheer and easy laughter
+      - jolly: hearty, warm and always up for a laugh
+      - smiley: always smiling, and it’s catching
+      - upbeat: tilted toward the bright side, whatever happens
+      - full of the joys of spring: bursting with good cheer, whatever the season
+    deep:
+      - jocund: merry and bright-spirited — a poet’s word
+        sounds: JOK-und
+        from: Latin jucundus, “pleasant”
+      - jovial: hearty, convivial and full of good humor
+        sounds: JOH-vee-ul
+        from: Latin Jovialis, “of Jupiter” — the planet said to make people merry
+      - gladsome: full of gladness, and generous with it — old-fashioned
+
+  - word: sunny
+    mix: humor 52, spirit 33, heart 15
+    level: 3
+    def: Warm and bright by nature — they lean toward the good and somehow hand some of it to you.
+    notice: the way they find the one good thing in a lousy day and point it out
+    see: [radiant, warm]
+    say: You’re like walking into sunlight. I always feel better after seeing you.
+    text: Forecast says rain all week, but I get to see you soon — so I’m calling it sunny.
+    about: They’ve got the sunniest disposition — they can make a delayed flight feel like an adventure.
+    synonyms:
+      - a ray of sunshine: brightens every room they walk into
+      - sunshiny: warm and bright, like a good day
+      - optimistic: expects the best, and often finds it
+      - positive: leans toward the good in people and things
+      - glass-half-full: sees what’s there, not what’s missing
+    deep:
+      - beamish: beaming with cheer
+        sounds: BEE-mish
+        from: an old word revived by the poem Jabberwocky
+      - riant: smiling and full of cheer
+        sounds: RY-unt
+        from: French riant, “laughing”
+      - sanguine: cheerfully sure that things will turn out well
+        sounds: SANG-gwin
+        from: Latin sanguis, “blood” — the humor once thought to make people hopeful
+      - Pollyannaish: hopeful to a fault, finding the glad side of everything
+        sounds: pol-ee-AN-uh-ish
+        from: Pollyanna, the relentlessly glad heroine of a 1913 novel
+
+  - word: lighthearted
+    mix: humor 72, spirit 28
+    level: 2
+    def: Easy and unburdened — they carry things lightly and remind you that you can, too.
+    notice: the tune they whistle while doing a chore everyone else hates
+    shadow: flippant
+    say: Everything feels lighter around you. I don’t think you know how rare that is.
+    text: Thank you for today. I needed someone who doesn’t sweat the small stuff, and there you were.
+    about: They’re so lighthearted — somehow a flat tire turns into a roadside picnic.
+    synonyms:
+      - carefree: free of worry, and generous with that freedom
+      - breezy: light, airy company, easy to be around
+      - happy-go-lucky: takes life as it comes, cheerfully
+      - untroubled: calm and bright, hard to weigh down
+      - buoyant: bobs back up, whatever life throws at them
+      - without a care in the world: worry just seems to slide off them
+    deep:
+      - blithe: happily free of care
+        sounds: BLYTHE
+        from: Old English blīþe, “joyous, kind”
+      - lightsome: light in heart and light on their feet
+        sounds: LITE-sum
+
+  - word: easygoing
+    mix: humor 55, heart 30, character 15
+    level: 2
+    def: Relaxed and hard to rattle — plans change, the order’s wrong, and they just shrug and smile.
+    notice: the easy shrug and grin when the plans fall apart
+    opposite: rigid
+    shadow: wishy-washy
+    say: Being with you is so easy. I never feel like I have to perform.
+    text:
+      - I love how little rattles you. You make everything feel like it’s going to be fine.
+      - Sorry again about the mix-up — and thank you for being so easygoing about it. Seriously.
+    about: They’re really easygoing — you could change plans three times and they’d still be up for it.
+    synonyms:
+      - laid-back: relaxed about almost everything
+      - chill: calm, unbothered, easy to be with
+      - relaxed: at ease, and it puts you at ease too
+      - mellow: soft-edged and calm, like late-afternoon light
+      - low-maintenance: needs very little to be happy
+      - unfussy: happy with whatever’s on the menu
+      - go-with-the-flow: rolls happily with whatever comes
+      - no-drama: keeps things calm and simple
+    deep:
+      - dégagé: relaxed and unconcerned, with an easy grace
+        sounds: day-gah-ZHAY
+        lang: French
+        from: French, “disengaged”
+      - laissez-faire: happy to let things be, and to let people be
+        sounds: les-ay-FAIR
+        lang: French
+        from: French, “let do”
+
+  - word: good-natured
+    mix: humor 52, heart 48
+    level: 2
+    def: Kind-tempered and hard to offend — they take a joke, give the benefit of the doubt, and mean well.
+    notice: how they laugh hardest when the joke’s on them
+    opposite: petty
+    say: You take everything with such good humor. It makes me want to be kinder.
+    text:
+      - I love how easily you laugh at yourself. It makes being around you feel so warm.
+      - Thanks for being such a good sport about the canoe. I’d have been furious. You were laughing.
+    about: They’re so good-natured — you can tease them, beat them at cards, and they’ll still bring you soup.
+    synonyms:
+      - good-humored: cheerful, kind and slow to take offense
+      - amiable: friendly in an easy, unforced way
+      - affable: friendly and easy to talk to
+      - agreeable: pleasant company, rarely contrary
+      - obliging: happy to help, without making a thing of it
+      - a good sport: takes jokes and losses with a grin
+      - easy to get along with: gets on with just about everyone
+    deep:
+      - couthy: friendly, kindly and pleasant to be around
+        sounds: KOO-thee
+        lang: Scots
+        from: couth, “known, familiar” — the lost opposite of uncouth
+      - complaisant: glad to please, and gracious about it
+        sounds: kum-PLAY-sunt
+        from: French complaire, “to please”
+      - bonhomous: full of easy, friendly good cheer
+        sounds: BON-uh-mus
+        from: French bonhomie, “good nature”

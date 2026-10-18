@@ -1,0 +1,135 @@
+# Cold cluster · people deck · format guide: content/README.md
+
+id: cold
+name: Cold
+family: heart
+side: shadow
+anchor: cold
+blurb: Where the warmth should be.
+near:
+  kindness: [kind]
+  warmth: [warm]
+  vanity: [superficial]
+  stubborn: [arrogant]
+
+words:
+  - word: cold
+    mix: heart 65, character 35
+    level: 3
+    def: Slow to show warmth — whatever’s in there stays well out of sight.
+    notice: the one-word reply after you’ve poured your heart out
+    about: They can come across as cold — it takes a long time to feel like you’re actually let in.
+    gentle: I know you care in your own way. Sometimes I just need a little more of it out loud.
+    synonyms:
+      - frosty: cool and unfriendly, especially when displeased
+      - icy: chillingly unfriendly — a look that could freeze water
+      - chilly: cool and distant, short on warmth
+      - stony: shows nothing — no warmth, no give
+      - unemotional: keeps feelings out of sight, maybe even from themselves
+      - closed off: keeps everyone at a distance, emotionally
+      - a cold fish: hard to warm up to, slow to show feeling
+    deep:
+      - gelid: icy in manner — chilly enough to frost the room
+        sounds: JEL-id
+        from: Latin gelidus, “icy”
+      - marmoreal: cold and remote, like a marble statue
+        sounds: mar-MOR-ee-ul
+        from: Latin marmor, “marble”
+      - undemonstrative: keeps affection under wraps, even with the people they love
+        sounds: un-dih-MON-struh-tiv
+
+  - word: selfish
+    mix: heart 60, character 40
+    level: 3
+    def: Puts their own wants first, often without noticing who’s left holding the rest.
+    notice: how plans always seem to end up wherever they wanted
+    about: They can be a bit selfish — not cruel, just used to the world bending their way.
+    gentle: I love doing things with you. Lately it feels like the plans are mostly yours, though — can we take turns choosing?
+    synonyms:
+      - self-centered: sees most things in terms of how they affect them
+      - self-serving: tends to look after their own interests first
+      - inconsiderate: doesn’t stop to think how things land on others
+      - me-first: reaches for their own needs before anyone else’s
+      - looks out for number one: their own interests come first, every time
+      - ungenerous: slow to give, share or make room
+    deep:
+      - solipsistic: so wrapped up in themselves that others barely register
+        sounds: sol-ip-SIS-tik
+        from: Latin solus ipse, “oneself alone”
+      - nombriliste: self-centered — wrapped up in their own navel
+        sounds: nom-bree-LEEST
+        lang: French
+        from: nombril, “belly button”
+      - a dog in the manger: won’t let others have what they don’t even want
+        from: an old fable of a dog guarding hay it couldn’t eat
+
+  - word: callous
+    mix: heart 73, character 27
+    level: 4
+    def: Hardened to other people’s hurt — what would stop most of us barely seems to land.
+    notice: the shrug when someone’s clearly hurting
+    about: They can be callous — other people’s pain just doesn’t seem to reach them.
+    gentle: When you brushed that off, it really hurt. I don’t think you meant it to — can we talk about it?
+    synonyms:
+      - heartless: shows no sign of feeling for others
+      - unfeeling: unmoved by what others are going through
+      - hard-hearted: hard to move, even by real pain
+      - cold-blooded: unmoved where anyone else would flinch
+      - insensitive: doesn’t notice, or doesn’t mind, when they hurt someone
+      - uncaring: doesn’t seem to care what happens to others
+    deep:
+      - pachydermatous: thick-skinned to the point of feeling nothing
+        sounds: pak-ih-DUR-muh-tus
+        from: Greek pachydermos, “thick-skinned” — as in elephants
+      - case-hardened: hardened by life until little gets through
+        from: metalwork, where a surface is made hard
+      - obdurate: hardened against pity, unmoved where others soften
+        sounds: OB-dyuh-rit
+        from: Latin obduratus, “hardened”
+
+  - word: petty
+    mix: heart 50, character 35, mind 15
+    level: 2
+    def: Holds on to small slights and small scores, and finds it hard to let the little things go.
+    notice: how a forgotten birthday from years ago still comes up
+    about: They can be a bit petty — they remember every tiny slight, and they’ll get you back for it, just a little.
+    gentle: I get that it stung, and it’s fair to say so. I just don’t want us keeping score over the small stuff.
+    synonyms:
+      - small-minded: fixates on little things and little grievances
+      - mean-spirited: a bit ungenerous in how they see and treat people
+      - spiteful: likes to even the score, even when it’s tiny
+      - keeps score: tracks every favor and every slight
+      - tit-for-tat: matches every small wrong with one of their own
+      - holds a grudge: hangs on to hurts long after everyone else forgot
+    deep:
+      - picayune: fussing over things too small to matter
+        sounds: pik-ee-YOON
+        from: Louisiana French picaillon, a coin worth next to nothing
+      - rancorous: nursing old resentments long past their date
+        sounds: RANG-ker-us
+        from: Latin rancor, “rancidness, grudge”
+
+  - word: aloof
+    mix: heart 55, looks 25, mind 20
+    level: 2
+    def: Keeps a cool distance — friendly enough, but hard to really reach.
+    notice: the half-step back whenever things start getting close
+    about: They’re a bit aloof — not unkind, just hard to get close to.
+    gentle: I like you a lot, and sometimes you feel a few steps away. Is that just your way, or can I get closer?
+    synonyms:
+      - distant: there, but somehow a few steps away
+      - detached: watches from a little way off, emotionally
+      - standoffish: polite, but keeps people at bay
+      - remote: hard to reach, even up close
+      - reserved: keeps their thoughts and feelings to themselves
+      - unapproachable: makes people hesitate to walk up and say hi
+      - too cool for school: acts like they’re above it all
+      - keeps everyone at arm’s length: lets people near, but never close
+    deep:
+      - offish: inclined to keep their distance — a cousin of standoffish
+      - Olympian: loftily detached, as if watching from a mountaintop
+        sounds: oh-LIM-pee-un
+        from: the Greek gods, who looked down on everything from Olympus
+      - unclubbable: not one for joining in — happiest a little apart from the crowd
+        sounds: un-KLUB-uh-bul
+        from: un- + clubbable, “sociable” — an 18th-century word

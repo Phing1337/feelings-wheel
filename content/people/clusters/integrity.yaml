@@ -1,0 +1,143 @@
+# Integrity cluster · people deck · format guide: content/README.md
+
+id: integrity
+name: Integrity
+family: character
+anchor: honest
+blurb: What you see is what you get — and what you get is good.
+near:
+  steadfast: [loyal]
+  courage: [strong]
+  wisdom: [wise]
+  kindness: [kind]
+
+words:
+  - word: honest
+    mix: character 75, heart 25
+    level: 3
+    def: They tell you the truth, kindly — even when a softer lie would be easier for everyone.
+    notice: how they mention the spinach in your teeth before the meeting
+    opposite: two-faced
+    say:
+      - I trust you more than almost anyone, because you never just tell me what I want to hear.
+      - Thank you for being honest with me. It’s one of the things I love most about you.
+    text:
+      - I know that wasn’t easy to say. Thank you for being honest — it means a lot.
+      - You’re the only one I trust to tell me if this is a terrible idea. So… is it?
+    about: They’re honest in the best way — ask what they think and you’ll get the real answer, kindly.
+    synonyms:
+      - truthful: says what’s true, even when it costs them
+      - candid: open and frank, without being unkind
+      - frank: says plainly what they think
+      - upfront: tells you what’s what from the very start
+      - forthright: direct and open, nothing held back
+      - trustworthy: you can believe what they tell you
+      - on the level: honest and above board, no tricks
+      - a straight shooter: honest and direct, no angles
+      - honest as the day is long: honest right through, with nothing to hide
+    deep:
+      - veracious: habitually, almost compulsively truthful
+        sounds: vuh-RAY-shus
+        from: Latin verax, “truthful”
+      - plain-dealing: straight and honest in every dealing, big or small
+
+  - word: genuine
+    mix: character 70, heart 30
+    level: 3
+    def: Exactly who they seem to be — no performance, no angle, just them.
+    notice: how they’re the same with the waiter as they are with the boss
+    say: I love that you’re the same person with everyone. It makes it so easy to trust you.
+    text: Talking to you is such a relief. No act, no angle — just you. Never change that.
+    about: They’re completely genuine — the same with a stranger as with their oldest friend.
+    synonyms:
+      - sincere: means every word they say
+      - authentic: fully, unmistakably themselves
+      - real: no filter, no front
+      - earnest: means it all the way down, not a trace of irony
+      - unfiltered: shows you the real thing, unedited
+      - transparent: nothing hidden, and nothing to hide
+      - the real deal: exactly what they seem, through and through
+      - what you see is what you get: no hidden sides, no surprises
+    deep:
+      - guileless: without a trace of scheming or deceit
+        sounds: GILE-lis
+      - unfeigned: not put on, not even for a second
+        sounds: un-FAYND
+      - echt: genuine and authentic, the real thing
+        sounds: EKHT
+        lang: German
+      - fair dinkum: genuine and honest, no doubt about it — Australian slang
+
+  - word: principled
+    mix: character 80, mind 20
+    level: 4
+    def: They live by what they believe — and hold the line even when bending would be easier.
+    notice: how they turn down the easy win when it isn’t the right one
+    shadow: rigid
+    say: I really admire that you won’t bend on the things that matter. It makes me want to be better.
+    text: You did the right thing today, even though it cost you. I see it, and I’m proud of you.
+    about: They’re so principled — they’ll take the harder road before they’ll do something they don’t believe in.
+    synonyms:
+      - ethical: lives by a real sense of right and wrong
+      - upright: morally straight, whatever bends around them
+      - upstanding: decent and honest, the kind people look up to
+      - honorable: keeps their word and does the right thing
+      - decent: good in the plain, everyday way that matters most
+      - scrupulous: careful to do exactly what’s right
+      - incorruptible: can’t be bought, bribed or talked round
+      - high-minded: guided by high ideals and strong principles
+    deep:
+      - foursquare: firm and forthright, standing squarely for something
+        sounds: FOR-skwair
+      - unimpeachable: so trustworthy that no one could fault them
+        sounds: un-im-PEE-chuh-bul
+      - a mensch: a truly decent, honorable person — high praise
+        lang: Yiddish
+        from: Yiddish mentsh, “human being”
+
+  - word: humble
+    mix: character 65, heart 35
+    level: 3
+    def: Really good at things and the last to mention it — they always make room for everyone else.
+    notice: how they pass the credit to everyone else in the room
+    opposite: arrogant
+    say: You’re so good at this, and you never once make anyone feel small. I love that about you.
+    text: Just found out what you did, and you didn’t even mention it? You’re ridiculous. Ridiculously humble.
+    about: They’re incredibly talented and the last person who’d ever tell you so.
+    synonyms:
+      - modest: doesn’t make a fuss about how good they are
+      - unassuming: quietly brilliant, no spotlight needed
+      - self-effacing: steps back so other people can shine
+      - unpretentious: no airs, no act, nothing put on
+      - unshowy: good in a quiet way, without fanfare
+      - never one to brag: good at a lot, loud about none of it
+    deep:
+      - unpresuming: never assumes they deserve the best seat
+        sounds: un-prih-ZOO-ming
+      - unostentatious: no flash, no fanfare, nothing to prove
+        sounds: un-oss-ten-TAY-shus
+        from: Latin ostentare, “to show off”
+
+  - word: grounded
+    mix: character 70, mind 18, heart 12
+    level: 3
+    def: Rooted in who they are — calm, real, and not easily blown around by the noise.
+    notice: how they bring the conversation back to what actually matters
+    see: [level-headed, steady]
+    say: Being around you is like exhaling. You always know what actually matters.
+    text: Needed your no-nonsense brain today. Thank you for being my reality check.
+    about: They’re really grounded — whatever’s going on, they keep both feet on the floor.
+    synonyms:
+      - down-to-earth: practical, real, and easy to be around
+      - salt of the earth: good, honest and decent all the way through
+      - rooted: knows where they come from and who they are
+      - centered: calm and balanced at the core
+      - anchored: steady in themselves, hard to set adrift
+      - well-adjusted: at ease with life, and with themselves
+      - unspoiled: success never once went to their head
+    deep:
+      - equanimous: calm and even, whatever comes their way
+        sounds: ih-KWAN-ih-mus
+        from: Latin aequus animus, “an even mind”
+      - temperate: balanced and moderate, never too much of anything
+        from: Latin temperare, “to mix in due measure”

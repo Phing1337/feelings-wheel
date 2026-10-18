@@ -1,0 +1,169 @@
+# Too much cluster · people deck · format guide: content/README.md
+
+id: too-much
+name: Too much
+family: spirit
+side: shadow
+anchor: dramatic
+blurb: All that fire, pointed the wrong way.
+near:
+  energy: [energetic]
+  charisma: [passionate]
+  clingy: [needy]
+  flaky: [flaky]
+
+words:
+  - word: dramatic
+    mix: spirit 65, heart 35
+    level: 3
+    def: Feelings arrive at full volume — small things become big scenes, and everyone ends up in the audience.
+    notice: how a late reply becomes a whole saga by the time you hear about it
+    opposite: level-headed
+    about: They can be a bit dramatic — a slow coffee order becomes a three-act play.
+    gentle: I love how much you feel things — sometimes I just need us to turn the volume down so I can actually help.
+    synonyms:
+      - theatrical: playing every moment to the back row
+      - over the top: always a few notches past what the moment needs
+      - extra: doing the absolute most, all the time — slang
+      - melodramatic: big emotions, bigger plot twists
+      - operatic: every feeling sung at full voice
+      - stormy: big weather, emotionally speaking
+      - volatile: can flip from sunny to stormy in a second
+    deep:
+      - histrionic: theatrical to the point of excess
+        sounds: his-tree-ON-ik
+        from: Latin histrio, “actor”
+      - tempestuous: stormy, passionate and prone to sudden squalls
+        sounds: tem-PES-choo-us
+        from: Latin tempestas, “storm”
+      - mercurial: up, down and sideways before lunch
+        sounds: mer-KYOOR-ee-ul
+        from: Mercury, the quick, changeable messenger god
+      - Sturm und Drang: all storm and stress, every feeling a saga
+        sounds: SHTOORM oont DRAHNG
+        lang: German
+
+  - word: intense
+    mix: spirit 62, heart 20, character 18
+    level: 4
+    side: edge
+    def: Everything at full strength — deep feelings, fierce focus, strong opinions. Thrilling, and sometimes a lot.
+    notice: the way they look at you like nothing else in the room exists
+    text: I love how intensely you care. When you’re in, you’re all the way in.
+    about: They’re intense — when they care about something, it gets all of them, all at once.
+    gentle: I love how deeply you feel things. Sometimes I just need a minute to catch up — can we slow it down a little?
+    synonyms:
+      - full-on: all energy, all feeling, all the time
+      - high-voltage: a current that can light you up or knock you flat
+      - hot-blooded: quick to feel, quick to flare
+      - laser-focused: locked on, with nothing else getting a look-in
+      - brooding: quiet, deep, and clearly thinking something big
+      - all-or-nothing: no middle setting, ever
+    deep:
+      - vehement: feels and says everything with full force
+        sounds: VEE-uh-munt
+        from: Latin vehemens, “impetuous”
+      - perfervid: fervent to the point of fever
+        sounds: per-FUR-vid
+        from: Latin per-, “thoroughly,” + fervidus, “glowing hot”
+      - incandescent: burning so bright it’s hard to look straight at them
+        sounds: in-kun-DESS-unt
+        from: Latin incandescere, “to glow white”
+      - febrile: running hot, almost feverish with energy
+        sounds: FEB-ryle
+        from: Latin febris, “fever”
+
+  - word: chaotic
+    mix: spirit 64, humor 20, mind 16
+    level: 4
+    def: Big plans, last-minute changes and a trail of happy mess — exciting to be around, hard to keep up with.
+    notice: how there are always three plans, two lost chargers and one surprise
+    about: They’re a bit chaotic — lovely, but there’s always a lost passport somewhere in the story.
+    gentle: I love that there’s never a dull moment with you — I just need a bit more of a heads-up sometimes. Could we plan a little together?
+    synonyms:
+      - a whirlwind: blowing in, stirring everything up, gone again
+      - messy: plans, rooms and calendars all slightly everywhere
+      - a hot mess: lovably, disastrously disorganized
+      - unpredictable: you never quite know what’s coming next
+      - frenetic: fast, frantic and hard to keep up with
+      - unruly: hard to rein in, and not especially keen to be
+      - haphazard: winging it, always, and hoping for the best
+    deep:
+      - helter-skelter: rushing about in a happy, headlong muddle
+      - harum-scarum: wild, scattered and a little reckless
+        sounds: HAIR-um SKAIR-um
+      - madcap: full of wild, impulsive schemes
+        from: mad + cap, an old word for head
+
+  - word: reckless
+    mix: spirit 67, character 33
+    level: 4
+    def: Leaps first and looks later, if at all — thrilling to watch, and scary to love.
+    notice: how they say “it’ll be fine” right before it very much isn’t
+    about: They’re a bit reckless — so much fun, but I’d love them to come home in one piece.
+    gentle: I love how brave you are — I just worry about you. Could you let me in on the plan before you jump?
+    synonyms:
+      - rash: acts before stopping to think
+      - careless: forgets that some things can break
+      - devil-may-care: cheerfully ignoring every warning sign
+      - foolhardy: brave in a way that isn’t very smart
+      - heedless: blind to the risks, and to the people worrying
+      - a loose cannon: liable to go off in any direction
+      - wild: all speed, no brakes
+    deep:
+      - temerarious: bold to the point of rashness
+        sounds: tem-uh-RAIR-ee-us
+        from: Latin temere, “blindly, by chance”
+      - Icarian: flying too close to the sun
+        sounds: ih-KAIR-ee-un
+        from: Icarus, whose wax wings melted when he flew too high
+      - precipitate: all leap and no look
+        sounds: prih-SIP-ih-tut
+        from: Latin praeceps, “headlong”
+
+  - word: flighty
+    mix: spirit 58, humor 22, character 20
+    level: 2
+    def: Here, there and gone again — quick to chase a new idea or person, and slow to land anywhere.
+    notice: how a new hobby lasts exactly as long as the starter kit
+    opposite: steady
+    about: They’re a bit flighty — a new plan, a new city or a new crush every other month.
+    gentle: I love how much you want to try everything — I’d just love us to finish one thing together before the next one starts.
+    synonyms:
+      - fickle: changes their mind, or heart, on a whim
+      - restless: always itching for the next new thing
+      - hard to pin down: here one minute and somewhere else the next
+      - changeable: never quite the same plan twice
+      - commitment-shy: loves the start of things, wobbles at forever
+    deep:
+      - capricious: ruled by sudden whims
+        sounds: kuh-PRISH-us
+        from: Italian capriccio, “a sudden shiver, a whim”
+      - quicksilver: quick, bright and impossible to hold onto
+        from: “living silver,” an old name for mercury
+      - a flibbertigibbet: a giddy, chattering will-o’-the-wisp
+        sounds: FLIB-er-tee-jib-it
+        from: flepergebet, a 1400s word mimicking idle chatter
+      - a gadabout: always off to the next fun thing
+        from: gad about, “to roam restlessly”
+
+  - word: exhausting
+    mix: spirit 80, heart 20
+    level: 3
+    def: So much, so often, that time with them can feel like a workout — even when you love them.
+    notice: how you need a quiet night alone after a whole day with them
+    opposite: easygoing
+    about: They can be exhausting — wonderful, but I need a nap and a dark room after a weekend with them.
+    gentle: I love spending time with you — I just run out of battery faster than you do. Can we build in some quiet time too?
+    synonyms:
+      - draining: leaves you running on empty
+      - a lot: so much energy and need it can swamp you
+      - a handful: takes all your energy to keep up with
+      - hard work: lovely, but you really have to work at it
+      - relentless: never lets up, not even for a minute
+      - wearing: tiring in a slow, grinding way
+    deep:
+      - enervating: quietly drains the energy out of you
+        sounds: EN-er-vay-ting
+        from: Latin enervare, “to cut the sinews”
+      - wearisome: tiring to be around for long stretches

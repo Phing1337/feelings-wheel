@@ -24,6 +24,12 @@ button{font:inherit;color:inherit;touch-action:manipulation}
 .trail::-webkit-scrollbar{display:none}
 .chip{flex:none;border:0;background:var(--line);color:var(--fg);font:600 12px/1 var(--fw-font-body);padding:8px 11px;border-radius:99px;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
 .chip i{width:9px;height:9px;border-radius:50%;display:inline-block}
+/* "I feel | I see you" — home only, at the bottom; the thumb slides to the deck that's showing */
+.modes{position:relative;align-self:center;display:flex;padding:4px;border-radius:99px;background:var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.modes .thumb{position:absolute;left:0;top:4px;bottom:4px;width:0;border-radius:99px;background:var(--fg)}
+.modes button{position:relative;z-index:1;border:0;background:none;color:var(--fg);font:700 13px/1 var(--fw-font-body);padding:11px 16px;border-radius:99px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:color .3s}
+.modes button.on{color:var(--bg)}
+.mdot{width:12px;height:12px;border-radius:50%;flex:none}
 .trail .sep{flex:none;opacity:.3;font-size:12px}
 .iconbtn{flex:none;width:36px;height:36px;border-radius:50%;border:0;background:var(--line);color:var(--fg);font:700 15px/1 var(--fw-font-body);cursor:pointer;display:grid;place-items:center}
 .prompt{position:absolute;left:0;right:0;text-align:center;font:var(--fw-font-weight-heavy) var(--fw-text-prompt)/1.15 var(--fw-font-display);letter-spacing:var(--fw-tracking-tight);pointer-events:none}
@@ -62,6 +68,8 @@ button{font:inherit;color:inherit;touch-action:manipulation}
 .peek .w{font:800 22px/1 var(--fw-font-display);letter-spacing:-.02em}
 .mix{display:flex;gap:4px;flex-wrap:wrap;margin-top:6px}
 .mixchip{font:700 9.5px/1 var(--fw-font-body);letter-spacing:.06em;text-transform:uppercase;padding:4px 7px;border-radius:99px}
+/* "double-edged" / "shadow side" (people deck) */
+.mixchip.sidechip{background:transparent;color:var(--mute);box-shadow:inset 0 0 0 1.2px var(--line)}
 .peek .def{font:500 13.5px/1.42 var(--fw-font-body);opacity:.86;margin-top:10px}
 .peek .say{margin-left:8px;font:italic 500 13px/1 var(--fw-font-body);letter-spacing:0;color:var(--mute)}
 .peek .from{margin-top:6px;font:500 12px/1.4 var(--fw-font-body);color:var(--mute)}
@@ -81,7 +89,7 @@ button{font:inherit;color:inherit;touch-action:manipulation}
 .wheel-core{position:absolute;inset:22%;border-radius:50%;overflow:hidden;background:var(--line)}
 .wheel-core .fill{inset:-30%}
 .badge{position:absolute;right:-6px;top:-4px;min-width:20px;height:20px;padding:0 6px;border-radius:99px;background:var(--fg);color:var(--bg);font:800 11px/20px var(--fw-font-body);text-align:center}
-.dock-label{font:700 9.5px/1 var(--fw-font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.dock-label{font:700 9.5px/1 var(--fw-font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);max-width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .fly{position:absolute;inset:0;pointer-events:none;z-index:20}
 .fly .node{cursor:default}
 .toast{position:absolute;left:0;right:0;top:calc(84px + var(--sat));margin:auto;width:max-content;max-width:86%;padding:10px 16px;border-radius:99px;background:var(--fg);color:var(--bg);font:700 13px/1.2 var(--fw-font-body);z-index:30;opacity:0;pointer-events:none}

@@ -1,0 +1,143 @@
+# Empathy cluster · people deck · format guide: content/README.md
+
+id: empathy
+name: Empathy
+family: heart
+anchor: understanding
+blurb: They get it — sometimes before you've said a word.
+near:
+  kindness: [gentle]
+  wisdom: [insightful, perceptive]
+  steadfast: [supportive]
+  curiosity: [open-minded]
+
+words:
+  - word: understanding
+    mix: heart 60, mind 40
+    level: 3
+    def: Gets it — or really tries to. You can bring them your mess without bracing for a verdict.
+    notice: the way they say “that makes sense” when you were sure it wouldn’t
+    see: open-minded
+    say:
+      - I was half braced for you to think I was ridiculous, and you just got it. Thank you.
+      - You never make me feel silly for how I feel. I hope you know what that means to me.
+    text: Thanks for getting it without me having to explain everything. That’s rare.
+    about: They’re so understanding — you can tell them anything and they won’t make you feel small.
+    synonyms:
+      - accepting: takes you as you are, mess and all
+      - forgiving: lets things go, and actually means it
+      - easy to talk to: the kind of person you end up telling everything
+      - a good listener: hears what you’re saying, and what you’re not
+      - gives you the benefit of the doubt: assumes the best about you first
+    deep:
+      - verständnisvoll: full of understanding, and quick to see things your way
+        sounds: fair-SHTENT-niss-fol
+        lang: German
+        from: Verständnis, “understanding” + voll, “full”
+      - placable: quick to forgive and easy to make peace with
+        sounds: PLAK-uh-bul
+        from: Latin placabilis, “easily appeased” — implacable’s gentle twin
+
+  - word: empathetic
+    mix: heart 65, mind 35
+    level: 4
+    def: Feels what you’re feeling, almost as if it were happening to them too.
+    notice: how their face falls a second before you get to the sad part
+    see: compassionate
+    say:
+      - I saw your face when I told you. You really feel things with people, don’t you?
+      - You always know exactly how I’m feeling. It’s like you feel it with me.
+    text:
+      - Thanks for listening earlier. You took it in like it was happening to you too.
+      - I don’t know how you always know when I’m not okay, but thank you.
+    about: They’re incredibly empathetic — when you’re hurting, they hurt a little too.
+    synonyms:
+      - empathic: feels what others feel — the older, shorter spelling
+      - attuned: tuned in to how everyone around them is feeling
+      - reads the room: senses the mood before anyone says a word
+      - puts themselves in your shoes: imagines it from your side, every time
+      - on your wavelength: gets you without needing it explained
+    deep:
+      - einfühlsam: deeply empathetic — literally “feeling into” others
+        sounds: INE-fyool-zahm
+        lang: German
+        from: Einfühlung, the word English “empathy” was coined to translate
+      - en rapport: in close, easy harmony with how you feel
+        sounds: ahn ra-POR
+        lang: French
+
+  - word: thoughtful
+    mix: heart 55, mind 45
+    level: 3
+    def: Thinks of other people — and remembers the little things that matter to them.
+    notice: how your favorite snack is somehow already in the car
+    see: reflective
+    say:
+      - You remembered that? That’s so thoughtful. You never miss a thing.
+      - You think about people in such a lovely way. I notice it every time.
+    text:
+      - The fact that you thought of me while you were away? So thoughtful. Thank you.
+      - You remembered today was the big day. I don’t know how you keep track of everyone, but it means a lot.
+    about: They’re so thoughtful — they’ll remember something you said once and act on it months later.
+    synonyms:
+      - considerate: weighs how things will land for other people
+      - mindful: aware of other people and what they might need
+      - tactful: knows how to say the hard thing kindly
+      - courteous: polite in a way that’s actually about you
+      - thinks of everything: the plan always has room for what you need
+      - remembers the little things: your coffee order, your big exam
+    deep:
+      - regardful: heedful and attentive to others — old and gentle
+      - ki ga kiku: quick to notice what’s needed and quietly see to it
+        sounds: kee gah KEE-koo
+        lang: Japanese
+
+  - word: patient
+    mix: heart 55, character 45
+    level: 3
+    def: Gives people time — to explain, to learn, to get it wrong and try again.
+    notice: how they explain it a third time, just as kindly as the first
+    see: steady
+    say: Thank you for not rushing me. I don’t think you know how much that helps.
+    text: Sorry I was a mess today. Thank you for being so patient with me.
+    about: They’re endlessly patient — I’ve never once seen them make someone feel slow.
+    synonyms:
+      - long-suffering: puts up with a lot, and rarely complains
+      - unhurried: never rushes you, or anything else
+      - even-tempered: calm and level, hard to rattle
+      - uncomplaining: takes delays and setbacks in stride
+      - slow to anger: takes a lot to make them lose their cool
+      - the patience of a saint: can wait, explain and forgive forever
+    deep:
+      - forbearing: patient and restrained, slow to take offense
+        sounds: for-BAIR-ing
+      - longanimous: patient through long trouble — long-souled
+        sounds: long-GAN-ih-mus
+        from: Latin longanimis, “long-souled”
+
+  - word: sensitive
+    mix: heart 72, mind 28
+    level: 3
+    side: edge
+    def: Feels things deeply and picks up on what others miss — which can also mean they bruise easily.
+    notice: how they catch the wobble in your voice that everyone else missed
+    say: I love how much you feel. You notice things nobody else does.
+    text: You picked up on that before I’d said a word. I love how sensitive you are to people.
+    about: They’re sensitive — they feel everything, the lovely stuff and the hard stuff, at full volume.
+    gentle: I love how deeply you feel things. I just want us to be able to talk about the hard stuff without either of us getting hurt.
+    synonyms:
+      - a softie: tears up at weddings, sad songs and dog videos
+      - feels things deeply: everything lands a little harder, good and bad
+      - emotional: feels strongly and doesn’t hide it
+      - sentimental: holds on to memories, ticket stubs and old texts
+      - wears their heart on their sleeve: every feeling shows on their face
+      - thin-skinned: easily hurt by criticism, even the gentle kind
+      - touchy: quick to take things to heart
+    deep:
+      - empfindsam: finely sensitive, tender and quick to feel
+        sounds: EMP-fint-zahm
+        lang: German
+        from: Empfindsamkeit, the 1700s German cult of feeling
+      - lachrymose: easily moved to tears
+        sounds: LAK-ruh-mohs
+        from: Latin lacrima, “tear”

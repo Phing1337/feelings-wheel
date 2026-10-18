@@ -1,0 +1,147 @@
+# Adventure cluster · people deck · format guide: content/README.md
+
+id: adventure
+name: Adventure
+family: spirit
+anchor: adventurous
+blurb: Up for anything — and they make you want to be, too.
+near:
+  energy: [lively]
+  courage: [brave]
+  curiosity: [curious]
+  too-much: [reckless]
+
+words:
+  - word: adventurous
+    mix: spirit 70, character 30
+    level: 3
+    def: Up for anything new — places, food, ideas — and happiest just past the edge of the map.
+    notice: how they order the one dish on the menu nobody can pronounce
+    see: curious
+    shadow: reckless
+    say: I love that you’re always up for something new. You make my world bigger.
+    text:
+      - I love hearing about your adventures. Please never stop collecting them.
+      - You make me braver about trying things. Where are we going next?
+    about: They’re so adventurous — every trip with them has a detour that ends up being the best part.
+    synonyms:
+      - up for anything: happy to try whatever comes next
+      - game: willing to have a go, no persuading needed
+      - outdoorsy: happiest outside, ideally halfway up a mountain
+      - well-traveled: been everywhere, and brought the stories back
+      - a globetrotter: always just back from somewhere new
+      - a born explorer: forever wondering what’s around the next corner
+    deep:
+      - venturesome: always willing to take a chance on the unknown
+        from: venture, short for adventure
+      - peripatetic: always on the move, happiest with a bag half-packed
+        sounds: per-ih-puh-TET-ik
+        from: Greek peripatein, “to walk up and down”
+      - errant: roaming in search of adventure, like a knight of old
+        from: Old French errer, “to travel” — as in knight-errant
+      - full of wanderlust: forever itching to be somewhere new
+        sounds: WON-der-lust
+        lang: German
+
+  - word: spontaneous
+    mix: spirit 75, humor 25
+    level: 3
+    def: Happy to ditch the plan for something better — they say yes on the spot, and it’s always worth it.
+    notice: the 10 p.m. text that says “get dressed, we’re going”
+    shadow: flighty
+    say:
+      - I love that you’re always one “why not?” away from an adventure.
+      - Never stop being this spontaneous. My favorite nights all started with you saying “wanna go?”
+    text: You’re the only person who could turn “grabbing coffee” into a day at the beach. Do it again soon?
+    about: They’re so spontaneous — half my favorite memories started with them saying “wait, let’s just go.”
+    synonyms:
+      - spur-of-the-moment: happiest when nothing’s planned
+      - down for whatever: up for any plan, no notice needed
+      - in the moment: living for right now, not three plans ahead
+      - freewheeling: rolling along wherever the day takes them
+      - impulsive: acting on a whim, and usually glad they did
+      - unscripted: happiest when nobody’s written the day yet
+    deep:
+      - impetuous: acting on sudden impulse, heart first and head later
+        sounds: im-PECH-oo-us
+        from: Latin impetus, “attack, rush”
+      - quixotic: given to sudden, romantic, gloriously impractical plans
+        sounds: kwik-SOT-ik
+        from: Don Quixote, the dreamy knight who tilted at windmills
+
+  - word: free-spirited
+    mix: spirit 68, humor 17, mind 15
+    level: 3
+    def: They follow their own compass — unbothered by how things are “supposed” to go, and happier for it.
+    notice: the way they kick off their shoes the second they reach grass
+    shadow: flaky
+    say: I love how unbothered you are by what everyone else is doing. It’s so freeing to be around.
+    text: You remind me life doesn’t have to follow a script. Thank you for that.
+    about: They’re such a free spirit — they live like the rules were only ever suggestions.
+    synonyms:
+      - footloose and fancy-free: free to go anywhere, tied to nothing
+      - uninhibited: free of the usual self-consciousness
+      - unfettered: unchained by the usual rules and routines
+      - untamed: a little wild, and happy to stay that way
+      - a law unto themselves: living by their own rules entirely
+      - a hippie at heart: all bare feet, big skies and good vibes
+    deep:
+      - bohemian: living for art, freedom and good company over money and rules
+        sounds: boh-HEE-mee-un
+        from: French bohème, the artsy, penniless world of 1800s Paris
+      - untrammeled: free of every net and rule that tries to hold them
+        sounds: un-TRAM-uld
+        from: trammel, an old net for snaring birds and fish
+
+  - word: bold
+    mix: spirit 55, character 45
+    level: 4
+    def: Unafraid to go first — they say the thing, take the leap, and wear the bright color.
+    notice: how they’re first on the dance floor, every single time
+    see: [brave, confident]
+    shadow: cocky
+    say: I love how bold you are. You just go for it, and it makes me want to.
+    text: You walked in there and asked for exactly what you wanted. Still thinking about it.
+    about: They’re so bold — they’ll ask the question everyone else in the room was too nervous to.
+    synonyms:
+      - outspoken: never afraid to speak their mind
+      - forward: never shy about making the first move
+      - full of nerve: never short of courage, or a little cheek
+      - anything but shy: first to speak, first to dance, first to try
+      - loud and proud: openly, happily themselves
+      - a firebrand: says what they think, and sets things alight doing it
+    deep:
+      - audacious: bold enough to surprise you, in a thrilling way
+        sounds: aw-DAY-shus
+        from: Latin audax, “daring”
+      - full of chutzpah: blessed with gutsy, cheeky nerve
+        sounds: HOOTS-puh
+        lang: Yiddish
+      - full of panache: bold, swaggering style — worn like a plume in a hat
+        sounds: puh-NASH
+        from: French panache, “a plume of feathers”
+
+  - word: daring
+    mix: spirit 60, character 40
+    level: 4
+    def: Drawn to the leap — they’ll try the thing that makes everyone else hold their breath.
+    notice: how they’re already strapping in while everyone else reads the waiver
+    shadow: reckless
+    say: I can’t believe you actually did that. Terrifying — and honestly so impressive.
+    text:
+      - You make scary things look like fun. I kind of want to try one with you.
+      - You jumped. Out of a plane. I’m still recovering and I wasn’t even there.
+    about: They’re so daring — if there’s a zipline, a cliff jump or a dare, they’re already in line.
+    synonyms:
+      - a daredevil: first to the edge, and usually over it
+      - a thrill-seeker: always chasing the next rush
+      - an adrenaline junkie: hooked on the thrill of it
+      - a risk-taker: happy to bet on themselves
+      - death-defying: forever doing the thing that makes everyone gasp
+      - swashbuckling: swaggering and adventurous, like a pirate in an old film
+    deep:
+      - full of derring-do: brimming with heroic, daring deeds
+        from: Middle English “daring to do,” later misread as a noun
+      - full of élan: dashing, spirited verve in everything they try
+        sounds: ay-LAHN
+        from: French élancer, “to rush forward”

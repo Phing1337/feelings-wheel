@@ -1,0 +1,154 @@
+# Allure cluster · people deck · format guide: content/README.md
+
+id: allure
+name: Allure
+family: looks
+anchor: attractive
+blurb: The pull — the reason you can't quite look away.
+near:
+  beauty: [gorgeous]
+  charisma: [magnetic, charming]
+  grace: [glamorous]
+
+words:
+  - word: attractive
+    mix: looks 75, spirit 25
+    level: 2
+    def: Easy to be drawn to — good-looking, sure, but with a pull that’s about more than looks.
+    notice: the way you keep finding reasons to stand a little closer
+    stronger: irresistible
+    say:
+      - I find you really attractive. I figured I should just say it out loud.
+      - There’s something about the way you carry yourself — it’s very attractive.
+    text:
+      - Not to be forward, but you looked really attractive today. Okay. Putting my phone down now.
+      - Honestly? The way you stood up for your friend tonight was really attractive.
+    about: They’re really attractive — and it’s more than looks, it’s how at home they are in their own skin.
+    synonyms:
+      - good-looking: nice to look at, plain and simple
+      - a looker: someone people can’t help looking at
+      - eye-catching: hard not to notice, in the best way
+      - appealing: pleasing in a way that draws you in
+      - a catch: someone anyone would be lucky to end up with
+      - crush-worthy: easy to fall for, at least a little
+    deep:
+      - well-favored: good-looking, in the old storybook way
+        from: favor, in its old sense of “face, looks”
+      - fanciable: attractive enough to fancy — British and informal
+
+  - word: sexy
+    mix: looks 70, spirit 30
+    level: 4
+    def: Attractive with heat in it — a confidence and spark that’s hard to ignore.
+    notice: that half-smile that says they know exactly what they’re doing
+    softer: attractive
+    say: You’re so sexy when you’re this sure of yourself.
+    text: Just so you know — watching you take charge today was very sexy. As you were.
+    about: They’re genuinely sexy — and honestly, the confidence is most of it.
+    synonyms:
+      - hot: seriously attractive, no two ways about it
+      - sultry: slow-burning and warm, like a summer evening
+      - smoldering: quietly intense, with heat just under the surface
+      - foxy: sly, playful and very attractive
+      - fine: seriously good-looking, in slang
+      - sensual: attractive in a way you feel with every sense
+    deep:
+      - va-va-voom: bursting with glamorous sex appeal — 1950s slang
+      - dishy: very attractive — British and informal
+
+  - word: alluring
+    mix: looks 65, spirit 35
+    level: 4
+    def: Mysteriously attractive — there’s a pull to them you feel before you can explain it.
+    notice: the way they hold back just enough to keep you wondering
+    see: magnetic
+    say: There’s something so alluring about you. I can never quite figure you out, and I love that.
+    text: The way you looked at me across the table tonight? Very alluring. Very unfair.
+    about: They’re alluring in this quiet way — you meet them and just want to know more.
+    synonyms:
+      - enticing: tempting in a way that draws you closer
+      - seductive: tempting, persuasive and hard to resist
+      - mysterious: hard to read, and all the more intriguing for it
+      - come-hither: inviting, with a look that says come closer
+      - beguiling: charming in a way that quietly wins you over
+      - tantalizing: tempting, and always just out of reach
+    deep:
+      - enigmatic: mysterious and hard to read, like a riddle you want to solve
+        sounds: en-ig-MAT-ik
+        from: Greek ainigma, “riddle”
+      - sphinxlike: calm, unreadable and quietly fascinating
+        from: the Sphinx, keeper of riddles in Greek myth
+
+  - word: captivating
+    mix: looks 60, spirit 40
+    level: 4
+    def: So engaging you can’t look away — they hold your attention without even trying.
+    notice: the way whole afternoons go missing when you’re with them
+    see: charismatic
+    say: You’re captivating, you know that? I could listen to you talk about anything.
+    text: Still replaying our conversation from earlier. You’re kind of captivating, you know.
+    about: They’re captivating — you meet them once and think about them for days.
+    synonyms:
+      - enchanting: delightful in a way that feels like a spell
+      - spellbinding: so absorbing you lose track of everything else
+      - mesmerizing: impossible to look away from
+      - entrancing: so absorbing you drift into a happy trance
+      - bewitching: charming in a way that feels like magic
+      - hypnotic: holds your attention like a swinging pocket watch
+    deep:
+      - ensorcelling: so enchanting it’s as if they’ve cast a spell
+        sounds: en-SOR-sel-ing
+        from: Middle French ensorceler, “to bewitch”
+      - orphic: entrancing, like music that could charm the stones
+        sounds: OR-fik
+        from: Orpheus, whose music charmed even trees and stones
+
+  - word: handsome
+    mix: looks 85, character 15
+    level: 3
+    def: Good-looking in a striking, well-defined way — attractive with a quiet strength to it.
+    notice: the strong lines of their face in late-afternoon light
+    say:
+      - You look really handsome tonight — that jacket was a very good decision.
+      - You’re really handsome, you know. Especially when you’re laughing at your own jokes.
+    text:
+      - You looked so handsome tonight. I kept catching myself staring.
+      - Friendly reminder that you’re very handsome and I’m very lucky.
+    about: They’re seriously handsome — and somehow they have no idea.
+    synonyms:
+      - distinguished: handsome with a dignified, well-earned air
+      - striking: handsome in a way that makes you look twice
+      - chiseled: strong, clean, sculpted features
+      - rugged: handsome in a weathered, outdoorsy way
+      - clean-cut: neat, fresh and wholesome-looking
+      - fine-looking: handsome in a solid, classic way
+      - a heartthrob: the one everyone has a crush on
+      - a silver fox: gray-haired, and all the more attractive for it
+    deep:
+      - a dreamboat: dreamily handsome — 1940s slang, still sailing
+      - braw: fine and handsome, especially when dressed up
+        from: Scots, an old twist on brave
+
+  - word: irresistible
+    mix: looks 57, spirit 43
+    level: 5
+    def: So appealing you can’t stay away — you keep getting pulled back in, happily.
+    notice: how you keep inventing excuses to text them first
+    see: charming
+    say: You’re honestly irresistible. I had a whole plan to play it cool.
+    text: I was going to wait an hour to reply. I lasted four minutes. You’re irresistible, it’s a problem.
+    about: They’re irresistible — I keep saying I’ll take it slow, and then they smile at me.
+    synonyms:
+      - tempting: very hard to say no to
+      - dreamy: so attractive you go a bit soft and starry-eyed
+      - swoon-worthy: guaranteed to make you weak at the knees
+      - pure catnip: impossible not to keep coming back to
+      - addictive: the more time you spend with them, the more you want
+      - to die for: so wonderful they’re worth almost any trouble
+      - kissable: very hard not to want to kiss
+      - desirable: wanted, and easy to see why
+    deep:
+      - delectable: utterly delightful, in every possible way
+        sounds: dih-LEK-tuh-bul
+        from: Latin delectare, “to delight”
+      - toothsome: temptingly attractive, as if good enough to eat

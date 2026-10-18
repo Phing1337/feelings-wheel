@@ -1,0 +1,147 @@
+# Stubborn cluster · people deck · format guide: content/README.md
+
+id: stubborn
+name: Stubborn
+family: character
+side: shadow
+anchor: stubborn
+blurb: Strength that won't bend — even when it should.
+near:
+  confidence: [confident]
+  courage: [determined]
+  integrity: [principled]
+  know-it-all: [closed-minded]
+
+words:
+  - word: stubborn
+    mix: character 78, mind 22
+    level: 3
+    side: edge
+    def: Once they’ve dug in, they’re not moving — admirable when they’re right, maddening when they’re not.
+    notice: how “we’ll see” from them actually means “absolutely not”
+    say: You’re the most stubborn person I’ve ever met, and somehow it’s one of my favorite things about you.
+    about: They’re stubborn as anything — great when they’re on your side, a lot when they’re not.
+    gentle: I love how strongly you stick to things. I just want to feel like I can change your mind sometimes, too.
+    synonyms:
+      - headstrong: set on their own way, and hard to steer
+      - strong-willed: a will of iron, for better and for worse
+      - obstinate: won’t budge, even when budging would help
+      - willful: does what they’ve decided, whatever anyone says
+      - contrary: digs in the moment anyone pushes
+      - pigheaded: stubborn well past the point of sense
+      - like a dog with a bone: won’t let it go, whatever happens
+    deep:
+      - mulish: stubborn as a mule, and about as easy to move
+        sounds: MYOO-lish
+      - pertinacious: holds on to an opinion or a goal, and won’t let go
+        sounds: per-tih-NAY-shus
+        from: Latin pertinax, “holding fast”
+      - thrawn: stubborn and contrary, just for the sake of it
+        sounds: THRAWN
+        lang: Scots
+      - intransigent: unwilling to compromise, not even an inch
+        sounds: in-TRAN-zih-junt
+        from: Spanish intransigente, “uncompromising”
+
+  - word: arrogant
+    mix: character 64, looks 20, mind 16
+    level: 4
+    def: Sure they’re better than everyone in the room — and not very good at hiding it.
+    notice: how rarely they ask what anyone else thinks
+    about: They can be pretty arrogant — clever, and they know it, and they want you to know it too.
+    gentle: I love how sure of yourself you are. Sometimes, though, it leaves me feeling a bit small — can we talk about that?
+    synonyms:
+      - haughty: looks down on people from a great height
+      - self-important: thinks everything they do matters more than it does
+      - big-headed: success has gone a little to their head
+      - puffed up: swollen with a sense of their own importance
+      - stuck-up: too good to mix, or so they seem to think
+      - full of themselves: thinks they’re the best thing in any room
+      - high and mighty: lofty and grand, and quick to look down on you
+    deep:
+      - hubristic: dangerously overconfident, and heading for a fall
+        sounds: hyoo-BRISS-tik
+        from: Greek hubris, “excessive pride”
+      - overweening: arrogant, with far too high an opinion of themselves
+        sounds: oh-ver-WEE-ning
+        from: Old English wenan, “to think, expect”
+      - orgulous: proud and haughty, straight out of an old romance
+        sounds: OR-gyuh-lus
+        from: Old French orgueilleus, “proud”
+
+  - word: controlling
+    mix: character 71, heart 29
+    level: 4
+    def: Needs things done their way — and finds it hard to let anyone else steer, even a little.
+    notice: how they reload the dishwasher right after you’ve loaded it
+    see: possessive
+    about: They’re a bit controlling — they mean well, but somehow everything ends up done their way.
+    gentle: I know you care about getting things right, and I love that. Could you let me do this one my way, even if it’s messier?
+    synonyms:
+      - bossy: likes telling everyone what to do
+      - domineering: rules the room, and everyone in it
+      - overbearing: pushes their way in, a little too hard
+      - micromanaging: checks and corrects every little detail
+      - high-handed: decides for everyone, without asking
+      - overprotective: keeps you so safe you can barely move
+      - a control freak: needs a hand on every steering wheel
+      - a backseat driver: directs you through the thing you’re already doing
+    deep:
+      - imperious: commanding, and fully expecting to be obeyed
+        sounds: im-PEER-ee-us
+        from: Latin imperium, “command, empire”
+      - officious: too eager to tell other people what to do
+        sounds: uh-FISH-us
+        from: Latin officiosus, “obliging, dutiful”
+
+  - word: rigid
+    mix: character 74, mind 26
+    level: 3
+    def: Stuck on how things should go — the plan, the rules, the routine — and thrown when they don’t.
+    notice: how one changed plan can throw off their whole day
+    see: closed-minded
+    about: They’re a bit rigid — brilliant with a routine, not so great when the plan goes sideways.
+    gentle: I love how much you care about doing things properly. Could we leave a little room for winging it sometimes?
+    synonyms:
+      - inflexible: can’t bend, even when bending would help
+      - unbending: holds the line, even when the line is wrong
+      - uncompromising: won’t meet you halfway, not even a little
+      - uptight: tense, and needs everything just so
+      - strait-laced: strict and proper about everything
+      - by-the-book: follows the rules to the letter, every time
+      - set in their ways: does it the way they’ve always done it
+    deep:
+      - procrustean: forces everything to fit their one fixed shape
+        sounds: proh-KRUSS-tee-un
+        from: Procrustes of Greek myth, who stretched or cut guests to fit his bed
+      - punctilious: exacting about every rule, detail and formality
+        sounds: punk-TIL-ee-us
+        from: Italian puntiglio, “a fine point”
+      - a martinet: a strict stickler for rules and discipline
+        sounds: mar-tih-NET
+        from: a famously strict French army drillmaster of the 1600s
+
+  - word: cocky
+    mix: character 60, spirit 25, humor 15
+    level: 3
+    side: edge
+    def: Sure of themselves with a grin and a bit of swagger — charming in small doses, a lot in large ones.
+    notice: the little smirk right before they say “watch this”
+    stronger: arrogant
+    text: Fine, you were right. Please don’t be insufferably cocky about it for the rest of the week.
+    about: They’re a little cocky — but they can usually back it up, which is annoying and kind of great.
+    gentle: I love your swagger, honestly. Sometimes it tips into brushing people off, though — I don’t think you mean it to.
+    synonyms:
+      - cocksure: sure of themselves, and then some
+      - overconfident: a little more sure than the facts allow
+      - brash: bold and loud, without much of a filter
+      - swaggering: walks and talks like they own the place
+      - a hotshot: talented, and very much aware of it
+      - too big for their boots: getting a bit above themselves
+    deep:
+      - bumptious: cheerfully, loudly full of themselves
+        sounds: BUMP-shus
+        from: bump + the ending of fractious — a jokey 1800s coinage
+      - braggadocious: boastful and swaggering, all brag and bravado
+        sounds: brag-uh-DOH-shus
+        from: Braggadocchio, a boaster in a 1590 epic poem

@@ -1,13 +1,13 @@
-/* Feelings wheel — Gen 1 dock: pins, "my wheel", pin flight */
+/* Feelings wheel — dock: pins, the wheel (top left), pin flight. Each deck keeps its own pins. */
 (function () {
 const FW = window.FW, NS = 'http://www.w3.org/2000/svg';
-const KEY = 'fw.pins.v1', R1 = 46, R0 = 31, C = 50, RM = 38.5;
-const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) { return []; } };
-FW.pins = load().filter(p => FW.byId[p.id]);
-const landing = new Set(), segs = new Map();
+const R1 = 46, R0 = 31, C = 50, RM = 38.5;
+const load = () => { try { return (JSON.parse(localStorage.getItem(FW.UI.pins)) || []).filter(p => FW.byId[p.id]); } catch (e) { return []; } };
+FW.pins = load();
+const landing = new Set(), segs = new Map(), grads = new Set();
 let defs, g, coreFill, badge;
 
-const save = () => { localStorage.setItem(KEY, JSON.stringify(FW.pins)); FW.emit('pins', FW.pins); };
+const save = () => { try { localStorage.setItem(FW.UI.pins, JSON.stringify(FW.pins)); } catch (e) {} FW.emit('pins', FW.pins); };
 FW.isPinned = id => FW.pins.some(p => p.id === id);
 FW.pin = (id, srcEl) => {
   const f = FW.byId[id]; if (!f) return;
@@ -44,8 +44,9 @@ function targets() {
   return out;
 }
 function grad(f) {
-  const id = 'wg-' + f.id;
-  if (defs.querySelector('#' + id)) return id;
+  const id = `wg-${FW.deck.id}-${f.id}`;
+  if (grads.has(id)) return id;
+  grads.add(id);
   const lg = document.createElementNS(NS, 'linearGradient');
   lg.id = id; lg.setAttribute('x1', '0'); lg.setAttribute('y1', '0'); lg.setAttribute('x2', '1'); lg.setAttribute('y2', '1');
   const cols = f.parts.length > 1 ? f.parts.map(p => p.color) : [FW.color.mixHex(f.parts[0].color, '#ffffff', 0.3), f.parts[0].color];
@@ -53,15 +54,14 @@ function grad(f) {
   defs.appendChild(lg);
   return id;
 }
+const collapse = s => {
+  const m = (s.a0 + s.a1) / 2;
+  gsap.to(s, { a0: m, a1: m, duration: FW.dur(0.4), ease: 'power2.in', overwrite: true, onUpdate: () => draw(s), onComplete: () => s.el.remove() });
+};
 function syncWheel() {
   if (!g) return;
   const T = targets();
-  segs.forEach((s, id) => {
-    if (T[id]) return;
-    segs.delete(id);
-    const m = (s.a0 + s.a1) / 2;
-    gsap.to(s, { a0: m, a1: m, duration: FW.dur(0.4), ease: 'power2.in', overwrite: true, onUpdate: () => draw(s), onComplete: () => s.el.remove() });
-  });
+  segs.forEach((s, id) => { if (!T[id]) { segs.delete(id); collapse(s); } });
   Object.entries(T).forEach(([id, t]) => {
     let s = segs.get(id);
     if (!s) {
@@ -109,6 +109,7 @@ FW.initDock = () => {
   segs.clear();
   if (!FW.reduce) gsap.to(coreFill, { rotation: 360, duration: 24, ease: 'none', repeat: -1 });
   syncWheel();
+  label();
   /* the wheel sits top left: tap it, or pull it down, to open the drawer */
   let y0 = null;
   FW.els.dock.addEventListener('pointerdown', e => { y0 = e.clientY; });
@@ -119,4 +120,19 @@ FW.initDock = () => {
   });
 };
 FW.on('pins', () => syncWheel());
+/* "my wheel" / "their wheel" (or "Sam's wheel" once you've typed their name in the builder) */
+function label() {
+  const el = FW.els && FW.els.dockLabel; if (!el) return;
+  el.textContent = FW.UI.dock();
+  FW.els.dock.setAttribute('aria-label', FW.UI.dock());
+}
+/* switching decks: the old wheel folds away and the new deck's pins grow in */
+FW.on('deck', () => {
+  landing.clear();
+  segs.forEach(collapse); segs.clear();
+  FW.pins = load();
+  syncWheel();
+  label();
+});
+FW.on('person', label);
 })();

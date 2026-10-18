@@ -1,0 +1,151 @@
+# Wit cluster · people deck · format guide: content/README.md
+
+id: wit
+name: Wit
+family: humor
+anchor: witty
+blurb: Quick, sharp, and always one line ahead.
+near:
+  play: [funny]
+  brilliance: [clever, sharp]
+  snark: [sarcastic]
+  curiosity: [nerdy]
+
+words:
+  - word: witty
+    mix: humor 60, mind 40
+    level: 3
+    def: Quick, clever and funny all at once — they find the perfect line before you’ve found any.
+    notice: the comeback that lands half a second after the setup
+    see: [clever, sharp]
+    shadow: snarky
+    say:
+      - How do you always have the perfect line ready? It’s honestly unfair.
+      - Talking with you is like a game I’m happy to keep losing. You’re so quick.
+    text:
+      - That reply was so good I had to put my phone down and walk around the room.
+      - Been trying to think of a comeback for an hour. You win. Again.
+    about: They’re so witty — half our inside jokes started as one of their throwaway lines.
+    synonyms:
+      - quick-witted: has a clever answer ready before you’ve finished asking
+      - wisecracking: full of smart, funny one-liners
+      - quick on the draw: fires back a great line before you’ve blinked
+      - bantering: lives for a bit of playful back-and-forth
+      - sparkling: their conversation fizzes with clever lines
+      - a wit: known far and wide for their way with words
+    deep:
+      - spirituel: witty and refined, with a light, quick mind
+        sounds: spee-ree-TWEL
+        lang: French
+      - epigrammatic: speaks in short, sharp lines you want to quote
+        sounds: ep-i-gruh-MAT-ik
+        from: Greek epigramma, “inscription”
+      - scintillating: dazzlingly clever and lively in conversation
+        sounds: SIN-tuh-lay-ting
+        from: Latin scintilla, “spark”
+
+  - word: wry
+    mix: humor 55, mind 45
+    level: 2
+    def: Their humor is dry and knowing — a raised eyebrow, a half-smile, a joke you almost miss.
+    notice: the half-smile that says they’ve clocked the absurdity before you
+    see: deadpan
+    say: I love your sense of humor — it’s so dry I’m still catching jokes from last week.
+    text: Just got your joke from the other day and laughed out loud in a meeting. Your humor runs on a delay.
+    about: They’re wry — easily the funniest person in the room, if you’re paying attention.
+    synonyms:
+      - dry: funny without ever raising their voice
+      - tongue-in-cheek: half-joking, and leaves you to work out which half
+      - knowing: their humor comes with a little wink of understanding
+      - quizzical: amused, with one eyebrow permanently raised
+      - sly: slips the funny line in when no one’s looking
+      - quietly funny: the funniest one in the room, at low volume
+    deep:
+      - droll: funny in an odd, dry, quietly amusing way
+        sounds: DROHL
+        from: French drôle, “funny, odd”
+      - pawky: shrewd and slyly humorous, with a straight face
+        sounds: PAW-kee
+        lang: Scots
+        from: pawk, an old Scots word for a trick
+
+  - word: deadpan
+    mix: humor 65, mind 25, character 10
+    level: 3
+    def: Says the funniest things with a perfectly straight face — you’re never quite sure they’re joking.
+    notice: the perfectly blank face while everyone else is crying laughing
+    say: How do you keep a straight face? I’m dying over here and you haven’t even blinked.
+    text: Read your text in a meeting and had to fake a coughing fit. Your deadpan is lethal.
+    about: They’re so deadpan — they’ll say something outrageous like they’re reading the weather.
+    synonyms:
+      - straight-faced: tells the joke without a flicker
+      - poker-faced: gives nothing away, especially the punchline
+      - stone-faced: not a crack in the facade, however funny it gets
+      - bone-dry: humor with every drop of fuss squeezed out
+      - matter-of-fact: says the absurd thing as if it’s the news
+      - keeps a straight face: never cracks, however wild the joke
+    deep:
+      - laconic: says a lot in very few words, and it lands
+        sounds: luh-KON-ik
+        from: Laconia, home of the famously terse Spartans
+      - pince-sans-rire: a deadpan joker who never cracks a smile
+        sounds: pans-sahn-REER
+        lang: French
+        from: French, “pinch without laughing”
+
+  - word: irreverent
+    mix: humor 60, spirit 25, mind 15
+    level: 3
+    def: Refuses to take the stuffy and self-important too seriously — and it lets everyone else breathe.
+    notice: the joke at the fancy dinner that makes the whole table exhale
+    shadow: flippant
+    say: You make every stiff, stuffy room feel human again. I love that about you.
+    text:
+      - If I ever get stuck at a stuffy event, I’m bringing you. Never let them make you behave.
+      - That comment during the toast? Iconic. I nearly spat out my drink.
+    about: They’re wonderfully irreverent — no title, ceremony or dress code is safe from them.
+    synonyms:
+      - satirical: pokes fun at the powerful and the pompous
+      - subversive: quietly undermines anything too self-important
+      - unstuffy: allergic to formality and fuss
+      - unbuttoned: relaxed, uninhibited, happy to bend a rule
+      - unimpressed: titles and status don’t faze them one bit
+      - a bit of a rebel: happy to break a rule if it’s a silly one
+    deep:
+      - iconoclastic: loves knocking sacred cows off their pedestals
+        sounds: eye-kon-uh-KLAS-tik
+        from: Greek eikonoklastēs, “image breaker”
+      - carnivalesque: turns the usual order upside down for the joy of it
+        sounds: kar-nuh-vuh-LESK
+        from: carnival, the feast when the usual rules were flipped
+
+  - word: quirky
+    mix: humor 55, mind 30, spirit 15
+    level: 2
+    def: Delightfully a little odd — strange habits, unexpected tastes, and completely themselves about it.
+    notice: the oddly specific ritual they have for eating a kiwi
+    see: [original, nerdy]
+    say:
+      - You’re so completely, unapologetically yourself. Please don’t ever become normal.
+      - I love every strange little habit you have — I’m starting a collection.
+    text:
+      - Just saw a dog in a tiny raincoat and thought of you instantly. That’s a compliment, I promise.
+      - Watched someone eat a kiwi like a normal person today and missed you immediately.
+    about: They’re wonderfully quirky — they’ve named every houseplant and know each one’s birthday.
+    synonyms:
+      - kooky: charmingly strange in their own way
+      - offbeat: marches to a slightly different rhythm
+      - eccentric: wonderfully unconventional, and happy to be
+      - oddball: odd in the very best way
+      - weird: gloriously strange — meant as the highest praise
+      - a character: one of a kind, and you’ll never forget them
+      - off-the-wall: unpredictable in a delightful way
+    deep:
+      - idiosyncratic: entirely their own, down to the smallest habit
+        sounds: id-ee-oh-sin-KRAT-ik
+        from: Greek idiosynkrasis, “one’s own mixture”
+      - outré: unusual to the point of startling, in the best way
+        sounds: oo-TRAY
+        lang: French
+        from: French outrer, “to exaggerate”
+      - fey: whimsically otherworldly, as if half in a fairy tale

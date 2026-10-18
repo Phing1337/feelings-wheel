@@ -1,0 +1,190 @@
+# Brilliance cluster · people deck · format guide: content/README.md
+
+id: brilliance
+name: Brilliance
+family: mind
+anchor: smart
+blurb: A mind you want to spend time inside.
+near:
+  wit: [witty]
+  wisdom: [wise]
+  curiosity: [curious]
+  know-it-all: [condescending]
+
+words:
+  - word: smart
+    core: true
+    mix: mind
+    level: 3
+    def: Quick, deep, and fun to think with — a mind you could talk to all night.
+    notice: the way they get it before you’ve finished explaining
+    stronger: brilliant
+    softer: clever
+    see: [witty, wise]
+    shadow: condescending
+    say:
+      - I love how your mind works. Every conversation with you ends up somewhere I didn’t see coming.
+      - You’re so smart — and you never once make anyone feel small for it.
+    text:
+      - Still thinking about something you said. How is your brain like that?
+      - You’re the smartest person I know, and I need your brain on something. Got five minutes?
+    about: They’re seriously smart — the kind of person who makes everyone around them think a little better.
+    synonyms:
+      - bright: quick to learn, and quick to see what matters
+      - brainy: clearly a lot going on upstairs
+      - whip-smart: the answer’s out before you’ve finished asking
+      - wicked smart: very, very smart — New England slang
+      - quick on the uptake: gets it the first time, no diagrams needed
+      - a quick study: picks up anything new almost scarily fast
+      - a smart cookie: clever and shrewd, in the most likable way
+    deep:
+      - sapient: deeply knowing and thoughtful — the sapiens in Homo sapiens
+        sounds: SAY-pee-unt
+        from: Latin sapere, “to be wise” — and, first, “to taste”
+      - astute: quick to read people and situations, and rarely wrong
+        sounds: uh-STOOT
+        from: Latin astutus, “crafty”, from astus, “cunning”
+      - smart as paint: bright, quick and clever — an old British simile
+        from: as in Treasure Island (1883) — “you’re as smart as paint”
+
+  - word: brilliant
+    mix: mind 85, spirit 15
+    level: 5
+    def: Exceptionally smart, in a way that lights things up — ideas seem to come alive around them.
+    notice: the idea they toss out casually that changes the whole plan
+    softer: smart
+    say:
+      - Do you know how brilliant you are? Like, actually?
+      - You untangled in five minutes what I’ve been stuck on all week. That was brilliant.
+    text:
+      - Your idea was brilliant, and I’ve already told three people about it.
+      - You’re brilliant. That’s the whole message.
+    about: They’re honestly brilliant — one conversation with them and you see everything differently.
+    synonyms:
+      - a genius: brilliant in a way you can’t quite explain
+      - gifted: born with a remarkable mind, and using it well
+      - scary smart: so smart it’s almost intimidating
+      - exceptional: a cut above, by a long way
+      - a whiz: brilliant at what they do, and fast with it
+      - a prodigy: astonishingly talented, and ahead of their years
+    deep:
+      - a polymath: brilliant in more fields than seems fair
+        sounds: POL-ee-math
+        from: Greek polymathēs, “having learned much”
+      - a wunderkind: dazzlingly gifted, and young to be this good
+        sounds: VOON-der-kint
+        lang: German
+        from: German, “wonder child”
+      - a savant: deeply learned — knows their field inside out
+        sounds: sa-VAHNT
+        from: French savant, “knowing”, from savoir, “to know”
+
+  - word: clever
+    mix: mind 70, humor 30
+    level: 2
+    def: Quick and inventive, with a playful streak — there’s always a neat trick up their sleeve.
+    notice: the neat little fix they rig from whatever’s lying around
+    stronger: smart
+    say:
+      - That’s so clever. How did you even think of that?
+      - You always find the neat way through. I’d never have seen it.
+    text:
+      - Used your trick today and it worked perfectly. Clever, clever you.
+      - You’re so clever it’s honestly a little annoying. In the best way.
+    about: They’re so clever — hand them a problem and a roll of tape and it’s fixed by dinner.
+    synonyms:
+      - ingenious: dreams up fixes nobody else would think of
+      - quick-thinking: has the good idea before the moment’s passed
+      - nimble-witted: thinks fast and always lands on their feet
+      - a problem-solver: loves a puzzle, and usually cracks it
+      - a bright spark: a clever, lively one — British, often said with a wink
+      - a clever clogs: a fond, teasing name for someone a bit too clever — British
+      - a smarty-pants: clever, knows it, and is usually right — said with a grin
+    deep:
+      - adroit: deft and clever, especially in a tricky spot
+        sounds: uh-DROYT
+        from: French à droit, “properly” — literally “to the right”
+      - daedal: ingeniously skilled, like a born inventor
+        sounds: DEE-dl
+        from: Greek daidalos, “cunningly made” — the name of the inventor Daedalus
+
+  - word: sharp
+    mix: mind 75, character 25
+    level: 3
+    def: Quick, alert and hard to fool — they notice the detail that matters and get straight to the point.
+    notice: how they spot the one thing that doesn’t add up
+    say: Nothing gets past you, does it? Remind me never to play poker with you.
+    text: You caught the one thing the rest of us missed. Seriously sharp.
+    about: They’re sharp — they’ll find the hole in your plan while you’re still pitching it.
+    synonyms:
+      - sharp as a tack: quick, alert and missing nothing
+      - on the ball: alert, quick to react and on top of things
+      - shrewd: sees how things really are, and is hard to fool
+      - savvy: knows how things work, and how to work them
+      - street-smart: knows how the world works, not just the theory
+      - switched-on: alert and up to speed — British
+      - eagle-eyed: spots the tiny detail everyone else skims past
+      - nobody’s fool: impossible to pull one over on
+    deep:
+      - incisive: cuts straight to the heart of a problem
+        sounds: in-SY-siv
+        from: Latin incidere, “to cut into”
+      - canny: shrewd, careful and very hard to fool — Scottish
+        sounds: KAN-ee
+        from: Scots, from can, “to know how”
+      - argute: shrewd and keen-witted — a rare, pointed little word
+        sounds: ar-GYOOT
+        from: Latin argutus, “clear, sharp, shrewd”
+      - gimlet-eyed: with a gaze sharp enough to drill through nonsense
+        from: gimlet, a small tool for boring holes
+
+  - word: intelligent
+    mix: mind 90, character 10
+    level: 3
+    def: Thinks clearly and deeply — they understand things properly, not just on the surface.
+    notice: how quickly they get to the bottom of something complicated
+    say: You’re one of the most intelligent people I’ve ever met, and you wear it so lightly.
+    text: Your take on that article was the most intelligent thing I’ve read all week.
+    about: They’re genuinely intelligent — not show-off smart, just thoughtful all the way down.
+    synonyms:
+      - intellectual: happiest in the world of ideas
+      - knowledgeable: knows a lot, and knows it properly
+      - analytical: takes things apart to see how they really work
+      - logical: thinks in clear, careful steps
+      - clear-thinking: cuts through the muddle to what makes sense
+      - a brainbox: a very clever person, said fondly — British
+      - a mind like a steel trap: grasps things fast and never lets them go
+    deep:
+      - cerebral: lives happily in their head — thoughtful, analytical, deep
+        sounds: suh-REE-brul
+        from: Latin cerebrum, “brain”
+      - ratiocinative: reasons everything out, one careful step at a time
+        sounds: rash-ee-OSS-ih-nay-tiv
+        from: Latin ratiocinari, “to reckon, to reason”
+
+  - word: articulate
+    mix: mind 72, spirit 16, looks 12
+    level: 3
+    def: Says exactly what they mean, clearly and well — words seem to line up for them.
+    notice: how they find the exact word you were reaching for
+    say: You find exactly the right words for things. I could listen to you explain anything.
+    text: The way you put that earlier stuck with me all day. You have such a way with words.
+    about: They’re so articulate — they can say in one sentence what takes me a whole rambling paragraph.
+    synonyms:
+      - well-spoken: speaks clearly, thoughtfully and well
+      - eloquent: moving and persuasive with words
+      - lucid: clear and easy to follow, even on hard things
+      - fluent: words come to them easily and smoothly
+      - quotable: says things you want to write down
+      - a wordsmith: crafts sentences with a carpenter’s care
+      - has a way with words: always lands on the perfect phrasing
+    deep:
+      - mellifluous: speaks so smoothly the words flow like honey
+        sounds: muh-LIF-loo-us
+        from: Latin mel, “honey”, + fluere, “to flow”
+      - lapidary: speaks in lines polished enough to carve in stone
+        sounds: LAP-ih-dair-ee
+        from: Latin lapis, “stone” — like an inscription on a monument
+      - a logophile: a lover of words, and it shows
+        sounds: LOG-uh-file
+        from: Greek logos, “word”, + philos, “loving”

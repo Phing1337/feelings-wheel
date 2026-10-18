@@ -1,0 +1,143 @@
+# Steadfast cluster · people deck · format guide: content/README.md
+
+id: steadfast
+name: Steadfast
+family: character
+anchor: loyal
+blurb: The one you can count on, every single time.
+near:
+  integrity: [honest]
+  warmth: [nurturing]
+  empathy: [patient]
+  courage: [resilient]
+
+words:
+  - word: loyal
+    mix: character 68, heart 32
+    level: 4
+    def: In your corner for good — they stand by you when it’s easy, and especially when it isn’t.
+    notice: how they still stick up for you in rooms you’re not even in
+    opposite: two-faced
+    say:
+      - You’ve had my back since the day we met. I don’t think I’ve ever properly said thank you. Thank you.
+      - You’ve never once made me wonder whose side you’re on. Do you know how rare that is?
+    text:
+      - Heard what you said about me when I wasn’t there. You’re the most loyal person I know.
+      - Years in, and you’ve never once let me down. Just wanted you to know I’ve noticed.
+    about: They’re loyal to the bone — once you’re one of theirs, you’re theirs for life.
+    synonyms:
+      - faithful: true to you, through thick and thin
+      - true-blue: loyal right down to the core
+      - staunch: firm and unwavering in their support
+      - steadfast: unwavering, year after year after year
+      - constant: the same toward you, in every season
+      - in your corner: on your side, always, no matter what
+      - ride or die: with you to the very end, whatever happens
+      - loyal to a fault: would stand by you even when maybe they shouldn’t
+    deep:
+      - leal: loyal and true — an old Scots word
+        sounds: LEEL
+        from: Anglo-French leal, the same root as loyal
+      - stalwart: loyal, sturdy and there for the long haul
+        sounds: STAWL-wurt
+        from: Old English stælwierthe, “serviceable”
+      - truehearted: faithful and loyal, heart and soul
+
+  - word: reliable
+    mix: character 85, mind 15
+    level: 3
+    def: If they said they’d be there, they’re there — no reminders, no excuses, no drama.
+    notice: how they text “on my way” before you’ve even finished asking
+    opposite: flaky
+    say: You always do what you say you’ll do. You have no idea how much I lean on that.
+    text: You showed up again, exactly when you said you would. Never taking that for granted.
+    about: They’re so reliable — if they say they’ll be there at eight, they’re there at five to.
+    synonyms:
+      - dependable: you can count on them, every single time
+      - solid: sound and steady all the way through
+      - consistent: the same good, day after day
+      - conscientious: careful to do things properly, and to do them well
+      - responsible: takes care of what’s theirs to take care of
+      - punctual: on time, every time — a quiet kind of respect
+      - rock-solid: utterly dependable, never wobbles
+      - as good as their word: if they say it, it happens
+    deep:
+      - trusty: tried and true, always there — a bit old-fashioned
+      - sterling: thoroughly excellent and dependable, through and through
+        from: sterling silver, the old standard for the real thing
+      - sound: decent and dependable — high praise in British slang
+
+  - word: supportive
+    mix: character 55, heart 45
+    level: 3
+    def: They believe in you out loud — and make you feel like you can actually do the thing.
+    notice: the way they show up to your thing, front row, cheering too loud
+    see: caring
+    say: You always make me feel like I can actually do this. I don’t think you know how much that matters.
+    text: Thank you for believing in me before I did. You’re the best hype person in the world.
+    about: They’re so supportive — they’ll talk you up to everyone, then help you pack for it.
+    synonyms:
+      - encouraging: always nudging you toward “you’ve got this”
+      - reassuring: makes everything feel a little more possible
+      - affirming: makes you feel seen, valid and okay
+      - there for you: shows up when it counts, no questions asked
+      - your biggest fan: cheers for you louder than anyone
+      - your cheerleader: always rooting for you, pom-poms optional
+      - a shoulder to cry on: someone you can safely fall apart on
+    deep:
+      - unstinting: gives support without holding anything back
+        sounds: un-STIN-ting
+        from: stint, “to hold back, be sparing”
+      - solicitous: always checking in on how you’re really doing
+        sounds: suh-LISS-ih-tus
+        from: Latin sollicitus, “anxious, concerned”
+
+  - word: protective
+    mix: character 60, heart 40
+    level: 4
+    def: They look out for the people they love — and step in fast if anyone comes for them.
+    notice: how they always take the traffic side of the sidewalk
+    shadow: controlling
+    say: I always feel safe with you. You notice everything, and you never let anyone make me feel small.
+    text: Thank you for walking me to the car last night. You always make me feel so looked after.
+    about: They’re really protective — the kind who waits at the curb until you’re safely inside.
+    synonyms:
+      - watchful: always quietly keeping an eye out
+      - vigilant: alert to anything that could hurt the people they love
+      - sheltering: keeps the people they love out of the storm
+      - always looking out for you: one eye on how you’re doing, always
+      - a guardian angel: always watching over you
+    deep:
+      - tutelary: guardian-like, keeping watch over someone
+        sounds: TOO-tuh-lair-ee
+        from: Latin tutela, “protection, guardianship”
+      - Argus-eyed: watchful, with an eye on absolutely everything
+        sounds: AR-gus-eyed
+        from: Argus, the hundred-eyed watchman of Greek myth
+
+  - word: steady
+    mix: character 78, heart 12, mind 10
+    level: 2
+    def: Calm, even, and the same on a good day or a bad one — their steadiness steadies you, too.
+    notice: how their voice doesn’t change when everything else does
+    opposite: wishy-washy
+    say: You’re the calmest place I know. Everything feels more manageable when you’re around.
+    text: Rough day, but then I talked to you and the floor came back. Thank you for being so steady.
+    about: They’re so steady — the kind of person who makes a bad day feel smaller just by being in it.
+    synonyms:
+      - a rock: the one you lean on when everything else shakes
+      - even-keeled: calm and balanced, never tipping too far
+      - unshakable: hard to rattle, whatever lands
+      - stable: emotionally steady, the same from day to day
+      - unwavering: doesn’t flicker or falter
+      - sure-footed: steady and sure, rarely slips
+    deep:
+      - unflappable: impossible to fluster, even in a crisis
+        sounds: un-FLAP-uh-bul
+        from: “in a flap,” British slang for a panic
+      - imperturbable: calm right through, whatever’s going on
+        sounds: im-per-TUR-buh-bul
+        from: Latin perturbare, “to throw into confusion”
+      - equable: even-tempered, rarely too up or too down
+        sounds: EK-wuh-bul
+        from: Latin aequabilis, “even, uniform”

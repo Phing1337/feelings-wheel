@@ -1,0 +1,164 @@
+# Courage cluster · people deck · format guide: content/README.md
+
+id: courage
+name: Courage
+family: character
+anchor: strong
+blurb: They don't fold. They rise.
+near:
+  confidence: [confident]
+  adventure: [bold]
+  steadfast: [protective]
+
+words:
+  - word: strong
+    core: true
+    mix: character
+    level: 3
+    def: Steady under pressure — the kind of strength that holds other people up, too.
+    notice: how they keep going on the days that would flatten anyone else
+    stronger: fierce
+    see: [confident, steady]
+    shadow: rigid
+    say:
+      - You’ve carried so much this year, and you’re still this gentle with everyone. That’s what strong looks like to me.
+      - I hope you know how strong you are. Not loud strong — the kind that just keeps going.
+    text:
+      - Thinking about everything you handled this week. You’re so much stronger than you let on.
+      - You don’t have to be strong today, by the way. But you are, and I’m in awe of you.
+    about: They’re strong in the quiet way — the one everybody leans on without even noticing.
+    synonyms:
+      - tough: hard to break, and not scared of hard things
+      - sturdy: built to take the weight and stay standing
+      - mighty: strong in a big, storybook-hero kind of way
+      - powerful: strong enough to move things, and people
+      - stoic: carries the heavy stuff quietly, without a fuss
+      - tough as nails: hard to rattle, harder to break
+      - a tower of strength: the one everyone leans on when things fall apart
+      - made of sterner stuff: tougher than whatever life throws at them
+    deep:
+      - indomitable: impossible to defeat or discourage, however hard it gets
+        sounds: in-DOM-ih-tuh-bul
+        from: Latin indomitabilis, “untameable”
+      - adamantine: unbreakable, like the hardest stone of legend
+        sounds: ad-uh-MAN-teen
+        from: Greek adamas, “unconquerable” — the name of that stone
+      - fortitudinous: full of fortitude — enduring hard things with courage
+        sounds: for-tih-TOO-dih-nus
+        from: Latin fortitudo, “strength”
+      - puissant: mighty and powerful — a grand, old-fashioned word
+        sounds: PWISS-unt
+        from: Old French puissant, “powerful”
+
+  - word: brave
+    mix: character 75, spirit 25
+    level: 4
+    def: Scared and doing it anyway — they walk toward the hard thing instead of around it.
+    notice: how they say the hard thing first, even with their voice shaking
+    see: bold
+    shadow: reckless
+    say:
+      - That was so brave. I saw how nervous you were, and you did it anyway.
+      - You’re braver than you think. I’ve watched you do hard things all year.
+    text:
+      - What you did today was really brave. I hope you’re proud of yourself, because I am.
+      - You’re one of the bravest people I know, and you’d never say it about yourself, so I will.
+    about: They’re braver than they look — scared of plenty, and they do it all anyway.
+    synonyms:
+      - courageous: brave in a deep, steady, chosen way
+      - fearless: doesn’t let fear make the decisions
+      - gutsy: brave with a bit of nerve and swagger
+      - plucky: brave and spirited, especially against the odds
+      - valiant: brave in a noble, old-storybook way
+      - heroic: brave on someone else’s behalf
+      - unafraid: looks the scary thing in the eye and keeps walking
+    deep:
+      - intrepid: fearless, especially heading into the unknown
+        sounds: in-TREP-id
+        from: Latin intrepidus, “not alarmed”
+      - dauntless: impossible to scare off or discourage
+        from: daunt, “to frighten,” + -less
+      - lionhearted: brave as a lion, with the big heart to match
+      - stouthearted: brave and resolute, heart and soul
+        from: stout, which once meant “brave, proud”
+      - doughty: brave and persistent, in a sturdy, old-fashioned way
+        sounds: DOW-tee
+        from: Old English dohtig, “worthy, valiant”
+
+  - word: resilient
+    mix: character 80, heart 20
+    level: 4
+    def: Knocked down and back up again — they bend with the hard stuff instead of breaking.
+    notice: how they get back up — a little bruised, never bitter
+    say: You’ve been through so much, and you’re still this soft and this funny. I honestly don’t know how you do it.
+    text: Every time life knocks you down, you get back up kinder. It’s one of my favorite things about you.
+    about: They’ve had a rough few years, and somehow they came out of it softer, not harder.
+    synonyms:
+      - hardy: tough enough to weather almost anything
+      - unbreakable: bends, sometimes, but never quite breaks
+      - unsinkable: keeps bobbing back up, whatever the weather
+      - quick to bounce back: down one day, back on their feet the next
+      - a survivor: has come through worse, and come through whole
+      - a tough cookie: hard to crumble, whatever life throws at them
+    deep:
+      - unbowed: not beaten down, however much lands on them
+        from: “bloody, but unbowed” — a line from the Victorian poem Invictus
+      - unvanquished: never truly beaten, however hard they’re hit
+        from: vanquish, from Latin vincere, “to conquer”
+      - renascent: reborn after every hard season, and growing again
+        sounds: rih-NAS-unt
+        from: Latin renasci, “to be born again”
+
+  - word: determined
+    mix: character 72, spirit 28
+    level: 3
+    def: Once they’ve decided, it’s happening — they keep going long after most people would’ve quit.
+    notice: how a “no” just sends them looking for another door
+    shadow: stubborn
+    say: Once you set your mind to something, it’s basically already done. I love watching you go after things.
+    text: I don’t know anyone who wants it as much as you do. You’re going to get there.
+    about: They’re so determined — once they’ve decided something, you might as well start celebrating.
+    synonyms:
+      - tenacious: grabs hold and doesn’t let go
+      - dogged: keeps plodding forward, step after step after step
+      - resolute: clear and firm about where they’re going
+      - persistent: keeps coming back until it works
+      - single-minded: all in on one goal, no distractions
+      - gritty: tough and determined, especially when it’s hard
+      - steely: cool, quiet, iron-hard resolve
+      - purposeful: always moving toward something, on purpose
+      - unstoppable: good luck getting in their way
+      - on a mission: locked onto a goal and going for it
+    deep:
+      - indefatigable: tireless — still going when everyone else has stopped
+        sounds: in-dih-FAT-ih-guh-bul
+        from: Latin in-, “not,” + defatigare, “to tire out”
+      - unflagging: never drooping, never slowing down
+        from: flag, “to droop or grow tired”
+      - sedulous: quietly, carefully persistent, never skipping a step
+        sounds: SEJ-uh-lus
+        from: Latin sedulus, “diligent”
+
+  - word: fierce
+    mix: character 65, spirit 35
+    level: 5
+    def: Strength with heat in it — protective, passionate, and absolutely not to be underestimated.
+    notice: how fast they go to bat for the people they love
+    say: You’re fierce, you know that? I’d hate to be on the wrong side of you, and I love being on your side.
+    text: Watching you stand up for yourself today was the best thing I’ve seen all week. Fierce.
+    about: They’re fierce — warm as anything, but come for someone they love and you’ll see.
+    synonyms:
+      - formidable: impressive, and just a little intimidating
+      - feisty: full of fight and spark, ready to stand their ground
+      - unapologetic: fully themselves, and not sorry about it
+      - a force to be reckoned with: impossible to ignore or push around
+      - a powerhouse: strength and drive packed into one person
+      - a warrior: fights for what matters, and for who matters
+      - full of fight: never short on the will to stand up
+    deep:
+      - redoubtable: formidable — worthy of respect, and a little fear
+        sounds: rih-DOW-tuh-bul
+        from: Old French redouter, “to dread”
+      - mettlesome: full of spirit, courage and fight
+        sounds: MET-ul-sum
+        from: mettle, which began as just another spelling of metal

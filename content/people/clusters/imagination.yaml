@@ -1,0 +1,149 @@
+# Imagination cluster · people deck · format guide: content/README.md
+
+id: imagination
+name: Imagination
+family: mind
+anchor: creative
+blurb: They see things that aren't there yet.
+near:
+  curiosity: [curious]
+  charisma: [inspiring]
+  wit: [quirky]
+  grace: [stylish]
+
+words:
+  - word: creative
+    mix: mind 65, spirit 35
+    level: 3
+    def: Always making something — ideas, playlists, dinners, worlds — out of thin air and a bit of nerve.
+    notice: the doodle in the margin, the dinner from three random ingredients
+    shadow: scatterbrained
+    say:
+      - Where do your ideas even come from? Everything you make has you all over it.
+      - I love that you can’t leave anything alone — you always have to make it yours.
+    text:
+      - Okay, what you made is incredible. I’ve looked at it about forty times.
+      - You’re the most creative person I know, and I’m stealing your idea. Full credit, obviously.
+    about: They’re so creative — they’ll turn a cardboard box and a free afternoon into the best day of your month.
+    synonyms:
+      - inventive: forever dreaming up new ways to do things
+      - innovative: finds the new approach nobody’s tried yet
+      - full of ideas: more ideas than they’ll ever have time for
+      - a maker: always building, sewing, cooking or making something
+      - multitalented: good at an unfair number of creative things
+      - prolific: makes a lot, and keeps on making
+    deep:
+      - fecund: endlessly fertile with ideas, one after another
+        sounds: FEE-kund
+        from: Latin fecundus, “fruitful”
+      - a bricoleur: builds something wonderful out of odds and ends
+        sounds: bree-koh-LUR
+        lang: French
+        from: French bricoler, “to tinker, do odd jobs”
+
+  - word: imaginative
+    mix: mind 60, spirit 30, humor 10
+    level: 3
+    def: Lives half in the land of what-if — and the stories they bring back are wonderful.
+    notice: the ridiculous, wonderful what-if they spin out of nothing
+    say: I love the way your mind wanders. Tell me the rest of the story.
+    text: Your theory that the pigeons secretly run the city has lived in my head all day.
+    about: They’re so imaginative — give them a rainy afternoon and they’ll invent a whole world.
+    synonyms:
+      - a daydreamer: happily lost in their own head, building castles
+      - fanciful: full of whimsical, unlikely, lovely ideas
+      - a storyteller: can spin a story out of anything at all
+      - poetic: sees the world in images and metaphors
+      - a worldbuilder: dreams up whole worlds, maps and all
+    deep:
+      - mythopoeic: makes myths and legends out of ordinary life
+        sounds: mith-uh-PEE-ik
+        from: Greek mythopoiein, “to make myths”
+      - chimerical: given to wild, fantastical schemes and dreams
+        sounds: ky-MER-ih-kul
+        from: the Chimera, a Greek monster stitched from lion, goat and serpent
+
+  - word: artistic
+    mix: mind 55, looks 30, spirit 15
+    level: 3
+    def: Has an eye for beauty and a need to make it — in color, sound, words, whatever’s at hand.
+    notice: how they stop mid-sentence to photograph the light on a wall
+    say: You see beauty in things everyone else walks right past. I love that about you.
+    text:
+      - Went back through the photos you took and I’m honestly blown away. You have such an eye.
+      - Your sketch is on my fridge and it’s never coming down. You’re so talented.
+    about: They’re so artistic — even their grocery lists look like they belong in a gallery.
+    synonyms:
+      - artsy: into art, music, galleries and making things
+      - talented: has a real gift for making beautiful things
+      - expressive: pours what they feel into what they make
+      - musical: hears music in everything, and can make it too
+      - has a good eye: knows instantly what looks right
+      - a true artist: makes things that make you feel something
+    deep:
+      - an aesthete: deeply, happily devoted to beautiful things
+        sounds: ES-theet
+        from: Greek aisthētēs, “one who perceives”
+      - virtuosic: so skilled it looks effortless
+        sounds: vur-choo-OH-sik
+        from: Italian virtuoso, “skilled, learned”
+      - painterly: sees the world the way a painter would — all light and color
+        sounds: PAYN-ter-lee
+
+  - word: original
+    mix: mind 62, spirit 25, humor 13
+    level: 4
+    def: Unlike anyone else — they think, make and live in a way that’s entirely their own.
+    notice: the take you’d never have come up with in a million years
+    say: There’s honestly no one like you. I mean that as the highest compliment.
+    text: Nobody else would’ve thought of that. You’re one of a kind.
+    about: They’re a true original — you could meet a thousand people and not find another one like them.
+    synonyms:
+      - one of a kind: genuinely unlike anyone else
+      - a breath of fresh air: different from everyone else, in the best way
+      - unconventional: happily ignores the usual way of doing things
+      - refreshing: a welcome change from the same old
+      - distinctive: unmistakably, recognizably themselves
+      - experimental: always trying something nobody’s tried
+      - outside-the-box: thinks in directions nobody else is facing
+    deep:
+      - sui generis: in a category all their own
+        sounds: SOO-ee JEN-er-is
+        lang: Latin
+        from: Latin, “of its own kind”
+      - inimitable: impossible to copy — and nobody should try
+        sounds: ih-NIM-ih-tuh-bul
+        from: Latin inimitabilis, “not imitable”
+      - singular: remarkable and one of a kind — a lovely old sense
+      - avant-garde: out on the experimental front edge of things
+        sounds: ah-vahnt-GARD
+        lang: French
+        from: French, “vanguard” — the front line of an army
+
+  - word: visionary
+    mix: mind 58, spirit 22, character 20
+    level: 5
+    def: Sees what could be long before anyone else — and makes you believe it’s possible.
+    notice: how they talk about the future like they’ve already been there
+    see: inspiring
+    say: The way you talk about what’s next makes me want to be part of it.
+    text: That plan you sketched on a napkin? I can’t stop thinking about it. You see things nobody else sees yet.
+    about: They’re a real visionary — they’ll describe something that doesn’t exist yet, and by the end you can see it too.
+    synonyms:
+      - forward-thinking: always looking a few moves ahead
+      - far-sighted: plans for a future most people can’t picture yet
+      - ahead of their time: seeing now what everyone else will catch up to
+      - big-picture: sees the whole map, not just the next step
+      - a dreamer: dreams big, and means every word of it
+      - idealistic: believes the world can be better, and acts like it
+      - a trailblazer: goes first, so others can follow
+    deep:
+      - prescient: seems to know what’s coming before it comes
+        sounds: PRESH-unt
+        from: Latin praescire, “to know beforehand”
+      - Promethean: boldly, daringly creative — a bringer of fire
+        sounds: pruh-MEE-thee-un
+        from: Prometheus, who stole fire from the gods for humankind
+      - vatic: prophetic, like a seer
+        sounds: VAT-ik
+        from: Latin vates, “prophet, seer”

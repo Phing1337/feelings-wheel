@@ -1,0 +1,112 @@
+# Confidence cluster · people deck · format guide: content/README.md
+
+id: confidence
+name: Confidence
+family: character
+anchor: confident
+blurb: Sure of themselves — in the best way.
+near:
+  courage: [strong]
+  grace: [poised]
+  charisma: [charismatic]
+  stubborn: [cocky]
+
+words:
+  - word: confident
+    mix: character 70, spirit 30
+    level: 3
+    def: At home in themselves — sure enough of who they are that they don’t need to prove it.
+    notice: how they walk into a room full of strangers like they were expected
+    see: poised
+    shadow: cocky
+    say:
+      - I love how you walk into a room. Like you already know you belong there — because you do.
+      - You never ask permission to take up space, and it’s honestly one of the most attractive things about you.
+    text:
+      - You were so sure of yourself in there today. It was a joy to watch.
+      - Reminder that you’re the most self-assured person I know. Go get it.
+    about: They’re confident without being loud about it — they just know who they are.
+    synonyms:
+      - self-assured: sure of themselves, no crowd needed to agree
+      - assertive: says what they want, clearly and kindly
+      - secure: steady in themselves, not fishing for reassurance
+      - unselfconscious: free of awkward second-guessing
+      - sure of themselves: knows who they are and what they bring
+      - comfortable in their own skin: at ease with exactly who they are
+    deep:
+      - unabashed: not the least bit embarrassed to be themselves
+        sounds: un-uh-BASHT
+      - gallus: bold and self-assured, with a bit of swagger
+        sounds: GAL-us
+        lang: Scots
+
+  - word: independent
+    mix: character 75, mind 25
+    level: 3
+    def: Their own person — happy in their own company, and with you because they choose to be.
+    notice: how they book the solo trip, and actually go
+    shadow: aloof
+    say: I love that you’ve built a whole life that’s entirely yours. It makes being part of it feel like a gift.
+    text: Saw you went to that show on your own. Honestly so cool. You’re your own whole person.
+    about: They’re so independent — they’ll take themselves out to dinner and have the best night.
+    synonyms:
+      - self-reliant: handles their own life, and handles it well
+      - self-sufficient: has what they need, mostly from within
+      - self-directed: picks their own path and steers it
+      - autonomous: runs their own life, by their own lights
+      - their own person: makes their own choices, lives their own way
+    deep:
+      - unbeholden: owes no one, answers to no one
+        sounds: un-bih-HOLE-dun
+      - inner-directed: guided by their own values, not the crowd’s
+        from: 1950s sociology, which pictured an inner gyroscope
+
+  - word: ambitious
+    mix: character 66, spirit 20, mind 14
+    level: 4
+    def: Big dreams, real plans — they want more from life, and they’re actually going after it.
+    notice: the notes app full of plans, and the way they keep ticking them off
+    say: I love how big you dream. And I love even more that you actually do the things.
+    text: You’re going to do something huge. I just hope I get to watch.
+    about: They’re so ambitious — they’ve got a five-year plan and they’re ahead of schedule.
+    synonyms:
+      - driven: pushed from the inside to keep reaching
+      - hungry: wants it badly, and works like it
+      - enterprising: spots the chance and grabs it
+      - self-made: built it all themselves, from scratch
+      - a go-getter: doesn’t wait for chances, goes and gets them
+      - a high-flyer: aiming high, and getting there
+    deep:
+      - emulous: eager to match the very best, then beat them
+        sounds: EM-yuh-lus
+        from: Latin aemulus, “rivaling”
+      - go-ahead: full of drive and new ideas — British
+
+  - word: capable
+    mix: character 72, mind 28
+    level: 3
+    def: Hand them anything and it gets handled — calmly, competently, and usually better than you’d have done it.
+    notice: how they fix it while everyone else is still reading the manual
+    say: Honestly, I’d trust you with anything. You just quietly handle it all.
+    text: Is there anything you can’t do? Asking for a friend. The friend is me. I’m very impressed.
+    about: They’re ridiculously capable — hand them a problem and you can stop worrying about it.
+    synonyms:
+      - competent: knows what they’re doing, and does it well
+      - skilled: good at what they do, and it shows
+      - practical: knows how to make things actually work
+      - efficient: gets it done without the fuss
+      - can-do: ready to roll up their sleeves for anything
+      - on top of things: has it all handled before you ask
+      - can turn their hand to anything: good at whatever you throw at them
+      - a safe pair of hands: you’d trust them with anything delicate
+    deep:
+      - ept: competent and effective — the cheerful opposite of inept
+        sounds: EPT
+        from: a playful back-formation from inept, 1930s
+      - compleat: skilled and accomplished in every part of what they do
+        sounds: kum-PLEET
+        from: an old spelling of complete
+      - au fait: completely at home with how things work
+        sounds: oh-FAY
+        lang: French
+      - a dab hand: brilliant at it — British, and warmly meant

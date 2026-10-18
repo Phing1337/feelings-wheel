@@ -1,0 +1,202 @@
+# Beauty cluster · people deck · format guide: content/README.md
+
+id: beauty
+name: Beauty
+family: looks
+anchor: beautiful
+blurb: The kind of lovely you notice — then keep noticing.
+near:
+  allure: [captivating]
+  grace: [elegant]
+  kindness: [sweet]
+  energy: [vibrant]
+
+words:
+  - word: beautiful
+    core: true
+    mix: looks
+    level: 3
+    def: Lovely to look at — and somehow more than that, the kind of beauty that stays with you.
+    notice: the second look you never meant to take
+    stronger: gorgeous
+    softer: pretty
+    see: [radiant, lovely]
+    shadow: vain
+    say:
+      - Sorry, I lost my train of thought. You look beautiful.
+      - You’re beautiful. Not just tonight — on every ordinary day, too.
+    text:
+      - Meant to say this earlier and lost my nerve — you looked beautiful tonight.
+      - I keep thinking about how beautiful you looked this morning, half-asleep and laughing at me.
+    about: They’re beautiful — and somehow it’s the least interesting thing about them.
+    synonyms:
+      - a vision: so lovely it’s like something you dreamed up
+      - a work of art: beautiful enough to belong in a gallery
+      - exquisite: beautiful in a fine, delicate, carefully finished way
+      - angelic: beautiful in a soft, luminous, almost heavenly way
+      - beautiful inside and out: lovely to look at, and even lovelier to know
+      - a sight to behold: worth stopping everything just to look
+      - sublime: so beautiful it’s almost overwhelming
+      - fine-featured: delicate, beautifully balanced features
+    deep:
+      - pulchritudinous: beautiful — though you’d never guess it from the sound
+        sounds: pul-kri-TOO-di-nus
+        from: Latin pulchritudo, “beauty”
+      - comely: pleasing to look at — an old word, still lovely
+        sounds: KUM-lee
+        from: perhaps Old English cȳme, “lovely”
+      - beauteous: beautiful, the way poets put it
+        sounds: BYOO-tee-us
+      - ethereal: so delicately beautiful they seem not quite of this world
+        sounds: ih-THEER-ee-ul
+        from: Greek aithēr, “the upper air”
+
+  - word: gorgeous
+    mix: looks 85, spirit 15
+    level: 4
+    def: Beautiful with the volume up — vivid, warm and impossible not to notice.
+    notice: the double take you still do, even after all this time
+    stronger: stunning
+    say:
+      - Okay, wow. You look gorgeous — give me a second to catch up.
+      - You’re gorgeous, and I’m going to keep saying it until you believe me.
+    text:
+      - You looked so gorgeous tonight I forgot about my dessert. That’s serious.
+      - That photo from Saturday? Gorgeous. I’ve looked at it more times than I’ll admit.
+    about: They’re gorgeous — like, stop-mid-sentence gorgeous.
+    synonyms:
+      - drop-dead gorgeous: so gorgeous it’s almost unfair
+      - ravishing: beautiful enough to carry you clean away
+      - divine: heavenly to look at, and then some
+      - head-turning: the reason heads swivel when they walk past
+      - a knockout: so good-looking it nearly floors you
+      - smashing: looking fantastic — British, and a little old-school
+      - unreal: so good-looking it hardly seems possible
+    deep:
+      - lush: gorgeous, in British slang — as rich and generous as it sounds
+      - a bobby-dazzler: a real dazzler — strikingly, showily good-looking
+        from: Northern English dialect, 1860s — the “bobby” part is a mystery
+
+  - word: stunning
+    mix: looks 80, spirit 20
+    level: 5
+    def: So beautiful it stops you in your tracks — the wow arrives before the words do.
+    notice: the half-second the room forgets what it was saying
+    say: You look stunning. Did you see everyone turn when you walked in?
+    text: Can we talk about how stunning you looked tonight? Because I’d like to. At length.
+    about: They’re stunning — the kind of beautiful that makes a busy street go quiet for a second.
+    synonyms:
+      - breathtaking: so beautiful you forget to breathe for a second
+      - jaw-dropping: striking enough to leave your mouth hanging open
+      - a showstopper: the one everyone turns to look at
+      - arresting: so striking it stops you mid-step
+      - out of this world: too beautiful to be from around here
+      - magnificent: grand, splendid and impossible to overlook
+      - heart-stopping: so beautiful your heart skips a beat
+    deep:
+      - nonpareil: beautiful beyond compare
+        sounds: non-puh-REL
+        from: French non pareil, “without equal”
+      - a cynosure: the one every eye in the room turns toward
+        sounds: SY-nuh-shoor
+        from: Greek kynosoura, “dog’s tail” — the stars sailors steered by
+
+  - word: pretty
+    mix: looks 80, heart 20
+    level: 2
+    def: Lovely to look at in a light, fresh way — good looks that feel easy, not intimidating.
+    notice: how they look first thing in the morning, without even trying
+    softer: cute
+    say: You look really pretty today. That color is so good on you.
+    text: Can I just say you looked so pretty at lunch? It’s been on my mind all afternoon.
+    about: They’re so pretty — no fuss, nothing forced, just the kind of face that puts you at ease.
+    synonyms:
+      - pretty as a picture: lovely enough to frame
+      - easy on the eyes: a pleasure to look at, no effort required
+      - fresh-faced: bright, clear and wide awake
+      - photogenic: the camera loves them, from every angle
+      - nice-looking: good-looking in a gentle, understated way
+    deep:
+      - bonny: pretty, healthy and glowing — Scottish and Northern English
+        sounds: BON-ee
+        from: Scots, perhaps from French bon, “good”
+      - sightly: pleasing to the eye — the happy flip side of unsightly
+      - fetching: attractive in a way that draws you in — a little old-fashioned
+
+  - word: radiant
+    mix: looks 55, spirit 45
+    level: 4
+    def: Lit up from the inside — glowing with a warmth and happiness that shows on their face.
+    notice: the glow they get talking about something they love
+    see: [sunny, vibrant]
+    say: You look radiant. Whatever’s making you smile like that, I hope it keeps happening.
+    text: You were glowing tonight. Radiant is the only word for it.
+    about: They’re radiant — happiness just looks really good on them.
+    synonyms:
+      - glowing: lit up from within, and it shows
+      - luminous: shining softly, like there’s a lamp on inside
+      - aglow: warm and softly shining with happiness
+      - beaming: smiling so wide it lights up the room
+      - blooming: flushed with health and happiness, like a flower opening
+      - lit from within: glowing in a way no lighting could fake
+      - dewy: fresh and softly glowing, like early morning
+    deep:
+      - effulgent: shining out brilliantly, warmth and all
+        sounds: ih-FUL-junt
+        from: Latin effulgere, “to shine forth”
+      - lambent: softly glowing, like a flame that flickers but never flares
+        sounds: LAM-bunt
+        from: Latin lambere, “to lick” — like little tongues of flame
+      - lucent: glowing with a soft, clear light
+        sounds: LOO-sunt
+        from: Latin lucere, “to shine”
+
+  - word: lovely
+    mix: looks 55, heart 45
+    level: 2
+    def: Beautiful in a warm, gentle way — easy to look at and even easier to be around.
+    notice: how everyone softens a little when they’re around
+    see: [sweet, kind]
+    say: You look lovely. And you were lovely to everyone tonight — I noticed.
+    text: Today was so nice. You’re just lovely — it’s impossible to stay grumpy around you.
+    about: They’re so lovely — pretty in that warm way that makes strangers smile back.
+    synonyms:
+      - a sight for sore eyes: a joy to see, especially after time apart
+      - delightful: a pleasure to look at, and to be around
+      - sweet-faced: a face that looks kind before they’ve said a word
+      - easy to love: lovely in a way that takes no effort to adore
+      - heavenly: so lovely it feels like a gift
+    deep:
+      - lovesome: lovely in a way that invites love — gentle and old-fashioned
+        from: Old English lufsum
+      - a peach: a thoroughly lovely person — old-fashioned slang
+
+  - word: cute
+    mix: looks 60, heart 25, humor 15
+    level: 2
+    def: Sweetly, endearingly attractive — the kind of appealing that makes you smile without meaning to.
+    notice: the tiny victory dance they do when the food arrives
+    see: [goofy, sweet]
+    say:
+      - You’re so cute when you’re concentrating. Your whole face gets involved.
+      - Stop being cute, I’m trying to stay annoyed at you.
+    text:
+      - You trying to whistle and just giggling instead? Cutest thing I’ve seen all week.
+      - You’re very cute. That’s all. That’s the text.
+    about: They’re so cute — they say hi to every single dog we pass.
+    synonyms:
+      - adorable: so cute you can hardly stand it
+      - cute as a button: small, sweet and perfectly put together
+      - a cutie: cute through and through, no notes
+      - darling: sweetly, delightfully cute
+      - huggable: so cute you just want to scoop them up
+      - endearing: cute in a way that makes you fond of them
+    deep:
+      - winsome: sweetly appealing, with a little childlike charm
+        sounds: WIN-sum
+        from: Old English wynsum, “pleasant”, from wynn, “joy”
+      - cunning: cute — in old American usage, with nothing sly about it
+      - kawaii: cute in the full, heart-eyed Japanese sense
+        sounds: kuh-WY-ee
+        lang: Japanese
+      - cute as a bug’s ear: utterly adorable, in folksy old American slang

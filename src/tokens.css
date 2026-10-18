@@ -145,4 +145,20 @@
   --fw-opacity-aura-poster: 45%;
   --fw-motion-aura-drift: "60–110s · sine.inOut · drift 18% · breathe 12% · shimmer 8°";
   --fw-motion-aura-shift: "8s · sine.inOut · stagger 0.7s";
+
+  /* 08 · Decks — "I feel | I see you". Each deck's families read --fw-color-<deck>-<family> first,
+     then --fw-color-<family> (so the feelings above need no prefix). The aura reads
+     --fw-color-aura-<deck>-<family> the same way, falling back to the family colour.
+     Words have a side: light (their own colour), edge (double-edged: a touch dimmer) or shadow
+     (deeper and turned toward red). shade = lightness · chroma · hue turn, applied in OKLCH. */
+  --fw-color-people-looks: #D94DFF;
+  --fw-color-people-heart: #FF4F8B;
+  --fw-color-people-spirit: #FF7A1A;
+  --fw-color-people-humor: #FFD60A;
+  --fw-color-people-mind: #1EC8FF;
+  --fw-color-people-character: #3D5BFF;
+  --fw-shade-edge: "86% · 100% · 0°";
+  --fw-shade-shadow: "64% · 95% · -12°";
+  /* the old deck's bubbles swirl into the middle as the new deck blooms out of it */
+  --fw-motion-deck-swap: "0.6s · power2.in · swirl 70°";
 }

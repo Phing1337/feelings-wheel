@@ -1,0 +1,137 @@
+# Wisdom cluster · people deck · format guide: content/README.md
+
+id: wisdom
+name: Wisdom
+family: mind
+anchor: wise
+blurb: Deep water — they see what actually matters.
+near:
+  brilliance: [smart]
+  empathy: [understanding]
+  integrity: [grounded]
+  steadfast: [steady]
+
+words:
+  - word: wise
+    mix: mind 65, character 35
+    level: 4
+    def: They see what really matters and know what to do about it — judgment you can lean on.
+    notice: the one quiet sentence of advice you carry around for years
+    see: grounded
+    shadow: smug
+    say:
+      - That’s the wisest thing anyone’s said to me in a long time.
+      - You always know what actually matters. I don’t know how you do it, but I’m so glad I can ask you.
+    text:
+      - What you said earlier was so wise. I have a feeling I’ll be thinking about it for a while.
+      - You’re the person I call when I want the truth, not just comfort. That’s rare.
+    about: They’re wise — the one everyone quietly goes to when things fall apart.
+    synonyms:
+      - an old soul: wise and calm in a way that feels older than they are
+      - wise beyond their years: wiser than their age has any right to be
+      - discerning: can tell what’s good from what only looks good
+      - seasoned: wise from having been through things
+      - worldly-wise: knows how life works, and isn’t fooled by it
+    deep:
+      - sagacious: wise, with a shrewd, practical edge
+        sounds: suh-GAY-shus
+        from: Latin sagax, “keen-scented, shrewd”
+      - sage: deeply wise, calm and experienced — the word for old teachers
+        sounds: SAYJ
+        from: Old French sage, from Latin sapere, “to be wise”
+      - Solomonic: wise and fair, especially when the choice is hard
+        sounds: sol-uh-MON-ik
+        from: King Solomon, famed in the Bible for his wise judgments
+      - long-headed: wise and far-seeing — an old-fashioned compliment
+
+  - word: insightful
+    mix: mind 70, heart 30
+    level: 3
+    def: Sees beneath the surface of things and people — they name what’s really going on.
+    notice: the single remark that makes everything suddenly click
+    say: How do you see straight to the heart of things like that?
+    text:
+      - That thing you said earlier flipped the whole situation for me. You’re so insightful.
+      - What you said about my family last night changed how I see the whole thing. Thank you.
+    about: They’re so insightful — they’ll say one thing and suddenly you understand yourself better.
+    synonyms:
+      - profound: thinks deeply, and it shows in what they say
+      - penetrating: sees right through to the heart of things
+      - deep: sees the layers most people skim right past
+      - clear-eyed: sees things exactly as they are, no fog, no flinching
+      - spot-on: always seems to land on exactly the right point
+    deep:
+      - perspicacious: quick to see what others miss, and to see it truly
+        sounds: per-spih-KAY-shus
+        from: Latin perspicax, “sharp-sighted”
+      - clairvoyant: so perceptive it borders on mind-reading
+        sounds: klair-VOY-unt
+        from: French, “clear-seeing”
+
+  - word: perceptive
+    mix: mind 75, heart 25
+    level: 3
+    def: Notices what others miss — the shift in your voice, the thing you didn’t quite say.
+    notice: how they ask what’s wrong before you’ve said a word
+    say: You notice everything. It’s a little unnerving, and I love it.
+    text: You clocked I was off today before I even did. Thank you for noticing.
+    about: They’re incredibly perceptive — they can read a room in about four seconds.
+    synonyms:
+      - observant: notices the small things everyone else walks past
+      - intuitive: understands without needing it spelled out
+      - clued-in: picks up on what’s really going on, even unspoken
+      - emotionally intelligent: reads feelings — theirs and yours — with real skill
+      - a mind reader: seems to know what you’re thinking before you do
+    deep:
+      - percipient: perceptive in a quiet, penetrating way
+        sounds: per-SIP-ee-unt
+        from: Latin percipere, “to seize, to perceive”
+      - lynx-eyed: sharp-sighted enough to see through walls
+        from: the lynx, once believed to see through solid stone
+
+  - word: level-headed
+    mix: mind 55, character 45
+    level: 3
+    def: Calm and sensible when things get messy — they think clearly while everyone else panics.
+    notice: how they’re the calm voice when everything’s going sideways
+    see: [grounded, steady]
+    say: I love that you never panic. You make everything feel solvable.
+    text: Thank you for being the calm one today. I needed your head more than you know.
+    about: They’re so level-headed — exactly who you want next to you when something goes wrong.
+    synonyms:
+      - sensible: makes good, reasonable choices without a fuss
+      - clear-headed: thinks straight, even under pressure
+      - cool-headed: stays calm exactly when it counts
+      - balanced: steady, fair and hard to tip over
+      - pragmatic: cares about what works, not what sounds good
+      - the voice of reason: the calm, sensible one in any room
+    deep:
+      - judicious: weighs everything carefully before deciding
+        sounds: joo-DISH-us
+        from: Latin iudicium, “judgment”
+      - Apollonian: measured, orderly and balanced — reason over frenzy
+        sounds: ap-uh-LOH-nee-un
+        from: Apollo, the Greek god of light and order — as opposed to wild Dionysus
+
+  - word: reflective
+    mix: mind 72, heart 18, character 10
+    level: 2
+    def: Thinks things over deeply — about life, about themselves, about what you said last week.
+    notice: the long, thoughtful pause before they answer
+    say: I love that you take a second to really think before you answer. It’s worth the wait.
+    text: Your voice note about growing up has been on my mind all day. I love how you think about things.
+    about: They’re really reflective — they’ll go quiet, then say the thing you remember for a month.
+    synonyms:
+      - a deep thinker: turns things over until they find the bottom
+      - introspective: looks inward, honestly and often
+      - self-aware: knows themselves, quirks and all
+      - philosophical: ponders the big questions, and takes knocks calmly
+      - contemplative: given to quiet, unhurried thought
+      - pensive: quietly lost in thought, sometimes a little wistful
+    deep:
+      - ruminative: turns things over and over, slowly and thoroughly
+        sounds: ROO-mih-nuh-tiv
+        from: Latin ruminari, “to chew the cud”
+      - cogitative: given to long, careful thinking
+        sounds: KOJ-ih-tay-tiv
+        from: Latin cogitare, “to think”

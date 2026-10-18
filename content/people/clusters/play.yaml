@@ -1,0 +1,215 @@
+# Play cluster · people deck · format guide: content/README.md
+
+id: play
+name: Play
+family: humor
+anchor: funny
+blurb: They make everything a little more fun.
+near:
+  wit: [witty]
+  energy: [fun]
+  sunshine: [lighthearted]
+  beauty: [cute]
+  snark: [sarcastic]
+
+words:
+  - word: funny
+    core: true
+    mix: humor
+    level: 3
+    def: They make you laugh — the real kind, the kind you can't stop.
+    notice: the laugh they get out of you when you swore you’d stay mad
+    stronger: hilarious
+    see: [witty, fun]
+    shadow: mocking
+    say:
+      - Nobody makes me laugh like you do. My face actually hurts.
+      - I’m still laughing at what you said earlier. How are you this funny?
+    text:
+      - Just laughed out loud on the train thinking about what you said. People are staring. Your fault.
+      - Still cackling alone in my kitchen about your joke from last night. This is what you’ve done to me.
+    about: They’re so funny — even waiting in line with them turns into the best part of the day.
+    synonyms:
+      - humorous: has a real sense of humor, and shares it generously
+      - amusing: easy company, always good for a smile
+      - comical: funny in face, voice and timing
+      - jokey: always joking around, even when you’re trying to be serious
+      - a hoot: so much fun to be around you can’t help laughing
+      - a laugh a minute: never a dull moment, never a straight face
+      - quick with a joke: has one ready for every occasion
+      - a born comedian: funny without even trying
+    deep:
+      - jocular: fond of a joke, and always ready with one
+        sounds: JOK-yuh-ler
+        from: Latin joculus, “a little joke”
+      - jocose: playful and jesting by nature
+        sounds: joh-KOHS
+        from: Latin jocus, “jest”
+      - waggish: funny in a playful, mischievous way
+        sounds: WAG-ish
+        from: wag, an old word for a habitual joker
+      - a card: a real character, always good for a laugh — old-fashioned
+
+  - word: hilarious
+    mix: humor 85, spirit 15
+    level: 5
+    def: So funny it hurts — the kind of laughing where you have to hold on to something.
+    notice: the laugh that leaves you wheezing and begging them to stop
+    softer: funny
+    say:
+      - Stop, stop — I can’t breathe. You’re actually hilarious.
+      - I haven’t laughed this hard in months. I think I pulled something.
+    text:
+      - I just snorted out loud in a silent office because of you. Hope you’re proud.
+      - Crying. Actually crying. How are you this hilarious.
+    about: They’re hilarious — every dinner with them ends with someone crying from laughing.
+    synonyms:
+      - hysterical: so funny everyone around them loses it
+      - side-splitting: funny enough to leave your sides aching
+      - a scream: so funny it’s almost too much
+      - a riot: a whole party’s worth of laughs in one person
+      - priceless: so funny you couldn’t put a price on it
+      - comedy gold: everything they say is material
+      - uproarious: sets the whole room roaring
+      - laugh-out-loud: the real kind of funny, no polite chuckles
+    deep:
+      - a gas: a total blast to be around — mid-century slang
+      - a panic: so funny it’s an emergency — old showbiz slang
+      - risible: laugh-inducing — though careful, it can mean laughably bad
+        sounds: RIZ-uh-bul
+        from: Latin ridere, “to laugh”
+
+  - word: playful
+    mix: humor 70, spirit 30
+    level: 3
+    def: Teasing, light and up for anything — they turn ordinary moments into little games.
+    notice: the way a trip to the grocery store becomes a competition
+    see: fun
+    shadow: immature
+    say:
+      - You turn everything into a game, and I hope you never stop.
+      - I love that you still know how to play. It makes me lighter.
+    text:
+      - Talking to you feels like recess, and I never want the bell to ring.
+      - Still smiling about the chopstick sword fight. Please never get serious on me.
+    about: They’re so playful — ten minutes with them and you’re racing shopping carts.
+    synonyms:
+      - teasing: pokes fun softly, and always with love
+      - fun-loving: game for a laugh, and usually the one starting it
+      - joshing: teases you in the friendliest way
+      - frisky: bouncy, playful, maybe a little flirty
+      - puppyish: eager and bouncy, like a puppy with a ball
+      - a big kid: still knows how to play, and isn’t embarrassed about it
+    deep:
+      - frolicsome: merry and full of capers
+        sounds: FROL-ik-sum
+        from: frolic, from Dutch vrolijk, “merry”
+      - sportive: light-footed and full of play — literary
+        from: sport, in its old sense of “play, amusement”
+      - gamesome: full of sport and games — an old word
+        sounds: GAYM-sum
+      - ludic: playful for the sheer joy of it
+        sounds: LOO-dik
+        from: Latin ludus, “play, game”
+      - kittenish: playful and a little coy, like a kitten
+
+  - word: silly
+    mix: humor 80, spirit 20
+    level: 2
+    def: Happily ridiculous — they’ll do the voice, the dance, the whole bit, just to make you laugh.
+    notice: the made-up songs they sing while folding laundry
+    see: goofy
+    say: You’re ridiculous, and it’s honestly my favorite thing about you.
+    text: You’re the silliest person I know, and I mean that as the highest compliment.
+    about: They’re wonderfully silly — they narrate the dog’s inner thoughts like a nature documentary.
+    synonyms:
+      - ridiculous: absurd on purpose, and loved for it
+      - daft: lovably foolish — British
+      - loopy: a little bit wonderfully unhinged
+      - nutty: delightfully nuts, in a harmless way
+      - bananas: gone gloriously round the bend
+      - a silly goose: a lovable fool, said with a smile
+      - a ham: hams it up for a laugh every chance they get
+    deep:
+      - daffy: sweetly, harmlessly daft
+        from: daff, an old word for a fool
+      - slaphappy: giddy and goofy, like the last hour of a sleepover
+      - dotty: dizzy and a bit delightfully mad — British
+
+  - word: goofy
+    mix: humor 82, heart 18
+    level: 2
+    def: Endearingly awkward and unselfconscious — the big grin, the weird dance, the zero shame.
+    notice: the full-body dance they break into when their song comes on
+    see: cute
+    say: I love how goofy you are. You make it so easy to be myself.
+    text:
+      - Zero shame, full commitment to the bit. Honestly? Goofy looks great on you.
+      - Can’t stop smiling about you sliding across the kitchen in your socks. Such a goofball. I adore it.
+    about: They’re so goofy — totally unbothered about looking cool, which honestly makes them cooler.
+    synonyms:
+      - a goofball: lovably ridiculous, and fully committed to it
+      - zany: wildly, cartoonishly silly
+      - wacky: wonderfully weird and a bit over the top
+      - a clown: always clowning around for a laugh
+      - a doofus: a sweet, slightly clumsy fool
+      - a cut-up: the class clown, still clowning
+      - dopey: sweetly dazed, with a lopsided grin
+    deep:
+      - antic: wildly, clownishly playful
+        sounds: AN-tik
+        from: Italian antico, “antique” — once the name for grotesque carvings
+      - coltish: gangly and bouncy, like a young horse
+        sounds: KOHL-tish
+      - galumphing: bounding about in a clumsy, joyful way
+        from: the poem Jabberwocky — maybe gallop + triumphant
+
+  - word: cheeky
+    mix: humor 65, spirit 35
+    level: 3
+    def: Playfully bold — a little rude, a lot charming, and fully aware they’re getting away with it.
+    notice: the grin right after they say the thing you can’t believe they said
+    see: irreverent
+    say: You’re so cheeky. I should be offended, and somehow I’m charmed.
+    text: That was the cheekiest text I’ve ever received, and I’ve read it four times.
+    about: They’re so cheeky — they’ll steal a fry off your plate while looking you dead in the eye.
+    synonyms:
+      - sassy: bold, quick and full of attitude
+      - saucy: cheeky with a little wink in it
+      - impudent: boldly unbothered by the rules of politeness
+      - lippy: always ready with a comeback — British
+      - a cheeky monkey: a lovable little troublemaker — British
+      - a wind-up merchant: loves teasing you till you bite — British
+    deep:
+      - arch: knowingly playful, with a teasing glint
+        from: arch-, “chief,” as in arch-rogue — a ringleader of mischief
+      - malapert: boldly saucy and quick to answer back — archaic
+        sounds: MAL-uh-purt
+        from: Old French mal apert, “ill-skilled”
+      - a saucebox: an old word for someone with plenty of cheek
+
+  - word: mischievous
+    mix: humor 60, spirit 30, mind 10
+    level: 3
+    def: Full of harmless trouble — the glint, the plan, the prank you never see coming.
+    notice: the glint in their eye right before snow ends up down your collar
+    see: cheeky
+    say: You’ve got that look again. I don’t know what you’re planning, but I’m in.
+    text: Why do I have a feeling you’re up to something? (Please be up to something.)
+    about: They’re mischievous in the best way — you keep finding googly eyes on everything you own.
+    synonyms:
+      - impish: naughty in a small, sparkly-eyed way
+      - rascally: a scamp at heart, in the nicest way
+      - prankish: always plotting the next harmless prank
+      - roguish: playfully naughty, with a rascal’s grin
+      - devilish: a little bit wicked, and a lot of fun
+      - up to something: always quietly planning a bit of fun
+      - a prankster: never met a practical joke they didn’t like
+    deep:
+      - puckish: mischievous like a woodland sprite
+        sounds: PUCK-ish
+        from: Puck, the prank-playing sprite of English folklore
+      - tricksy: full of tricks, and delighted by them
+      - a rapscallion: a lovable rascal through and through
+        sounds: rap-SKAL-yun
+        from: rascallion, a playful stretch of rascal

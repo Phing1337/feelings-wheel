@@ -1,0 +1,98 @@
+# Clingy cluster · people deck · format guide: content/README.md
+
+id: clingy
+name: Clingy
+family: heart
+side: shadow
+anchor: clingy
+blurb: Love that holds on a little too tight.
+near:
+  warmth: [loving, affectionate]
+  too-much: [dramatic]
+  stubborn: [controlling]
+
+words:
+  - word: clingy
+    mix: heart 82, spirit 18
+    level: 3
+    def: Holds on tight — wants closeness all the time and gets uneasy with any space.
+    notice: the third text before you’ve had a chance to answer the first
+    opposite: independent
+    about: They can be a bit clingy — sweet, but they get anxious if you don’t text back right away.
+    gentle: I love how much you want to be close — I do too. I just need a little room sometimes, and it doesn’t mean anything’s wrong.
+    synonyms:
+      - joined at the hip: wants to do everything together, always
+      - glued to your side: never far away, at parties or anywhere else
+      - inseparable: can hardly bear to be apart
+      - attached: gets very attached, very fast
+      - hovering: always close by, checking in a little too often
+      - smothering: so close and attentive you can’t quite breathe
+    deep:
+      - a limpet: holds on like a sea snail clamped to a rock
+      - a burr: sticks to you like a seed head on a sweater
+        from: “I am a kind of burr; I shall stick” — Measure for Measure
+
+  - word: needy
+    mix: heart 78, spirit 22
+    level: 3
+    def: Needs a lot of reassurance and attention — more than one person can always give.
+    notice: the “are we okay?” after every slightly quiet evening
+    about: They’re a bit needy — lovely, but nothing ever quite reassures them for long.
+    gentle: I love being there for you. I just can’t be the only thing that makes you feel okay — and I’m not going anywhere.
+    synonyms:
+      - insecure: unsure of their place, and often in need of proof
+      - dependent: leans hard on others to feel okay
+      - high-needs: needs more care and attention than most
+      - starved for attention: craves being noticed and fussed over
+      - hungry for reassurance: needs to hear it’s okay, again and again
+    deep:
+      - importunate: asks again and again, and won’t take “later” for an answer
+        sounds: im-POR-chuh-nit
+        from: Latin importunus, “inconvenient”
+      - amaenbō: loves to be babied, fussed over and indulged
+        sounds: ah-mah-EN-boh
+        lang: Japanese
+
+  - word: possessive
+    mix: heart 62, character 38
+    level: 4
+    def: Loves people as if they were theirs to keep — and bristles when anyone else gets close.
+    notice: the “who’s that?” whenever your phone lights up
+    see: controlling
+    about: They can get possessive — they love hard, but they don’t like sharing you.
+    gentle: I know it comes from caring about us. When you check who I’m with, though, I feel less trusted — can we talk about what’s behind it?
+    synonyms:
+      - territorial: guards their people like a patch of land
+      - keeps tabs on you: always wants to know where you are and who with
+      - wants you all to themselves: struggles to share you with anyone
+      - won’t let you out of their sight: gets uneasy the moment you’re apart
+      - keeps you on a short leash: wants a say in where you go and who you see
+    deep:
+      - proprietorial: acts a little like they own you
+        sounds: pruh-pry-uh-TOR-ee-ul
+        from: Latin proprietas, “ownership”
+      - besitzergreifend: possessive — literally “possession-grabbing”
+        sounds: buh-ZITS-air-gry-fent
+        lang: German
+
+  - word: jealous
+    mix: heart 66, spirit 18, character 16
+    level: 4
+    def: Feels threatened when attention goes elsewhere — afraid of losing someone, or of not being enough.
+    notice: the sudden quiet after you mention someone new
+    about: They can get jealous — usually it’s insecurity talking, but it comes out sideways.
+    gentle: I can tell when something I mention gets to you, and I get it — it comes from caring. You don’t have to compete for me, though.
+    synonyms:
+      - envious: wants what someone else has, and it shows
+      - suspicious: quick to read something into nothing
+      - threatened: feels every new person as competition
+      - distrustful: finds it hard to trust they’re the one you want
+      - begrudging: finds it hard to be happy for others
+    deep:
+      - green-eyed: jealous — eaten up by suspicion and comparison
+        from: the “green-eyed monster” of Othello
+      - jaundiced: soured by envy or bitterness
+        sounds: JAWN-dist
+        from: jaundice, once thought to tint the whole world yellow
+      - covetous: longing for what belongs to someone else
+        sounds: KUV-uh-tus

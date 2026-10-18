@@ -8,18 +8,22 @@ const FW = window.FW;
 export function createBloom(stage) {
   const T = FW.tok, B = 100, MORE = '__more';
   const live = new Map();
-  let focus = null, trail = [], page = 0;
+  let focus = null, trail = [], page = 0, swap = 0, pillH = 0;
   let W, H, k, cx, cy, hy, top, bottom;
 
   const prompt = document.createElement('div');
   prompt.className = 'prompt';
-  prompt.innerHTML = 'How are you<br>feeling?<small>tap to explore<br>hold to pin</small>';
+  const promptHTML = () => `${FW.UI.prompt}<small>${FW.UI.hint}</small>`;
+  prompt.innerHTML = promptHTML();
   stage.appendChild(prompt);
 
   function measure() {
     W = FW.W; H = FW.H;
     k = Math.min(W / 390, H / 844, T.layout('max-zoom')[0] ?? 1.15);
-    top = FW.room().top; bottom = 24 + FW.safe.bottom;
+    /* home keeps room for the "I feel | I see you" switch (remembered while it's tucked away) */
+    const md = FW.els.modes;
+    if (md && md.style.display !== 'none' && md.offsetHeight) pillH = md.offsetHeight + 10;
+    top = FW.room().top; bottom = 24 + FW.safe.bottom + pillH;
     cx = W / 2;
     cy = FW.safe.top + (H - FW.safe.top - FW.safe.bottom) * (T.layout('center-y')[0] ?? 42) / 100;
     /* home has nothing at the bottom, so its ring sits in the middle of the open space (a touch high) */
@@ -35,7 +39,7 @@ export function createBloom(stage) {
 
   const homeLayout = () => {
     const [rad = 134, sc = 0.9] = T.layout('bloom-home');
-    return FW.fams.map(F => ({ id: FW.core[F.id].id, x: cx + Math.cos(F.rad) * rad * k, y: hy + Math.sin(F.rad) * rad * k, sc: sc * k, cap: '', role: 'home' }));
+    return FW.fams.filter(F => FW.core[F.id]).map(F => ({ id: FW.core[F.id].id, x: cx + Math.cos(F.rad) * rad * k, y: hy + Math.sin(F.rad) * rad * k, sc: sc * k, cap: '', role: 'home' }));
   };
 
   /* place items on an ellipse, rotated so each sits as close as possible to its colour direction.
@@ -166,6 +170,7 @@ export function createBloom(stage) {
      everything else drifts off, and the orbit borrows its bubble */
   function words(head, at) {
     if (orbit.isOpen() && orbit.head() === head) return at ? orbit.center(at) : orbit.close();
+    FW.showModes(false);
     orbit.close(true);
     if (head !== focus) {
       page = 0; focus = head;
@@ -217,6 +222,7 @@ export function createBloom(stage) {
   function go(id, fromTrail) {
     const w = id && FW.byId[id];
     if (w && w.head) return words(w.head, id);
+    FW.showModes(!id);     // before the peek + band measure the hud
     orbit.close(true);
     const src = id && live.get(id);
     const origin = src ? { x: gsap.getProperty(src, 'x'), y: gsap.getProperty(src, 'y') } : { x: cx, y: cy };
@@ -264,8 +270,35 @@ export function createBloom(stage) {
     if (act === 'head' && f.head) orbit.isOpen() && orbit.head() === f.head ? orbit.center(f.head) : go(f.head);
   });
 
+  /* switching "I feel | I see you": the old deck's bubbles swirl into the middle and fade while the
+     new deck's six bloom out of it, and the question in the middle changes. Timing: --fw-motion-deck-swap. */
+  function deck(id) {
+    if (!FW.setDeck(id)) return;
+    const n = ++swap, m = T.motion('deck-swap'), dur = FW.dur(m.dur ?? 0.6), sw = (m.swirl ?? 70) * Math.PI / 180;
+    orbit.close(true);
+    focus = null; trail = []; page = 0;
+    FW.peek(null); FW.tint(null); drawTrail(); FW.syncModes();
+    live.forEach((el, nid) => {
+      live.delete(nid);
+      gsap.killTweensOf(el);
+      el.classList.add('off');
+      const x = gsap.getProperty(el, 'x'), y = gsap.getProperty(el, 'y');
+      const p = { a: Math.atan2(y - hy, x - cx), r: Math.hypot(x - cx, y - hy) };
+      (el._tw = el._tw || []).push(gsap.to(p, { a: p.a + sw, r: p.r * 0.35, duration: dur, ease: m.ease,
+        onUpdate: () => gsap.set(el, { x: cx + Math.cos(p.a) * p.r, y: hy + Math.sin(p.a) * p.r }) }));
+      gsap.to(el, { scale: 0, opacity: 0, duration: dur, ease: m.ease, onComplete: () => FW.dispose(el) });
+    });
+    gsap.to(prompt, { autoAlpha: 0, scale: 0.92, duration: dur * 0.5, ease: 'power2.in', overwrite: true, onComplete: () => {
+      if (n !== swap) return;
+      prompt.innerHTML = promptHTML();
+      gsap.to(prompt, { autoAlpha: 1, scale: 1, duration: FW.dur(0.5), ease: 'back.out(1.6)' });
+    } });
+    gsap.delayedCall(dur * 0.55, () => n === swap && render(homeLayout(), { x: cx, y: hy }));
+  }
+
   return {
     go,
+    deck,
     relayout() { measure(); if (orbit.isOpen()) orbit.relayout(); else go(focus, true); },
     syncPins() { live.forEach((el, id) => el.classList.toggle('is-pinned', FW.isPinned(id))); orbit.syncPins(); },
     focus: () => focus,

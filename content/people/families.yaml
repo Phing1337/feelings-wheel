@@ -1,0 +1,9 @@
+# The six domains of how you see someone. Each family's core word (core: true) is a home bubble.
+# angle: where the family sits on screen, in degrees (0 = right, 90 = down, -90 = up) — neighbours blend well.
+# color: fallback only — the live colours come from the --fw-color-people-* design tokens (src/tokens.css).
+- { id: looks,     name: Looks,     color: "#D94DFF", angle: -90 }
+- { id: heart,     name: Heart,     color: "#FF4F8B", angle: -30 }
+- { id: spirit,    name: Spirit,    color: "#FF7A1A", angle: 30 }
+- { id: humor,     name: Humor,     color: "#FFD60A", angle: 90 }
+- { id: mind,      name: Mind,      color: "#1EC8FF", angle: 150 }
+- { id: character, name: Character, color: "#3D5BFF", angle: 210 }

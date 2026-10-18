@@ -1,0 +1,133 @@
+# Grace cluster · people deck · format guide: content/README.md
+
+id: grace
+name: Grace
+family: looks
+anchor: elegant
+blurb: Ease and polish — the way they carry themselves.
+near:
+  beauty: [lovely]
+  confidence: [confident]
+  allure: [alluring]
+  vanity: [flashy]
+
+words:
+  - word: elegant
+    mix: looks 70, character 30
+    level: 3
+    def: Refined in a quiet, unforced way — polish without the fuss, style without the noise.
+    notice: how they make jeans and a plain white tee look like an occasion
+    shadow: pretentious
+    say: You look so elegant tonight. Please tell me you didn’t just throw that on.
+    text: You looked so elegant at dinner. Everyone else was dressed up; you just looked… effortless.
+    about: They’re so elegant — never showy, just quietly right in a way nobody else can copy.
+    synonyms:
+      - refined: polished and cultured, with lovely taste
+      - classy: stylish and tasteful, never trying too hard
+      - sophisticated: worldly and polished, with grown-up taste
+      - timeless: stylish in a way that never goes out of date
+      - understated: elegant without needing to announce it
+      - effortless: polished in a way that never shows the work
+      - tasteful: always gets it just right, never too much
+    deep:
+      - couth: polished and refined — uncouth’s rarely seen other half
+        from: a playful back-formation from uncouth, around 1896
+      - distingué: distinguished in looks and manner
+        sounds: dee-stan-GAY
+        lang: French
+      - soigné: elegantly groomed, with every detail seen to
+        sounds: swahn-YAY
+        lang: French
+
+  - word: graceful
+    mix: looks 65, heart 20, character 15
+    level: 3
+    def: They move through the world with ease — light, fluid and unhurried, even in small gestures.
+    notice: the way they slip through a crowd without bumping a single elbow
+    see: gentle
+    say: How are you this graceful? I’ve been dancing next to you all night and I just sort of flail.
+    text: The way you handled that today was so graceful. Not one cross word. I’m taking notes.
+    about: They’re so graceful — they could trip over a rug and make it look intentional.
+    synonyms:
+      - lithe: supple and light in the way they move
+      - fluid: moves smoothly, with no jerky edges at all
+      - light on their feet: nimble and easy in every step
+      - balletic: graceful like a dancer, even off the dance floor
+      - swanlike: serene and smooth in motion
+    deep:
+      - gainly: graceful and easy in movement — the opposite of ungainly
+      - lissome: lithe and supple, moving with easy grace
+        sounds: LISS-um
+        from: a softened form of lithesome
+
+  - word: stylish
+    mix: looks 78, spirit 22
+    level: 3
+    def: They have a real eye — what they wear always looks considered, current and completely them.
+    notice: the outfit you’d never think to try that looks perfect on them
+    see: artistic
+    shadow: flashy
+    say: Okay, where did you get that? You’re so effortlessly stylish.
+    text: Need your eye on something — you’re the most stylish person I know. Left or right?
+    about: They’re so stylish — they could wear a paper bag and somehow start a trend.
+    synonyms:
+      - chic: effortlessly stylish, with a little French ease
+      - fashionable: always on top of what’s in
+      - well-dressed: always dressed just right for the moment
+      - dapper: neat, trim and sharply turned out
+      - snazzy: bright, bold and fun in how they dress
+      - fashion-forward: ahead of the trends, not chasing them
+      - put-together: always looks finished, never thrown together
+      - sharp-dressed: crisp and polished in everything they wear
+    deep:
+      - à la mode: in fashion — and in an American diner, topped with ice cream
+        lang: French
+      - modish: fashionable and up to the minute, with old-world flair
+      - natty: neatly and smartly dressed
+      - trig: neat, trim and jauntily stylish
+
+  - word: poised
+    mix: looks 55, character 45
+    level: 3
+    def: Calm and composed in how they carry themselves — steady, even when the room isn’t.
+    notice: the stillness they bring into a room that’s gone a bit frantic
+    see: [confident, level-headed]
+    say: I love how you handled that. You were so poised — I would have panicked.
+    text: You were so poised up there today. Honestly, I was in awe.
+    about: They’re so poised — I’ve never once seen them flustered, and believe me, I’ve tried.
+    synonyms:
+      - composed: calm and collected, inside and out
+      - self-possessed: in quiet command of themselves
+      - cool, calm and collected: unbothered, whatever’s going on
+      - polished: smooth and assured, every rough edge buffed away
+      - dignified: carries themselves with quiet self-respect
+      - regal: carries themselves like royalty
+      - unruffled: nothing seems to rattle them
+    deep:
+      - debonair: suave, courteous and completely at ease
+        sounds: deb-uh-NAIR
+        from: Old French de bon aire, “of good nature”
+      - stately: dignified and unhurried, in a grand, gracious way
+
+  - word: glamorous
+    mix: looks 72, spirit 28
+    level: 4
+    def: Dazzling in a dressed-up, larger-than-life way — they bring the red carpet with them.
+    notice: how a plain old Tuesday turns into an event when they arrive
+    shadow: high-maintenance
+    say: You look so glamorous. Where are we going, and can I keep up?
+    text: Saw the photos from the wedding — you looked so glamorous. Total main-character energy.
+    about: They’re so glamorous — they’ll turn up to a barbecue looking like it’s a premiere.
+    synonyms:
+      - glam: glamorous, but make it casual
+      - dressed to the nines: dressed up as far as dressed up goes
+      - red-carpet ready: always looks like the cameras might be waiting
+      - dazzling: so polished and bright it’s almost blinding
+      - fabulous: extravagantly, joyfully gorgeous
+      - glossy: polished to a high shine, like a magazine cover
+      - decked out: dressed in their finest, head to toe
+    deep:
+      - resplendent: splendidly, dazzlingly dressed and shining
+        sounds: rih-SPLEN-dunt
+        from: Latin resplendere, “to shine brightly”
+      - in full fig: dressed in all their finery — old British slang

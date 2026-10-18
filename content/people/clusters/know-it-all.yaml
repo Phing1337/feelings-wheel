@@ -1,0 +1,167 @@
+# Know-it-all cluster · people deck · format guide: content/README.md
+
+id: know-it-all
+name: Know-it-all
+family: mind
+side: shadow
+anchor: condescending
+blurb: Smart — and making sure you know it.
+near:
+  brilliance: [smart]
+  stubborn: [arrogant]
+  snark: [snide]
+  vanity: [superficial]
+
+words:
+  - word: condescending
+    mix: mind 60, character 24, heart 16
+    level: 4
+    def: Talks down to people — explaining what you already know, as if you couldn’t possibly.
+    notice: the slow, patient voice they use to explain what you just said
+    see: arrogant
+    about: They can be a bit condescending — they’ll explain your own job to you, very slowly.
+    gentle: I love how much you know. But sometimes when you explain things, I feel talked down to — can we figure it out together instead?
+    synonyms:
+      - patronizing: kind on the surface, superior underneath
+      - a know-it-all: acts like they already know everything — and you don’t
+      - belittling: makes other people feel smaller than they are
+      - lofty: speaks to you from somewhere high up
+      - preachy: forever lecturing people on what’s right
+      - dismissive: brushes off what other people think
+    deep:
+      - de haut en bas: talking down from on high
+        sounds: duh OH tahn BAH
+        lang: French
+        from: French, “from high to low”
+      - pontificating: hands down opinions like a pope from a balcony
+        sounds: pon-TIF-ih-kay-ting
+        from: Latin pontifex, “high priest” — literally “bridge-builder”
+
+  - word: pedantic
+    mix: mind 80, character 20
+    level: 2
+    def: Can’t let a small mistake slide — the footnote, the grammar, the technically-not-quite.
+    notice: the “well, actually” before they correct a tiny detail
+    about: They’re a little pedantic — they’ll stop a great story to fix the date by a day.
+    gentle: I love how precise you are — it’s genuinely useful. But when you correct the small stuff mid-story, I lose the thread and feel a bit silly.
+    synonyms:
+      - nitpicky: zeroes in on the tiniest mistakes
+      - a stickler: insists every rule and detail be exactly right
+      - hair-splitting: argues over differences almost too small to see
+      - quibbling: picks at small points instead of the big one
+      - literal-minded: takes everything exactly as it’s said
+      - the grammar police: can’t let a typo or a stray apostrophe go
+    deep:
+      - persnickety: fussy about tiny details, to a fault
+        sounds: per-SNIK-ih-tee
+        from: Scots pernickety
+      - pettifogging: quibbling over the trivial, like a petty lawyer
+        sounds: PET-ee-fog-ing
+        from: pettifogger, an old word for a lawyer who argued over trifles
+      - captious: always ready to catch you out on a small point
+        sounds: KAP-shus
+        from: Latin captiosus, “catching, deceptive”
+
+  - word: pretentious
+    mix: mind 55, looks 30, character 15
+    level: 3
+    def: Trying a little too hard to seem cultured or deep — the big words, the right references, the pose.
+    notice: the obscure reference dropped just to see if you’ll catch it
+    opposite: genuine
+    about: They can be a little pretentious — the vinyl, the films nobody’s heard of — but they really do love that stuff.
+    gentle: I love your taste, honestly. I just like you most when you’re not trying to impress anyone — including me.
+    synonyms:
+      - affected: a bit put-on, not quite natural
+      - a try-hard: working a little too hard to impress
+      - a culture snob: looks down on anything too popular
+      - pompous: grand, self-important and very serious about it
+      - highfalutin: fancy and showy, with airs and graces
+      - arty-farty: pretentiously arty — British slang
+    deep:
+      - grandiloquent: grand and pompous in the way they talk
+        sounds: gran-DIL-uh-kwunt
+        from: Latin grandiloquus, “speaking loftily”
+      - sesquipedalian: fond of long words, the longer the better
+        sounds: ses-kwih-pih-DAY-lee-un
+        from: Latin sesquipedalis, “a foot and a half long”
+      - a poseur: strikes poses to impress
+        sounds: poh-ZUR
+        lang: French
+        from: French, “one who poses”
+      - la-di-da: putting on airs, little finger raised
+
+  - word: closed-minded
+    mix: mind 60, character 40
+    level: 3
+    def: Has already made up their mind — new ideas, other views and other ways don’t really get a hearing.
+    notice: how fast “that’ll never work” arrives, before you’ve finished
+    opposite: open-minded
+    see: rigid
+    about: They’re pretty closed-minded — once they’ve decided, nothing you say really gets in.
+    gentle: I know you’ve thought a lot about this, and I respect that. Could you hear me out before deciding? It would mean a lot.
+    synonyms:
+      - narrow-minded: room for only one way of seeing things
+      - dogmatic: sure they’re right, no discussion needed
+      - blinkered: sees only what’s straight ahead — British
+      - insular: inward-looking and wary of anything unfamiliar
+      - opinionated: strong opinions, all ready-made
+      - unreceptive: new ideas bounce right off
+    deep:
+      - parochial: sees the whole world from inside their own small parish
+        sounds: puh-ROH-kee-ul
+        from: Latin parochia, “parish”
+      - purblind: can’t quite see past their own point of view
+        sounds: PUR-blind
+        from: Middle English pur blind, “wholly blind”
+      - doctrinaire: sticks to the theory, whatever the facts say
+        sounds: dok-truh-NAIR
+        from: French doctrinaire, from doctrine
+
+  - word: scatterbrained
+    mix: mind 60, humor 25, spirit 15
+    level: 2
+    def: A mind going in twelve directions at once — keys lost, plans half-remembered, ideas everywhere.
+    notice: the keys in the fridge and the half-finished sentence
+    see: flighty
+    about: They’re a little scatterbrained — brilliant ideas, zero idea where their phone is.
+    gentle: I love how your brain jumps around — it’s part of your charm. But when plans slip, I feel a bit forgotten. Can we find a way to keep track together?
+    synonyms:
+      - absent-minded: forgets what they came in for, lost in thought
+      - forgetful: the keys, the date, the thing you told them twice
+      - head in the clouds: drifting in their own thoughts, missing what’s right here
+      - a space cadet: floating somewhere in orbit, very sweetly
+      - easily distracted: chases every shiny new thought
+    deep:
+      - woolgathering: lost in idle daydreams, miles away
+        sounds: WOOL-gath-er-ing
+        from: wandering the hedgerows gathering stray tufts of sheep’s wool
+      - distrait: absent-minded and distracted, often by worry
+        sounds: dih-STRAY
+        lang: French
+        from: French, “distracted”
+      - scatty: lovably disorganized and forgetful — British
+        sounds: SKAT-ee
+      - addlepated: muddled and befuddled — an old, comic word
+        sounds: AD-ul-pay-tid
+        from: addle, “rotten” (of an egg), + pate, “head”
+
+  - word: smug
+    mix: mind 52, character 33, humor 15
+    level: 3
+    def: Quietly very pleased with themselves — and making sure you notice.
+    notice: the tiny satisfied smile when they turn out to be right
+    opposite: humble
+    about: They can be a bit smug — the “told you so” face arrives about a second before the words.
+    gentle: You’re right a lot, and I genuinely admire that. It just stings a little when you seem pleased that I wasn’t.
+    synonyms:
+      - self-satisfied: very pleased with themselves, and not hiding it
+      - self-congratulatory: always giving themselves a little pat on the back
+      - smirky: wears a little smile that says “I knew it”
+      - too clever by half: so pleased with their own cleverness it backfires
+      - holier-than-thou: morally superior, and letting you know
+    deep:
+      - sanctimonious: smugly, preachily sure of their own goodness
+        sounds: sank-tih-MOH-nee-us
+        from: Latin sanctimonia, “holiness”
+      - cock-a-hoop: crowing with delight at being right
+        sounds: kok-uh-HOOP

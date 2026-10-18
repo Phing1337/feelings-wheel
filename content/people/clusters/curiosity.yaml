@@ -1,0 +1,151 @@
+# Curiosity cluster · people deck · format guide: content/README.md
+
+id: curiosity
+name: Curiosity
+family: mind
+anchor: curious
+blurb: Always asking, always learning — and genuinely interested in you.
+near:
+  brilliance: [clever]
+  imagination: [creative]
+  adventure: [adventurous]
+  wit: [quirky]
+
+words:
+  - word: curious
+    mix: mind 70, spirit 30
+    level: 3
+    def: Always wondering how things work and why — and genuinely fascinated by people, including you.
+    notice: the follow-up question that shows they were really listening
+    see: interesting
+    say: I love how curious you are about everything. You make the world feel bigger.
+    text:
+      - Your questions are my favorite part of talking to you. Never stop being this curious.
+      - Sent you that article because I knew you’d have twelve questions. Go.
+    about: They’re so curious — they’ll ask a stranger how their job works and walk away with a whole story.
+    synonyms:
+      - inquisitive: always asking how, and why, and then what
+      - questioning: never takes things at face value
+      - full of questions: has a hundred, and they’re all good
+      - eager to learn: hungry for anything new
+      - a sponge: soaks up every new thing they come across
+      - wide-eyed: still meets the world with wonder
+      - a lifelong learner: still learning, and still loving it
+    deep:
+      - a philomath: a lover of learning, for its own sake
+        sounds: FIL-uh-math
+        from: Greek philomathēs, “fond of learning”
+      - zetetic: forever inquiring, seeking, asking
+        sounds: zuh-TET-ik
+        from: Greek zētētikos, “inquiring”
+      - agog: eager, excited and hanging on every word
+        sounds: uh-GOG
+        from: Old French en gogues, “in merriment”
+
+  - word: open-minded
+    mix: mind 65, heart 35
+    level: 3
+    def: Willing to hear you out and change their mind — new ideas don’t threaten them, they interest them.
+    notice: how they say “huh, I never thought of it that way” — and mean it
+    opposite: closed-minded
+    say:
+      - I love how you hear people out instead of just waiting for your turn to talk.
+      - I love that I can tell you anything, and you actually think about it instead of judging.
+    text:
+      - Honestly loved disagreeing with you today. You really listen — that’s rarer than you’d think.
+      - Thank you for really listening tonight. You’re one of the few people I can disagree with and still feel close to.
+    about: They’re really open-minded — bring them your strangest idea and they get curious, not weird about it.
+    synonyms:
+      - receptive: welcomes new ideas instead of bracing against them
+      - broad-minded: room in their head for lots of ways to see things
+      - tolerant: lets people be different without needing to fix them
+      - unprejudiced: meets people fresh, without a verdict ready
+      - non-judgmental: listens without sitting in judgment
+      - unshockable: tell them anything — they won’t even blink
+    deep:
+      - catholic: broad in their tastes and sympathies — open to it all
+        sounds: KATH-lik
+        from: Greek katholikos, “universal” — lowercase, not the church
+      - latitudinarian: generously tolerant of views not their own
+        sounds: lat-ih-too-dih-NAIR-ee-un
+        from: Latin latitudo, “breadth”
+
+  - word: interesting
+    mix: mind 60, spirit 40
+    level: 3
+    def: Full of stories, ideas and odd little passions — there’s always another layer to them.
+    notice: the story they drop at 2am that you never saw coming
+    see: quirky
+    say: I could listen to you talk about anything. You make everything sound interesting.
+    text: Just told someone your octopus fact and they lost it. You’re the most interesting person I know.
+    about: They’re so interesting — every time you think you’ve figured them out, there’s another chapter.
+    synonyms:
+      - fascinating: hard to stop listening to, or thinking about
+      - intriguing: a lovely puzzle you want to keep working on
+      - multifaceted: more sides to them than you’d ever guess
+      - full of surprises: just when you think you know them, something new
+      - thought-provoking: leaves you with something to chew on for days
+      - a great conversationalist: someone you could talk to about anything, for hours
+    deep:
+      - piquant: pleasantly sharp and lively — a little spice to them
+        sounds: PEE-kunt
+        from: French piquant, “pricking, stinging”
+      - a raconteur: tells stories so well you lose track of time
+        sounds: rak-on-TUR
+        lang: French
+        from: French raconter, “to tell”
+
+  - word: nerdy
+    mix: mind 75, humor 25
+    level: 2
+    def: Delightfully, unapologetically into things — the deep dive, the trivia, the fifteen-tab rabbit hole.
+    notice: how their whole face lights up explaining the thing they love
+    see: quirky
+    shadow: pedantic
+    say: Please keep going — I love watching you get nerdy about this.
+    text: Watched a whole documentary on deep-sea squid and thought of you the entire time. My favorite nerd.
+    about: They’re adorably nerdy — ask them about maps and clear your evening.
+    synonyms:
+      - geeky: proudly obsessed with the things they love
+      - a brainiac: brilliantly, happily clever — and not hiding it
+      - an egghead: bookish and brainy — a fond tease
+      - a walking encyclopedia: knows a startling amount about nearly everything
+      - studious: genuinely happy with their head in a book or a project
+    deep:
+      - an anorak: a British tease for a devoted, detail-obsessed hobbyist
+        sounds: AN-uh-rak
+        from: the hooded jackets worn by trainspotters on cold platforms
+      - a boffin: a fondly teased scientist or expert — British
+        sounds: BOF-in
+        from: 1940s RAF slang, origin unknown
+      - owlish: studious-looking and wise, glasses optional
+        sounds: OW-lish
+
+  - word: well-read
+    mix: mind 85, character 15
+    level: 3
+    def: Has read widely and deeply — and it shows in how they think, talk and see the world.
+    notice: the line they quote that’s exactly right for the moment
+    shadow: pretentious
+    say:
+      - You’ve read everything, haven’t you? Please tell me what to read next.
+      - I love that you always have the perfect book for whatever I’m going through.
+    text: I need a book recommendation, and something tells me you’re exactly the right person to ask.
+    about: They’re so well-read — ask them anything and they’ve read a book about it, or three.
+    synonyms:
+      - bookish: happiest with a book in hand, and it shows
+      - a bookworm: never without something to read
+      - widely read: has read across everything, high and low
+      - literary: drawn to good writing and big ideas
+      - cultured: steeped in books, art and ideas
+      - well-informed: always up on what’s happening, and why
+    deep:
+      - erudite: deeply learned, and wearing it lightly
+        sounds: AIR-yuh-dite
+        from: Latin eruditus, “instructed” — literally “un-roughened”
+      - learned: deeply, seriously educated
+        sounds: LUR-nid
+      - lettered: steeped in books and learning — gracefully old-fashioned
+      - a bibliophile: in love with books — the stories and the objects
+        sounds: BIB-lee-uh-file
+        from: Greek biblion, “book”, + philos, “loving”

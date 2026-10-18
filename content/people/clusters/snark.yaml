@@ -1,0 +1,157 @@
+# Snark cluster · people deck · format guide: content/README.md
+
+id: snark
+name: Snark
+family: humor
+side: shadow
+anchor: snarky
+blurb: When the jokes start to bite.
+near:
+  wit: [witty]
+  play: [cheeky]
+  cold: [petty]
+  know-it-all: [smug]
+
+words:
+  - word: sarcastic
+    mix: humor 60, mind 30, character 10
+    level: 3
+    side: edge
+    def: Says the opposite of what they mean, with a raised eyebrow — fun as a game, sharp when aimed at you.
+    notice: the “oh, great” that tells you exactly how not-great it is
+    say: I love your sarcasm. Never let anyone sand the edges off it.
+    text: Your sarcasm is my favorite language. I think I’m finally fluent.
+    about: They’re pretty sarcastic — hilarious once you speak the language, a little prickly until you do.
+    gentle: I usually love the sarcasm — but when I’m upset, it’s hard to tell if you’re with me. Can you just say it straight?
+    synonyms:
+      - ironic: says one thing and means the opposite
+      - biting: jokes with teeth in them
+      - sharp-tongued: quick with a pointed remark
+      - caustic: humor that can burn a little
+      - sarky: quick with a sarcastic aside — British
+      - eye-rolling: says it all with a roll of the eyes
+    deep:
+      - sardonic: mocking with a dry, bitter little smile
+        sounds: sar-DON-ik
+        from: Greek sardonios, a bitter, scornful laugh
+      - mordant: bitingly sharp, and often brilliantly funny
+        sounds: MOR-dunt
+        from: Latin mordere, “to bite”
+
+  - word: snarky
+    mix: humor 65, mind 35
+    level: 3
+    def: Quick with a cutting remark — clever, but the joke usually has a little bite in it.
+    notice: the muttered comment that’s funny right up until it’s about you
+    about: They’re a bit snarky — sharp and funny, but you learn to brace a little before they reply.
+    gentle: I love how quick you are — but some of the snark lately has stung a bit. Is something bugging you?
+    synonyms:
+      - smart-alecky: always has a clever comeback, wanted or not
+      - smart-mouthed: talks back with a sharp, clever edge
+      - mouthy: never keeps a sharp remark to themselves
+      - acid-tongued: their words have a sour, stinging edge
+      - salty: a little bitter, and not shy about saying so
+      - cutting: remarks that land a little too sharply
+    deep:
+      - acerbic: sharp and sour in their wit
+        sounds: uh-SUR-bik
+        from: Latin acerbus, “sour, harsh”
+      - waspish: quick to sting with a sharp remark
+      - a wisenheimer: a smart aleck with a comeback for everything — US slang
+        sounds: WY-zun-hy-mer
+        from: wise, plus a jokey German-style ending
+
+  - word: snide
+    mix: humor 52, mind 26, heart 22
+    level: 3
+    def: Their digs come sideways — a smirk, a backhanded compliment, a remark you only feel later.
+    notice: the compliment that somehow leaves a little sting behind
+    about: They can be a bit snide — lots of little side comments, none of them quite said to your face.
+    gentle: I might be reading it wrong, but that comment felt like a dig. If something’s bothering you, I’d rather hear it straight.
+    synonyms:
+      - backhanded: compliments that come with a hidden jab
+      - sneering: a curl of the lip that says what they won’t
+      - sniping: takes little shots from the sidelines
+      - snippy: short and sharp, with a hint of attitude
+      - insinuating: hints at the unkind thing instead of saying it
+      - smirking: a knowing little smile at someone else’s expense
+    deep:
+      - fleering: grinning in a mocking, scornful way
+        sounds: FLEER-ing
+        from: fleer, an old word for a scornful grin — probably Scandinavian
+      - acidulous: sharp and a little sour in what they say
+        sounds: uh-SID-yuh-lus
+        from: Latin acidulus, “slightly sour”
+
+  - word: mocking
+    mix: humor 62, heart 38
+    level: 4
+    def: Makes fun of people in a way that stings — the laugh is at someone, not with them.
+    notice: the impression of you they do that everyone laughs at except you
+    about: They can get pretty mocking — the jokes are funny until you realize who they’re about.
+    gentle: I know it’s meant as a joke, but when you imitate me in front of people, it really stings. Can we leave that bit out?
+    synonyms:
+      - derisive: laughs at people, not with them
+      - scornful: makes their contempt very easy to read
+      - jeering: loud, public, and at someone’s expense
+      - taunting: pokes and prods to get a reaction
+      - scoffing: waves off what matters to you with a laugh
+      - ridiculing: turns someone into the punchline
+      - needling: keeps poking at the same sore spot
+      - sniggering: laughs behind their hand at others
+    deep:
+      - contumelious: scornful in a way meant to humiliate
+        sounds: kon-tyoo-MEE-lee-us
+        from: Latin contumelia, “insult, abuse”
+      - mordacious: biting and caustic in what they say
+        sounds: mor-DAY-shus
+        from: Latin mordax, “given to biting”
+
+  - word: flippant
+    mix: humor 70, character 30
+    level: 2
+    def: Treats serious things too lightly — a joke or a shrug where a real answer was needed.
+    notice: the joke they make right when you needed them to take it seriously
+    about: They can be kind of flippant — they’ll make a joke out of anything, even things that matter.
+    gentle: I love that you keep things light — but this one really matters to me. Can we talk about it for real for a minute?
+    synonyms:
+      - glib: smooth and quick, but not much underneath
+      - offhand: breezily casual about things that need care
+      - cavalier: careless about what matters to other people
+      - flip: quick, casual and never quite serious
+      - airy: light and dismissive, as if nothing weighs much
+      - unserious: never quite gives things the weight they need
+    deep:
+      - facetious: joking at the wrong moment, about the wrong thing
+        sounds: fuh-SEE-shus
+        from: Latin facetia, “jest”
+      - pococurante: casually indifferent, caring little about anything
+        sounds: poh-koh-koo-RAN-tee
+        lang: Italian
+        from: Italian poco curante, “caring little”
+      - light-minded: not serious enough about serious things — old-fashioned
+
+  - word: immature
+    mix: humor 68, spirit 20, character 12
+    level: 2
+    def: Acts younger than they are — sulking, dodging grown-up stuff, or turning everything into a bit.
+    notice: the sulk that kicks in the moment they don’t get their way
+    about: They can be a bit immature — so fun on a Saturday, so hard to count on when real life shows up.
+    gentle: I love your inner kid — honestly. But when things get serious, I need the grown-up you too. Can we try that?
+    synonyms:
+      - childish: reacts like a kid when things don’t go their way
+      - juvenile: humor and habits stuck in middle school
+      - babyish: needs a lot of soothing over small things
+      - adolescent: still a little stuck in their teenage years
+      - bratty: sulks or acts up to get their way
+      - infantile: stuck at a very early stage of growing up
+    deep:
+      - puerile: childishly silly, especially in what they find funny
+        sounds: PYOOR-ul
+        from: Latin puer, “boy, child”
+      - sophomoric: overconfident and underripe, like a second-year student
+        sounds: sof-uh-MOR-ik
+        from: sophomore, a second-year student — often read as Greek for “wise fool”
+      - callow: young and green, still finding their feet
+        sounds: KAL-oh
+        from: Old English calu, “bald” — like a bird not yet fledged

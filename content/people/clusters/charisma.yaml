@@ -1,0 +1,156 @@
+# Charisma cluster · people deck · format guide: content/README.md
+
+id: charisma
+name: Charisma
+family: spirit
+anchor: charismatic
+blurb: The room tilts toward them.
+near:
+  allure: [captivating]
+  energy: [enthusiastic]
+  confidence: [confident]
+  imagination: [visionary]
+
+words:
+  - word: charismatic
+    mix: spirit 70, looks 15, character 15
+    level: 4
+    def: Effortlessly compelling — people lean in when they talk and want to follow where they go.
+    notice: how a whole table goes quiet when they start a story
+    see: confident
+    say: You have this way of making everyone want to be around you. It’s kind of unfair.
+    text: You had the whole room in the palm of your hand tonight. Where do you even learn that?
+    about: They’re so charismatic — they could read out a grocery list and the room would hang on every word.
+    synonyms:
+      - larger than life: more vivid and present than everyone around them
+      - commanding: holds a room without even trying
+      - a natural leader: people just fall in behind them
+      - a force of nature: sweeps everyone along in their wake
+      - a scene-stealer: somehow the center of every story
+      - a crowd-pleaser: wins over any room they walk into
+    deep:
+      - a spellbinder: a talker who can hold a room completely still
+      - a Pied Piper: someone people can’t help following
+        from: the piper of Hamelin, whose music no one could resist
+
+  - word: charming
+    mix: spirit 55, looks 25, humor 20
+    level: 3
+    def: Easy to like and hard to forget — they make you feel delightful just for being in the conversation.
+    notice: how your grumpiest relative ends up laughing at their jokes
+    see: [captivating, witty]
+    say:
+      - You could charm anyone. You definitely charmed me.
+      - How do you make everyone feel like the most interesting person in the room?
+    text:
+      - Still smiling about something you said today. You’re ridiculously charming, you know that?
+      - You had my whole family eating out of your hand tonight. Charming doesn’t even cover it.
+    about: They’re so charming — five minutes in, even the shy ones are telling them their life story.
+    synonyms:
+      - likeable: impossible not to like — usually within minutes
+      - engaging: draws you in and keeps you there
+      - personable: easy to talk to, easy to warm to
+      - disarming: so warm you forget to keep your guard up
+      - winning: has you won over before you’ve even noticed
+      - smooth: effortlessly charming, sometimes suspiciously so
+      - suave: polished, confident and smooth in a classic way
+      - a charmer: could talk anyone into anything, nicely
+      - silver-tongued: always finds the perfect thing to say
+      - a delight: a genuine pleasure to have around, every time
+    deep:
+      - simpatico: instantly likeable, like you’ve known them for years
+        sounds: sim-PAH-tih-koh
+        lang: Italian
+      - full of sprezzatura: charming with an air of complete effortlessness
+        sounds: sprets-uh-TOOR-uh
+        from: Italian sprezzare, “to scorn” — as if trying were beneath them
+        lang: Italian
+
+  - word: magnetic
+    mix: spirit 60, looks 40
+    level: 4
+    def: Hard to look away from and harder to walk away from — they have a pull you feel across a room.
+    notice: how you end up beside them at every party, somehow
+    see: [alluring, irresistible]
+    say: I don’t know what it is about you, but I always end up wherever you are.
+    text: You have this pull. I noticed it the first time we met and I still feel it.
+    about: They’re magnetic — people just drift toward them without noticing they’re doing it.
+    synonyms:
+      - compelling: impossible to ignore, in the best way
+      - electric: a charge in the air whenever they’re near
+      - intoxicating: the more time you spend with them, the more you want
+      - riveting: so absorbing you forget to check your phone
+      - the center of gravity: the one everyone in the room quietly orbits
+      - a people magnet: people just gravitate toward them
+    deep:
+      - mesmeric: spellbinding, almost hypnotic
+        sounds: mez-MER-ik
+        from: mesmerism, a 1700s craze for “animal magnetism”
+      - a lodestone: the natural magnet everyone is drawn to
+        sounds: LOHD-stohn
+        from: lode, “way, course,” + stone — the first compasses used it
+      - full of duende: a mysterious, soulful magnetism that moves people
+        sounds: DWEN-day
+        from: a mischievous little house spirit in Spanish folklore
+        lang: Spanish
+
+  - word: inspiring
+    mix: spirit 55, character 30, mind 15
+    level: 4
+    def: They make you want to be braver, kinder and more yourself — just by being who they are.
+    notice: how you leave a coffee with them already planning your next move
+    see: visionary
+    say:
+      - You make me want to be better. Not in a pressure way — you just make it look possible.
+      - I hope you know how many people you’ve made braver. I’m one of them.
+    text:
+      - You inspired me today. I finally sent the email I’ve been avoiding for a month.
+      - Just signed up for the class. Blame you and your whole inspiring existence.
+    about: They’re so inspiring — honestly, half the brave things I’ve done this year started with them.
+    synonyms:
+      - uplifting: you leave them lighter and more hopeful
+      - motivating: gets you moving, without a single lecture
+      - stirring: moves you to feel something, then do something
+      - galvanizing: jolts everyone around them into action
+      - a role model: the kind of person you hope to grow into
+      - a guiding light: someone whose example shows the way
+      - admirable: easy to look up to, for all the right reasons
+    deep:
+      - a lodestar: a guiding star, the one you steer your life by
+        sounds: LOHD-star
+        from: Middle English lode sterre, “guiding star” — the North Star
+      - inspiriting: breathing courage and spirit into everyone near them
+        from: in- + spirit, “to fill with spirit”
+      - a paragon: a shining example of everything you hope to be
+        sounds: PAIR-uh-gon
+        from: Italian paragone, “touchstone,” a stone for testing gold
+
+  - word: passionate
+    mix: spirit 70, heart 30
+    level: 4
+    def: They feel things all the way down and love what they love out loud — nothing about them is lukewarm.
+    notice: how they talk faster and lean closer when it’s something they love
+    shadow: intense
+    say:
+      - I love listening to you talk about the things you care about. You light up.
+      - You never do anything halfway, and I love that about you.
+    text:
+      - The way you care about things is one of my favorite things about you.
+      - You went on about bridges for twenty minutes tonight and it was my favorite part of the evening.
+    about: They’re so passionate — ask them about something they love and you’ll happily lose an hour.
+    synonyms:
+      - fiery: full of fire and feeling
+      - all in: heart and soul, nothing held back
+      - wholehearted: puts their whole heart into everything they do
+      - impassioned: filled with feeling, and not afraid to show it
+      - soulful: full of deep, heartfelt feeling
+    deep:
+      - ardent: burning with feeling and devotion
+        sounds: AR-dunt
+        from: Latin ardere, “to burn”
+      - fervent: glowing with heartfelt intensity
+        sounds: FUR-vunt
+        from: Latin fervere, “to boil”
+      - Dionysian: wild, ecstatic and hungry for life
+        sounds: dy-uh-NIZH-un
+        from: Dionysus, Greek god of wine and revelry

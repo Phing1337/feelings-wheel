@@ -1,0 +1,112 @@
+# Vanity cluster · people deck · format guide: content/README.md
+
+id: vanity
+name: Vanity
+family: looks
+side: shadow
+anchor: vain
+blurb: When the mirror wins.
+near:
+  grace: [stylish]
+  beauty: [beautiful]
+  know-it-all: [pretentious]
+  cold: [aloof]
+
+words:
+  - word: vain
+    mix: looks 68, character 32
+    level: 3
+    def: Very focused on how they look — and on making sure everyone else notices too.
+    notice: the quick check in every shop window they pass
+    opposite: humble
+    about: They’re a bit vain — every photo takes five retakes, though to be fair, they always look great in the end.
+    gentle: You always look great, and I can tell you put real care into it. I’d just love more time with you that isn’t about mirrors or photos.
+    synonyms:
+      - conceited: thinks very highly of themselves, and their looks
+      - image-conscious: always aware of how they’re coming across
+      - preening: forever fixing, smoothing and admiring their look
+      - self-admiring: very much their own biggest fan
+      - selfie-obsessed: always angling for the perfect shot of themselves
+      - self-regarding: very taken with themselves
+    deep:
+      - vainglorious: puffed up with pride in themselves
+        sounds: vayn-GLOR-ee-us
+        from: Latin vana gloria, “empty glory”
+      - foppish: fussily devoted to clothes and looking good
+        from: fop, which first meant “a fool”
+      - coxcombical: vain and showy, strutting like a rooster
+        from: the coxcomb, a jester’s cap shaped like a rooster’s comb
+
+  - word: superficial
+    mix: looks 60, mind 25, heart 15
+    level: 3
+    def: Drawn to surfaces — looks, labels and first impressions count for a lot with them.
+    notice: how quickly they size someone up by their shoes
+    opposite: genuine
+    about: They can be a bit superficial — sometimes the label on the jacket matters more than who’s wearing it.
+    gentle: You notice so much about people, which I love. I’m just curious what you think of them once you get past the first impression.
+    synonyms:
+      - shallow: doesn’t go much below the surface
+      - surface-level: stays on the surface of things
+      - skin-deep: cares most about what’s on the outside
+      - style over substance: puts polish ahead of what’s underneath
+      - status-conscious: very aware of who has what
+      - materialistic: puts a lot of stock in things and labels
+      - frothy: light and fun, but not much to hold onto
+    deep:
+      - jejune: naive and lacking depth, like a meal with no nourishment
+        sounds: jih-JOON
+        from: Latin jejunus, “fasting, empty”
+      - frivolous: light to a fault, rarely taking anything seriously
+
+  - word: flashy
+    mix: looks 63, spirit 37
+    level: 3
+    def: Loves to be noticed — loud labels, big entrances, and a little more sparkle than the moment needs.
+    notice: the logo you can read from across the street
+    about: They can be a bit flashy — big watch, bigger entrance, the whole show.
+    gentle: Honestly, you’re never boring to look at. I just think you don’t need all the extra sparkle — you’re plenty on your own.
+    synonyms:
+      - showy: dressed and done up to be seen
+      - gaudy: bright and bold to the point of loud
+      - blingy: dripping in shiny things
+      - look-at-me: all about grabbing attention
+      - swanky: showily expensive and fancy
+      - splashy: big, bright and made to make a splash
+      - glitzy: all glitter and shine
+      - all hat and no cattle: all show, not much behind it — a Texan saying
+    deep:
+      - ostentatious: showing off wealth and style for all to see
+        sounds: os-ten-TAY-shus
+        from: Latin ostentare, “to show off”
+      - peacockish: strutting and showy, like a peacock in full fan
+      - bedizened: decked out in gaudy finery
+        sounds: bih-DY-zund
+        from: be- + dizen, “to dress up”
+
+  - word: high-maintenance
+    mix: looks 55, heart 30, character 15
+    level: 3
+    def: Very particular about how things should be — and it takes real effort to keep them happy.
+    notice: the twenty-minute debate over which table to take
+    about: They’re a bit high-maintenance — but they know exactly what they like, and honestly, they’re usually right.
+    gentle: I love that you know exactly what you like. It can be a lot to keep up with, though — could we have a few more easy, no-fuss nights?
+    synonyms:
+      - particular: has very specific ideas about how things should be
+      - hard to please: takes a lot to make them happy
+      - pampered: used to having things just so
+      - fussy: picky about the details
+      - picky: choosy, sometimes to a fault
+      - finicky: fussy about the small things
+      - demanding: expects a lot, and often right away
+      - a hothouse flower: delicate, and needs just the right conditions
+    deep:
+      - pernickety: fussy about the tiniest details
+        sounds: per-NIK-uh-tee
+        from: Scots; Americans say persnickety
+      - sybaritic: devoted to luxury and comfort
+        sounds: sib-uh-RIT-ik
+        from: Sybaris, an ancient Greek city famous for its luxury
+      - fastidious: hard to please, with exacting standards for everything
+        sounds: fa-STID-ee-us
+        from: Latin fastidium, “distaste, squeamishness”

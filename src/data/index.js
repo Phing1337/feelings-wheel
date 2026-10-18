@@ -1,13 +1,12 @@
-/* The feelings come from content/*.yaml, compiled by scripts/vite-plugin-feelings.js.
-   They're published as globals because the engine files read them when they load. */
-import data, { warnings } from 'virtual:feelings';
-import content from 'virtual:feelings/content';
+/* The decks come from YAML — feelings in content/, people in content/people/ — compiled by
+   scripts/vite-plugin-feelings.js. They're published as a global because the engine reads them when it loads. */
+import decks, { warnings } from 'virtual:decks';
 
-window.FEELINGS_DATA = data;
-window.FEELINGS_CONTENT = content;
+window.FW_DECKS = decks;
 
-if (warnings.length) {
-  console.groupCollapsed(`feelings: ${warnings.length} content warning${warnings.length > 1 ? 's' : ''} (npm run words:check)`);
-  warnings.forEach(w => console.warn(`${w.where}  ${w.msg}`));
+Object.entries(warnings).forEach(([id, list]) => {
+  if (!list.length) return;
+  console.groupCollapsed(`${id}: ${list.length} content warning${list.length > 1 ? 's' : ''} (npm run words:check ${id})`);
+  list.forEach(w => console.warn(`${w.where}  ${w.msg}`));
   console.groupEnd();
-}
+});
