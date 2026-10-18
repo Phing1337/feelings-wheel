@@ -295,7 +295,7 @@ FW.share = async (text, title) => {
   if (navigator.share) { try { await navigator.share({ text, title }); return; } catch (e) { if (e.name === 'AbortError') return; } }
   FW.copy(text, 'Copied — paste it anywhere');
 };
-FW.mixChips = f => f.parts.map(p => `<span class="mixchip" style="background:${FW.fam[p.fam].color};color:${FW.fam[p.fam].ink}">${FW.fam[p.fam].name}${f.parts.length > 1 ? ' ' + Math.round(p.w * 100) + '%' : ''}</span>`).join('');
+FW.mixChips = f => f.parts.map(p => `<span class="mixchip" style="background:${FW.fam[p.fam].color};color:${FW.fam[p.fam].ink}">${FW.fam[p.fam].name}</span>`).join('');
 
 /* fallbacks until dock.js loads */
 FW.isPinned = FW.isPinned || (() => false);

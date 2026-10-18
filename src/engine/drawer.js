@@ -79,7 +79,7 @@ function journal() {
   const d = new Date(), pins = FW.pinnedSorted();
   const lines = [`## How I'm feeling — ${d.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}`, '', FW.summary(), ''];
   pins.forEach(p => { const f = FW.byId[p.id], h = f.head && FW.byId[f.head]; lines.push(`- ${'●'.repeat(p.amt)}${'○'.repeat(3 - p.amt)} **${f.word}**${h ? ` (\u2248 ${h.word})` : ''} — ${f.def}`); });
-  lines.push('', 'Mix: ' + FW.aggregate().map(p => `${FW.fam[p.fam].name} ${Math.round(p.w * 100)}%`).join(' · '));
+  lines.push('', 'Mix: ' + FW.aggregate().map(p => FW.fam[p.fam].name).join(' · '));
   return lines.join('\n');
 }
 
