@@ -31,8 +31,8 @@ The switch at the bottom of the home screen flips between two wheels:
   (beautiful, witty, kind) sit beside double-edged ones (stubborn, intense) and their shadow sides
   (vain, flaky), which show up deeper in colour with a gentle way to bring them up.
 
-Each wheel keeps its own pins. In **their wheel**, type the person's name when you share — it stays on
-your phone — and **Tell them** drafts a warm, playful or honest message from what you've pinned.
+Each wheel keeps its own pins. Every pin counts the same. In the drawer, tap any example to copy it,
+**Share** a word, **Copy for journal** (Markdown for your notes), or **Clear** the wheel (tap twice).
 
 ## Develop
 

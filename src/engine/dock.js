@@ -2,7 +2,7 @@
 (function () {
 const FW = window.FW, NS = 'http://www.w3.org/2000/svg';
 const R1 = 46, R0 = 31, C = 50, RM = 38.5;
-const load = () => { try { return (JSON.parse(localStorage.getItem(FW.UI.pins)) || []).filter(p => FW.byId[p.id]); } catch (e) { return []; } };
+const load = () => { try { return (JSON.parse(localStorage.getItem(FW.UI.pins)) || []).filter(p => FW.byId[p.id]).map(({ id, t }) => ({ id, t })); } catch (e) { return []; } };
 FW.pins = load();
 const landing = new Set(), segs = new Map(), grads = new Set();
 let defs, g, coreFill, badge;
@@ -12,17 +12,16 @@ FW.isPinned = id => FW.pins.some(p => p.id === id);
 FW.pin = (id, srcEl) => {
   const f = FW.byId[id]; if (!f) return;
   if (FW.isPinned(id)) { FW.toast(f.word + ' is already on your wheel'); return; }
-  FW.pins.push({ id, amt: 2, t: Date.now() });
+  FW.pins.push({ id, t: Date.now() });
   landing.add(id);
   save();
   flight(id, srcEl, () => { landing.delete(id); syncWheel(); bump(); FW.toast('Pinned ' + f.word); });
 };
 FW.unpin = id => { FW.pins = FW.pins.filter(p => p.id !== id); save(); FW.toast('Unpinned ' + FW.byId[id].word); };
-FW.setAmt = (id, amt) => { const p = FW.pins.find(p => p.id === id); if (p) { p.amt = amt; save(); } };
 FW.clearPins = () => { FW.pins = []; save(); };
 FW.aggregate = () => {
   const acc = {}; let tot = 0;
-  FW.pins.forEach(p => FW.byId[p.id].parts.forEach(q => { acc[q.fam] = (acc[q.fam] || 0) + q.w * p.amt; tot += q.w * p.amt; }));
+  FW.pins.forEach(p => FW.byId[p.id].parts.forEach(q => { acc[q.fam] = (acc[q.fam] || 0) + q.w; tot += q.w; }));
   return Object.entries(acc).map(([fam, w]) => ({ fam, w: w / (tot || 1), color: FW.fam[fam].color })).sort((a, b) => b.w - a.w);
 };
 
@@ -38,9 +37,9 @@ const arc = (a0, a1) => {
 const draw = s => s.el.setAttribute('d', arc(s.a0, s.a1));
 function targets() {
   const list = FW.pins.filter(p => !landing.has(p.id));
-  const tot = list.reduce((a, p) => a + p.amt, 0), gap = list.length > 1 ? 0.05 : 0;
+  const span = Math.PI * 2 / (list.length || 1), gap = list.length > 1 ? 0.05 : 0;
   let a = -Math.PI / 2; const out = {};
-  list.forEach(p => { const span = Math.PI * 2 * p.amt / tot; out[p.id] = { a0: a + gap / 2, a1: a + span - gap / 2, mid: a + span / 2 }; a += span; });
+  list.forEach(p => { out[p.id] = { a0: a + gap / 2, a1: a + span - gap / 2, mid: a + span / 2 }; a += span; });
   return out;
 }
 function grad(f) {
@@ -120,7 +119,7 @@ FW.initDock = () => {
   });
 };
 FW.on('pins', () => syncWheel());
-/* "my wheel" / "their wheel" (or "Sam's wheel" once you've typed their name in the builder) */
+/* the deck's name for the wheel: "my wheel" / "their wheel" */
 function label() {
   const el = FW.els && FW.els.dockLabel; if (!el) return;
   el.textContent = FW.UI.dock();
@@ -134,5 +133,4 @@ FW.on('deck', () => {
   syncWheel();
   label();
 });
-FW.on('person', label);
 })();

@@ -111,7 +111,7 @@ sides: [light, edge, shadow]
 
 1. Make a folder with `deck.yaml`, `families.yaml` and `clusters/` (copy `content/people/`).
 2. Register it in `scripts/feelings/decks.js` (`id: 'content/<folder>'`).
-3. Give it its screen copy — tab name, prompt, share text, message builder — in `FW.UIS` in
+3. Give it its screen copy — tab name, prompt, drawer title, share text — in `FW.UIS` in
    `src/engine/decks.js`, and family colours as `--fw-color-<deck>-<family>` tokens.
 
 `npm run words:check` checks every deck; `npm run words:check -- people` checks one.

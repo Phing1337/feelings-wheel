@@ -9,12 +9,15 @@
   --fw-color-ink-mute: rgb(244 242 255 / 56%);
   --fw-color-ink-line: rgb(244 242 255 / 10%);
   --fw-color-ink-card: rgb(22 21 34 / 90%);
+  --fw-color-ink-danger: #FF2E4D;
   /* 03 · Poster theme */
   --fw-color-poster-bg: #F7F5F0;
   --fw-color-poster-fg: #14131A;
   --fw-color-poster-mute: rgb(20 19 26 / 56%);
   --fw-color-poster-line: rgb(20 19 26 / 8%);
   --fw-color-poster-card: rgb(255 255 255 / 92%);
+  /* danger = destructive buttons (Clear); the poster red is deeper so it still reads on paper */
+  --fw-color-poster-danger: #C20E2C;
   /* 03 · Shared by both themes */
   --fw-color-label-dark: #14131A;
   --fw-color-label-light: #FFFFFF;

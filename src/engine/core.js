@@ -348,9 +348,12 @@ FW.toast = msg => {
   const t = FW.els && FW.els.toast; if (!t) return;
   t.textContent = msg;
   gsap.killTweensOf(t);
+  /* over the open drawer it rises from the bottom instead, so it never sits on the drawer's title */
+  const low = !!(FW.drawerOpen && FW.drawerOpen()), dy = low ? 10 : -10;
+  t.classList.toggle('low', low);
   const m = T.motion('toast');
-  gsap.timeline().fromTo(t, { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: FW.dur(m.dur), ease: m.ease })
-    .to(t, { opacity: 0, y: -10, duration: FW.dur(m.dur) }, '+=' + (m.hold ?? 1.6));
+  gsap.timeline().fromTo(t, { opacity: 0, y: dy }, { opacity: 1, y: 0, duration: FW.dur(m.dur), ease: m.ease })
+    .to(t, { opacity: 0, y: dy, duration: FW.dur(m.dur) }, '+=' + (m.hold ?? 1.6));
 };
 FW.copy = async (text, msg) => {
   try { await navigator.clipboard.writeText(text); }
