@@ -44,6 +44,10 @@ feelings:
 | `synonyms` `deep` | the thesaurus — see below |
 | `note` | a comment for editors; the app ignores it |
 
+Search finds a feeling by its `word`, `aliases` and thesaurus words, and by what's written about it —
+`def`, `body`, `voice` and the example phrases — so plain everyday words there help people find it by
+describing it (“lump in my throat”).
+
 ## The thesaurus: `synonyms` and `deep`
 
 Tap a feeling’s centre bubble and its synonyms revolve around it — everyday words on the inner ring, rare

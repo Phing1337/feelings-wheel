@@ -161,4 +161,9 @@
   --fw-shade-shadow: "64% · 95% · -12°";
   /* the old deck's bubbles swirl into the middle as the new deck blooms out of it */
   --fw-motion-deck-swap: "0.6s · power2.in · swirl 70°";
+
+  /* 09 · Search — the field grows out of the magnifier, the results rise in one after another,
+     and it all shrinks back into the magnifier when you're done */
+  --fw-motion-search-open: "0.45s · power3.out · rise 10px · stagger 16ms";
+  --fw-motion-search-close: "0.3s · power2.in";
 }

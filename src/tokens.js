@@ -32,6 +32,8 @@ const FALLBACK = {
   'motion-aura-drift': '60–110s · sine.inOut · drift 18% · breathe 12% · shimmer 8°',
   'motion-aura-shift': '8s · sine.inOut · stagger 0.7s',
   'motion-deck-swap': '0.6s · power2.in · swirl 70°',
+  'motion-search-open': '0.45s · power3.out · rise 10px · stagger 16ms',
+  'motion-search-close': '0.3s · power2.in',
   'shade-edge': '86% · 100% · 0°',
   'shade-shadow': '64% · 95% · -12°',
   'layout-center-y': '42%',

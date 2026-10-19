@@ -15,6 +15,10 @@ Chrome: ⋮ → Install app).
   it — everyday words on the inner ring, rare and strange ones (sanguine, choleric, twitterpated…) on
   the outer. Tap a word to swap it into the middle, drag to spin, tap outside to close.
 - The card at the bottom explains the feeling in focus, with your path back above it.
+- **Search** (the magnifier at the top right, or `/`) looks through both wheels at once: spell a word,
+  start it, misspell it ("lonley") or describe it ("lump in my throat"). The word you meant — or
+  another form of it (hope → hopeful) — brings its synonyms along; tap a result to go there, or **+**
+  to pin it without leaving.
 - Open My wheel (tap or pull down) to learn more about each feeling and share how you're doing.
 - The background glows drift slowly and take on the colors and mood of what you've pinned.
 

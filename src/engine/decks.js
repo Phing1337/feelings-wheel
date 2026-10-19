@@ -37,6 +37,8 @@ FW.UIS = {
     write: '✎ Write a text',
     sides: {},
     fields: [{ key: 'body', lead: 'In your body: ' }, { key: 'voice', quote: true }],
+    /* search (search.js): ways in for when you can't name it yet */
+    search: { describe: 'Or describe it', try: ['feeling down', 'too much', 'nobody gets me', 'lump in my throat', 'can’t stop smiling', 'proud of myself'] },
     summary(agg) {
       const bits = agg.filter(p => p.w >= 0.08).map(p => (p.w >= 0.45 ? 'mostly ' : p.w >= 0.2 ? 'some ' : 'a little ') + FW.fam[p.fam].name.toLowerCase());
       return bits.length ? cap(bits.join(' · ')) : 'Nothing pinned yet';
@@ -100,6 +102,7 @@ FW.UIS = {
     write: '✎ Tell them',
     sides: { edge: 'double-edged', shadow: 'shadow side' },
     fields: [{ key: 'notice', lead: 'You see it in ', dot: true }],
+    search: { describe: 'Or describe them', try: ['makes me laugh', 'beautiful smile', 'quick wit', 'big heart', 'good listener', 'thinks deeply'] },
     summary() {
       const ws = pinned();
       if (!ws.length) return 'Nothing pinned yet';

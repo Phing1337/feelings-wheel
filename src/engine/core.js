@@ -408,6 +408,7 @@ FW.mount = (o = {}) => {
   FW.initDrawer && FW.initDrawer();
   FW.initAura && FW.initAura();
   FW.initModes && FW.initModes();
+  FW.initSearch && FW.initSearch();
   return FW.els;
 };
 

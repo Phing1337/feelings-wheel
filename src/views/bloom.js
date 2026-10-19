@@ -271,9 +271,10 @@ export function createBloom(stage) {
   });
 
   /* switching "I feel | I see you": the old deck's bubbles swirl into the middle and fade while the
-     new deck's six bloom out of it, and the question in the middle changes. Timing: --fw-motion-deck-swap. */
-  function deck(id) {
-    if (!FW.setDeck(id)) return;
+     new deck's six bloom out of it, and the question in the middle changes. Timing: --fw-motion-deck-swap.
+     With `at` (a search pick from the other deck) it lands straight on that word instead. */
+  function deck(id, at) {
+    if (!FW.setDeck(id)) return at && go(at);
     const n = ++swap, m = T.motion('deck-swap'), dur = FW.dur(m.dur ?? 0.6), sw = (m.swirl ?? 70) * Math.PI / 180;
     orbit.close(true);
     focus = null; trail = []; page = 0;
@@ -291,9 +292,9 @@ export function createBloom(stage) {
     gsap.to(prompt, { autoAlpha: 0, scale: 0.92, duration: dur * 0.5, ease: 'power2.in', overwrite: true, onComplete: () => {
       if (n !== swap) return;
       prompt.innerHTML = promptHTML();
-      gsap.to(prompt, { autoAlpha: 1, scale: 1, duration: FW.dur(0.5), ease: 'back.out(1.6)' });
+      if (!at) gsap.to(prompt, { autoAlpha: 1, scale: 1, duration: FW.dur(0.5), ease: 'back.out(1.6)' });
     } });
-    gsap.delayedCall(dur * 0.55, () => n === swap && render(homeLayout(), { x: cx, y: hy }));
+    gsap.delayedCall(dur * 0.55, () => n === swap && (at ? go(at) : render(homeLayout(), { x: cx, y: hy })));
   }
 
   return {

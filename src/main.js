@@ -9,6 +9,7 @@ import './engine/decks.js';
 import './engine/core.js';
 import './engine/dock.js';
 import './engine/drawer.js';
+import './engine/search.js';
 import './engine/aura.js';
 import { createBloom } from './views/bloom.js';
 
@@ -28,6 +29,8 @@ async function boot() {
   const view = createBloom(FW.els.stage);
   FW.on('explore', id => view.go(id));
   FW.on('mode', id => view.deck(id));
+  /* a search pick: go to the word, switching decks first if it lives in the other one */
+  FW.on('find', ({ deck, id }) => deck && deck !== FW.deck.id ? view.deck(deck, id) : view.go(id));
   FW.on('pins', () => view.syncPins());
   let rt = 0;
   addEventListener('resize', () => {
